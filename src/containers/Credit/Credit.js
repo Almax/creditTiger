@@ -1,15 +1,21 @@
 import React, {Component, PropTypes} from 'react';
 import Helmet from 'react-helmet';
 import {connect} from 'react-redux';
-import { PointSlider } from 'components';
+import { FteCheckbox, PointSlider } from 'components';
 
-const getVisibleCards = (cards, value) => {
-  switch (value) {
-    case 0:
-      return cards;
-    default:
-      return cards.filter(ca => ca.currentBonus > value);
+const getVisibleCards = (cards, filters) => {
+  var cardsToShow = cards;
+  const pointMinimumFilter = filters.pointMinimumFilter;
+
+  if (pointMinimumFilter > 0) {
+    cardsToShow = cardsToShow.filter(ca => ca.currentBonus > pointMinimumFilter);
   }
+
+  if (filters.noFteOnly === true) {
+    cardsToShow = cardsToShow.filter(ca => ca.fte === 0.0);
+  }
+
+  return cardsToShow;
 };
 
 @connect(
@@ -28,14 +34,15 @@ export default class Credit extends Component {
   };
 
   render() {
-    const {cards} = this.props;
-    const {pointMinimumFilter} = this.props.filter;
-    const visibleCards = getVisibleCards(cards, pointMinimumFilter);
+    const { cards, filter } = this.props;
+    const visibleCards = getVisibleCards(cards, filter);
+
     return (
       <div className="container">
         <h1>Top Credit Cards</h1>
         <Helmet title="Top Credit Cards Helmet"/>
-        <PointSlider multireducerKey="pointMinimumFilter1"/>
+        <div><FteCheckbox /></div>
+        <div><PointSlider multireducerKey="pointMinimumFilter1"/></div>
         {visibleCards && visibleCards.length &&
           <table className="table table-striped">
           <thead>

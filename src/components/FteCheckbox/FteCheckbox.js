@@ -1,0 +1,37 @@
+import React, {Component, PropTypes} from 'react';
+import Checkbox from 'react-toolbox/lib/checkbox';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { fteBoxChange } from 'redux/modules/filter';
+
+@connect(
+  null,
+  dispatch => bindActionCreators({fteBoxChange}, dispatch)
+)
+
+export default class FteCheckbox extends Component {
+  static propTypes = {
+    fteBoxChange: PropTypes.func.isRequired
+  }
+
+  state = {
+    check2: false
+  };
+
+  handleChange = (field, bool) => {
+    const {fteBoxChange} = this.props; // eslint-disable-line no-shadow
+
+    this.setState({[field]: bool});
+    fteBoxChange(bool);
+  };
+
+  render() {
+    return (
+      <Checkbox
+        checked={this.state.check2}
+        label="No Foreign Transaction Fees"
+        onChange={this.handleChange.bind(this, 'check2')}
+      />
+    );
+  }
+}

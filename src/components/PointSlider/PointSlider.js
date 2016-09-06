@@ -4,12 +4,7 @@ import {sliderValueChange} from 'redux/modules/filter';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-const MULTIPLE_FACTOR = 10000
-
-// @connectMultireducer(
-//   (key, state) => ({value: state.multireducer[key].value}),
-//   {sliderValueChange}
-// )
+const MULTIPLE_FACTOR = 10000;
 
 @connect(
   null,
@@ -33,7 +28,6 @@ export default class PointSlider extends Component {
     this.setState(newState);
 
     const multipleValue = MULTIPLE_FACTOR * value;
-    console.log(multipleValue);
     sliderValueChange(multipleValue);
   }
 

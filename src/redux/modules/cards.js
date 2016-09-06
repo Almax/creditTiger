@@ -20,7 +20,7 @@ const initialState = [
     AFWaived: true,
     fte: 0.0
   },
-    {
+  {
     issuer: 'AMEX',
     cardName: 'HHonors',
     currentBonus: 50000,

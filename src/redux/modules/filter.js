@@ -1,26 +1,37 @@
 const initialState = {
-  pointMinimumFilter: 0
+  pointMinimumFilter: 0,
+  noFteOnly: false
 };
 
-const FILTER = 'SET_FILTER';
+const POINT_FILTER = 'SET_POINT_FILTER';
+const FTE_FILTER = 'SET_FTE_FILTER';
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
-    case FILTER:
-      console.log('assigning filter');
+    case POINT_FILTER:
       return Object.assign({}, state, {
         pointMinimumFilter: action.value
       });
+    case FTE_FILTER:
+      return {
+        ...state,
+        noFteOnly: action.bool
+      };
     default:
-      console.log('reduced');
       return state;
   }
 }
 
 export function sliderValueChange(value) {
-  console.log('sliderValueChange', value);
   return {
-    type: FILTER,
+    type: POINT_FILTER,
     value: value
+  };
+}
+
+export function fteBoxChange(bool) {
+  return {
+    type: FTE_FILTER,
+    bool: bool
   };
 }
