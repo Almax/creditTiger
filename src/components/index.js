@@ -5,6 +5,7 @@
  *
  */
 
+export PointSlider from './PointSlider/PointSlider';
 export CounterButton from './CounterButton/CounterButton';
 export GithubButton from './GithubButton/GithubButton';
 export InfoBar from './InfoBar/InfoBar';

@@ -9,6 +9,7 @@ import {reducer as form} from 'redux-form';
 import info from './info';
 import widgets from './widgets';
 import cards from './cards';
+import filter from './filter';
 
 export default combineReducers({
   routing: routerReducer,
@@ -16,6 +17,7 @@ export default combineReducers({
   auth,
   form,
   cards,
+  filter,
   multireducer: multireducer({
     counter1: counter,
     counter2: counter,

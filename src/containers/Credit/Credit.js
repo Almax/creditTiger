@@ -1,43 +1,44 @@
 import React, {Component, PropTypes} from 'react';
 import Helmet from 'react-helmet';
 import {connect} from 'react-redux';
-// import {connectMultireducer} from 'multireducer';
-// import {afWaived} from 'redux/modules/filter';
+import { PointSlider } from 'components';
 
-// @connectMultireducer(
-//   {afWaived}
-// )
+const getVisibleCards = (cards, value) => {
+  switch (value) {
+    case 0:
+      return cards;
+    default:
+      return cards.filter(ca => ca.currentBonus > value);
+  }
+};
 
 @connect(
   state => (
     {
-      cards: state.cards
+      cards: state.cards,
+      filter: state.filter
     }
   )
 )
 
 export default class Credit extends Component {
   static propTypes = {
-    cards: PropTypes.array
+    cards: PropTypes.array,
+    filter: PropTypes.object
   };
 
-  // state = {
-  //   seedTable: false
-  // };
-
-  // handleToggleKitten = () => this.setState({showKitten: !this.state.showKitten});
-  // seedTable = (event) => this.setState({seedTable: true});
-
-  // componentDidMount() {
-  // };
-
   render() {
+    console.log('render');
+    console.log('this.props', this.props);
     const {cards} = this.props;
+    const {pointMinimumFilter} = this.props.filter;
+    const visibleCards = getVisibleCards(cards, pointMinimumFilter);
     return (
       <div className="container">
         <h1>Top Credit Cards</h1>
         <Helmet title="Top Credit Cards Helmet"/>
-        {cards && cards.length &&
+        <PointSlider multireducerKey="pointMinimumFilter1"/>
+        {visibleCards && visibleCards.length &&
           <table className="table table-striped">
           <thead>
           <tr>
@@ -48,7 +49,7 @@ export default class Credit extends Component {
           </tr>
           </thead>
           <tbody>
-            {cards.map((card) => {
+            {visibleCards.map((card) => {
               return (
                 <tr>
                   <th>{card.issuer}</th>
