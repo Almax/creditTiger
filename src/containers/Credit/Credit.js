@@ -28,8 +28,6 @@ export default class Credit extends Component {
   };
 
   render() {
-    console.log('render');
-    console.log('this.props', this.props);
     const {cards} = this.props;
     const {pointMinimumFilter} = this.props.filter;
     const visibleCards = getVisibleCards(cards, pointMinimumFilter);

@@ -4,6 +4,8 @@ import {sliderValueChange} from 'redux/modules/filter';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
+const MULTIPLE_FACTOR = 10000
+
 // @connectMultireducer(
 //   (key, state) => ({value: state.multireducer[key].value}),
 //   {sliderValueChange}
@@ -20,7 +22,7 @@ export default class PointSlider extends Component {
   }
 
   state = {
-    value: 0
+    slider1: 0
   }
 
   handleChange = (slider, value) => {
@@ -29,15 +31,16 @@ export default class PointSlider extends Component {
     const newState = {};
     newState[slider] = value;
     this.setState(newState);
-    sliderValueChange(value);
+
+    const multipleValue = MULTIPLE_FACTOR * value;
+    console.log(multipleValue);
+    sliderValueChange(multipleValue);
   }
 
   render() {
     return (
-      <Slider min={0} max={100000} value={this.state.slider1} onChange={this.handleChange.bind(this, 'slider1')} />
+      <Slider pinned snaps min={0} max={10} step={1} value={this.state.slider1} onChange={this.handleChange.bind(this, 'slider1')} />
     );
   }
 }
 
-// this.handleChange.bind(this, 'slider1')
-// <Slider value={this.state.value} onChange={sliderValueChange} />
