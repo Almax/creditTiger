@@ -10,7 +10,7 @@ const getVisibleCards = (cards, filters) => {
   const onlyShowIssuer = filters.onlyShowIssuer;
 
   if (pointMinimumFilter > 0) {
-    cardsToShow = cardsToShow.filter(ca => ca.currentBonus > pointMinimumFilter);
+    cardsToShow = cardsToShow.filter(ca => ca.currentBonus >= pointMinimumFilter);
   }
 
   if (filters.noFteOnly === true) {
@@ -25,9 +25,6 @@ const getVisibleCards = (cards, filters) => {
 
   if (Object.keys(onlyIssuerKeysToFilter).length > 0) {
     cardsToShow = cardsToShow.filter(ca => onlyIssuerKeysToFilter[ca.issuer] === true);
-    if (cardsToShow.length === 0) {
-      cardsToShow = cards;
-    }
   }
 
   return cardsToShow;
