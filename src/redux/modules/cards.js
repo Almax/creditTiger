@@ -1,4 +1,4 @@
-const initialState = [
+const all = [
   {
     issuer: 'AMEX',
     cardName: 'Gold Delta',
@@ -70,6 +70,19 @@ const initialState = [
     fte: 0.03
   }
 ];
+
+const issuers = [];
+all.forEach( (val, key) => {
+  const issuer = val.issuer;
+  if (all[key + 1] && issuer !== all[key + 1].issuer) {
+    issuers.push(issuer);
+  }
+});
+
+const initialState = {
+  all,
+  issuers
+};
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {

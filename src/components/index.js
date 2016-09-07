@@ -13,3 +13,4 @@ export SurveyForm from './SurveyForm/SurveyForm';
 export WidgetForm from './WidgetForm/WidgetForm';
 export PointSlider from './PointSlider/PointSlider';
 export FteCheckbox from './FteCheckbox/FteCheckbox';
+export IssuerCheckbox from './IssuerCheckbox/IssuerCheckbox';

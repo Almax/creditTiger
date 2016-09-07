@@ -1,12 +1,15 @@
 const initialState = {
   pointMinimumFilter: 0,
-  noFteOnly: false
+  noFteOnly: false,
+  onlyShowIssuer: {}
 };
 
 const POINT_FILTER = 'SET_POINT_FILTER';
 const FTE_FILTER = 'SET_FTE_FILTER';
+const ONLY_SHOW_ISSUER_FILTER = 'SET_ONLY_SHOW_ISSUER_FILTER';
 
 export default function reducer(state = initialState, action = {}) {
+  const issuerName = action.issuerName;
   switch (action.type) {
     case POINT_FILTER:
       return Object.assign({}, state, {
@@ -17,6 +20,14 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         noFteOnly: action.bool
       };
+    case ONLY_SHOW_ISSUER_FILTER:
+      const newIssuerFilter = Object.assign({}, state.onlyShowIssuer, {
+        [issuerName]: action.bool
+      });
+      return {
+        ...state,
+        onlyShowIssuer: newIssuerFilter
+      };
     default:
       return state;
   }
@@ -25,13 +36,21 @@ export default function reducer(state = initialState, action = {}) {
 export function sliderValueChange(value) {
   return {
     type: POINT_FILTER,
-    value: value
+    value
   };
 }
 
 export function fteBoxChange(bool) {
   return {
     type: FTE_FILTER,
-    bool: bool
+    bool
+  };
+}
+
+export function issuerBoxChange(issuerName, bool) {
+  return {
+    type: ONLY_SHOW_ISSUER_FILTER,
+    issuerName,
+    bool
   };
 }
