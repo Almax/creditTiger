@@ -1,6 +1,4 @@
 import React, {Component, PropTypes} from 'react';
-import config from '../../config';
-import Helmet from 'react-helmet';
 import {connect} from 'react-redux';
 import { CardBox, FteCheckbox, IssuerCheckbox, PointSlider } from 'components';
 

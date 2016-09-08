@@ -72,6 +72,18 @@ const all = [
     annualFeePerc: 81
   },
   {
+    key: 'chase_per_freedom',
+    imageFullName: 'chase_per_freedom.png',
+    issuer: 'Chase',
+    cardName: 'Freedom',
+    currentBonus: 30000,
+    annualFeeWaived: true,
+    fte: 0.0,
+    bonusRewardValuePerc: 41,
+    minSpendPerc: 87,
+    annualFeePerc: 100
+  },
+  {
     key: 'chase_per_saphpref',
     imageFullName: 'chase_per_saphpref.jpg',
     issuer: 'Chase',
@@ -106,6 +118,30 @@ const all = [
     bonusRewardValuePerc: 99,
     minSpendPerc: 20,
     annualFeePerc: 80
+  },
+  {
+    key: 'citi_per_prestige',
+    imageFullName: 'citi_per_prestige.jpg',
+    issuer: 'Citi',
+    cardName: 'Prestige',
+    currentBonus: 50000,
+    annualFeeWaived: false,
+    fte: 0.00,
+    bonusRewardValuePerc: 100,
+    minSpendPerc: 47,
+    annualFeePerc: 5
+  },
+  {
+    key: 'usbank_per_clubcarlson',
+    imageFullName: 'usbank_per_clubcarlson.jpg',
+    issuer: 'US Bank',
+    cardName: 'Club Carlson',
+    currentBonus: 60000,
+    annualFeeWaived: false,
+    fte: 0.03,
+    bonusRewardValuePerc: 32,
+    minSpendPerc: 60,
+    annualFeePerc: 89
   }
 ];
 

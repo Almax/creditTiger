@@ -3,7 +3,6 @@ export Chat from './Chat/Chat';
 export Home from './Home/Home';
 export Widgets from './Widgets/Widgets';
 export About from './About/About';
-export Credit from './Credit/Credit';
 export Login from './Login/Login';
 export LoginSuccess from './LoginSuccess/LoginSuccess';
 export Survey from './Survey/Survey';
