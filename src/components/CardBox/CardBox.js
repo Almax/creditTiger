@@ -18,7 +18,7 @@ export default class CardBox extends Component {
     const imageUrl = require('../../images/' + imageFullName);
 
     return (
-      <Card className='.col-md-4' style={{width: '280px'}}>
+      <Card className="col-md-3" style={{width: '280px'}}>
         <CardTitle
           title={ cardName }
           subtitle={ issuer }

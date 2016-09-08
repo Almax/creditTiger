@@ -54,27 +54,33 @@ export default class Credit extends Component {
       <div className="container">
         <h1>Top Credit Cards</h1>
         <Helmet title="Top Credit Cards Helmet"/>
-        <h2>Filters</h2>
-        <div><FteCheckbox /></div>
-        {issuers && issuers.length &&
-          <div>
-          {issuers.map((issuer) => {
-            return (
-              <div><IssuerCheckbox issuerName={issuer} /></div>
-            );
-          })}
-          </div>
-        }
-        <div><PointSlider multireducerKey="pointMinimumFilter1"/></div>
-        {visibleCards && visibleCards.length &&
-          <div>
-            {visibleCards.map((card) => {
+        <div className="col-md-2">
+          <h3>Fees</h3>
+          <div><FteCheckbox /></div>
+          <h3>Issuers</h3>
+          {issuers && issuers.length &&
+            <div>
+            {issuers.map((issuer) => {
               return (
-                <CardBox card={card} />
+                <div><IssuerCheckbox issuerName={issuer} /></div>
               );
             })}
-          </div>
-        }
+            </div>
+          }
+          <h3>Rewards</h3>
+          <div><PointSlider multireducerKey="pointMinimumFilter1"/></div>
+        </div>
+        <div className="col-md-10">
+          {visibleCards && visibleCards.length &&
+            <div>
+              {visibleCards.map((card) => {
+                return (
+                  <CardBox card={card} />
+                );
+              })}
+            </div>
+          }
+        </div>
       </div>
     );
   }
