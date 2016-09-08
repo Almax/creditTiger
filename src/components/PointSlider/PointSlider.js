@@ -17,7 +17,7 @@ export default class PointSlider extends Component {
   }
 
   state = {
-    slider1: 0
+    slider1: 1
   }
 
   handleChange = (slider, value) => {
@@ -33,7 +33,7 @@ export default class PointSlider extends Component {
 
   render() {
     return (
-      <Slider pinned snaps min={0} max={10} step={1} value={this.state.slider1} onChange={this.handleChange.bind(this, 'slider1')} />
+      <Slider pinned snaps min={0} max={6} step={1} value={this.state.slider1} onChange={this.handleChange.bind(this, 'slider1')} />
     );
   }
 }

@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import Helmet from 'react-helmet';
 import {connect} from 'react-redux';
-import { FteCheckbox, IssuerCheckbox, PointSlider } from 'components';
+import { CardBox, FteCheckbox, IssuerCheckbox, PointSlider } from 'components';
 
 const getVisibleCards = (cards, filters) => {
   let cardsToShow = cards;
@@ -67,28 +67,14 @@ export default class Credit extends Component {
         }
         <div><PointSlider multireducerKey="pointMinimumFilter1"/></div>
         {visibleCards && visibleCards.length &&
-          <table className="table table-striped">
-          <thead>
-          <tr>
-            <th>Issuer</th>
-            <th>Card Name</th>
-            <th>Current Bonus</th>
-            <th>AF Waived</th>
-          </tr>
-          </thead>
-          <tbody>
+          <div>
             {visibleCards.map((card) => {
               return (
-                <tr>
-                  <th>{card.issuer}</th>
-                  <th>{card.cardName}</th>
-                  <th>{card.currentBonus}</th>
-                  <th>{card.AFWaived ? 'yes' : 'no'}</th>
-                </tr>
+                <CardBox card={card} />
               );
             })}
-          </tbody>
-        </table>}
+          </div>
+        }
       </div>
     );
   }
