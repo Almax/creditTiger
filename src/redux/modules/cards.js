@@ -1,3 +1,5 @@
+const _R = require('ramda');
+
 const all = [
   {
     cardKey: 'amex_per_gd',
@@ -157,13 +159,9 @@ const all = [
   }
 ];
 
-const issuers = [];
-all.forEach( (val, key) => {
-  const issuer = val.issuer;
-  if (all[key + 1] && issuer !== all[key + 1].issuer) {
-    issuers.push(issuer);
-  }
-});
+const issuer = ca => ca.issuer;
+const issuerList = _R.map(issuer, all);
+const issuers = _R.uniq(issuerList);
 
 const initialState = {
   all,
