@@ -5,7 +5,7 @@
  *
  */
 
-export CardBox from './CardBox/Cardbox';
+export CardBox from './CardBox/CardBox';
 export CounterButton from './CounterButton/CounterButton';
 export GithubButton from './GithubButton/GithubButton';
 export InfoBar from './InfoBar/InfoBar';
