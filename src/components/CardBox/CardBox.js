@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import { Card, CardMedia, CardTitle, CardText, CardActions } from 'react-toolbox/lib/card';
 import { Button } from 'react-toolbox/lib/button';
-import ProgressBar from 'react-toolbox/lib/progress_bar';
+import RatingBar from '../RatingBar/RatingBar';
 
 // import { bindActionCreators } from 'redux';
 // import { connect } from 'react-redux';
@@ -28,11 +28,11 @@ export default class CardBox extends Component {
           image={ imageUrl }
         />
         <CardText>Bonus Rewards</CardText>
-        <ProgressBar type="linear" mode="determinate" value={ bonusRewardValuePerc } />
+        <RatingBar value={ bonusRewardValuePerc } />
         <CardText>Annual Fee</CardText>
-        <ProgressBar type="linear" mode="determinate" value={ annualFeePerc } />
+        <RatingBar type="linear" mode="determinate" value={ annualFeePerc } />
         <CardText>Minimum Spend</CardText>
-        <ProgressBar type="linear" mode="determinate" value={ minSpendPerc } />
+        <RatingBar type="linear" mode="determinate" value={ minSpendPerc } />
         <CardActions>
           <Button label="Apply" />
           <Button label="Details" />
@@ -41,5 +41,6 @@ export default class CardBox extends Component {
     );
   }
 }
+
 
 // <CardText>{dummyText}</CardText>

@@ -5,6 +5,7 @@ import { CardBox, FteCheckbox, IssuerCheckbox, PointSlider } from 'components';
 const getVisibleCards = (cards, filters) => {
   let cardsToShow = cards;
   let onlyIssuerKeysToFilter = {}; // eslint-disable-line prefer-const
+
   const pointMinimumFilter = filters.pointMinimumFilter;
   const onlyShowIssuer = filters.onlyShowIssuer;
 
