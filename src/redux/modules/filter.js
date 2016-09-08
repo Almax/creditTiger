@@ -1,13 +1,15 @@
 const initialState = {
   pointMinimumFilter: 0,
   noFteOnly: false,
-  onlyShowIssuer: {}
+  onlyShowIssuer: {},
+  hiddenCardKeys: {}
 };
 
 const POINT_FILTER = 'SET_POINT_FILTER';
 const FTE_FILTER = 'SET_FTE_FILTER';
 const ANNUAL_FEE_CHANGE = 'SET_ANNUAL_FEE_FILTER';
 const ONLY_SHOW_ISSUER_FILTER = 'SET_ONLY_SHOW_ISSUER_FILTER';
+const HIDE_CARD = 'HIDE_CARD';
 
 export default function reducer(state = initialState, action = {}) {
   const issuerName = action.issuerName;
@@ -33,6 +35,15 @@ export default function reducer(state = initialState, action = {}) {
       return {
         ...state,
         onlyShowIssuer: newIssuerFilter
+      };
+    case HIDE_CARD:
+      const cardKey = action.cardKey;
+      const newHiddenCardKeys = Object.assign({}, state.hiddenCardKeys, {
+        [cardKey]: true
+      });
+      return {
+        ...state,
+        hiddenCardKeys: newHiddenCardKeys
       };
     default:
       return state;
@@ -65,5 +76,12 @@ export function issuerBoxChange(issuerName, bool) {
     type: ONLY_SHOW_ISSUER_FILTER,
     issuerName,
     bool
+  };
+}
+
+export function hideCard(cardKey) {
+  return {
+    type: HIDE_CARD,
+    cardKey
   };
 }

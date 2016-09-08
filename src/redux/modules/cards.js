@@ -1,6 +1,6 @@
 const all = [
   {
-    key: 'amex_per_gd',
+    cardKey: 'amex_per_gd',
     imageFullName: 'amex_per_gd.png',
     issuer: 'AMEX',
     cardName: 'Gold Delta',
@@ -13,7 +13,7 @@ const all = [
     annualFeePerc: 80
   },
   {
-    key: 'amex_per_plat',
+    cardKey: 'amex_per_plat',
     imageFullName: 'amex_per_plat.jpg',
     issuer: 'AMEX',
     cardName: 'Platinum',
@@ -26,7 +26,7 @@ const all = [
     annualFeePerc: 5
   },
   {
-    key: 'amex_per_spg',
+    cardKey: 'amex_per_spg',
     imageFullName: 'amex_per_spg.png',
     issuer: 'AMEX',
     cardName: 'Starwood Preferred Guest',
@@ -39,7 +39,7 @@ const all = [
     annualFeePerc: 80
   },
   {
-    key: 'amex_per_hhonors',
+    cardKey: 'amex_per_hhonors',
     imageFullName: 'amex_per_hhonors.png',
     issuer: 'AMEX',
     cardName: 'HHonors',
@@ -52,7 +52,7 @@ const all = [
     annualFeePerc: 100
   },
   {
-    key: 'boa_per_alaska',
+    cardKey: 'boa_per_alaska',
     imageFullName: 'boa_per_alaska.png',
     issuer: 'Bank of America',
     cardName: 'Alaska',
@@ -65,7 +65,7 @@ const all = [
     annualFeePerc: 84
   },
   {
-    key: 'barc_per_arrivalplus',
+    cardKey: 'barc_per_arrivalplus',
     imageFullName: 'barc_per_arrivalplus.png',
     issuer: 'Barclays',
     cardName: 'Arrival +',
@@ -78,7 +78,7 @@ const all = [
     annualFeePerc: 81
   },
   {
-    key: 'chase_per_freedom',
+    cardKey: 'chase_per_freedom',
     imageFullName: 'chase_per_freedom.png',
     issuer: 'Chase',
     cardName: 'Freedom',
@@ -91,7 +91,7 @@ const all = [
     annualFeePerc: 100
   },
   {
-    key: 'chase_per_saphpref',
+    cardKey: 'chase_per_saphpref',
     imageFullName: 'chase_per_saphpref.jpg',
     issuer: 'Chase',
     cardName: 'Sapphire Preferred',
@@ -104,7 +104,7 @@ const all = [
     annualFeePerc: 80
   },
   {
-    key: 'chase_per_swpref',
+    cardKey: 'chase_per_swpref',
     imageFullName: 'chase_per_swpref.png',
     issuer: 'Chase',
     cardName: 'Southwest Preferred',
@@ -117,7 +117,7 @@ const all = [
     annualFeePerc: 79
   },
   {
-    key: 'citi_per_aadvanplat',
+    cardKey: 'citi_per_aadvanplat',
     imageFullName: 'citi_per_aadvanplat.jpg',
     issuer: 'Citi',
     cardName: 'AAdvantage Platinum',
@@ -130,7 +130,7 @@ const all = [
     annualFeePerc: 80
   },
   {
-    key: 'citi_per_prestige',
+    cardKey: 'citi_per_prestige',
     imageFullName: 'citi_per_prestige.jpg',
     issuer: 'Citi',
     cardName: 'Prestige',
@@ -143,7 +143,7 @@ const all = [
     annualFeePerc: 5
   },
   {
-    key: 'usbank_per_clubcarlson',
+    cardKey: 'usbank_per_clubcarlson',
     imageFullName: 'usbank_per_clubcarlson.jpg',
     issuer: 'US Bank',
     cardName: 'Club Carlson',
