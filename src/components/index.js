@@ -5,6 +5,7 @@
  *
  */
 
+export CardBox from './CardBox/Cardbox';
 export CounterButton from './CounterButton/CounterButton';
 export GithubButton from './GithubButton/GithubButton';
 export InfoBar from './InfoBar/InfoBar';
@@ -15,5 +16,4 @@ export PointSlider from './PointSlider/PointSlider';
 export FteCheckbox from './FeeCheckbox/FteCheckbox';
 export AnnualFeeCheckbox from './FeeCheckbox/AnnualFeeCheckbox';
 export IssuerCheckbox from './IssuerCheckbox/IssuerCheckbox';
-export CardBox from './CardBox/Cardbox';
 export RatingBar from './RatingBar/RatingBar';
