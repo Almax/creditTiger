@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
-import { CardBox, FteCheckbox, IssuerCheckbox, PointSlider } from 'components';
+import { CardBox, IssuerCheckbox, PointSlider } from 'components';
+import { AnnualFeeCheckbox, FteCheckbox } from 'components';
 
 const getVisibleCards = (cards, filters) => {
   let cardsToShow = cards;
@@ -15,6 +16,10 @@ const getVisibleCards = (cards, filters) => {
 
   if (filters.noFteOnly === true) {
     cardsToShow = cardsToShow.filter(ca => ca.fte === 0.0);
+  }
+
+  if (filters.noAnnualFeeOnly === true) {
+    cardsToShow = cardsToShow.filter(ca => ca.annualFee === 0.0 || ca.annualFeeWaived === true);
   }
 
   for (let key in onlyShowIssuer) {  // eslint-disable-line prefer-const
@@ -55,6 +60,7 @@ export default class Credit extends Component {
         <div className="col-md-2">
           <h3>Fees</h3>
           <div><FteCheckbox /></div>
+          <div><AnnualFeeCheckbox /></div>
           <h3>Issuers</h3>
           {issuers && issuers.length &&
             <div>

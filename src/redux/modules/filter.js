@@ -6,6 +6,7 @@ const initialState = {
 
 const POINT_FILTER = 'SET_POINT_FILTER';
 const FTE_FILTER = 'SET_FTE_FILTER';
+const ANNUAL_FEE_CHANGE = 'SET_ANNUAL_FEE_FILTER';
 const ONLY_SHOW_ISSUER_FILTER = 'SET_ONLY_SHOW_ISSUER_FILTER';
 
 export default function reducer(state = initialState, action = {}) {
@@ -19,6 +20,11 @@ export default function reducer(state = initialState, action = {}) {
       return {
         ...state,
         noFteOnly: action.bool
+      };
+    case ANNUAL_FEE_CHANGE:
+      return {
+        ...state,
+        noAnnualFeeOnly: action.bool
       };
     case ONLY_SHOW_ISSUER_FILTER:
       const newIssuerFilter = Object.assign({}, state.onlyShowIssuer, {
@@ -43,6 +49,13 @@ export function sliderValueChange(value) {
 export function fteBoxChange(bool) {
   return {
     type: FTE_FILTER,
+    bool
+  };
+}
+
+export function annualFeeChange(bool) {
+  return {
+    type: ANNUAL_FEE_CHANGE,
     bool
   };
 }

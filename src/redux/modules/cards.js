@@ -7,6 +7,7 @@ const all = [
     currentBonus: 30000,
     annualFeeWaived: true,
     fte: 0.0,
+    annualFee: 95.0,
     bonusRewardValuePerc: 48,
     minSpendPerc: 73,
     annualFeePerc: 80
@@ -19,6 +20,7 @@ const all = [
     currentBonus: 40000,
     annualFeeWaived: false,
     fte: 0.0,
+    annualFee: 450.0,
     bonusRewardValuePerc: 100,
     minSpendPerc: 20,
     annualFeePerc: 5
@@ -31,6 +33,7 @@ const all = [
     currentBonus: 25000,
     annualFeeWaived: true,
     fte: 0.0,
+    annualFee: 95.0,
     bonusRewardValuePerc: 82,
     minSpendPerc: 20,
     annualFeePerc: 80
@@ -43,6 +46,7 @@ const all = [
     currentBonus: 50000,
     annualFeeWaived: true,
     fte: 0.027,
+    annualFee: 0.0,
     bonusRewardValuePerc: 33,
     minSpendPerc: 73,
     annualFeePerc: 100
@@ -55,6 +59,7 @@ const all = [
     currentBonus: 25000,
     annualFeeWaived: false,
     fte: 0.03,
+    annualFee: 75.0,
     bonusRewardValuePerc: 72,
     minSpendPerc: 73,
     annualFeePerc: 84
@@ -67,6 +72,7 @@ const all = [
     currentBonus: 40000,
     annualFeeWaived: true,
     fte: 0.0,
+    annualFee: 89.0,
     bonusRewardValuePerc: 53,
     minSpendPerc: 20,
     annualFeePerc: 81
@@ -79,6 +85,7 @@ const all = [
     currentBonus: 30000,
     annualFeeWaived: true,
     fte: 0.0,
+    annualFee: 0.0,
     bonusRewardValuePerc: 41,
     minSpendPerc: 87,
     annualFeePerc: 100
@@ -91,6 +98,7 @@ const all = [
     currentBonus: 55000,
     annualFeeWaived: true,
     fte: 0.0,
+    annualFee: 95.0,
     bonusRewardValuePerc: 100,
     minSpendPerc: 0,
     annualFeePerc: 80
@@ -103,6 +111,7 @@ const all = [
     currentBonus: 50000,
     annualFeeWaived: false,
     fte: 0.0,
+    annualFee: 99.0,
     bonusRewardValuePerc: 99,
     minSpendPerc: 47,
     annualFeePerc: 79
@@ -115,6 +124,7 @@ const all = [
     currentBonus: 50000,
     annualFeeWaived: true,
     fte: 0.03,
+    annualFee: 95.0,
     bonusRewardValuePerc: 99,
     minSpendPerc: 20,
     annualFeePerc: 80
@@ -127,6 +137,7 @@ const all = [
     currentBonus: 50000,
     annualFeeWaived: false,
     fte: 0.00,
+    annualFee: 450.0,
     bonusRewardValuePerc: 100,
     minSpendPerc: 47,
     annualFeePerc: 5
@@ -139,6 +150,7 @@ const all = [
     currentBonus: 60000,
     annualFeeWaived: false,
     fte: 0.03,
+    annualFee: 50.0,
     bonusRewardValuePerc: 32,
     minSpendPerc: 60,
     annualFeePerc: 89

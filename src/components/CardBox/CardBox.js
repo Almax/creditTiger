@@ -3,10 +3,6 @@ import { Card, CardMedia, CardTitle, CardText, CardActions } from 'react-toolbox
 import { Button } from 'react-toolbox/lib/button';
 import RatingBar from '../RatingBar/RatingBar';
 
-// import { bindActionCreators } from 'redux';
-// import { connect } from 'react-redux';
-// import { newMethod } from 'redux/modules/.....';
-
 export default class CardBox extends Component {
   static propTypes = {
     card: PropTypes.object
