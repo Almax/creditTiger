@@ -24,14 +24,14 @@ export default class CardBox extends Component {
 
 
   render() {
-    const { cardKey, cardName, issuer, imageFullName, bonusRewardValuePerc, minSpendPerc, annualFeePerc } = this.props.card;
+    const { cardKey, cardName, issuerName, imageFullName, bonusRewardValuePerc, minSpendPerc, annualFeePerc } = this.props.card;
     const imageUrl = require('../../images/' + imageFullName);
 
     return (
       <Card className="col-md-3" style={{width: '280px'}}>
         <CardTitle
           title={ cardName }
-          subtitle={ issuer }
+          subtitle={ issuerName }
         />
         <CardMedia
           aspectRatio="wide"

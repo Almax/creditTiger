@@ -4,7 +4,7 @@ const all = [
   {
     cardKey: 'amex_per_gd',
     imageFullName: 'amex_per_gd.png',
-    issuer: 'AMEX',
+    issuerName: 'AMEX',
     cardName: 'Gold Delta',
     currentBonus: 30000,
     annualFeeWaived: true,
@@ -17,7 +17,7 @@ const all = [
   {
     cardKey: 'amex_per_plat',
     imageFullName: 'amex_per_plat.jpg',
-    issuer: 'AMEX',
+    issuerName: 'AMEX',
     cardName: 'Platinum',
     currentBonus: 40000,
     annualFeeWaived: false,
@@ -30,7 +30,7 @@ const all = [
   {
     cardKey: 'amex_per_spg',
     imageFullName: 'amex_per_spg.png',
-    issuer: 'AMEX',
+    issuerName: 'AMEX',
     cardName: 'Starwood Preferred Guest',
     currentBonus: 25000,
     annualFeeWaived: true,
@@ -43,7 +43,7 @@ const all = [
   {
     cardKey: 'amex_per_hhonors',
     imageFullName: 'amex_per_hhonors.png',
-    issuer: 'AMEX',
+    issuerName: 'AMEX',
     cardName: 'HHonors',
     currentBonus: 50000,
     annualFeeWaived: true,
@@ -56,7 +56,7 @@ const all = [
   {
     cardKey: 'boa_per_alaska',
     imageFullName: 'boa_per_alaska.png',
-    issuer: 'Bank of America',
+    issuerName: 'Bank of America',
     cardName: 'Alaska',
     currentBonus: 25000,
     annualFeeWaived: false,
@@ -69,7 +69,7 @@ const all = [
   {
     cardKey: 'barc_per_arrivalplus',
     imageFullName: 'barc_per_arrivalplus.png',
-    issuer: 'Barclays',
+    issuerName: 'Barclays',
     cardName: 'Arrival +',
     currentBonus: 40000,
     annualFeeWaived: true,
@@ -82,7 +82,7 @@ const all = [
   {
     cardKey: 'chase_per_freedom',
     imageFullName: 'chase_per_freedom.png',
-    issuer: 'Chase',
+    issuerName: 'Chase',
     cardName: 'Freedom',
     currentBonus: 30000,
     annualFeeWaived: true,
@@ -95,7 +95,7 @@ const all = [
   {
     cardKey: 'chase_per_saphpref',
     imageFullName: 'chase_per_saphpref.jpg',
-    issuer: 'Chase',
+    issuerName: 'Chase',
     cardName: 'Sapphire Preferred',
     currentBonus: 55000,
     annualFeeWaived: true,
@@ -108,7 +108,7 @@ const all = [
   {
     cardKey: 'chase_per_swpref',
     imageFullName: 'chase_per_swpref.png',
-    issuer: 'Chase',
+    issuerName: 'Chase',
     cardName: 'Southwest Preferred',
     currentBonus: 50000,
     annualFeeWaived: false,
@@ -121,7 +121,7 @@ const all = [
   {
     cardKey: 'citi_per_aadvanplat',
     imageFullName: 'citi_per_aadvanplat.jpg',
-    issuer: 'Citi',
+    issuerName: 'Citi',
     cardName: 'AAdvantage Platinum',
     currentBonus: 50000,
     annualFeeWaived: true,
@@ -134,7 +134,7 @@ const all = [
   {
     cardKey: 'citi_per_prestige',
     imageFullName: 'citi_per_prestige.jpg',
-    issuer: 'Citi',
+    issuerName: 'Citi',
     cardName: 'Prestige',
     currentBonus: 50000,
     annualFeeWaived: false,
@@ -147,7 +147,7 @@ const all = [
   {
     cardKey: 'usbank_per_clubcarlson',
     imageFullName: 'usbank_per_clubcarlson.jpg',
-    issuer: 'US Bank',
+    issuerName: 'US Bank',
     cardName: 'Club Carlson',
     currentBonus: 60000,
     annualFeeWaived: false,
@@ -159,8 +159,8 @@ const all = [
   }
 ];
 
-const issuer = ca => ca.issuer;
-const issuerList = _R.map(issuer, all);
+const issuerFn = ca => ca.issuerName;
+const issuerList = _R.map(issuerFn, all);
 const issuers = _R.uniq(issuerList);
 
 const initialState = {

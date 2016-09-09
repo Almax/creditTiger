@@ -32,7 +32,7 @@ const getVisibleCards = (cards, filters) => {
   }
 
   if (Object.keys(onlyIssuerKeysToFilter).length > 0) {
-    cardsToShow = cardsToShow.filter(ca => onlyIssuerKeysToFilter[ca.issuer] === true);
+    cardsToShow = cardsToShow.filter(ca => onlyIssuerKeysToFilter[ca.issuerName] === true);
   }
 
   return cardsToShow;
