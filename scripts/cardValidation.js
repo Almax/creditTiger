@@ -1,14 +1,3 @@
-var fs = require('fs-extra');
-var csv = require('fast-csv');
-var parse = require('csv-parse/lib/sync');
-var _R = require('ramda');
-var JSON3 = require('json3');
-
-var INPUT_CSV = './scripts/creditCardList.csv';
-var OUTPUT_JSON = './src/data/creditCardList.json';
-var csvFile = fs.readFileSync(INPUT_CSV, 'utf8');
-var records = parse(csvFile, {columns: true});
-
 var convertFloat = (num) => {
   return Math.round(num * 100) / 100;
 }
@@ -133,7 +122,7 @@ var createCardKey = (card) => {
   return cardKeyList.join('_');
 }
 
-var cleanCard = (card) => {
+export default function cleanCard(card) {
   var cleanedCard = {};
 
   try {
@@ -166,16 +155,3 @@ var cleanCard = (card) => {
 
   return cleanedCard;
 }
-
-var savedCards = [];
-
-records.forEach((row, index) => {
-  if (row['useOnCt'] === '1') {
-    var cleanedCard = cleanCard(row);
-    savedCards.push(cleanedCard);
-  }
-});
-
-savedCardsJson = JSON3.stringify(savedCards, null, 2);
-
-fs.outputFileSync(OUTPUT_JSON, savedCardsJson);

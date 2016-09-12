@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import { Card, CardMedia, CardTitle, CardText, CardActions } from 'react-toolbox/lib/card';
+import { Card, CardTitle, CardMedia, CardText, CardActions } from 'react-toolbox/lib/card';
 import { Button } from 'react-toolbox/lib/button';
 import RatingBar from '../RatingBar/RatingBar';
 import { bindActionCreators } from 'redux';
@@ -24,8 +24,8 @@ export default class CardBox extends Component {
 
 
   render() {
-    const { cardKey, cardName, issuerName, imageFullName, bonusRewardValuePerc, minSpendPerc, annualFeePerc } = this.props.card;
-    const imageUrl = require('../../images/' + imageFullName);
+    const { cardKey, cardName, issuerName, curBonusPrctl, minSpendPrctl, annualFeePrctl } = this.props.card;
+    const imageUrl = require('../../images/' + cardKey + '.jpg');
 
     return (
       <Card className="col-md-3" style={{width: '280px'}}>
@@ -38,11 +38,11 @@ export default class CardBox extends Component {
           image={ imageUrl }
         />
         <CardText>Bonus Rewards</CardText>
-        <RatingBar value={ bonusRewardValuePerc } />
+        <RatingBar value={ curBonusPrctl } />
         <CardText>Annual Fee</CardText>
-        <RatingBar type="linear" mode="determinate" value={ annualFeePerc } />
+        <RatingBar type="linear" mode="determinate" value={ annualFeePrctl } />
         <CardText>Minimum Spend</CardText>
-        <RatingBar type="linear" mode="determinate" value={ minSpendPerc } />
+        <RatingBar type="linear" mode="determinate" value={ minSpendPrctl } />
         <CardActions>
           <Button label="Apply" />
           <Button label="Details" />
@@ -55,3 +55,4 @@ export default class CardBox extends Component {
 
 
 // <CardText>{dummyText}</CardText>
+
