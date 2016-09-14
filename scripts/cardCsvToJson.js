@@ -14,6 +14,14 @@ var convertFloat = (num) => {
 }
 
 var convertBool = (boolStr) => {
+  switch (boolStr) {
+    case "Yes":
+      return true;
+    case "No":
+      return false;
+    default:
+      return "";
+  }
 
 }
 
@@ -60,7 +68,7 @@ var cardKeyFormats = [
   },
   {
     fieldName: 'annualFeeWaived',
-    fieldTypeFn: String
+    fieldTypeFn: convertBool
   },
   {
     fieldName: 'personalOrBiz',

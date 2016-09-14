@@ -17,15 +17,14 @@ export default class CardBox extends Component {
     hideCard: PropTypes.func
   }
 
-  handleRemoveClick = (cardKey) => {
+  handleHideClick = (cardKey) => {
     const { hideCard } = this.props; // eslint-disable-line no-shadow
     hideCard(cardKey);
   }
 
-
   render() {
     const { cardKey, cardName, issuerName, curBonusPrctl, minSpendPrctl, annualFeePrctl } = this.props.card;
-    const imageUrl = require('../../images/' + cardKey + '.jpg');
+    const img = require('../../images/' + cardKey + '.jpg');
 
     return (
       <Card className="col-md-3" style={{width: '280px'}}>
@@ -35,7 +34,7 @@ export default class CardBox extends Component {
         />
         <CardMedia
           aspectRatio="wide"
-          image={ imageUrl }
+          image={ img }
         />
         <CardText>Bonus Rewards</CardText>
         <RatingBar value={ curBonusPrctl } />
@@ -46,7 +45,7 @@ export default class CardBox extends Component {
         <CardActions>
           <Button label="Apply" />
           <Button label="Details" />
-          <Button label="Hide" onMouseUp={this.handleRemoveClick.bind(this, cardKey)} />
+          <Button label="Hide" onMouseUp={this.handleHideClick.bind(this, cardKey)} />
         </CardActions>
       </Card>
     );

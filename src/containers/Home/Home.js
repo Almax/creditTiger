@@ -18,7 +18,7 @@ const getVisibleCards = (cards, filters) => {
   }
 
   if (filters.noFteOnly === true) {
-    cardsToShow = cardsToShow.filter(ca => ca.fte === 0.0);
+    cardsToShow = cardsToShow.filter(ca => ca.ftf === 0.0);
   }
 
   if (filters.noAnnualFeeOnly === true) {
