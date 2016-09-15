@@ -35,7 +35,9 @@ const getVisibleCards = (cards, filters) => {
     cardsToShow = cardsToShow.filter(ca => onlyIssuerKeysToFilter[ca.issuerName] === true);
   }
 
-  return cardsToShow.sort((ca, cb) => { return (ca.overallRank < cb.overallRank);});
+  cardsToShow.sort((ca, cb) => { return (cb.overallRank - ca.overallRank);});
+
+  return cardsToShow;
 };
 
 @connect(
