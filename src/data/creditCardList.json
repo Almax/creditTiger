@@ -14,10 +14,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 30,
+    "curBonusPrctl": 21,
     "minSpendPrctl": 71,
     "annualFeePrctl": 100,
-    "overallRank": 99,
+    "overallRank": 89,
     "cardKey": "amex_per_hhonors"
   },
   {
@@ -35,10 +35,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 51,
+    "curBonusPrctl": 35,
     "minSpendPrctl": 71,
     "annualFeePrctl": 80,
-    "overallRank": 111,
+    "overallRank": 95,
     "cardKey": "amex_per_gold_delta"
   },
   {
@@ -56,10 +56,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 79,
+    "curBonusPrctl": 55,
     "minSpendPrctl": 14,
     "annualFeePrctl": 80,
-    "overallRank": 117,
+    "overallRank": 92,
     "cardKey": "amex_per_starwood_preferred_guest"
   },
   {
@@ -77,10 +77,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 97,
+    "curBonusPrctl": 67,
     "minSpendPrctl": 14,
     "annualFeePrctl": 5,
-    "overallRank": 105,
+    "overallRank": 75,
     "cardKey": "amex_per_platinum"
   },
   {
@@ -108,9 +108,9 @@
     "cardName": "Premier Rewards Gold",
     "issuerName": "Amex",
     "rewardProvider": "MR",
-    "curBonusPts": 50000,
+    "curBonusPts": 40000,
     "centValueOfPoint": 1.8,
-    "curBonusVal": 900,
+    "curBonusVal": 720,
     "otherPerks": "$100 Airline Credit",
     "minSpendVal": 1000,
     "minSpendMonths": 3,
@@ -119,10 +119,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 100,
+    "curBonusPrctl": 67,
     "minSpendPrctl": 71,
     "annualFeePrctl": 59,
-    "overallRank": 152,
+    "overallRank": 119,
     "cardKey": "amex_per_premier_rewards_gold"
   },
   {
@@ -140,10 +140,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 61,
+    "curBonusPrctl": 42,
     "minSpendPrctl": 71,
     "annualFeePrctl": 84,
-    "overallRank": 123,
+    "overallRank": 104,
     "cardKey": "boa_per_alaska"
   },
   {
@@ -161,10 +161,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0.01,
     "useOnCt": "Yes",
-    "curBonusPrctl": 41,
+    "curBonusPrctl": 28,
     "minSpendPrctl": 100,
     "annualFeePrctl": 81,
-    "overallRank": 113,
+    "overallRank": 100,
     "cardKey": "boa_per_virgin_atlantic"
   },
   {
@@ -182,10 +182,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 51,
+    "curBonusPrctl": 35,
     "minSpendPrctl": 71,
     "annualFeePrctl": 79,
-    "overallRank": 111,
+    "overallRank": 95,
     "cardKey": "barc_per_jetblue_plus"
   },
   {
@@ -203,10 +203,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 59,
+    "curBonusPrctl": 41,
     "minSpendPrctl": 86,
     "annualFeePrctl": 85,
-    "overallRank": 128,
+    "overallRank": 109,
     "cardKey": "barc_per_frontier"
   },
   {
@@ -224,10 +224,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 55,
+    "curBonusPrctl": 38,
     "minSpendPrctl": 14,
     "annualFeePrctl": 81,
-    "overallRank": 94,
+    "overallRank": 76,
     "cardKey": "barc_per_arrival_+"
   },
   {
@@ -245,10 +245,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 95,
+    "curBonusPrctl": 65,
     "minSpendPrctl": 0,
     "annualFeePrctl": 83,
-    "overallRank": 128,
+    "overallRank": 98,
     "cardKey": "barc_per_lufthansa"
   },
   {
@@ -266,10 +266,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 57,
+    "curBonusPrctl": 39,
     "minSpendPrctl": 71,
     "annualFeePrctl": 81,
-    "overallRank": 118,
+    "overallRank": 100,
     "cardKey": "barc_per_hawaiian"
   },
   {
@@ -287,10 +287,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 27,
+    "curBonusPrctl": 19,
     "minSpendPrctl": 71,
     "annualFeePrctl": 100,
-    "overallRank": 96,
+    "overallRank": 87,
     "cardKey": "capital_one_per_venture_one_rewards"
   },
   {
@@ -308,10 +308,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 54,
+    "curBonusPrctl": 37,
     "minSpendPrctl": 14,
     "annualFeePrctl": 88,
-    "overallRank": 95,
+    "overallRank": 78,
     "cardKey": "capital_one_per_venture_rewards"
   },
   {
@@ -329,10 +329,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 39,
+    "curBonusPrctl": 27,
     "minSpendPrctl": 86,
     "annualFeePrctl": 100,
-    "overallRank": 112,
+    "overallRank": 101,
     "cardKey": "chase_per_freedom_unlimited"
   },
   {
@@ -350,10 +350,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 61,
+    "curBonusPrctl": 42,
     "minSpendPrctl": 43,
     "annualFeePrctl": 90,
-    "overallRank": 114,
+    "overallRank": 95,
     "cardKey": "chase_per_ihg"
   },
   {
@@ -371,10 +371,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 69,
+    "curBonusPrctl": 47,
     "minSpendPrctl": 43,
     "annualFeePrctl": 80,
-    "overallRank": 118,
+    "overallRank": 96,
     "cardKey": "chase_per_united_explorer"
   },
   {
@@ -392,10 +392,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 81,
+    "curBonusPrctl": 56,
     "minSpendPrctl": 14,
     "annualFeePrctl": 82,
-    "overallRank": 120,
+    "overallRank": 94,
     "cardKey": "chase_per_marriott"
   },
   {
@@ -413,10 +413,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 39,
+    "curBonusPrctl": 27,
     "minSpendPrctl": 86,
     "annualFeePrctl": 100,
-    "overallRank": 113,
+    "overallRank": 101,
     "cardKey": "chase_per_freedom"
   },
   {
@@ -434,10 +434,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 98,
+    "curBonusPrctl": 67,
     "minSpendPrctl": 43,
     "annualFeePrctl": 85,
-    "overallRank": 149,
+    "overallRank": 119,
     "cardKey": "chase_per_southwest_plus"
   },
   {
@@ -455,10 +455,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 95,
+    "curBonusPrctl": 65,
     "minSpendPrctl": 43,
     "annualFeePrctl": 80,
-    "overallRank": 144,
+    "overallRank": 114,
     "cardKey": "chase_per_british_airways"
   },
   {
@@ -476,10 +476,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 98,
+    "curBonusPrctl": 67,
     "minSpendPrctl": 43,
     "annualFeePrctl": 79,
-    "overallRank": 147,
+    "overallRank": 116,
     "cardKey": "chase_per_southwest_premier"
   },
   {
@@ -497,10 +497,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 100,
+    "curBonusPrctl": 97,
     "minSpendPrctl": 0,
     "annualFeePrctl": 80,
-    "overallRank": 132,
+    "overallRank": 129,
     "cardKey": "chase_per_sapphire_preferred"
   },
   {
@@ -518,10 +518,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 89,
+    "curBonusPrctl": 61,
     "minSpendPrctl": 14,
     "annualFeePrctl": 80,
-    "overallRank": 127,
+    "overallRank": 99,
     "cardKey": "citi_per_thankyou_premier"
   },
   {
@@ -539,10 +539,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 100,
+    "curBonusPrctl": 70,
     "minSpendPrctl": 0,
     "annualFeePrctl": 5,
-    "overallRank": 102,
+    "overallRank": 72,
     "cardKey": "citi_per_aadvantage_executive"
   },
   {
@@ -560,10 +560,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 100,
+    "curBonusPrctl": 70,
     "minSpendPrctl": 14,
     "annualFeePrctl": 80,
-    "overallRank": 138,
+    "overallRank": 107,
     "cardKey": "citi_per_aadvantage_platinum"
   },
   {
@@ -581,10 +581,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 100,
+    "curBonusPrctl": 77,
     "minSpendPrctl": 43,
     "annualFeePrctl": 5,
-    "overallRank": 119,
+    "overallRank": 96,
     "cardKey": "citi_per_prestige"
   },
   {
@@ -602,10 +602,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 22,
+    "curBonusPrctl": 15,
     "minSpendPrctl": 71,
     "annualFeePrctl": 100,
-    "overallRank": 91,
+    "overallRank": 84,
     "cardKey": "us_bank_per_flexperks_select+_(amex)"
   },
   {
@@ -623,10 +623,10 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 32,
+    "curBonusPrctl": 22,
     "minSpendPrctl": 57,
     "annualFeePrctl": 89,
-    "overallRank": 91,
+    "overallRank": 81,
     "cardKey": "us_bank_per_club_carlson"
   },
   {

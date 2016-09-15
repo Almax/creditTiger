@@ -27,31 +27,34 @@ export default class CardBox extends Component {
     const img = require('../../images/' + cardKey + '.jpg');
 
     return (
-      <Card className="col-md-3" style={{width: '280px'}}>
-        <CardTitle
-          title={ cardName }
-          subtitle={ issuerName }
-        />
-        <CardMedia
-          aspectRatio="wide"
-          image={ img }
-        />
-        <CardText>Bonus Rewards</CardText>
-        <RatingBar value={ curBonusPrctl } />
-        <CardText>Annual Fee</CardText>
-        <RatingBar type="linear" mode="determinate" value={ annualFeePrctl } />
-        <CardText>Minimum Spend</CardText>
-        <RatingBar type="linear" mode="determinate" value={ minSpendPrctl } />
-        <CardActions>
-          <Button label="Apply" />
-          <Button label="Details" />
-          <Button label="Hide" onMouseUp={this.handleHideClick.bind(this, cardKey)} />
-        </CardActions>
-      </Card>
+      <div className="col-md-4">
+        <Card>
+          <CardTitle
+            title={ cardName }
+            subtitle={ issuerName }
+          />
+          <CardMedia
+            aspectRatio="wide"
+            image={ img }
+          />
+          <CardText>Bonus Rewards</CardText>
+          <RatingBar value={ curBonusPrctl } />
+          <CardText>Annual Fee</CardText>
+          <RatingBar type="linear" mode="determinate" value={ annualFeePrctl } />
+          <CardText>Minimum Spend</CardText>
+          <RatingBar type="linear" mode="determinate" value={ minSpendPrctl } />
+          <CardActions>
+            <Button label="Apply" />
+            <Button label="Details" />
+            <Button label="Hide" onMouseUp={this.handleHideClick.bind(this, cardKey)} />
+          </CardActions>
+        </Card>
+      </div>
     );
   }
 }
 
 
 // <CardText>{dummyText}</CardText>
+//       <Card className="col-md-4" style={{width: '280px'}}>
 

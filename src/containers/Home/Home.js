@@ -61,7 +61,7 @@ export default class Credit extends Component {
     const visibleCards = getVisibleCards(all, filter);
 
     return (
-      <div className="container">
+      <div className="container-fluid">
         <div className="col-md-2">
           <h3>Fees</h3>
           <div><FteCheckbox /></div>
