@@ -93,6 +93,10 @@ var cardKeyFormats = [
   {
     fieldName: 'annualFeePrctl',
     fieldTypeFn: Number
+  },
+  {
+    fieldName: 'overallRank',
+    fieldTypeFn: Number
   }
 ];
 
@@ -178,7 +182,7 @@ var cleanCard = (card) => {
 var savedCards = [];
 
 records.forEach((row, index) => {
-  if (row['useOnCt'] === '1') {
+  if (row['useOnCt'] === 'Yes') {
     var cleanedCard = cleanCard(row);
     savedCards.push(cleanedCard);
   }
