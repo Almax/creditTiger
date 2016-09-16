@@ -34,8 +34,8 @@ export default class RatingBar extends Component {
   render() {
     const styles = require('./RatingBar.scss');
     const { value } = this.linearStyle();
+    const colorVal = this.props.value;
 
-    let colorVal = this.props.value;
     let colorStyle = '';
 
     if (colorVal < 33) {
