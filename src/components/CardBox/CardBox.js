@@ -1,31 +1,31 @@
 import React, { Component, PropTypes } from 'react';
-// import { Card, CardTitle, CardMedia, CardText, CardActions } from 'react-toolbox/lib/card';
+// import { CardActions } from 'react-toolbox/lib/card';
 // import { Button } from 'react-toolbox/lib/button';
 import RatingBar from '../RatingBar/RatingBar';
-// import { bindActionCreators } from 'redux';
-// import { connect } from 'react-redux';
-// import { hideCard } from 'redux/modules/filter';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { hideCard } from 'redux/modules/filter';
 
 
-// @connect(
-//   null,
-//   dispatch => bindActionCreators({ hideCard }, dispatch)
-// )
+@connect(
+  null,
+  dispatch => bindActionCreators({ hideCard }, dispatch)
+)
 
 export default class CardBox extends Component {
   static propTypes = {
     card: PropTypes.object,
-  //   hideCard: PropTypes.func
+    hideCard: PropTypes.func
   }
 
   state = {
     mouseIsOver: false
   }
 
-  // handleHideClick = (cardKey) => {
-  //   const { hideCard } = this.props; // eslint-disable-line no-shadow
-  //   hideCard(cardKey);
-  // }
+  handleHideClick = (cardKey) => {
+    const { hideCard } = this.props; // eslint-disable-line no-shadow
+    hideCard(cardKey);
+  }
 
   handleMouseOver = () => {
     this.setState({mouseIsOver: true});
@@ -99,6 +99,7 @@ export default class CardBox extends Component {
                   })}
                 </div>
               }
+              <button className={styles.hide} onClick={this.handleHideClick.bind(this, cardKey)}>Hide</button>
             </div>
           }
         </div>
@@ -123,11 +124,11 @@ export default class CardBox extends Component {
 //   <RatingBar type="linear" mode="determinate" value={ annualFeePrctl } />
 //   <CardText>Minimum Spend</CardText>
 //   <RatingBar type="linear" mode="determinate" value={ minSpendPrctl } />
-//   <CardActions>
-//     <Button label="Apply" />
-//     <Button label="Details" />
-//     <Button label="Hide" onMouseUp={this.handleHideClick.bind(this, cardKey)} />
-//   </CardActions>
+  // <CardActions>
+  //   <Button label="Apply" />
+  //   <Button label="Details" />
+  //   <Button label="Hide" onMouseUp={this.handleHideClick.bind(this, cardKey)} />
+  // </CardActions>
 // </Card>
 
 
