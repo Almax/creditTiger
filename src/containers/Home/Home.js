@@ -14,7 +14,7 @@ const getVisibleCards = (cards, filters) => {
   }
 
   if (pointMinimumFilter > 0) {
-    cardsToShow = cardsToShow.filter(ca => ca.currentBonus >= pointMinimumFilter);
+    cardsToShow = cardsToShow.filter(ca => ca.curBonusVal >= pointMinimumFilter);
   }
 
   if (filters.noFteOnly === true) {
@@ -78,7 +78,7 @@ export default class Credit extends Component {
             })}
             </div>
           }
-          <h3>Rewards</h3>
+          <h3>Reward Value</h3>
           <div><PointSlider multireducerKey="pointMinimumFilter1"/></div>
         </div>
         <div className="col-md-10">

@@ -4,7 +4,7 @@ import {sliderValueChange} from 'redux/modules/filter';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-const MULTIPLE_FACTOR = 10000;
+const MULTIPLE_FACTOR = 100;
 
 @connect(
   null,
@@ -33,7 +33,7 @@ export default class PointSlider extends Component {
 
   render() {
     return (
-      <Slider pinned snaps min={0} max={6} step={1} value={this.state.slider1} onChange={this.handleChange.bind(this, 'slider1')} />
+      <Slider pinned snaps min={1} max={10} step={1} value={this.state.slider1} onChange={this.handleChange.bind(this, 'slider1')} />
     );
   }
 }
