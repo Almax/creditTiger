@@ -37,6 +37,8 @@ const getVisibleCards = (cards, filters) => {
 
   cardsToShow.sort((ca, cb) => { return (cb.overallRank - ca.overallRank);});
 
+  cardsToShow.forEach((ca, ind) => { ca.curRank = ind + 1; });
+
   return cardsToShow;
 };
 
