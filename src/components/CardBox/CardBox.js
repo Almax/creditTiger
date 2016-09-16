@@ -66,7 +66,7 @@ export default class CardBox extends Component {
     ];
 
     return (
-      <div className="col-md-4">
+      <div className="col-sm-6 col-md-4">
         <div className={styles.card}
         onMouseEnter={this.handleMouseOver.bind(this)}
         onMouseLeave={this.handleMouseLeave.bind(this)}
