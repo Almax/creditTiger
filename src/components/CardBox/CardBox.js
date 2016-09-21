@@ -37,7 +37,7 @@ export default class CardBox extends Component {
 
 
   render() {
-    const { cardKey, cardName, issuerName, curRank, curBonusVal, annualFee, curBonusPrctl, minSpendPrctl, annualFeePrctl } = this.props.card;
+    const { cardKey, cardName, issuerName, curRank, curBonusVal, annualFee, curBonusPrctl, minSpendPrctl, annualFeePrctl, annualFeeWaived } = this.props.card;
     const styles = require('./CardBox.scss');
     const imgUrl = require('../../images/' + cardKey + '.jpg');
     const imageStyle = {backgroundImage: 'url(' + imgUrl + ')'};
@@ -65,6 +65,9 @@ export default class CardBox extends Component {
       }
     ];
 
+    let annualFeeStr = 'Annual Fee $' + annualFee;
+    if (annualFeeWaived === true) annualFeeStr += ' (waived first year)';
+
     return (
       <div className="col-sm-6 col-md-4">
         <div className={styles.card}
@@ -79,7 +82,7 @@ export default class CardBox extends Component {
               <div className={styles.card_name}>{ cardName }</div>
               <div className={styles.issuer_name}>{ issuerName }</div>
               <div className={styles.sign_up}>Sign-up Bonus Value ${ curBonusVal }</div>
-              <div className={styles.annual_fee}>Annual Fee ${ annualFee }</div>
+              <div className={styles.annual_fee}>{ annualFeeStr }</div>
             </div>
           }
           {this.state.mouseIsOver &&

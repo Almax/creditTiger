@@ -1,6 +1,6 @@
 const _R = require('ramda');
 
-const creditCardList = require('../../data/creditCardList.json'); // json-loader
+const creditCardList = require('../../data/credit_card_list.json'); // json-loader
 
 const issuerFn = ca => ca.issuerName;
 const issuerList = _R.map(issuerFn, creditCardList);

@@ -1,29 +1,13 @@
 var fs = require('fs-extra');
-var csv = require('fast-csv');
 var parse = require('csv-parse/lib/sync');
 var _R = require('ramda');
 var JSON3 = require('json3');
+var _C = require('./helpers/converters.js');
 
-var INPUT_CSV = './scripts/creditCardList.csv';
-var OUTPUT_JSON = './src/data/creditCardList.json';
+var INPUT_CSV = './scripts/cardCsvToJson/credit_card_list.csv';
+var OUTPUT_JSON = './src/data/credit_card_list.json';
 var csvFile = fs.readFileSync(INPUT_CSV, 'utf8');
 var records = parse(csvFile, {columns: true});
-
-var convertFloat = (num) => {
-  return Math.round(num * 100) / 100;
-}
-
-var convertBool = (boolStr) => {
-  switch (boolStr) {
-    case "Yes":
-      return true;
-    case "No":
-      return false;
-    default:
-      return "";
-  }
-
-}
 
 var cardKeyFormats = [
   {
@@ -44,7 +28,7 @@ var cardKeyFormats = [
   },
   {
     fieldName: 'centValueOfPoint',
-    fieldTypeFn: convertFloat
+    fieldTypeFn: _C.convertFloat
   },
   {
     fieldName: 'curBonusVal',
@@ -68,7 +52,7 @@ var cardKeyFormats = [
   },
   {
     fieldName: 'annualFeeWaived',
-    fieldTypeFn: convertBool
+    fieldTypeFn: _C.convertBool
   },
   {
     fieldName: 'personalOrBiz',
@@ -76,7 +60,7 @@ var cardKeyFormats = [
   },
   {
     fieldName: 'ftf',
-    fieldTypeFn: convertFloat
+    fieldTypeFn: _C.convertFloat
   },
   {
     fieldName: 'useOnCt',
