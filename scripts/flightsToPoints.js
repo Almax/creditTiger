@@ -9,7 +9,7 @@ var AIRPORT_MAP_CSV = FLIGHTS_TO_POINTS_DIR + 'airport_map.csv';
 var POINT_CONV_MAP_CSV = FLIGHTS_TO_POINTS_DIR + 'point_conv_map.csv';
 var ROUTE_POINT_LIST_CSV = FLIGHTS_TO_POINTS_DIR + 'route_point_list.csv';
 
-var OUTPUT_JSON = '';
+var OUTPUT_JSON = './src/data/country_award_routes.json';
 
 var airportMapCsv = fs.readFileSync(AIRPORT_MAP_CSV, 'utf8');
 var airportMapRecords = parse(airportMapCsv, {columns: true});
@@ -114,10 +114,15 @@ for (var continent in routeByContinent) {
     routeByContinent[continent][pointType].sort((ca, cb) => { return (ca.numberOfPointsReq - cb.numberOfPointsReq);});
     routeByContinent[continent][pointType].splice(5);
   }
-  console.log(routeByContinent[continent]);
+  // console.log(routeByContinent[continent]);
 }
 
-console.log(routeByContinent);
+// console.log(routeByContinent);
+
+savedRoutesJson = JSON3.stringify(routeByContinent, null, 2);
+
+fs.outputFileSync(OUTPUT_JSON, savedRoutesJson);
+
 
 // sort each sub array
 // splice the end results off.

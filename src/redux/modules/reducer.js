@@ -10,6 +10,7 @@ import info from './info';
 import widgets from './widgets';
 import cards from './cards';
 import filter from './filter';
+import sort from './sort';
 
 export default combineReducers({
   routing: routerReducer,
@@ -18,6 +19,7 @@ export default combineReducers({
   form,
   cards,
   filter,
+  sort,
   multireducer: multireducer({
     counter1: counter,
     counter2: counter,

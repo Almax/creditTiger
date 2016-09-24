@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
 import { CardBox, IssuerCheckbox, PointSlider } from 'components';
-import { AnnualFeeCheckbox, FteCheckbox } from 'components';
+import { ContinentSortCheckbox, AnnualFeeCheckbox, FteCheckbox } from 'components';
 
 const getVisibleCards = (cards, filters) => {
   let cardsToShow = cards;
@@ -46,7 +46,8 @@ const getVisibleCards = (cards, filters) => {
   state => (
     {
       cards: state.cards,
-      filter: state.filter
+      filter: state.filter,
+      sort: state.sort
     }
   )
 )
@@ -65,6 +66,11 @@ export default class Credit extends Component {
     return (
       <div className="container-fluid">
         <div className="col-md-2">
+          <h2>Sort</h2>
+          <div>Overall</div>
+          <div><ContinentSortCheckbox label="Best for Free Trips to Asia" continentName="Asia" /></div>
+          <div>Best for Free Trips to Europe</div>
+          <h2>Filters</h2>
           <h3>Fees</h3>
           <div><FteCheckbox /></div>
           <div><AnnualFeeCheckbox /></div>

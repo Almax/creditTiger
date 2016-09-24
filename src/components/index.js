@@ -17,3 +17,4 @@ export FteCheckbox from './FeeCheckbox/FteCheckbox';
 export AnnualFeeCheckbox from './FeeCheckbox/AnnualFeeCheckbox';
 export IssuerCheckbox from './IssuerCheckbox/IssuerCheckbox';
 export RatingBar from './RatingBar/RatingBar';
+export ContinentSortCheckbox from './SortCheckbox/ContinentSortCheckbox';
