@@ -112,7 +112,7 @@ routePointListWithConversions.forEach((route, index) => {
 for (var continent in routeByContinent) {
   for (var pointType in routeByContinent[continent]) {
     routeByContinent[continent][pointType].sort((ca, cb) => { return (ca.numberOfPointsReq - cb.numberOfPointsReq);});
-    routeByContinent[continent][pointType].splice(3);
+    routeByContinent[continent][pointType].splice(5);
   }
   console.log(routeByContinent[continent]);
 }

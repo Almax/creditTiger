@@ -1,26 +1,5 @@
 [
   {
-    "cardName": "HHonors",
-    "issuerName": "Amex",
-    "rewardProvider": "Hilton",
-    "curBonusPts": 50000,
-    "centValueOfPoint": 0.45,
-    "curBonusVal": 225,
-    "otherPerks": "Silver status. $20k spend: Gold status.",
-    "minSpendVal": 1000,
-    "minSpendMonths": 3,
-    "annualFee": 0,
-    "annualFeeWaived": "",
-    "personalOrBiz": "Personal",
-    "ftf": 0.03,
-    "useOnCt": "Yes",
-    "curBonusPrctl": 21,
-    "minSpendPrctl": 71,
-    "annualFeePrctl": 100,
-    "overallRank": 89,
-    "cardKey": "amex_per_hhonors"
-  },
-  {
     "cardName": "Gold Delta",
     "issuerName": "Amex",
     "rewardProvider": "Delta",
@@ -37,8 +16,8 @@
     "useOnCt": "Yes",
     "curBonusPrctl": 35,
     "minSpendPrctl": 71,
-    "annualFeePrctl": 80,
-    "overallRank": 95,
+    "annualFeePrctl": 90,
+    "overallRank": 99,
     "cardKey": "amex_per_gold_delta"
   },
   {
@@ -58,8 +37,8 @@
     "useOnCt": "Yes",
     "curBonusPrctl": 55,
     "minSpendPrctl": 14,
-    "annualFeePrctl": 80,
-    "overallRank": 92,
+    "annualFeePrctl": 90,
+    "overallRank": 96,
     "cardKey": "amex_per_starwood_preferred_guest"
   },
   {
@@ -121,8 +100,8 @@
     "useOnCt": "Yes",
     "curBonusPrctl": 67,
     "minSpendPrctl": 71,
-    "annualFeePrctl": 59,
-    "overallRank": 119,
+    "annualFeePrctl": 79,
+    "overallRank": 127,
     "cardKey": "amex_per_premier_rewards_gold"
   },
   {
@@ -226,8 +205,8 @@
     "useOnCt": "Yes",
     "curBonusPrctl": 38,
     "minSpendPrctl": 14,
-    "annualFeePrctl": 81,
-    "overallRank": 76,
+    "annualFeePrctl": 91,
+    "overallRank": 80,
     "cardKey": "barc_per_arrival_+"
   },
   {
@@ -310,8 +289,8 @@
     "useOnCt": "Yes",
     "curBonusPrctl": 37,
     "minSpendPrctl": 14,
-    "annualFeePrctl": 88,
-    "overallRank": 78,
+    "annualFeePrctl": 94,
+    "overallRank": 80,
     "cardKey": "capital_one_per_venture_rewards"
   },
   {
@@ -336,27 +315,6 @@
     "cardKey": "chase_per_freedom_unlimited"
   },
   {
-    "cardName": "IHG",
-    "issuerName": "Chase",
-    "rewardProvider": "IHG",
-    "curBonusPts": 75000,
-    "centValueOfPoint": 0.6,
-    "curBonusVal": 450,
-    "otherPerks": "0",
-    "minSpendVal": 2000,
-    "minSpendMonths": 3,
-    "annualFee": 49,
-    "annualFeeWaived": true,
-    "personalOrBiz": "Personal",
-    "ftf": 0,
-    "useOnCt": "Yes",
-    "curBonusPrctl": 42,
-    "minSpendPrctl": 43,
-    "annualFeePrctl": 90,
-    "overallRank": 95,
-    "cardKey": "chase_per_ihg"
-  },
-  {
     "cardName": "United Explorer",
     "issuerName": "Chase",
     "rewardProvider": "United",
@@ -373,30 +331,9 @@
     "useOnCt": "Yes",
     "curBonusPrctl": 47,
     "minSpendPrctl": 43,
-    "annualFeePrctl": 80,
-    "overallRank": 96,
+    "annualFeePrctl": 90,
+    "overallRank": 100,
     "cardKey": "chase_per_united_explorer"
-  },
-  {
-    "cardName": "Marriott",
-    "issuerName": "Chase",
-    "rewardProvider": "Marriott",
-    "curBonusPts": 80000,
-    "centValueOfPoint": 0.75,
-    "curBonusVal": 600,
-    "otherPerks": "0",
-    "minSpendVal": 3000,
-    "minSpendMonths": 3,
-    "annualFee": 85,
-    "annualFeeWaived": false,
-    "personalOrBiz": "Personal",
-    "ftf": 0,
-    "useOnCt": "Yes",
-    "curBonusPrctl": 56,
-    "minSpendPrctl": 14,
-    "annualFeePrctl": 82,
-    "overallRank": 94,
-    "cardKey": "chase_per_marriott"
   },
   {
     "cardName": "Freedom",
@@ -457,8 +394,8 @@
     "useOnCt": "Yes",
     "curBonusPrctl": 65,
     "minSpendPrctl": 43,
-    "annualFeePrctl": 80,
-    "overallRank": 114,
+    "annualFeePrctl": 90,
+    "overallRank": 118,
     "cardKey": "chase_per_british_airways"
   },
   {
@@ -499,8 +436,8 @@
     "useOnCt": "Yes",
     "curBonusPrctl": 97,
     "minSpendPrctl": 0,
-    "annualFeePrctl": 80,
-    "overallRank": 129,
+    "annualFeePrctl": 90,
+    "overallRank": 133,
     "cardKey": "chase_per_sapphire_preferred"
   },
   {
@@ -520,8 +457,8 @@
     "useOnCt": "Yes",
     "curBonusPrctl": 61,
     "minSpendPrctl": 14,
-    "annualFeePrctl": 80,
-    "overallRank": 99,
+    "annualFeePrctl": 90,
+    "overallRank": 103,
     "cardKey": "citi_per_thankyou_premier"
   },
   {
@@ -562,8 +499,8 @@
     "useOnCt": "Yes",
     "curBonusPrctl": 70,
     "minSpendPrctl": 14,
-    "annualFeePrctl": 80,
-    "overallRank": 107,
+    "annualFeePrctl": 90,
+    "overallRank": 111,
     "cardKey": "citi_per_aadvantage_platinum"
   },
   {
@@ -609,27 +546,6 @@
     "cardKey": "us_bank_per_flexperks_select+_(amex)"
   },
   {
-    "cardName": "Club Carlson",
-    "issuerName": "US Bank",
-    "rewardProvider": "Carlson",
-    "curBonusPts": 60000,
-    "centValueOfPoint": 0.4,
-    "curBonusVal": 240,
-    "otherPerks": "0",
-    "minSpendVal": 1500,
-    "minSpendMonths": 3,
-    "annualFee": 50,
-    "annualFeeWaived": false,
-    "personalOrBiz": "Personal",
-    "ftf": 0.03,
-    "useOnCt": "Yes",
-    "curBonusPrctl": 22,
-    "minSpendPrctl": 57,
-    "annualFeePrctl": 89,
-    "overallRank": 81,
-    "cardKey": "us_bank_per_club_carlson"
-  },
-  {
     "cardName": "Sapphire Reserve",
     "issuerName": "Chase",
     "rewardProvider": "UR",
@@ -640,7 +556,7 @@
     "minSpendVal": 4000,
     "minSpendMonths": 3,
     "annualFee": 450,
-    "annualFeeWaived": true,
+    "annualFeeWaived": false,
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
