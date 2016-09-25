@@ -1,0 +1,94 @@
+{
+  "Asia": [
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "PEK",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 239,
+      "class": "Coach",
+      "airlineName": "United",
+      "roundTripReq": "FALSE",
+      "arrivingAirportDetails": {
+        "airportTicker": "PEK",
+        "cityName": "Peking",
+        "countryName": "China",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "CTU",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 253,
+      "class": "Coach",
+      "airlineName": "United",
+      "roundTripReq": "FALSE",
+      "arrivingAirportDetails": {
+        "airportTicker": "CTU",
+        "cityName": "Chengdu",
+        "countryName": "China",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "PVG",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 268,
+      "class": "Coach",
+      "airlineName": "United",
+      "roundTripReq": "FALSE",
+      "arrivingAirportDetails": {
+        "airportTicker": "PVG",
+        "cityName": "Shanghai",
+        "countryName": "China",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "SIN",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 324,
+      "class": "Coach",
+      "airlineName": "Singapore",
+      "roundTripReq": "FALSE",
+      "arrivingAirportDetails": {
+        "airportTicker": "SIN",
+        "cityName": "Singapore",
+        "countryName": "Singapore",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "HKG",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 350,
+      "class": "Coach",
+      "airlineName": "Cathay",
+      "roundTripReq": "FALSE",
+      "arrivingAirportDetails": {
+        "airportTicker": "HKG",
+        "cityName": "Hong Kong",
+        "countryName": "China",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ]
+}

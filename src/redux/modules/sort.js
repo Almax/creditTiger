@@ -1,12 +1,13 @@
-const OVERALL = 'OVERALL';
+const OVERALL = 'SET_OVERALL';
+const CONTINENT = 'SET_CONTINENT';
 
-const countryRoutes = require('../../data/country_award_routes.json'); // json-loader
+const continentRoutes = require('../../data/continent_award_routes.json'); // json-loader
 
-const countryList = Object.keys(countryRoutes);
+const continentList = Object.keys(continentRoutes);
 
 const initialState = {
   sortType: OVERALL,
-  countryList
+  continentList
 };
 
 export default function reducer(state = initialState, action = {}) {
@@ -16,6 +17,12 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         sortType: OVERALL
       };
+    case CONTINENT:
+      return {
+        ...state,
+        sortType: CONTINENT,
+        continentName: action.continentName
+      };
     default:
       return state;
   }
@@ -24,12 +31,19 @@ export default function reducer(state = initialState, action = {}) {
 export function sortOverall() {
   return {
     type: OVERALL
-  }
+  };
 }
 
-export function sortOverall() {
+export function sortContinent(continent, bool) {
+  return {
+    type: CONTINENT,
+    continentName: continent,
+    bool
+  };
+}
+
+export function unsortContinent() {
   return {
     type: OVERALL
-  }
+  };
 }
-

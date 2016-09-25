@@ -9,7 +9,8 @@ var AIRPORT_MAP_CSV = FLIGHTS_TO_POINTS_DIR + 'airport_map.csv';
 var POINT_CONV_MAP_CSV = FLIGHTS_TO_POINTS_DIR + 'point_conv_map.csv';
 var ROUTE_POINT_LIST_CSV = FLIGHTS_TO_POINTS_DIR + 'route_point_list.csv';
 
-var OUTPUT_JSON = './src/data/country_award_routes.json';
+var OUTPUT_CONTINENT_AWARD_ROUTE_JSON = './src/data/continent_award_routes.json';
+var OUTPUT_CONTINENT_CASH_ROUTE_JSON = './src/data/continent_cash_routes.json';
 
 var airportMapCsv = fs.readFileSync(AIRPORT_MAP_CSV, 'utf8');
 var airportMapRecords = parse(airportMapCsv, {columns: true});
@@ -39,22 +40,28 @@ var routePointListCsv= fs.readFileSync(ROUTE_POINT_LIST_CSV, 'utf8');
 var routePointListRecords = parse(routePointListCsv, {columns: true});
 
 var routePointList = [];
+var routeCashList = [];
 
 routePointListRecords.forEach((row, index) => {
   var numberOfPointsReq = Number(row['numberOfPointsReq']);
   var cashReq = Number(row['cashReq']);
   var arrivingAirportTicker = row['arrivingAirportTicker'];
   var arrivingAirportDetails = airportMap[arrivingAirportTicker];
-  var orignalPointType = row['pointType'];
+  var originalPointType = row['pointType'];
   var converted = false;
   var route = Object.assign({}, row, {
     numberOfPointsReq,
     cashReq,
     arrivingAirportDetails,
-    orignalPointType,
+    originalPointType,
     converted
   });
-  routePointList.push(route);
+
+  if (originalPointType === 'Cash') {
+    routeCashList.push(route);
+  } else {
+    routePointList.push(route);
+  }
 });
 
 var routePointListWithConversions = [];
@@ -70,7 +77,7 @@ routePointList.forEach((row, index) => {
     for (var key in alternatePointTypes) {
       var pointConversion = alternatePointTypes[key]
 
-      // old original type is now the curren pointType
+      // old original type is now the current pointType
       var pointType = pointConversion['originalType'];
       var conversionRate = pointConversion['rate'];
       var numberOfPointsReq = row['numberOfPointsReq'] / conversionRate;
@@ -90,39 +97,56 @@ routePointList.forEach((row, index) => {
 
 routePointListWithConversions = _R.concat(routePointListWithConversions, routePointList);
 
-var routeByContinent = {};
+var routePointByContinent = {};
 
 routePointListWithConversions.forEach((route, index) => {
   var continent = route['arrivingAirportDetails']['continentName'];
   var pointType = route['pointType'];
 
   // FIX THIS
-  if (!routeByContinent[continent]) {
-    routeByContinent[continent] = {};
+  if (!routePointByContinent[continent]) {
+    routePointByContinent[continent] = {};
   }
 
   // FIX THIS
-  if (!routeByContinent[continent][pointType]) {
-    routeByContinent[continent][pointType] = []
+  if (!routePointByContinent[continent][pointType]) {
+    routePointByContinent[continent][pointType] = []
   }
 
-  routeByContinent[continent][pointType].push(route);
+  routePointByContinent[continent][pointType].push(route);
 });
 
-for (var continent in routeByContinent) {
-  for (var pointType in routeByContinent[continent]) {
-    routeByContinent[continent][pointType].sort((ca, cb) => { return (ca.numberOfPointsReq - cb.numberOfPointsReq);});
-    routeByContinent[continent][pointType].splice(5);
+for (var continent in routePointByContinent) {
+  for (var pointType in routePointByContinent[continent]) {
+    routePointByContinent[continent][pointType].sort((ca, cb) => { return (ca.numberOfPointsReq - cb.numberOfPointsReq);});
+    routePointByContinent[continent][pointType].splice(5);
   }
-  // console.log(routeByContinent[continent]);
+  // console.log(routePointByContinent[continent]);
 }
 
-// console.log(routeByContinent);
+var routeCashByContinent = {};
 
-savedRoutesJson = JSON3.stringify(routeByContinent, null, 2);
+routeCashList.forEach((route, index) => {
+  var continent = route['arrivingAirportDetails']['continentName'];
 
-fs.outputFileSync(OUTPUT_JSON, savedRoutesJson);
+  // FIX THIS
+  if (!routeCashByContinent[continent]) {
+    routeCashByContinent[continent] = [];
+  }
 
+  routeCashByContinent[continent].push(route);
+});
+
+for (var continent in routeCashByContinent) {
+  routeCashByContinent[continent].sort((ca, cb) => { return (ca.cashReq - cb.cashReq);});
+  routeCashByContinent[continent].splice(10);
+}
+
+savedRoutesPointsJson = JSON3.stringify(routePointByContinent, null, 2);
+savedRoutesCashJson = JSON3.stringify(routeCashByContinent, null, 2);
+
+fs.outputFileSync(OUTPUT_CONTINENT_AWARD_ROUTE_JSON, savedRoutesPointsJson);
+fs.outputFileSync(OUTPUT_CONTINENT_CASH_ROUTE_JSON, savedRoutesCashJson);
 
 // sort each sub array
 // splice the end results off.
@@ -143,4 +167,4 @@ fs.outputFileSync(OUTPUT_JSON, savedRoutesJson);
 
 // savedCardsJson = JSON3.stringify(savedCards, null, 2);
 
-// fs.outputFileSync(OUTPUT_JSON, savedCardsJson);
+// fs.outputFileSync(OUTPUT_CONTINENT_AWARD_ROUTE_JSON, savedCardsJson);

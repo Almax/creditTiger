@@ -1,36 +1,42 @@
 import React, {Component, PropTypes} from 'react';
 import Checkbox from 'react-toolbox/lib/checkbox';
-// import { bindActionCreators } from 'redux';
-// import { connect } from 'react-redux';
-import { sortContinent } from 'redux/modules/sort';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { sortContinent, unsortContinent } from 'redux/modules/sort';
 
-// @connect(
-//   null,
-//   dispatch => bindActionCreators({ annualFeeChange }, dispatch)
-// )
+@connect(
+  state => ({sort: state.sort}),
+  dispatch => bindActionCreators({ sortContinent, unsortContinent }, dispatch)
+)
 
 export default class ContinentSortCheckbox extends Component {
   static propTypes = {
+    sort: PropTypes.object,
+    sortContinent: PropTypes.func.isRequired,
+    unsortContinent: PropTypes.func.isRequired,
     continentName: PropTypes.string,
     label: PropTypes.string
   }
 
-  state = {
-    check: false
-  };
 
   handleChange = (bool) => {
-    const { continentName } = this.props; // eslint-disable-line no-shadow
+    const { sortContinent, unsortContinent, continentName } = this.props; // eslint-disable-line no-shadow
 
-    this.setState({['check']: bool});
-    sortContinent(continentName, bool);
+    if (bool) {
+      sortContinent(continentName, bool);
+    } else {
+      unsortContinent();
+    }
   };
 
   render() {
+    const { sort, continentName } = this.props;
+    const currentCheck = sort.sortType === 'SET_CONTINENT' && sort.continentName === continentName;
+
     return (
       <div>
         <Checkbox
-          checked={this.state.check}
+          checked={currentCheck}
           label={this.props.label}
           onChange={this.handleChange.bind(this)}
         />

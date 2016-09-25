@@ -16,7 +16,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Alaska",
+        "originalPointType": "Alaska",
         "converted": true,
         "pointConversion": {
           "originalType": "SPG",
@@ -39,7 +39,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Alaska",
+        "originalPointType": "Alaska",
         "converted": true,
         "pointConversion": {
           "originalType": "SPG",
@@ -62,7 +62,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Alaska",
+        "originalPointType": "Alaska",
         "converted": true,
         "pointConversion": {
           "originalType": "SPG",
@@ -85,7 +85,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "ANA",
+        "originalPointType": "ANA",
         "converted": true,
         "pointConversion": {
           "originalType": "SPG",
@@ -108,7 +108,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "ANA",
+        "originalPointType": "ANA",
         "converted": true,
         "pointConversion": {
           "originalType": "SPG",
@@ -120,104 +120,58 @@
     "MR": [
       {
         "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "CTU",
+        "arrivingAirportTicker": "NRT",
         "pointType": "MR",
-        "numberOfPointsReq": 0,
-        "cashReq": 253,
+        "numberOfPointsReq": 25000,
+        "cashReq": 87.22,
         "class": "Coach",
-        "airlineName": "United",
-        "roundTripReq": "FALSE",
+        "airlineName": "ANA",
+        "roundTripReq": "TRUE",
         "arrivingAirportDetails": {
-          "airportTicker": "CTU",
-          "cityName": "Chengdu",
-          "countryName": "China",
+          "airportTicker": "NRT",
+          "cityName": "Narita",
+          "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Cash",
+        "originalPointType": "ANA",
         "converted": true,
         "pointConversion": {
           "originalType": "MR",
-          "transfersToType": "Cash",
-          "rate": "0.01"
+          "transfersToType": "ANA",
+          "rate": "1"
         }
       },
       {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "PVG",
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "HND",
         "pointType": "MR",
-        "numberOfPointsReq": 0,
-        "cashReq": 268,
+        "numberOfPointsReq": 25000,
+        "cashReq": 87.22,
         "class": "Coach",
-        "airlineName": "United",
-        "roundTripReq": "FALSE",
+        "airlineName": "ANA",
+        "roundTripReq": "TRUE",
         "arrivingAirportDetails": {
-          "airportTicker": "PVG",
-          "cityName": "Shanghai",
-          "countryName": "China",
+          "airportTicker": "HND",
+          "cityName": "Haneda",
+          "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Cash",
+        "originalPointType": "ANA",
         "converted": true,
         "pointConversion": {
           "originalType": "MR",
-          "transfersToType": "Cash",
-          "rate": "0.01"
-        }
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "PEK",
-        "pointType": "MR",
-        "numberOfPointsReq": 0,
-        "cashReq": 239,
-        "class": "Coach",
-        "airlineName": "United",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "PEK",
-          "cityName": "Peking",
-          "countryName": "China",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "MR",
-          "transfersToType": "Cash",
-          "rate": "0.01"
-        }
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "SIN",
-        "pointType": "MR",
-        "numberOfPointsReq": 0,
-        "cashReq": 324,
-        "class": "Coach",
-        "airlineName": "Singapore",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "SIN",
-          "cityName": "Singapore",
-          "countryName": "Singapore",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "MR",
-          "transfersToType": "Cash",
-          "rate": "0.01"
+          "transfersToType": "ANA",
+          "rate": "1"
         }
       },
       {
         "departingAirportTicker": "SFO",
         "arrivingAirportTicker": "HKG",
         "pointType": "MR",
-        "numberOfPointsReq": 0,
-        "cashReq": 350,
+        "numberOfPointsReq": 30000,
+        "cashReq": 23.4,
         "class": "Coach",
-        "airlineName": "Cathay",
+        "airlineName": "Singapore",
         "roundTripReq": "FALSE",
         "arrivingAirportDetails": {
           "airportTicker": "HKG",
@@ -225,12 +179,58 @@
           "countryName": "China",
           "continentName": "Asia"
         },
-        "orignalPointType": "Cash",
+        "originalPointType": "Singapore",
         "converted": true,
         "pointConversion": {
           "originalType": "MR",
-          "transfersToType": "Cash",
-          "rate": "0.01"
+          "transfersToType": "Singapore",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "MR",
+        "numberOfPointsReq": 32500,
+        "cashReq": 53.4,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "roundTripReq": "FALSE",
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Singapore",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "MR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "roundTripReq": "FALSE",
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Delta",
+          "rate": "1"
         }
       }
     ],
@@ -250,7 +250,7 @@
           "countryName": "China",
           "continentName": "Asia"
         },
-        "orignalPointType": "Singapore",
+        "originalPointType": "Singapore",
         "converted": true,
         "pointConversion": {
           "originalType": "UR",
@@ -273,7 +273,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Singapore",
+        "originalPointType": "Singapore",
         "converted": true,
         "pointConversion": {
           "originalType": "UR",
@@ -296,7 +296,7 @@
           "countryName": "Korea",
           "continentName": "Asia"
         },
-        "orignalPointType": "Korean",
+        "originalPointType": "Korean",
         "converted": true,
         "pointConversion": {
           "originalType": "UR",
@@ -319,7 +319,7 @@
           "countryName": "Korea",
           "continentName": "Asia"
         },
-        "orignalPointType": "United",
+        "originalPointType": "United",
         "converted": true,
         "pointConversion": {
           "originalType": "UR",
@@ -342,129 +342,12 @@
           "countryName": "Taiwan",
           "continentName": "Asia"
         },
-        "orignalPointType": "United",
+        "originalPointType": "United",
         "converted": true,
         "pointConversion": {
           "originalType": "UR",
           "transfersToType": "United",
           "rate": "1"
-        }
-      }
-    ],
-    "Arrival": [
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "CTU",
-        "pointType": "Arrival",
-        "numberOfPointsReq": 0,
-        "cashReq": 253,
-        "class": "Coach",
-        "airlineName": "United",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "CTU",
-          "cityName": "Chengdu",
-          "countryName": "China",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "Arrival",
-          "transfersToType": "Cash",
-          "rate": "0.01"
-        }
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "PVG",
-        "pointType": "Arrival",
-        "numberOfPointsReq": 0,
-        "cashReq": 268,
-        "class": "Coach",
-        "airlineName": "United",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "PVG",
-          "cityName": "Shanghai",
-          "countryName": "China",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "Arrival",
-          "transfersToType": "Cash",
-          "rate": "0.01"
-        }
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "PEK",
-        "pointType": "Arrival",
-        "numberOfPointsReq": 0,
-        "cashReq": 239,
-        "class": "Coach",
-        "airlineName": "United",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "PEK",
-          "cityName": "Peking",
-          "countryName": "China",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "Arrival",
-          "transfersToType": "Cash",
-          "rate": "0.01"
-        }
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "SIN",
-        "pointType": "Arrival",
-        "numberOfPointsReq": 0,
-        "cashReq": 324,
-        "class": "Coach",
-        "airlineName": "Singapore",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "SIN",
-          "cityName": "Singapore",
-          "countryName": "Singapore",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "Arrival",
-          "transfersToType": "Cash",
-          "rate": "0.01"
-        }
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "HKG",
-        "pointType": "Arrival",
-        "numberOfPointsReq": 0,
-        "cashReq": 350,
-        "class": "Coach",
-        "airlineName": "Cathay",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "HKG",
-          "cityName": "Hong Kong",
-          "countryName": "China",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "Arrival",
-          "transfersToType": "Cash",
-          "rate": "0.01"
         }
       }
     ],
@@ -484,7 +367,7 @@
           "countryName": "China",
           "continentName": "Asia"
         },
-        "orignalPointType": "Singapore",
+        "originalPointType": "Singapore",
         "converted": true,
         "pointConversion": {
           "originalType": "TYP",
@@ -507,7 +390,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Singapore",
+        "originalPointType": "Singapore",
         "converted": true,
         "pointConversion": {
           "originalType": "TYP",
@@ -530,7 +413,7 @@
           "countryName": "Taiwan",
           "continentName": "Asia"
         },
-        "orignalPointType": "EVA",
+        "originalPointType": "EVA",
         "converted": true,
         "pointConversion": {
           "originalType": "TYP",
@@ -553,7 +436,7 @@
           "countryName": "Vietnam",
           "continentName": "Asia"
         },
-        "orignalPointType": "EVA",
+        "originalPointType": "EVA",
         "converted": true,
         "pointConversion": {
           "originalType": "TYP",
@@ -576,7 +459,7 @@
           "countryName": "Thailand",
           "continentName": "Asia"
         },
-        "orignalPointType": "EVA",
+        "originalPointType": "EVA",
         "converted": true,
         "pointConversion": {
           "originalType": "TYP",
@@ -601,7 +484,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "AA",
+        "originalPointType": "AA",
         "converted": false
       },
       {
@@ -619,7 +502,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "AA",
+        "originalPointType": "AA",
         "converted": false
       },
       {
@@ -637,7 +520,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "AA",
+        "originalPointType": "AA",
         "converted": false
       }
     ],
@@ -657,7 +540,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Alaska",
+        "originalPointType": "Alaska",
         "converted": false
       },
       {
@@ -675,7 +558,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Alaska",
+        "originalPointType": "Alaska",
         "converted": false
       },
       {
@@ -693,7 +576,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Alaska",
+        "originalPointType": "Alaska",
         "converted": false
       },
       {
@@ -711,7 +594,7 @@
           "countryName": "China",
           "continentName": "Asia"
         },
-        "orignalPointType": "Alaska",
+        "originalPointType": "Alaska",
         "converted": false
       },
       {
@@ -729,7 +612,7 @@
           "countryName": "China",
           "continentName": "Asia"
         },
-        "orignalPointType": "Alaska",
+        "originalPointType": "Alaska",
         "converted": false
       }
     ],
@@ -749,7 +632,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "ANA",
+        "originalPointType": "ANA",
         "converted": false
       },
       {
@@ -767,7 +650,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "ANA",
+        "originalPointType": "ANA",
         "converted": false
       }
     ],
@@ -787,7 +670,7 @@
           "countryName": "China",
           "continentName": "Asia"
         },
-        "orignalPointType": "Avios",
+        "originalPointType": "Avios",
         "converted": false
       },
       {
@@ -805,99 +688,7 @@
           "countryName": "Thailand",
           "continentName": "Asia"
         },
-        "orignalPointType": "Avios",
-        "converted": false
-      }
-    ],
-    "Cash": [
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "CTU",
-        "pointType": "Cash",
-        "numberOfPointsReq": 0,
-        "cashReq": 253,
-        "class": "Coach",
-        "airlineName": "United",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "CTU",
-          "cityName": "Chengdu",
-          "countryName": "China",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
-        "converted": false
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "PVG",
-        "pointType": "Cash",
-        "numberOfPointsReq": 0,
-        "cashReq": 268,
-        "class": "Coach",
-        "airlineName": "United",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "PVG",
-          "cityName": "Shanghai",
-          "countryName": "China",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
-        "converted": false
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "PEK",
-        "pointType": "Cash",
-        "numberOfPointsReq": 0,
-        "cashReq": 239,
-        "class": "Coach",
-        "airlineName": "United",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "PEK",
-          "cityName": "Peking",
-          "countryName": "China",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
-        "converted": false
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "SIN",
-        "pointType": "Cash",
-        "numberOfPointsReq": 0,
-        "cashReq": 324,
-        "class": "Coach",
-        "airlineName": "Singapore",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "SIN",
-          "cityName": "Singapore",
-          "countryName": "Singapore",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
-        "converted": false
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "HKG",
-        "pointType": "Cash",
-        "numberOfPointsReq": 0,
-        "cashReq": 350,
-        "class": "Coach",
-        "airlineName": "Cathay",
-        "roundTripReq": "FALSE",
-        "arrivingAirportDetails": {
-          "airportTicker": "HKG",
-          "cityName": "Hong Kong",
-          "countryName": "China",
-          "continentName": "Asia"
-        },
-        "orignalPointType": "Cash",
+        "originalPointType": "Avios",
         "converted": false
       }
     ],
@@ -917,7 +708,7 @@
           "countryName": "Taiwan",
           "continentName": "Asia"
         },
-        "orignalPointType": "China",
+        "originalPointType": "China",
         "converted": false
       },
       {
@@ -935,7 +726,7 @@
           "countryName": "Taiwan",
           "continentName": "Asia"
         },
-        "orignalPointType": "China",
+        "originalPointType": "China",
         "converted": false
       }
     ],
@@ -955,7 +746,7 @@
           "countryName": "Taiwan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Delta",
+        "originalPointType": "Delta",
         "converted": false
       },
       {
@@ -973,7 +764,7 @@
           "countryName": "Taiwan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Delta",
+        "originalPointType": "Delta",
         "converted": false
       },
       {
@@ -991,7 +782,7 @@
           "countryName": "China",
           "continentName": "Asia"
         },
-        "orignalPointType": "Delta",
+        "originalPointType": "Delta",
         "converted": false
       },
       {
@@ -1009,7 +800,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Delta",
+        "originalPointType": "Delta",
         "converted": false
       },
       {
@@ -1027,7 +818,7 @@
           "countryName": "China",
           "continentName": "Asia"
         },
-        "orignalPointType": "Delta",
+        "originalPointType": "Delta",
         "converted": false
       }
     ],
@@ -1047,7 +838,7 @@
           "countryName": "Taiwan",
           "continentName": "Asia"
         },
-        "orignalPointType": "EVA",
+        "originalPointType": "EVA",
         "converted": false
       },
       {
@@ -1065,7 +856,7 @@
           "countryName": "Vietnam",
           "continentName": "Asia"
         },
-        "orignalPointType": "EVA",
+        "originalPointType": "EVA",
         "converted": false
       },
       {
@@ -1083,7 +874,7 @@
           "countryName": "Thailand",
           "continentName": "Asia"
         },
-        "orignalPointType": "EVA",
+        "originalPointType": "EVA",
         "converted": false
       },
       {
@@ -1101,7 +892,7 @@
           "countryName": "Taiwan",
           "continentName": "Asia"
         },
-        "orignalPointType": "EVA",
+        "originalPointType": "EVA",
         "converted": false
       }
     ],
@@ -1121,7 +912,7 @@
           "countryName": "Korea",
           "continentName": "Asia"
         },
-        "orignalPointType": "Korean",
+        "originalPointType": "Korean",
         "converted": false
       },
       {
@@ -1139,7 +930,7 @@
           "countryName": "Korea",
           "continentName": "Asia"
         },
-        "orignalPointType": "Korean",
+        "originalPointType": "Korean",
         "converted": false
       },
       {
@@ -1157,7 +948,7 @@
           "countryName": "Vietnam",
           "continentName": "Asia"
         },
-        "orignalPointType": "Korean",
+        "originalPointType": "Korean",
         "converted": false
       },
       {
@@ -1175,7 +966,7 @@
           "countryName": "Thailand",
           "continentName": "Asia"
         },
-        "orignalPointType": "Korean",
+        "originalPointType": "Korean",
         "converted": false
       }
     ],
@@ -1195,7 +986,7 @@
           "countryName": "China",
           "continentName": "Asia"
         },
-        "orignalPointType": "Singapore",
+        "originalPointType": "Singapore",
         "converted": false
       },
       {
@@ -1213,7 +1004,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "Singapore",
+        "originalPointType": "Singapore",
         "converted": false
       }
     ],
@@ -1233,7 +1024,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "United",
+        "originalPointType": "United",
         "converted": false
       },
       {
@@ -1251,7 +1042,7 @@
           "countryName": "Japan",
           "continentName": "Asia"
         },
-        "orignalPointType": "United",
+        "originalPointType": "United",
         "converted": false
       },
       {
@@ -1269,7 +1060,7 @@
           "countryName": "Taiwan",
           "continentName": "Asia"
         },
-        "orignalPointType": "United",
+        "originalPointType": "United",
         "converted": false
       },
       {
@@ -1287,7 +1078,7 @@
           "countryName": "Korea",
           "continentName": "Asia"
         },
-        "orignalPointType": "United",
+        "originalPointType": "United",
         "converted": false
       },
       {
@@ -1305,7 +1096,7 @@
           "countryName": "Singapore",
           "continentName": "Asia"
         },
-        "orignalPointType": "United",
+        "originalPointType": "United",
         "converted": false
       }
     ]

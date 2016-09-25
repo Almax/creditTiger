@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import { CardBox, IssuerCheckbox, PointSlider } from 'components';
 import { ContinentSortCheckbox, AnnualFeeCheckbox, FteCheckbox } from 'components';
 
-const getVisibleCards = (cards, filters) => {
+const getVisibleCards = (cards, filters, sort) => {
   let cardsToShow = cards;
   let onlyIssuerKeysToFilter = {}; // eslint-disable-line prefer-const
 
@@ -35,7 +35,15 @@ const getVisibleCards = (cards, filters) => {
     cardsToShow = cardsToShow.filter(ca => onlyIssuerKeysToFilter[ca.issuerName] === true);
   }
 
-  cardsToShow.sort((ca, cb) => { return (cb.overallRank - ca.overallRank);});
+  console.log('sort', sort);
+
+  console.log('sort.sortType', sort.sortType);
+
+  if (sort.sortType === 'SET_CONTINENT') {
+    cardsToShow.sort((ca, cb) => { return (ca.overallRank - cb.overallRank);});
+  } else {
+    cardsToShow.sort((ca, cb) => { return (cb.overallRank - ca.overallRank);});
+  }
 
   cardsToShow.forEach((ca, ind) => { ca.curRank = ind + 1; });
 
@@ -55,13 +63,15 @@ const getVisibleCards = (cards, filters) => {
 export default class Credit extends Component {
   static propTypes = {
     cards: PropTypes.object,
-    filter: PropTypes.object
+    filter: PropTypes.object,
+    sort: PropTypes.object
   };
 
   render() {
     const { all, issuers } = this.props.cards;
     const { filter } = this.props;
-    const visibleCards = getVisibleCards(all, filter);
+    const { sort } = this.props;
+    const visibleCards = getVisibleCards(all, filter, sort);
 
     return (
       <div className="container-fluid">
