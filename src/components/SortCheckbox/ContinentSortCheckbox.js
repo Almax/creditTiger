@@ -40,7 +40,6 @@ export default class ContinentSortCheckbox extends Component {
           label={this.props.label}
           onChange={this.handleChange.bind(this)}
         />
-        {this.props.continentName}
       </div>
     );
   }

@@ -5,7 +5,7 @@ import RatingBar from '../RatingBar/RatingBar';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { hideCard } from 'redux/modules/filter';
-
+import { CardBoxRoutes } from 'components';
 
 @connect(
   null,
@@ -106,6 +106,7 @@ export default class CardBox extends Component {
             </div>
           }
         </div>
+        <CardBoxRoutes card={this.props.card} />
       </div>
     );
   }

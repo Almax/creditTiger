@@ -1,0 +1,25 @@
+@import "~react-toolbox/lib/colors";
+
+$CARD-WIDTH: 350px;
+
+.routes {
+  width: $CARD-WIDTH;
+  background-color: $palette-grey-50;
+  border: 1px solid $palette-grey-300;
+  padding: 20px;
+  margin-bottom: 40px;
+
+  .title {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .chartBox {
+
+  }
+
+  .explanation {
+
+  }
+}
