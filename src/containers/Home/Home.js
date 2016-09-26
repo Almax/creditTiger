@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import { CardBox, IssuerCheckbox, PointSlider } from 'components';
 import { OverallSortCheckbox, ContinentSortCheckbox, AnnualFeeCheckbox, FteCheckbox } from 'components';
 
-const getVisibleCards = (cards, filters, sort) => {
+const getVisibleCards = (cards, filters, sort, routes) => {
   let cardsToShow = cards;
   let onlyIssuerKeysToFilter = {}; // eslint-disable-line prefer-const
 
@@ -35,12 +35,18 @@ const getVisibleCards = (cards, filters, sort) => {
     cardsToShow = cardsToShow.filter(ca => onlyIssuerKeysToFilter[ca.issuerName] === true);
   }
 
-  console.log('sort', sort);
-
-  console.log('sort.sortType', sort.sortType);
-
   if (sort.sortType === 'SET_CONTINENT') {
-    cardsToShow.sort((ca, cb) => { return (ca.overallRank - cb.overallRank);});
+    const curRoutes = routes.continentAwardRoutes[sort.continentName];
+    cardsToShow.forEach((ca) => {
+      const rewardProviver = ca.rewardProvider;
+      ca.routesForSort = curRoutes[rewardProviver] || [];
+      if (!ca.routesForSort.length) {
+        ca.awardTravelPerctl = 0;
+      } else {
+        ca.awardTravelPerctl = ca.curBonusPts / ca.routesForSort[0].numberOfPointsReq;
+      }
+    });
+    cardsToShow.sort((ca, cb) => { return (cb.awardTravelPerctl - ca.awardTravelPerctl);});
   } else {
     cardsToShow.sort((ca, cb) => { return (cb.overallRank - ca.overallRank);});
   }
@@ -55,7 +61,8 @@ const getVisibleCards = (cards, filters, sort) => {
     {
       cards: state.cards,
       filter: state.filter,
-      sort: state.sort
+      sort: state.sort,
+      routes: state.routes
     }
   )
 )
@@ -64,14 +71,14 @@ export default class Credit extends Component {
   static propTypes = {
     cards: PropTypes.object,
     filter: PropTypes.object,
-    sort: PropTypes.object
+    sort: PropTypes.object,
+    routes: PropTypes.object
   };
 
   render() {
     const { all, issuers } = this.props.cards;
-    const { filter } = this.props;
-    const { sort } = this.props;
-    const visibleCards = getVisibleCards(all, filter, sort);
+    const { filter, sort, routes } = this.props;
+    const visibleCards = getVisibleCards(all, filter, sort, routes);
 
     return (
       <div className="container-fluid">

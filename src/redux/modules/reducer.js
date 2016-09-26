@@ -11,6 +11,7 @@ import widgets from './widgets';
 import cards from './cards';
 import filter from './filter';
 import sort from './sort';
+import routes from './routes';
 
 export default combineReducers({
   routing: routerReducer,
@@ -20,6 +21,7 @@ export default combineReducers({
   cards,
   filter,
   sort,
+  routes,
   multireducer: multireducer({
     counter1: counter,
     counter2: counter,
