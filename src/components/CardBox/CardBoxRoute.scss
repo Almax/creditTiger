@@ -1,22 +1,50 @@
 @import "~react-toolbox/lib/colors";
 
 $CARD-WIDTH: 350px;
+$CARD-ROUTE-HEIGHT: 350px;
+$PADDING: 20px;
+$BORDER-WIDTH: 1px;
+$INNER-WIDTH-HALF: $CARD-WIDTH / 2 - $PADDING -  $BORDER-WIDTH;
 
 .routes {
   width: $CARD-WIDTH;
+  height: $CARD-ROUTE-HEIGHT;
   background-color: $palette-grey-50;
-  border: 1px solid $palette-grey-300;
-  padding: 20px;
+  border: $BORDER-WIDTH solid $palette-grey-300;
+  padding: $PADDING;
   margin-bottom: 40px;
 
   .title {
-    font-size: 14px;
+    margin-bottom: 10px;
+    font-size: 24px;
     text-transform: uppercase;
     text-align: center;
   }
 
-  .chartBox {
+  .subheader {
 
+  }
+
+  .subtitle {
+    width: $INNER-WIDTH-HALF;
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  .planeChart {
+    width: $INNER-WIDTH-HALF;
+    display: inline-block;
+  }
+
+  .planeGreen {
+    display: inline;
+  }
+
+  .planeYellowHalf {
+    display: inline;
   }
 
   .explanation {

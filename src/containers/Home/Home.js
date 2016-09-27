@@ -52,6 +52,10 @@ const getVisibleCards = (cards, filters, sort, routes) => {
         ca.awardTravelPerc = ca.curBonusPts / averageNumPoints;
       }
     });
+
+    const hasNoRoutes = ca => !ca.routesForSort.length;
+    cardsToShow = _R.reject(hasNoRoutes, cardsToShow);
+
     cardsToShow.sort((ca, cb) => { return (cb.awardTravelPerc - ca.awardTravelPerc);});
   } else {
     cardsToShow.sort((ca, cb) => { return (cb.overallRank - ca.overallRank);});
