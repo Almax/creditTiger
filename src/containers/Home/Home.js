@@ -1,3 +1,4 @@
+import _R from 'ramda';
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
 import { CardBox, IssuerCheckbox, PointSlider } from 'components';
@@ -37,16 +38,21 @@ const getVisibleCards = (cards, filters, sort, routes) => {
 
   if (sort.sortType === 'SET_CONTINENT') {
     const curRoutes = routes.continentAwardRoutes[sort.continentName];
+    const plus = (aa, bb) => aa + bb;
+    const numPointsFn = ro => ro.numberOfPointsReq;
+
     cardsToShow.forEach((ca) => {
       const rewardProviver = ca.rewardProvider;
       ca.routesForSort = curRoutes[rewardProviver] || [];
       if (!ca.routesForSort.length) {
-        ca.awardTravelPerctl = 0;
+        ca.awardTravelPerc = 0;
       } else {
-        ca.awardTravelPerctl = ca.curBonusPts / ca.routesForSort[0].numberOfPointsReq;
+        const numPointsList = _R.map(numPointsFn, ca.routesForSort);
+        const averageNumPoints = _R.reduce(plus, 0, numPointsList) / ca.routesForSort.length;
+        ca.awardTravelPerc = ca.curBonusPts / averageNumPoints;
       }
     });
-    cardsToShow.sort((ca, cb) => { return (cb.awardTravelPerctl - ca.awardTravelPerctl);});
+    cardsToShow.sort((ca, cb) => { return (cb.awardTravelPerc - ca.awardTravelPerc);});
   } else {
     cardsToShow.sort((ca, cb) => { return (cb.overallRank - ca.overallRank);});
   }

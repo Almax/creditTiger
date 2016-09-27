@@ -6,7 +6,7 @@
  */
 
 export CardBox from './CardBox/CardBox';
-export CardBoxRoutes from './CardBox/CardBoxRoutes';
+export CardBoxRoute from './CardBox/CardBoxRoute';
 export DoughnutChart from './Chart/DoughnutChart';
 
 export CounterButton from './CounterButton/CounterButton';

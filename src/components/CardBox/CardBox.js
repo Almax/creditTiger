@@ -5,15 +5,16 @@ import RatingBar from '../RatingBar/RatingBar';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { hideCard } from 'redux/modules/filter';
-import { CardBoxRoutes } from 'components';
+import { CardBoxRoute } from 'components';
 
 @connect(
-  null,
+  state => ({sort: state.sort}),
   dispatch => bindActionCreators({ hideCard }, dispatch)
 )
 
 export default class CardBox extends Component {
   static propTypes = {
+    sort: PropTypes.object,
     card: PropTypes.object,
     hideCard: PropTypes.func
   }
@@ -106,7 +107,9 @@ export default class CardBox extends Component {
             </div>
           }
         </div>
-        <CardBoxRoutes card={this.props.card} />
+        {this.props.sort.sortType === 'SET_CONTINENT' &&
+          <CardBoxRoute card={this.props.card} routeNum={0}/>
+        }
       </div>
     );
   }
