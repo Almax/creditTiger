@@ -5,8 +5,11 @@
     "rewardProvider": "Delta",
     "curBonusPts": 30000,
     "centValueOfPoint": 1.25,
+    "curPointBonusVal": 375,
     "curBonusVal": 375,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 1000,
     "minSpendMonths": 3,
     "annualFee": 95,
@@ -18,7 +21,8 @@
     "minSpendPrctl": 71,
     "annualFeePrctl": 90,
     "overallRank": 99,
-    "cardKey": "amex_per_gold_delta"
+    "cardKey": "amex_per_gold_delta",
+    "canConvToCash": false
   },
   {
     "cardName": "Starwood Preferred Guest",
@@ -26,8 +30,11 @@
     "rewardProvider": "SPG",
     "curBonusPts": 25000,
     "centValueOfPoint": 2.35,
+    "curPointBonusVal": 587.5,
     "curBonusVal": 587.5,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 3000,
     "minSpendMonths": 3,
     "annualFee": 95,
@@ -35,11 +42,12 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 55,
+    "curBonusPrctl": 54,
     "minSpendPrctl": 14,
     "annualFeePrctl": 90,
     "overallRank": 96,
-    "cardKey": "amex_per_starwood_preferred_guest"
+    "cardKey": "amex_per_starwood_preferred_guest",
+    "canConvToCash": false
   },
   {
     "cardName": "Platinum",
@@ -47,8 +55,11 @@
     "rewardProvider": "MR",
     "curBonusPts": 40000,
     "centValueOfPoint": 1.8,
-    "curBonusVal": 720,
+    "curPointBonusVal": 720,
+    "curBonusVal": 920,
+    "travelConvRate": 0.0143,
     "otherPerks": "$200 Airline Credit + $100 Global Entry",
+    "otherPerksTravelCashVal": 200,
     "minSpendVal": 3000,
     "minSpendMonths": 3,
     "annualFee": 450,
@@ -56,11 +67,12 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 67,
+    "curBonusPrctl": 85,
     "minSpendPrctl": 14,
     "annualFeePrctl": 5,
-    "overallRank": 75,
-    "cardKey": "amex_per_platinum"
+    "overallRank": 93,
+    "cardKey": "amex_per_platinum",
+    "canConvToCash": true
   },
   {
     "cardName": "Mercedes-Benz Platinum",
@@ -68,8 +80,11 @@
     "rewardProvider": "MR",
     "curBonusPts": 75000,
     "centValueOfPoint": 1.8,
+    "curPointBonusVal": 1350,
     "curBonusVal": 1350,
+    "travelConvRate": 0.01,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 3000,
     "minSpendMonths": 3,
     "annualFee": 475,
@@ -81,7 +96,8 @@
     "minSpendPrctl": 14,
     "annualFeePrctl": 0,
     "overallRank": 106,
-    "cardKey": "amex_per_mercedes-benz_platinum"
+    "cardKey": "amex_per_mercedes-benz_platinum",
+    "canConvToCash": true
   },
   {
     "cardName": "Premier Rewards Gold",
@@ -89,8 +105,11 @@
     "rewardProvider": "MR",
     "curBonusPts": 40000,
     "centValueOfPoint": 1.8,
-    "curBonusVal": 720,
+    "curPointBonusVal": 720,
+    "curBonusVal": 820,
+    "travelConvRate": 0.01,
     "otherPerks": "$100 Airline Credit",
+    "otherPerksTravelCashVal": 100,
     "minSpendVal": 1000,
     "minSpendMonths": 3,
     "annualFee": 195,
@@ -98,11 +117,12 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 67,
+    "curBonusPrctl": 76,
     "minSpendPrctl": 71,
     "annualFeePrctl": 79,
-    "overallRank": 127,
-    "cardKey": "amex_per_premier_rewards_gold"
+    "overallRank": 136,
+    "cardKey": "amex_per_premier_rewards_gold",
+    "canConvToCash": true
   },
   {
     "cardName": "Alaska",
@@ -110,8 +130,11 @@
     "rewardProvider": "Alaska",
     "curBonusPts": 25000,
     "centValueOfPoint": 1.8,
-    "curBonusVal": 450,
+    "curPointBonusVal": 450,
+    "curBonusVal": 600,
+    "travelConvRate": 0,
     "otherPerks": "$100 + Companion Pass",
+    "otherPerksTravelCashVal": 150,
     "minSpendVal": 1000,
     "minSpendMonths": 3,
     "annualFee": 75,
@@ -119,11 +142,12 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 42,
+    "curBonusPrctl": 56,
     "minSpendPrctl": 71,
     "annualFeePrctl": 84,
-    "overallRank": 104,
-    "cardKey": "boa_per_alaska"
+    "overallRank": 118,
+    "cardKey": "boa_per_alaska",
+    "canConvToCash": false
   },
   {
     "cardName": "Virgin Atlantic",
@@ -131,8 +155,11 @@
     "rewardProvider": "Virgin Atlantic",
     "curBonusPts": 20000,
     "centValueOfPoint": 1.5,
+    "curPointBonusVal": 300,
     "curBonusVal": 300,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 1,
     "minSpendMonths": 6,
     "annualFee": 90,
@@ -144,7 +171,8 @@
     "minSpendPrctl": 100,
     "annualFeePrctl": 81,
     "overallRank": 100,
-    "cardKey": "boa_per_virgin_atlantic"
+    "cardKey": "boa_per_virgin_atlantic",
+    "canConvToCash": false
   },
   {
     "cardName": "JetBlue Plus",
@@ -152,8 +180,11 @@
     "rewardProvider": "JetBlue",
     "curBonusPts": 30000,
     "centValueOfPoint": 1.25,
-    "curBonusVal": 375,
+    "curPointBonusVal": 375,
+    "curBonusVal": 437.5,
+    "travelConvRate": 0,
     "otherPerks": "5,000 anniversary bonus",
+    "otherPerksTravelCashVal": 62.5,
     "minSpendVal": 1000,
     "minSpendMonths": 3,
     "annualFee": 99,
@@ -161,11 +192,12 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 35,
+    "curBonusPrctl": 41,
     "minSpendPrctl": 71,
     "annualFeePrctl": 79,
-    "overallRank": 95,
-    "cardKey": "barc_per_jetblue_plus"
+    "overallRank": 101,
+    "cardKey": "barc_per_jetblue_plus",
+    "canConvToCash": false
   },
   {
     "cardName": "Frontier",
@@ -173,8 +205,11 @@
     "rewardProvider": "Frontier",
     "curBonusPts": 40000,
     "centValueOfPoint": 1.1,
+    "curPointBonusVal": 440,
     "curBonusVal": 440,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 500,
     "minSpendMonths": 3,
     "annualFee": 69,
@@ -186,7 +221,8 @@
     "minSpendPrctl": 86,
     "annualFeePrctl": 85,
     "overallRank": 109,
-    "cardKey": "barc_per_frontier"
+    "cardKey": "barc_per_frontier",
+    "canConvToCash": false
   },
   {
     "cardName": "Arrival +",
@@ -194,8 +230,11 @@
     "rewardProvider": "Arrival",
     "curBonusPts": 40000,
     "centValueOfPoint": 1.02,
+    "curPointBonusVal": 410,
     "curBonusVal": 410,
+    "travelConvRate": 0.01,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 3000,
     "minSpendMonths": 3,
     "annualFee": 89,
@@ -207,7 +246,8 @@
     "minSpendPrctl": 14,
     "annualFeePrctl": 91,
     "overallRank": 80,
-    "cardKey": "barc_per_arrival_+"
+    "cardKey": "barc_per_arrival_+",
+    "canConvToCash": true
   },
   {
     "cardName": "Lufthansa",
@@ -215,8 +255,11 @@
     "rewardProvider": "Miles & More",
     "curBonusPts": 50000,
     "centValueOfPoint": 1.4,
+    "curPointBonusVal": 700,
     "curBonusVal": 700,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 5000,
     "minSpendMonths": 0,
     "annualFee": 79,
@@ -228,7 +271,8 @@
     "minSpendPrctl": 0,
     "annualFeePrctl": 83,
     "overallRank": 98,
-    "cardKey": "barc_per_lufthansa"
+    "cardKey": "barc_per_lufthansa",
+    "canConvToCash": false
   },
   {
     "cardName": "Hawaiian",
@@ -236,8 +280,11 @@
     "rewardProvider": "Hawaiian",
     "curBonusPts": 35000,
     "centValueOfPoint": 1.2,
+    "curPointBonusVal": 420,
     "curBonusVal": 420,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 1000,
     "minSpendMonths": 3,
     "annualFee": 89,
@@ -249,7 +296,8 @@
     "minSpendPrctl": 71,
     "annualFeePrctl": 81,
     "overallRank": 100,
-    "cardKey": "barc_per_hawaiian"
+    "cardKey": "barc_per_hawaiian",
+    "canConvToCash": false
   },
   {
     "cardName": "Venture One Rewards",
@@ -257,8 +305,11 @@
     "rewardProvider": "Venture",
     "curBonusPts": 20000,
     "centValueOfPoint": 1,
+    "curPointBonusVal": 200,
     "curBonusVal": 200,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 1000,
     "minSpendMonths": 3,
     "annualFee": 0,
@@ -270,7 +321,8 @@
     "minSpendPrctl": 71,
     "annualFeePrctl": 100,
     "overallRank": 87,
-    "cardKey": "capital_one_per_venture_one_rewards"
+    "cardKey": "capital_one_per_venture_one_rewards",
+    "canConvToCash": false
   },
   {
     "cardName": "Venture Rewards",
@@ -278,8 +330,11 @@
     "rewardProvider": "Venture",
     "curBonusPts": 40000,
     "centValueOfPoint": 1,
+    "curPointBonusVal": 400,
     "curBonusVal": 400,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 3000,
     "minSpendMonths": 3,
     "annualFee": 59,
@@ -291,7 +346,8 @@
     "minSpendPrctl": 14,
     "annualFeePrctl": 94,
     "overallRank": 80,
-    "cardKey": "capital_one_per_venture_rewards"
+    "cardKey": "capital_one_per_venture_rewards",
+    "canConvToCash": false
   },
   {
     "cardName": "Freedom Unlimited",
@@ -299,8 +355,11 @@
     "rewardProvider": "UR",
     "curBonusPts": 15000,
     "centValueOfPoint": 1.9,
+    "curPointBonusVal": 285,
     "curBonusVal": 285,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 500,
     "minSpendMonths": 3,
     "annualFee": 0,
@@ -308,11 +367,12 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 27,
+    "curBonusPrctl": 26,
     "minSpendPrctl": 86,
     "annualFeePrctl": 100,
     "overallRank": 101,
-    "cardKey": "chase_per_freedom_unlimited"
+    "cardKey": "chase_per_freedom_unlimited",
+    "canConvToCash": false
   },
   {
     "cardName": "United Explorer",
@@ -320,8 +380,11 @@
     "rewardProvider": "United",
     "curBonusPts": 35000,
     "centValueOfPoint": 1.45,
+    "curPointBonusVal": 507.5,
     "curBonusVal": 507.5,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 2000,
     "minSpendMonths": 3,
     "annualFee": 95,
@@ -333,7 +396,8 @@
     "minSpendPrctl": 43,
     "annualFeePrctl": 90,
     "overallRank": 100,
-    "cardKey": "chase_per_united_explorer"
+    "cardKey": "chase_per_united_explorer",
+    "canConvToCash": false
   },
   {
     "cardName": "Freedom",
@@ -341,8 +405,11 @@
     "rewardProvider": "UR",
     "curBonusPts": 15000,
     "centValueOfPoint": 1.9,
+    "curPointBonusVal": 285,
     "curBonusVal": 285,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 500,
     "minSpendMonths": 3,
     "annualFee": 0,
@@ -350,11 +417,12 @@
     "personalOrBiz": "Personal",
     "ftf": 0.03,
     "useOnCt": "Yes",
-    "curBonusPrctl": 27,
+    "curBonusPrctl": 26,
     "minSpendPrctl": 86,
     "annualFeePrctl": 100,
     "overallRank": 101,
-    "cardKey": "chase_per_freedom"
+    "cardKey": "chase_per_freedom",
+    "canConvToCash": false
   },
   {
     "cardName": "Southwest Plus",
@@ -362,8 +430,11 @@
     "rewardProvider": "Southwest",
     "curBonusPts": 50000,
     "centValueOfPoint": 1.45,
+    "curPointBonusVal": 725,
     "curBonusVal": 725,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 2000,
     "minSpendMonths": 3,
     "annualFee": 69,
@@ -375,7 +446,8 @@
     "minSpendPrctl": 43,
     "annualFeePrctl": 85,
     "overallRank": 119,
-    "cardKey": "chase_per_southwest_plus"
+    "cardKey": "chase_per_southwest_plus",
+    "canConvToCash": false
   },
   {
     "cardName": "British Airways",
@@ -383,8 +455,11 @@
     "rewardProvider": "Avios",
     "curBonusPts": 50000,
     "centValueOfPoint": 1.4,
+    "curPointBonusVal": 700,
     "curBonusVal": 700,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 2000,
     "minSpendMonths": 3,
     "annualFee": 95,
@@ -396,7 +471,8 @@
     "minSpendPrctl": 43,
     "annualFeePrctl": 90,
     "overallRank": 118,
-    "cardKey": "chase_per_british_airways"
+    "cardKey": "chase_per_british_airways",
+    "canConvToCash": false
   },
   {
     "cardName": "Southwest Premier",
@@ -404,8 +480,11 @@
     "rewardProvider": "Southwest",
     "curBonusPts": 50000,
     "centValueOfPoint": 1.45,
+    "curPointBonusVal": 725,
     "curBonusVal": 725,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 2000,
     "minSpendMonths": 3,
     "annualFee": 99,
@@ -417,7 +496,8 @@
     "minSpendPrctl": 43,
     "annualFeePrctl": 79,
     "overallRank": 116,
-    "cardKey": "chase_per_southwest_premier"
+    "cardKey": "chase_per_southwest_premier",
+    "canConvToCash": false
   },
   {
     "cardName": "Sapphire Preferred",
@@ -425,8 +505,11 @@
     "rewardProvider": "UR",
     "curBonusPts": 55000,
     "centValueOfPoint": 1.9,
+    "curPointBonusVal": 1045,
     "curBonusVal": 1045,
+    "travelConvRate": 0.0125,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 4000,
     "minSpendMonths": 3,
     "annualFee": 95,
@@ -438,7 +521,8 @@
     "minSpendPrctl": 0,
     "annualFeePrctl": 90,
     "overallRank": 133,
-    "cardKey": "chase_per_sapphire_preferred"
+    "cardKey": "chase_per_sapphire_preferred",
+    "canConvToCash": true
   },
   {
     "cardName": "ThankYou Premier",
@@ -446,8 +530,11 @@
     "rewardProvider": "TYP",
     "curBonusPts": 40000,
     "centValueOfPoint": 1.65,
+    "curPointBonusVal": 660,
     "curBonusVal": 660,
+    "travelConvRate": 0.0125,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 3000,
     "minSpendMonths": 3,
     "annualFee": 95,
@@ -459,7 +546,8 @@
     "minSpendPrctl": 14,
     "annualFeePrctl": 90,
     "overallRank": 103,
-    "cardKey": "citi_per_thankyou_premier"
+    "cardKey": "citi_per_thankyou_premier",
+    "canConvToCash": true
   },
   {
     "cardName": "AAdvantage Executive",
@@ -467,8 +555,11 @@
     "rewardProvider": "AA",
     "curBonusPts": 50000,
     "centValueOfPoint": 1.5,
+    "curPointBonusVal": 750,
     "curBonusVal": 750,
+    "travelConvRate": 0,
     "otherPerks": "$100 Global Entry",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 5000,
     "minSpendMonths": 3,
     "annualFee": 450,
@@ -480,7 +571,8 @@
     "minSpendPrctl": 0,
     "annualFeePrctl": 5,
     "overallRank": 72,
-    "cardKey": "citi_per_aadvantage_executive"
+    "cardKey": "citi_per_aadvantage_executive",
+    "canConvToCash": false
   },
   {
     "cardName": "AAdvantage Platinum",
@@ -488,8 +580,11 @@
     "rewardProvider": "AA",
     "curBonusPts": 50000,
     "centValueOfPoint": 1.5,
+    "curPointBonusVal": 750,
     "curBonusVal": 750,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 3000,
     "minSpendMonths": 3,
     "annualFee": 95,
@@ -501,7 +596,8 @@
     "minSpendPrctl": 14,
     "annualFeePrctl": 90,
     "overallRank": 111,
-    "cardKey": "citi_per_aadvantage_platinum"
+    "cardKey": "citi_per_aadvantage_platinum",
+    "canConvToCash": false
   },
   {
     "cardName": "Prestige",
@@ -509,8 +605,11 @@
     "rewardProvider": "TYP",
     "curBonusPts": 50000,
     "centValueOfPoint": 1.65,
-    "curBonusVal": 825,
+    "curPointBonusVal": 825,
+    "curBonusVal": 1075,
+    "travelConvRate": 0.0133,
     "otherPerks": "$250 flight reimbursement + $100 Global Entry",
+    "otherPerksTravelCashVal": 250,
     "minSpendVal": 2000,
     "minSpendMonths": 3,
     "annualFee": 450,
@@ -518,11 +617,12 @@
     "personalOrBiz": "Personal",
     "ftf": 0,
     "useOnCt": "Yes",
-    "curBonusPrctl": 77,
+    "curBonusPrctl": 100,
     "minSpendPrctl": 43,
     "annualFeePrctl": 5,
-    "overallRank": 96,
-    "cardKey": "citi_per_prestige"
+    "overallRank": 119,
+    "cardKey": "citi_per_prestige",
+    "canConvToCash": true
   },
   {
     "cardName": "FlexPerks Select+ (Amex)",
@@ -530,8 +630,11 @@
     "rewardProvider": "FlexPerks",
     "curBonusPts": 10000,
     "centValueOfPoint": 1.66,
+    "curPointBonusVal": 166,
     "curBonusVal": 166,
+    "travelConvRate": 0,
     "otherPerks": "0",
+    "otherPerksTravelCashVal": 0,
     "minSpendVal": 1000,
     "minSpendMonths": 4,
     "annualFee": 0,
@@ -543,7 +646,8 @@
     "minSpendPrctl": 71,
     "annualFeePrctl": 100,
     "overallRank": 84,
-    "cardKey": "us_bank_per_flexperks_select+_(amex)"
+    "cardKey": "us_bank_per_flexperks_select+_(amex)",
+    "canConvToCash": false
   },
   {
     "cardName": "Sapphire Reserve",
@@ -551,8 +655,11 @@
     "rewardProvider": "UR",
     "curBonusPts": 100000,
     "centValueOfPoint": 1.9,
-    "curBonusVal": 1900,
-    "otherPerks": "0",
+    "curPointBonusVal": 1900,
+    "curBonusVal": 2200,
+    "travelConvRate": 0.0125,
+    "otherPerks": "$300 annual travel credit",
+    "otherPerksTravelCashVal": 300,
     "minSpendVal": 4000,
     "minSpendMonths": 3,
     "annualFee": 450,
@@ -564,6 +671,7 @@
     "minSpendPrctl": 0,
     "annualFeePrctl": 5,
     "overallRank": 102,
-    "cardKey": "chase_per_sapphire_reserve"
+    "cardKey": "chase_per_sapphire_reserve",
+    "canConvToCash": true
   }
 ]

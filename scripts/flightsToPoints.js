@@ -48,12 +48,16 @@ routePointListRecords.forEach((row, index) => {
   var arrivingAirportTicker = row['arrivingAirportTicker'];
   var arrivingAirportDetails = airportMap[arrivingAirportTicker];
   var originalPointType = row['pointType'];
+  var isCashRoute = row['isCashRoute'] === 'TRUE';
+  var roundTripReq = row['roundTripReq'] === 'TRUE';
   var converted = false;
   var route = Object.assign({}, row, {
     numberOfPointsReq,
     cashReq,
     arrivingAirportDetails,
     originalPointType,
+    isCashRoute,
+    roundTripReq,
     converted
   });
 

@@ -37,26 +37,42 @@ const getVisibleCards = (cards, filters, sort, routes) => {
   }
 
   if (sort.sortType === 'SET_CONTINENT') {
-    const curRoutes = routes.continentAwardRoutes[sort.continentName];
+    const curAwardRoutes = routes.continentAwardRoutes[sort.continentName];
+    const curCashRoutes = routes.continentCashRoutes[sort.continentName];
+
     const plus = (aa, bb) => aa + bb;
     const numPointsFn = ro => ro.numberOfPointsReq;
+    const cashFn = ro => ro.cashReq;
 
     cardsToShow.forEach((ca) => {
       const rewardProviver = ca.rewardProvider;
-      ca.routesForSort = curRoutes[rewardProviver] || [];
-      if (!ca.routesForSort.length) {
-        ca.awardTravelPerc = 0;
-      } else {
-        const numPointsList = _R.map(numPointsFn, ca.routesForSort);
-        const averageNumPoints = _R.reduce(plus, 0, numPointsList) / ca.routesForSort.length;
-        ca.awardTravelPerc = ca.curBonusPts / (averageNumPoints * 2);
+      ca.awardRedeemPerc = 0;
+      ca.cashRedeemPerc = 0;
+      ca.bestRedeemPerc = 0;
+
+      ca.awardRoutesForSort = curAwardRoutes[rewardProviver] || [];
+
+      if (ca.canConvToCash) {
+        const cashRouteList = _R.map(cashFn, curCashRoutes);
+        const averageCash = _R.reduce(plus, 0, cashRouteList) / curCashRoutes.length;
+
+        ca.cashRedeemPerc = (ca.curBonusPts * ca.travelConvRate) / averageCash;
+        ca.cashRoutesForSort = curCashRoutes;
       }
+
+      if (ca.awardRoutesForSort.length) {
+        const numPointsRouteList = _R.map(numPointsFn, ca.awardRoutesForSort);
+        const averageNumPoints = _R.reduce(plus, 0, numPointsRouteList) / ca.awardRoutesForSort.length;
+        ca.awardRedeemPerc = ca.curBonusPts / averageNumPoints;
+      }
+
+      ca.bestRedeemPerc = ca.awardRedeemPerc > ca.cashRedeemPerc ? ca.awardRedeemPerc : ca.cashRedeemPerc;
     });
 
-    const hasNoRoutes = ca => !ca.routesForSort.length;
+    const hasNoRoutes = ca => !ca.awardRoutesForSort.length && !ca.canConvToCash;
     cardsToShow = _R.reject(hasNoRoutes, cardsToShow);
 
-    cardsToShow.sort((ca, cb) => { return (cb.awardTravelPerc - ca.awardTravelPerc);});
+    cardsToShow.sort((ca, cb) => { return (cb.bestRedeemPerc - ca.bestRedeemPerc);});
   } else {
     cardsToShow.sort((ca, cb) => { return (cb.overallRank - ca.overallRank);});
   }

@@ -8,7 +8,8 @@
       "cashReq": 239,
       "class": "Coach",
       "airlineName": "United",
-      "roundTripReq": "TRUE",
+      "isCashRoute": true,
+      "roundTripReq": true,
       "arrivingAirportDetails": {
         "airportTicker": "PEK",
         "cityName": "Peking",
@@ -26,7 +27,8 @@
       "cashReq": 253,
       "class": "Coach",
       "airlineName": "United",
-      "roundTripReq": "TRUE",
+      "isCashRoute": true,
+      "roundTripReq": true,
       "arrivingAirportDetails": {
         "airportTicker": "CTU",
         "cityName": "Chengdu",
@@ -44,7 +46,8 @@
       "cashReq": 268,
       "class": "Coach",
       "airlineName": "United",
-      "roundTripReq": "TRUE",
+      "isCashRoute": true,
+      "roundTripReq": true,
       "arrivingAirportDetails": {
         "airportTicker": "PVG",
         "cityName": "Shanghai",
@@ -62,7 +65,8 @@
       "cashReq": 324,
       "class": "Coach",
       "airlineName": "Singapore",
-      "roundTripReq": "TRUE",
+      "isCashRoute": true,
+      "roundTripReq": true,
       "arrivingAirportDetails": {
         "airportTicker": "SIN",
         "cityName": "Singapore",
@@ -80,12 +84,110 @@
       "cashReq": 350,
       "class": "Coach",
       "airlineName": "Cathay",
-      "roundTripReq": "TRUE",
+      "isCashRoute": true,
+      "roundTripReq": true,
       "arrivingAirportDetails": {
         "airportTicker": "HKG",
         "cityName": "Hong Kong",
         "countryName": "China",
         "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Europe": [
+    {
+      "departingAirportTicker": "BOS",
+      "arrivingAirportTicker": "LGW",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 204,
+      "class": "Coach",
+      "airlineName": "Norwegian Air Shuttle",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "LGW",
+        "cityName": "London-Gatwick",
+        "countryName": "United Kingdom",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "JFK",
+      "arrivingAirportTicker": "AMS",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 219.5,
+      "class": "Coach",
+      "airlineName": "KLM",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "AMS",
+        "cityName": "Amsterdam",
+        "countryName": "Netherlands",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "JFK",
+      "arrivingAirportTicker": "BRU",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 231,
+      "class": "Coach",
+      "airlineName": "Brussels",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "BRU",
+        "cityName": "Brussels",
+        "countryName": "Belgium",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "JFK",
+      "arrivingAirportTicker": "CDG",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 250,
+      "class": "Coach",
+      "airlineName": "Icelandair",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "CDG",
+        "cityName": "Paris",
+        "countryName": "France",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "BOS",
+      "arrivingAirportTicker": "FRA",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 263,
+      "class": "Coach",
+      "airlineName": "Lufthansa",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "FRA",
+        "cityName": "Frankfurt",
+        "countryName": "Germany",
+        "continentName": "Europe"
       },
       "originalPointType": "Cash",
       "converted": false

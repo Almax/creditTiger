@@ -1,3 +1,4 @@
+import _R from 'ramda';
 import React, { Component, PropTypes } from 'react';
 const styles = require('./CardBoxRoute.scss');
 
@@ -8,6 +9,33 @@ export default class CardBoxRoute extends Component {
 
   state = {
     routeNum: 0
+  }
+
+  updateRoutes = () => {
+    const { card } = this.props;
+
+    card.awardRoutesForSort = _R.clone(card.awardRoutesForSort);
+    card.awardRoutesForSort.forEach((ro) => {
+      ro.cashRedeemPerc = 0;
+      ro.awardRedeemPerc = card.curBonusPts / ro.numberOfPointsReq;
+    });
+    card.allRoutesForSort = card.awardRoutesForSort;
+
+    if (card.canConvToCash) {
+      card.cashRoutesForSort = _R.clone(card.cashRoutesForSort);
+      card.cashRoutesForSort.forEach((ro) => {
+        ro.awardRedeemPerc = 0;
+        ro.cashRedeemPerc = (card.curBonusPts * card.travelConvRate) / ro.cashReq;
+      });
+
+      card.allRoutesForSort = _R.concat(card.awardRoutesForSort, card.cashRoutesForSort);
+
+      card.allRoutesForSort.forEach((ro) => {
+        ro.bestRedeemPerc = ro.awardRedeemPerc > ro.cashRedeemPerc ? ro.awardRedeemPerc : ro.cashRedeemPerc;
+      });
+
+      card.allRoutesForSort.sort((ca, cb) => { return (cb.bestRedeemPerc - ca.bestRedeemPerc);});
+    }
   }
 
   subtitle = (floorNumTrips) => {
@@ -44,17 +72,20 @@ export default class CardBoxRoute extends Component {
 
   handleNextRouteClick = () => {
     let nextRoute = this.state.routeNum + 1;
-    const hasNextRoute = !!this.props.card.routesForSort[nextRoute];
+    const hasNextRoute = !!this.props.card.awardRoutesForSort[nextRoute];
     nextRoute = hasNextRoute ? nextRoute : 0;
 
     this.setState({routeNum: nextRoute});
   }
 
   render() {
-    const route = this.props.card.routesForSort[this.state.routeNum];
-    const redeemPerc = route ? this.props.card.curBonusPts / (route.numberOfPointsReq * 2) : 0;
-    const floorNumRoundTrips = Math.floor(redeemPerc * 10 / 5) * 0.5;
     const { card } = this.props;
+
+    // FIX this!
+    this.updateRoutes();
+    const route = card.allRoutesForSort[this.state.routeNum];
+    const onewayRedeemPerc = route.isCashRoute ? route.cashRedeemPerc : route.awardRedeemPerc;
+    const floorNumRoundTrips = Math.floor(onewayRedeemPerc * 10 / 5 / 2) * 0.5;
 
     return (
       <div className={styles.routes}>
@@ -63,7 +94,14 @@ export default class CardBoxRoute extends Component {
           {this.subtitle(floorNumRoundTrips)}
           {this.planeChart(floorNumRoundTrips)}
         </div>
-        <div className={styles.explanation}>After the minimum spend, you will be rewarded with <b>{card.curBonusPts} {card.rewardProvider} points</b>. If you convert those points to {route.originalPointType} miles, it is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {route.numberOfPointsReq * 2} {route.originalPointType} miles per roundtrip. (how it works)</div>
+        <div className={styles.explanation}>After the minimum spend, you will be rewarded with <b>{card.curBonusPts} {card.rewardProvider} points</b>.</div>
+        <br />
+        {!route.isCashRoute &&
+          <div>If you convert those points to {route.originalPointType} miles, it is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {route.numberOfPointsReq * 2} {route.originalPointType} miles per roundtrip. (how it works)</div>
+        }
+        {route.isCashRoute &&
+          <div>The {card.cardName} allows you to convert to travel credit at ${card.travelConvRate} per point. You could therefore transfer all your points to ${card.travelConvRate * card.curBonusPts} in travel credit, which is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at ${route.cashReq * 2} per roundtrip. (how it works)</div>
+        }
         <button className={styles.nextRoute} onClick={this.handleNextRouteClick.bind(this)}>More flights</button>
       </div>
     );

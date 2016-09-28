@@ -31,12 +31,24 @@ var cardKeyFormats = [
     fieldTypeFn: _C.convertFloat
   },
   {
+    fieldName: 'curPointBonusVal',
+    fieldTypeFn: Number
+  },
+  {
     fieldName: 'curBonusVal',
+    fieldTypeFn: Number
+  },
+  {
+    fieldName: 'travelConvRate',
     fieldTypeFn: Number
   },
   {
     fieldName: 'otherPerks',
     fieldTypeFn: String
+  },
+  {
+    fieldName: 'otherPerksTravelCashVal',
+    fieldTypeFn: Number
   },
   {
     fieldName: 'minSpendVal',
@@ -155,6 +167,7 @@ var cleanCard = (card) => {
 
     var cardKey = createCardKey(cleanedCard);
     cleanedCard['cardKey'] = cardKey;
+    cleanedCard['canConvToCash'] = cleanedCard['travelConvRate'] > 0;
   } catch(err) {
     console.log('Error converting type for card', card);
     console.log(err);
