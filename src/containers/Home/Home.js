@@ -49,7 +49,7 @@ const getVisibleCards = (cards, filters, sort, routes) => {
       } else {
         const numPointsList = _R.map(numPointsFn, ca.routesForSort);
         const averageNumPoints = _R.reduce(plus, 0, numPointsList) / ca.routesForSort.length;
-        ca.awardTravelPerc = ca.curBonusPts / averageNumPoints;
+        ca.awardTravelPerc = ca.curBonusPts / (averageNumPoints * 2);
       }
     });
 

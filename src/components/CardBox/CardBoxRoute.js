@@ -19,7 +19,7 @@ export default class CardBoxRoute extends Component {
 
   planeChart = (floorNumTrips) => {
     const floorTrips = Math.floor(floorNumTrips);
-    const hasHalf = floorNumTrips / floorTrips > 0;
+    const hasHalf = floorNumTrips - floorTrips >= 0.5;
     const planeGreen = require('./plane_green.png');
     const planeYellowHalf = require('./plane_yellow_half.png');
 
@@ -27,12 +27,12 @@ export default class CardBoxRoute extends Component {
       <div className={styles.planeChart}>
         {[...Array(floorTrips)].map(() =>
           <div className={styles.planeGreen}>
-            <img src={planeGreen} />
+            <img src={planeGreen} height="17px" />
           </div>
         )}
         {hasHalf &&
           <div className={styles.planeYellowHalf}>
-            <img src={planeYellowHalf} />
+            <img src={planeYellowHalf} height="17px" />
           </div>
         }
       </div>
@@ -42,20 +42,19 @@ export default class CardBoxRoute extends Component {
   render() {
     const route = this.props.card.routesForSort[this.props.routeNum];
     const redeemPerc = route ? this.props.card.curBonusPts / route.numberOfPointsReq : 0;
-    const floorNumTrips = Math.floor(redeemPerc * 10 / 5) * 0.5;
+    const floorNumOneWayTrips = Math.floor(redeemPerc * 10 / 5) * 0.5;
+    const floorNumRoundTrips = floorNumOneWayTrips / 2;
+    const { card } = this.props;
 
     return (
       <div className={styles.routes}>
         <div className={styles.title + ' uppercase'}>{route.arrivingAirportDetails.cityName}</div>
         <div className={styles.subheader}>
-          {this.subtitle(floorNumTrips)}
-          {this.planeChart(floorNumTrips)}
+          {this.subtitle(floorNumRoundTrips)}
+          {this.planeChart(floorNumRoundTrips)}
         </div>
-        <div className={styles.chartBox}>65% of a round-trip flight to BKK</div>
-        <div className={styles.explanation}>After the minimum spend, you will be rewarded with 100,000 AMEX Membership Rewards points. If you convert those points to AA miles, it is enough for 0.65 round-trips to Bangkok, Thailand which are valued at 30,000 AA miles per one-way. (how it works)</div>
+        <div className={styles.explanation}>After the minimum spend, you will be rewarded with <b>{card.curBonusPts} {card.rewardProvider} points</b>. If you convert those points to {route.originalPointType} miles, it is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {route.numberOfPointsReq * 2} {route.originalPointType} miles per roundtrip. (how it works)</div>
       </div>
     );
   }
 }
-
-// <DoughnutChart redeemPerc={redeemPerc} />
