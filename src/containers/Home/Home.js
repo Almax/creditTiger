@@ -96,7 +96,7 @@ export default class Credit extends Component {
           <h2>Sort</h2>
           <div><OverallSortCheckbox label="Overall" /></div>
           <div><ContinentSortCheckbox label="Best for Free Trips to Asia" continentName="Asia" /></div>
-          <div>Best for Free Trips to Europe</div>
+          <div><ContinentSortCheckbox label="Best for Free Trips to Europe" continentName="Europe" /></div>
           <h2>Filters</h2>
           <h3>Fees</h3>
           <div><FteCheckbox /></div>

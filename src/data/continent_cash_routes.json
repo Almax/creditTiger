@@ -8,7 +8,7 @@
       "cashReq": 239,
       "class": "Coach",
       "airlineName": "United",
-      "roundTripReq": "FALSE",
+      "roundTripReq": "TRUE",
       "arrivingAirportDetails": {
         "airportTicker": "PEK",
         "cityName": "Peking",
@@ -26,7 +26,7 @@
       "cashReq": 253,
       "class": "Coach",
       "airlineName": "United",
-      "roundTripReq": "FALSE",
+      "roundTripReq": "TRUE",
       "arrivingAirportDetails": {
         "airportTicker": "CTU",
         "cityName": "Chengdu",
@@ -44,7 +44,7 @@
       "cashReq": 268,
       "class": "Coach",
       "airlineName": "United",
-      "roundTripReq": "FALSE",
+      "roundTripReq": "TRUE",
       "arrivingAirportDetails": {
         "airportTicker": "PVG",
         "cityName": "Shanghai",
@@ -62,7 +62,7 @@
       "cashReq": 324,
       "class": "Coach",
       "airlineName": "Singapore",
-      "roundTripReq": "FALSE",
+      "roundTripReq": "TRUE",
       "arrivingAirportDetails": {
         "airportTicker": "SIN",
         "cityName": "Singapore",
@@ -80,7 +80,7 @@
       "cashReq": 350,
       "class": "Coach",
       "airlineName": "Cathay",
-      "roundTripReq": "FALSE",
+      "roundTripReq": "TRUE",
       "arrivingAirportDetails": {
         "airportTicker": "HKG",
         "cityName": "Hong Kong",
