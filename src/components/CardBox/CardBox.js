@@ -108,7 +108,7 @@ export default class CardBox extends Component {
           }
         </div>
         {this.props.sort.sortType === 'SET_CONTINENT' &&
-          <CardBoxRoute card={this.props.card} routeNum={0}/>
+          <CardBoxRoute card={this.props.card} />
         }
       </div>
     );

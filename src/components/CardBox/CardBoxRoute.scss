@@ -48,6 +48,10 @@ $INNER-WIDTH-HALF: $CARD-WIDTH / 2 - $PADDING -  $BORDER-WIDTH;
     display: inline;
   }
 
+  .nextRoute {
+    float: right;
+  }
+
   .explanation {
 
   }
