@@ -9,8 +9,8 @@ var AIRPORT_MAP_CSV = FLIGHTS_TO_POINTS_DIR + 'airport_map.csv';
 var POINT_CONV_MAP_CSV = FLIGHTS_TO_POINTS_DIR + 'point_conv_map.csv';
 var ROUTE_POINT_LIST_CSV = FLIGHTS_TO_POINTS_DIR + 'route_point_list.csv';
 
-var OUTPUT_CONTINENT_AWARD_ROUTE_JSON = './src/data/continent_award_routes.json';
-var OUTPUT_CONTINENT_CASH_ROUTE_JSON = './src/data/continent_cash_routes.json';
+var OUTPUT_COUNTRY_AWARD_ROUTE_JSON = './src/data/country_award_routes.json';
+var OUTPUT_COUNTRY_CASH_ROUTE_JSON = './src/data/country_cash_routes.json';
 
 var airportMapCsv = fs.readFileSync(AIRPORT_MAP_CSV, 'utf8');
 var airportMapRecords = parse(airportMapCsv, {columns: true});
@@ -101,74 +101,74 @@ routePointList.forEach((row, index) => {
 
 routePointListWithConversions = _R.concat(routePointListWithConversions, routePointList);
 
-var routePointByContinent = {};
+var routePointByCountry = {};
 
 routePointListWithConversions.forEach((route, index) => {
-  var continent = route['arrivingAirportDetails']['continentName'];
+  var country = route['arrivingAirportDetails']['countryName'];
   var pointType = route['pointType'];
 
   // FIX THIS
-  if (!routePointByContinent[continent]) {
-    routePointByContinent[continent] = {};
+  if (!routePointByCountry[country]) {
+    routePointByCountry[country] = {};
   }
 
   // FIX THIS
-  if (!routePointByContinent[continent][pointType]) {
-    routePointByContinent[continent][pointType] = []
+  if (!routePointByCountry[country][pointType]) {
+    routePointByCountry[country][pointType] = []
   }
 
-  routePointByContinent[continent][pointType].push(route);
+  routePointByCountry[country][pointType].push(route);
 });
 
-for (var continent in routePointByContinent) {
-  for (var pointType in routePointByContinent[continent]) {
-    routePointByContinent[continent][pointType].sort((ca, cb) => { return (ca.numberOfPointsReq - cb.numberOfPointsReq);});
-    routePointByContinent[continent][pointType].splice(5);
+for (var country in routePointByCountry) {
+  for (var pointType in routePointByCountry[country]) {
+    routePointByCountry[country][pointType].sort((ca, cb) => { return (ca.numberOfPointsReq - cb.numberOfPointsReq);});
+    routePointByCountry[country][pointType].splice(5);
   }
-  // console.log(routePointByContinent[continent]);
+  // console.log(routePointByCountry[country]);
 }
 
-var routeCashByContinent = {};
+var routeCashByCountry = {};
 
 routeCashList.forEach((route, index) => {
-  var continent = route['arrivingAirportDetails']['continentName'];
+  var country = route['arrivingAirportDetails']['countryName'];
 
   // FIX THIS
-  if (!routeCashByContinent[continent]) {
-    routeCashByContinent[continent] = [];
+  if (!routeCashByCountry[country]) {
+    routeCashByCountry[country] = [];
   }
 
-  routeCashByContinent[continent].push(route);
+  routeCashByCountry[country].push(route);
 });
 
-for (var continent in routeCashByContinent) {
-  routeCashByContinent[continent].sort((ca, cb) => { return (ca.cashReq - cb.cashReq);});
-  routeCashByContinent[continent].splice(10);
+for (var country in routeCashByCountry) {
+  routeCashByCountry[country].sort((ca, cb) => { return (ca.cashReq - cb.cashReq);});
+  routeCashByCountry[country].splice(10);
 }
 
-savedRoutesPointsJson = JSON3.stringify(routePointByContinent, null, 2);
-savedRoutesCashJson = JSON3.stringify(routeCashByContinent, null, 2);
+savedRoutesPointsJson = JSON3.stringify(routePointByCountry, null, 2);
+savedRoutesCashJson = JSON3.stringify(routeCashByCountry, null, 2);
 
-fs.outputFileSync(OUTPUT_CONTINENT_AWARD_ROUTE_JSON, savedRoutesPointsJson);
-fs.outputFileSync(OUTPUT_CONTINENT_CASH_ROUTE_JSON, savedRoutesCashJson);
+fs.outputFileSync(OUTPUT_COUNTRY_AWARD_ROUTE_JSON, savedRoutesPointsJson);
+fs.outputFileSync(OUTPUT_COUNTRY_CASH_ROUTE_JSON, savedRoutesCashJson);
 
 // sort each sub array
 // splice the end results off.
 
 // create all routes with point mappings
-// then filter by continent. it will be simpler if you only have to rank like this once. maybe later you optimize the other way around.
+// then filter by country. it will be simpler if you only have to rank like this once. maybe later you optimize the other way around.
 
-// var continentRoutes = {};
+// var countryRoutes = {};
 
 // would be great to find a data structure that kept a stack rank of stuff I throw into it, like Redis.
 // let's keep it in an array. rank it at the end. then cut off anything below top 3.
 
 // routePointList.forEach((route, index) => {
-  // var continent = route['arrivingAirportDetails']['continentName'];
+  // var country = route['arrivingAirportDetails']['countryName'];
 // });
 
 // console.log(routePointList);
 
 // savedCardsJson = JSON3.stringify(savedCards, null, 2);
 
-// fs.outputFileSync(OUTPUT_CONTINENT_AWARD_ROUTE_JSON, savedCardsJson);
+// fs.outputFileSync(OUTPUT_COUNTRY_AWARD_ROUTE_JSON, savedCardsJson);

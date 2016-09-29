@@ -2,7 +2,7 @@ import _R from 'ramda';
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
 import { CardBox, IssuerCheckbox, PointSlider } from 'components';
-import { OverallSortCheckbox, ContinentSortCheckbox, AnnualFeeCheckbox, FteCheckbox } from 'components';
+import { OverallSortCheckbox, CountrySortCheckbox, AnnualFeeCheckbox, FteCheckbox } from 'components';
 
 const getVisibleCards = (cards, filters, sort, routes) => {
   let cardsToShow = cards;
@@ -36,9 +36,9 @@ const getVisibleCards = (cards, filters, sort, routes) => {
     cardsToShow = cardsToShow.filter(ca => onlyIssuerKeysToFilter[ca.issuerName] === true);
   }
 
-  if (sort.sortType === 'SET_CONTINENT') {
-    const curAwardRoutes = routes.continentAwardRoutes[sort.continentName];
-    const curCashRoutes = routes.continentCashRoutes[sort.continentName];
+  if (sort.sortType === 'SET_COUNTRY') {
+    const curAwardRoutes = routes.countryAwardRoutes[sort.countryName];
+    const curCashRoutes = routes.countryCashRoutes[sort.countryName];
 
     const plus = (aa, bb) => aa + bb;
     const numPointsFn = ro => ro.numberOfPointsReq;
@@ -112,8 +112,8 @@ export default class Credit extends Component {
           <div className="col-md-2">
             <h2>Sort</h2>
             <div><OverallSortCheckbox label="Overall" /></div>
-            <div><ContinentSortCheckbox label="Best for Free Trips to Asia" continentName="Asia" /></div>
-            <div><ContinentSortCheckbox label="Best for Free Trips to Europe" continentName="Europe" /></div>
+            <div><CountrySortCheckbox label="Best for Free Trips to France" countryName="France" /></div>
+            <div><CountrySortCheckbox label="Best for Free Trips to China" countryName="China" /></div>
             <h2>Filters</h2>
             <h3>Fees</h3>
             <div><FteCheckbox /></div>

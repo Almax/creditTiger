@@ -1,0 +1,4460 @@
+{
+  "Japan": {
+    "SPG": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "SPG",
+        "numberOfPointsReq": 20000,
+        "cashReq": 87.22,
+        "class": "Coach",
+        "airlineName": "ANA",
+        "isCashRoute": false,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "ANA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "ANA",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "SPG",
+        "numberOfPointsReq": 20000,
+        "cashReq": 24,
+        "class": "Coach",
+        "airlineName": "Alaska",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "SPG",
+        "numberOfPointsReq": 20000,
+        "cashReq": 24,
+        "class": "Coach",
+        "airlineName": "Alaska",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "SPG",
+        "numberOfPointsReq": 20000,
+        "cashReq": 24,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "HND",
+        "pointType": "SPG",
+        "numberOfPointsReq": 20000,
+        "cashReq": 87.22,
+        "class": "Coach",
+        "airlineName": "ANA",
+        "isCashRoute": false,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "HND",
+          "cityName": "Haneda",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "ANA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "ANA",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "MR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "MR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 87.22,
+        "class": "Coach",
+        "airlineName": "ANA",
+        "isCashRoute": false,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "ANA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "ANA",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "HND",
+        "pointType": "MR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 87.22,
+        "class": "Coach",
+        "airlineName": "ANA",
+        "isCashRoute": false,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "HND",
+          "cityName": "Haneda",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "ANA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "ANA",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "MR",
+        "numberOfPointsReq": 32500,
+        "cashReq": 53.4,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Singapore",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "HND",
+        "pointType": "MR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HND",
+          "cityName": "Haneda",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Delta",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "MR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "TYP",
+        "numberOfPointsReq": 32500,
+        "cashReq": 53.4,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "Singapore",
+          "rate": "1"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "UR",
+        "numberOfPointsReq": 32500,
+        "cashReq": 53.4,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Singapore",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "UR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "UR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "AA": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "AA",
+        "numberOfPointsReq": 32500,
+        "cashReq": 11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "AA",
+        "numberOfPointsReq": 32500,
+        "cashReq": 86.2,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "HND",
+        "pointType": "AA",
+        "numberOfPointsReq": 32500,
+        "cashReq": 86.2,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HND",
+          "cityName": "Haneda",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      }
+    ],
+    "Alaska": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 25000,
+        "cashReq": 24,
+        "class": "Coach",
+        "airlineName": "Alaska",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 25000,
+        "cashReq": 24,
+        "class": "Coach",
+        "airlineName": "Alaska",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 25000,
+        "cashReq": 24,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      }
+    ],
+    "ANA": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "ANA",
+        "numberOfPointsReq": 25000,
+        "cashReq": 87.22,
+        "class": "Coach",
+        "airlineName": "ANA",
+        "isCashRoute": false,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "ANA",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "HND",
+        "pointType": "ANA",
+        "numberOfPointsReq": 25000,
+        "cashReq": 87.22,
+        "class": "Coach",
+        "airlineName": "ANA",
+        "isCashRoute": false,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "HND",
+          "cityName": "Haneda",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "ANA",
+        "converted": false
+      }
+    ],
+    "Delta": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "HND",
+        "pointType": "Delta",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HND",
+          "cityName": "Haneda",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": false
+      }
+    ],
+    "Singapore": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "Singapore",
+        "numberOfPointsReq": 32500,
+        "cashReq": 53.4,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Singapore",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "United",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NRT",
+        "pointType": "United",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NRT",
+          "cityName": "Narita-Tokyo",
+          "countryName": "Japan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ]
+  },
+  "China": {
+    "SPG": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "SPG",
+        "numberOfPointsReq": 24000,
+        "cashReq": 24,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "SPG",
+        "numberOfPointsReq": 24000,
+        "cashReq": 23.4,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Singapore",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "SPG",
+        "numberOfPointsReq": 28000,
+        "cashReq": 41,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Avios",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "PEK",
+        "pointType": "SPG",
+        "numberOfPointsReq": 28000,
+        "cashReq": 37.2,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "PEK",
+          "cityName": "Peking",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Delta",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "PEK",
+        "pointType": "SPG",
+        "numberOfPointsReq": 28000,
+        "cashReq": 13.1,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "PEK",
+          "cityName": "Peking",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Delta",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "MR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "MR",
+        "numberOfPointsReq": 30000,
+        "cashReq": 23.4,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Singapore",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "PEK",
+        "pointType": "MR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 37.2,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "PEK",
+          "cityName": "Peking",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Delta",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "PEK",
+        "pointType": "MR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 13.1,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "PEK",
+          "cityName": "Peking",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Delta",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "MR",
+        "numberOfPointsReq": 40000,
+        "cashReq": 14.5,
+        "class": "Coach",
+        "airlineName": "Asiana",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "MR",
+        "numberOfPointsReq": 43750,
+        "cashReq": 41,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Avios",
+          "rate": "0.8"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "UR",
+        "numberOfPointsReq": 30000,
+        "cashReq": 23.4,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Singapore",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "UR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 41,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Avios",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "UR",
+        "numberOfPointsReq": 40000,
+        "cashReq": 14.5,
+        "class": "Coach",
+        "airlineName": "Asiana",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "TYP",
+        "numberOfPointsReq": 30000,
+        "cashReq": 23.4,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "Singapore",
+          "rate": "1"
+        }
+      }
+    ],
+    "Alaska": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 30000,
+        "cashReq": 24,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "PEK",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 40000,
+        "cashReq": 36,
+        "class": "Coach",
+        "airlineName": "Alaska",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "PEK",
+          "cityName": "Peking",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      }
+    ],
+    "Avios": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "Avios",
+        "numberOfPointsReq": 35000,
+        "cashReq": 41,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Avios",
+        "converted": false
+      }
+    ],
+    "Delta": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "PEK",
+        "pointType": "Delta",
+        "numberOfPointsReq": 35000,
+        "cashReq": 37.2,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "PEK",
+          "cityName": "Peking",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "PEK",
+        "pointType": "Delta",
+        "numberOfPointsReq": 35000,
+        "cashReq": 13.1,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "PEK",
+          "cityName": "Peking",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": false
+      }
+    ],
+    "Singapore": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "Singapore",
+        "numberOfPointsReq": 30000,
+        "cashReq": 23.4,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Singapore",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HKG",
+        "pointType": "United",
+        "numberOfPointsReq": 40000,
+        "cashReq": 14.5,
+        "class": "Coach",
+        "airlineName": "Asiana",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HKG",
+          "cityName": "Hong Kong",
+          "countryName": "China",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ]
+  },
+  "Thailand": {
+    "MR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "BKK",
+        "pointType": "MR",
+        "numberOfPointsReq": 46875,
+        "cashReq": 60,
+        "class": "Coach",
+        "airlineName": "Japan",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BKK",
+          "cityName": "Bangkok",
+          "countryName": "Thailand",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Avios",
+          "rate": "0.8"
+        }
+      }
+    ],
+    "SPG": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "BKK",
+        "pointType": "SPG",
+        "numberOfPointsReq": 30000,
+        "cashReq": 60,
+        "class": "Coach",
+        "airlineName": "Japan",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BKK",
+          "cityName": "Bangkok",
+          "countryName": "Thailand",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Avios",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "BKK",
+        "pointType": "UR",
+        "numberOfPointsReq": 37500,
+        "cashReq": 60,
+        "class": "Coach",
+        "airlineName": "Japan",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BKK",
+          "cityName": "Bangkok",
+          "countryName": "Thailand",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Avios",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "BKK",
+        "pointType": "UR",
+        "numberOfPointsReq": 42500,
+        "cashReq": 65.28,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BKK",
+          "cityName": "Bangkok",
+          "countryName": "Thailand",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Korean",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Korean",
+          "rate": "1"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "BKK",
+        "pointType": "TYP",
+        "numberOfPointsReq": 50000,
+        "cashReq": 54.41,
+        "class": "Coach",
+        "airlineName": "EVA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BKK",
+          "cityName": "Bangkok",
+          "countryName": "Thailand",
+          "continentName": "Asia"
+        },
+        "originalPointType": "EVA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "EVA",
+          "rate": "1"
+        }
+      }
+    ],
+    "Avios": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "BKK",
+        "pointType": "Avios",
+        "numberOfPointsReq": 37500,
+        "cashReq": 60,
+        "class": "Coach",
+        "airlineName": "Japan",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BKK",
+          "cityName": "Bangkok",
+          "countryName": "Thailand",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Avios",
+        "converted": false
+      }
+    ],
+    "EVA": [
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "BKK",
+        "pointType": "EVA",
+        "numberOfPointsReq": 50000,
+        "cashReq": 54.41,
+        "class": "Coach",
+        "airlineName": "EVA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BKK",
+          "cityName": "Bangkok",
+          "countryName": "Thailand",
+          "continentName": "Asia"
+        },
+        "originalPointType": "EVA",
+        "converted": false
+      }
+    ],
+    "Korean": [
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "BKK",
+        "pointType": "Korean",
+        "numberOfPointsReq": 42500,
+        "cashReq": 65.28,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BKK",
+          "cityName": "Bangkok",
+          "countryName": "Thailand",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Korean",
+        "converted": false
+      }
+    ]
+  },
+  "Taiwan": {
+    "MR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "MR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "All Nippon",
+        "isCashRoute": false,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "ANA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "ANA",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "MR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Delta",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "MR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Delta",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "MR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "SPG": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "SPG",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "All Nippon",
+        "isCashRoute": false,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "ANA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "ANA",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "SPG",
+        "numberOfPointsReq": 24000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "SPG",
+        "numberOfPointsReq": 28000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Delta",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "SPG",
+        "numberOfPointsReq": 28000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Delta",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "SPG",
+        "numberOfPointsReq": 28000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "United",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "TYP",
+        "numberOfPointsReq": 50000,
+        "cashReq": 48.4,
+        "class": "Coach",
+        "airlineName": "EVA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "EVA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "EVA",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "TYP",
+        "numberOfPointsReq": 50000,
+        "cashReq": 48.4,
+        "class": "Coach",
+        "airlineName": "EVA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "EVA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "EVA",
+          "rate": "1"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "UR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "China": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "China",
+        "numberOfPointsReq": 66000,
+        "cashReq": 23.4,
+        "class": "Coach",
+        "airlineName": "China",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "China",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "China",
+        "numberOfPointsReq": 66000,
+        "cashReq": 23.4,
+        "class": "Coach",
+        "airlineName": "China",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "China",
+        "converted": false
+      }
+    ],
+    "Delta": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "Delta",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "Delta",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": false
+      }
+    ],
+    "EVA": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "EVA",
+        "numberOfPointsReq": 50000,
+        "cashReq": 48.4,
+        "class": "Coach",
+        "airlineName": "EVA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "EVA",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "EVA",
+        "numberOfPointsReq": 50000,
+        "cashReq": 48.4,
+        "class": "Coach",
+        "airlineName": "EVA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "EVA",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "United",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ],
+    "ANA": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "ANA",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "All Nippon",
+        "isCashRoute": false,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "ANA",
+        "converted": false
+      }
+    ],
+    "Alaska": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "TPE",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TPE",
+          "cityName": "Taipei",
+          "countryName": "Taiwan",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      }
+    ]
+  },
+  "Singapore": {
+    "MR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "SIN",
+        "pointType": "MR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SIN",
+          "cityName": "Singapore",
+          "countryName": "Singapore",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SIN",
+        "pointType": "MR",
+        "numberOfPointsReq": 40000,
+        "cashReq": 34.1,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SIN",
+          "cityName": "Singapore",
+          "countryName": "Singapore",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Delta",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "SIN",
+        "pointType": "MR",
+        "numberOfPointsReq": 40000,
+        "cashReq": 21.2,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SIN",
+          "cityName": "Singapore",
+          "countryName": "Singapore",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Delta",
+          "rate": "1"
+        }
+      }
+    ],
+    "SPG": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "SIN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 28000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SIN",
+          "cityName": "Singapore",
+          "countryName": "Singapore",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "United",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SIN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 32000,
+        "cashReq": 34.1,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SIN",
+          "cityName": "Singapore",
+          "countryName": "Singapore",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Delta",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "SIN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 32000,
+        "cashReq": 21.2,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SIN",
+          "cityName": "Singapore",
+          "countryName": "Singapore",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Delta",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "SIN",
+        "pointType": "UR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SIN",
+          "cityName": "Singapore",
+          "countryName": "Singapore",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "Delta": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SIN",
+        "pointType": "Delta",
+        "numberOfPointsReq": 40000,
+        "cashReq": 34.1,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SIN",
+          "cityName": "Singapore",
+          "countryName": "Singapore",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "SIN",
+        "pointType": "Delta",
+        "numberOfPointsReq": 40000,
+        "cashReq": 21.2,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SIN",
+          "cityName": "Singapore",
+          "countryName": "Singapore",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Delta",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "SIN",
+        "pointType": "United",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SIN",
+          "cityName": "Singapore",
+          "countryName": "Singapore",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ]
+  },
+  "Vietnam": {
+    "TYP": [
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "SGN",
+        "pointType": "TYP",
+        "numberOfPointsReq": 50000,
+        "cashReq": 53.4,
+        "class": "Coach",
+        "airlineName": "EVA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SGN",
+          "cityName": "Saigon",
+          "countryName": "Vietnam",
+          "continentName": "Asia"
+        },
+        "originalPointType": "EVA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "EVA",
+          "rate": "1"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "HAN",
+        "pointType": "UR",
+        "numberOfPointsReq": 42500,
+        "cashReq": 68.07,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HAN",
+          "cityName": "Hanoi",
+          "countryName": "Vietnam",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Korean",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Korean",
+          "rate": "1"
+        }
+      }
+    ],
+    "EVA": [
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "SGN",
+        "pointType": "EVA",
+        "numberOfPointsReq": 50000,
+        "cashReq": 53.4,
+        "class": "Coach",
+        "airlineName": "EVA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SGN",
+          "cityName": "Saigon",
+          "countryName": "Vietnam",
+          "continentName": "Asia"
+        },
+        "originalPointType": "EVA",
+        "converted": false
+      }
+    ],
+    "Korean": [
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "HAN",
+        "pointType": "Korean",
+        "numberOfPointsReq": 42500,
+        "cashReq": 68.07,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HAN",
+          "cityName": "Hanoi",
+          "countryName": "Vietnam",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Korean",
+        "converted": false
+      }
+    ]
+  },
+  "Korea": {
+    "UR": [
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "ICN",
+        "pointType": "UR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 104.3,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "ICN",
+          "cityName": "Incheon",
+          "countryName": "Korea",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Korean",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Korean",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "YVR",
+        "arrivingAirportTicker": "ICN",
+        "pointType": "UR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 113.45,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "ICN",
+          "cityName": "Incheon",
+          "countryName": "Korea",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Korean",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Korean",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "ICN",
+        "pointType": "UR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "ICN",
+          "cityName": "Incheon",
+          "countryName": "Korea",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "MR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "ICN",
+        "pointType": "MR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "ICN",
+          "cityName": "Incheon",
+          "countryName": "Korea",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "SPG": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "ICN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 28000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "ICN",
+          "cityName": "Incheon",
+          "countryName": "Korea",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "United",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "Korean": [
+      {
+        "departingAirportTicker": "SEA",
+        "arrivingAirportTicker": "ICN",
+        "pointType": "Korean",
+        "numberOfPointsReq": 35000,
+        "cashReq": 104.3,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "ICN",
+          "cityName": "Incheon",
+          "countryName": "Korea",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Korean",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "YVR",
+        "arrivingAirportTicker": "ICN",
+        "pointType": "Korean",
+        "numberOfPointsReq": 35000,
+        "cashReq": 113.45,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "ICN",
+          "cityName": "Incheon",
+          "countryName": "Korea",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Korean",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "ICN",
+        "pointType": "United",
+        "numberOfPointsReq": 35000,
+        "cashReq": 5.6,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "ICN",
+          "cityName": "Incheon",
+          "countryName": "Korea",
+          "continentName": "Asia"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ]
+  },
+  "France": {
+    "MR": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "MR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air France",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "MR",
+        "numberOfPointsReq": 26250,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Iberia",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Iberia",
+          "rate": "0.8"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "MR",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "SPG": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "SPG",
+        "numberOfPointsReq": 16000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "SPG",
+        "numberOfPointsReq": 18000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "AA",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "SPG",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air France",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "FlyingBlue",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "SPG",
+        "numberOfPointsReq": 24000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Miles & More",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Miles & More",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "SPG",
+        "numberOfPointsReq": 24000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "United",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "TYP",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air France",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "UR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air France",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "UR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Korean",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Korean",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "UR",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "Iberia": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "Iberia",
+        "numberOfPointsReq": 21000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Iberia",
+        "converted": false
+      }
+    ],
+    "Alaska": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      }
+    ],
+    "AA": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "AA",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      }
+    ],
+    "FlyingBlue": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "FlyingBlue",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air France",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": false
+      }
+    ],
+    "Korean": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "Korean",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Korean",
+        "converted": false
+      }
+    ],
+    "Miles & More": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "Miles & More",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Miles & More",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "United",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ]
+  },
+  "United Kingdom": {
+    "MR": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "MR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air France",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "MR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "MR",
+        "numberOfPointsReq": 26250,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Iberia",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Iberia",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Iberia",
+          "rate": "0.8"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "MR",
+        "numberOfPointsReq": 27500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "ANA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "ANA",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "MR",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "SPG": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "SPG",
+        "numberOfPointsReq": 16000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "SPG",
+        "numberOfPointsReq": 16000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "SPG",
+        "numberOfPointsReq": 18000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "AA",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "SPG",
+        "numberOfPointsReq": 18000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "AA",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "SPG",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "FlyingBlue",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "TYP",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air France",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "TYP",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "UR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air France",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "UR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Korean",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Korean",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "UR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "UR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Korean",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Korean",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "UR",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "Iberia": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "Iberia",
+        "numberOfPointsReq": 21000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Iberia",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Iberia",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "Iberia",
+        "numberOfPointsReq": 32500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Iberia",
+        "converted": false
+      }
+    ],
+    "Alaska": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      }
+    ],
+    "AA": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "AA",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "AA",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      }
+    ],
+    "FlyingBlue": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "FlyingBlue",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air France",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "FlyingBlue",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": false
+      }
+    ],
+    "Miles & More": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "Miles & More",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Miles & More",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "Miles & More",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Miles & More",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "United",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "United",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ],
+    "Delta": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "Delta",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Delta",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "Delta",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Delta",
+        "converted": false
+      }
+    ],
+    "Korean": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "Korean",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Korean",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "Korean",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Korean",
+        "converted": false
+      }
+    ],
+    "ANA": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "ANA",
+        "numberOfPointsReq": 27500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "ANA",
+        "converted": false
+      }
+    ],
+    "Sinapore": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "LHR",
+        "pointType": "Sinapore",
+        "numberOfPointsReq": 27500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LHR",
+          "cityName": "London-Heathrow",
+          "countryName": "United Kingdom",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Sinapore",
+        "converted": false
+      }
+    ]
+  },
+  "Spain": {
+    "MR": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "MR",
+        "numberOfPointsReq": 21250,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Iberia",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Iberia",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Iberia",
+          "rate": "0.8"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "MR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "MR",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Avianca",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "MR",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Delta",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "MR",
+        "numberOfPointsReq": 55000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Avianca",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "ANA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "ANA",
+          "rate": "1"
+        }
+      }
+    ],
+    "SPG": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 16000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 18000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "AA",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "FlyingBlue",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 24000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Avianca",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Miles & More",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Miles & More",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 24000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Avianca",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "United",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "UR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "UR",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Avianca",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "TYP",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "Iberia": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "Iberia",
+        "numberOfPointsReq": 17000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Iberia",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Iberia",
+        "converted": false
+      }
+    ],
+    "Alaska": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      }
+    ],
+    "AA": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "AA",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      }
+    ],
+    "Miles & More": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "Miles & More",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Avianca",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Miles & More",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "United",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Avianca",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ],
+    "Delta": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "Delta",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Delta",
+        "converted": false
+      }
+    ],
+    "ANA": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "ANA",
+        "numberOfPointsReq": 55000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Avianca",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "ANA",
+        "converted": false
+      }
+    ],
+    "FlyingBlue": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "BCN",
+        "pointType": "FlyingBlue",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "BCN",
+          "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": false
+      }
+    ]
+  },
+  "Germany": {
+    "MR": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "MR",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Singapore",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "MR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "MR",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "MR",
+        "numberOfPointsReq": 40625,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Iberia",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Iberia",
+          "rate": "0.8"
+        }
+      }
+    ],
+    "SPG": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "SPG",
+        "numberOfPointsReq": 16000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Singapore",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "SPG",
+        "numberOfPointsReq": 16000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "SPG",
+        "numberOfPointsReq": 18000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "AA",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "SPG",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "FlyingBlue",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "SPG",
+        "numberOfPointsReq": 24000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "United",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "TYP",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "Singapore",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "TYP",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "UR",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Singapore",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Singapore",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "UR",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "UR",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "Iberia": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "Iberia",
+        "numberOfPointsReq": 32500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Iberia",
+        "converted": false
+      }
+    ],
+    "Singapore": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "Singapore",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Singapore",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Singapore",
+        "converted": false
+      }
+    ],
+    "Alaska": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      }
+    ],
+    "AA": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "AA",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      }
+    ],
+    "FlyingBlue": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "FlyingBlue",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "FRA",
+        "pointType": "United",
+        "numberOfPointsReq": 30000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "FRA",
+          "cityName": "Frankfurt",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ]
+  }
+}

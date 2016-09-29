@@ -1,0 +1,444 @@
+{
+  "China": [
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "PEK",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 239,
+      "class": "Coach",
+      "airlineName": "United",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "PEK",
+        "cityName": "Peking",
+        "countryName": "China",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "CTU",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 253,
+      "class": "Coach",
+      "airlineName": "United",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "CTU",
+        "cityName": "Chengdu",
+        "countryName": "China",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "PVG",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 268,
+      "class": "Coach",
+      "airlineName": "United",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "PVG",
+        "cityName": "Shanghai",
+        "countryName": "China",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "LAX",
+      "arrivingAirportTicker": "HKG",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 274,
+      "class": "Coach",
+      "airlineName": "Singapore",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "HKG",
+        "cityName": "Hong Kong",
+        "countryName": "China",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "LAX",
+      "arrivingAirportTicker": "HKG",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 299,
+      "class": "Coach",
+      "airlineName": "United",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "HKG",
+        "cityName": "Hong Kong",
+        "countryName": "China",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "HKG",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 350,
+      "class": "Coach",
+      "airlineName": "Cathay",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "HKG",
+        "cityName": "Hong Kong",
+        "countryName": "China",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Singapore": [
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "SIN",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 323,
+      "class": "Coach",
+      "airlineName": "United",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "SIN",
+        "cityName": "Singapore",
+        "countryName": "Singapore",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "SIN",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 324,
+      "class": "Coach",
+      "airlineName": "Singapore",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "SIN",
+        "cityName": "Singapore",
+        "countryName": "Singapore",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "France": [
+    {
+      "departingAirportTicker": "JFK",
+      "arrivingAirportTicker": "CDG",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 250,
+      "class": "Coach",
+      "airlineName": "Icelandair",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "CDG",
+        "cityName": "Paris",
+        "countryName": "France",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Netherlands": [
+    {
+      "departingAirportTicker": "JFK",
+      "arrivingAirportTicker": "AMS",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 219.5,
+      "class": "Coach",
+      "airlineName": "KLM",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "AMS",
+        "cityName": "Amsterdam",
+        "countryName": "Netherlands",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "United Kingdom": [
+    {
+      "departingAirportTicker": "BOS",
+      "arrivingAirportTicker": "LGW",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 204,
+      "class": "Coach",
+      "airlineName": "Norwegian Air Shuttle",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "LGW",
+        "cityName": "London-Gatwick",
+        "countryName": "United Kingdom",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Belgium": [
+    {
+      "departingAirportTicker": "JFK",
+      "arrivingAirportTicker": "BRU",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 231,
+      "class": "Coach",
+      "airlineName": "Brussels",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "BRU",
+        "cityName": "Brussels",
+        "countryName": "Belgium",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Germany": [
+    {
+      "departingAirportTicker": "BOS",
+      "arrivingAirportTicker": "FRA",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 263,
+      "class": "Coach",
+      "airlineName": "Lufthansa",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "FRA",
+        "cityName": "Frankfurt",
+        "countryName": "Germany",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Taiwan": [
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "TPE",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 285.5,
+      "class": "Coach",
+      "airlineName": "United",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "TPE",
+        "cityName": "Taipei",
+        "countryName": "Taiwan",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Spain": [
+    {
+      "departingAirportTicker": "BOS",
+      "arrivingAirportTicker": "BCN",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 330,
+      "class": "Coach",
+      "airlineName": "TAP",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "BCN",
+        "cityName": "Barcelona",
+        "countryName": "Spain",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "JFK",
+      "arrivingAirportTicker": "BCN",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 336,
+      "class": "Coach",
+      "airlineName": "Air Lingus",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "BCN",
+        "cityName": "Barcelona",
+        "countryName": "Spain",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Thailand": [
+    {
+      "departingAirportTicker": "LAX",
+      "arrivingAirportTicker": "BKK",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 279,
+      "class": "Coach",
+      "airlineName": "China Southern",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "BKK",
+        "cityName": "Bangkok",
+        "countryName": "Thailand",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "BKK",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 303,
+      "class": "Coach",
+      "airlineName": "EVA",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "BKK",
+        "cityName": "Bangkok",
+        "countryName": "Thailand",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Vietnam": [
+    {
+      "departingAirportTicker": "LAX",
+      "arrivingAirportTicker": "HAN",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 281,
+      "class": "Coach",
+      "airlineName": "China Southern",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "HAN",
+        "cityName": "Hanoi",
+        "countryName": "Vietnam",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "LAX",
+      "arrivingAirportTicker": "SGN",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 310.5,
+      "class": "Coach",
+      "airlineName": "Korean",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "SGN",
+        "cityName": "Saigon",
+        "countryName": "Vietnam",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Korea": [
+    {
+      "departingAirportTicker": "LAX",
+      "arrivingAirportTicker": "ICN",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 265.5,
+      "class": "Coach",
+      "airlineName": "China Southern",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "ICN",
+        "cityName": "Incheon",
+        "countryName": "Korea",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "ICN",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 290.5,
+      "class": "Coach",
+      "airlineName": "Air China",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "ICN",
+        "cityName": "Incheon",
+        "countryName": "Korea",
+        "continentName": "Asia"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ]
+}
