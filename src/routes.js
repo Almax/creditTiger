@@ -5,9 +5,9 @@ import {
     App,
     Chat,
     Home,
+    CardComparison,
     Widgets,
     About,
-    Credit,
     Login,
     LoginSuccess,
     Survey,
@@ -48,7 +48,7 @@ export default (store) => {
 
       { /* Routes */ }
       <Route path="about" component={About}/>
-      <Route path="credit" component={Credit}/>
+      <Route path="card_comparison" component={CardComparison}/>
       <Route path="login" component={Login}/>
       <Route path="survey" component={Survey}/>
       <Route path="widgets" component={Widgets}/>
