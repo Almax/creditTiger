@@ -1,13 +1,8 @@
 const OVERALL = 'SET_OVERALL';
 const COUNTRY = 'SET_COUNTRY';
 
-const countryRoutes = require('../../data/country_award_routes.json'); // json-loader
-
-const countryList = Object.keys(countryRoutes);
-
 const initialState = {
-  sortType: OVERALL,
-  countryList
+  sortType: OVERALL
 };
 
 export default function reducer(state = initialState, action = {}) {

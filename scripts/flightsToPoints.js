@@ -11,6 +11,7 @@ var ROUTE_POINT_LIST_CSV = FLIGHTS_TO_POINTS_DIR + 'route_point_list.csv';
 
 var OUTPUT_COUNTRY_AWARD_ROUTE_JSON = './src/data/country_award_routes.json';
 var OUTPUT_COUNTRY_CASH_ROUTE_JSON = './src/data/country_cash_routes.json';
+var OUTPUT_CONTINENTS_WITH_COUNTRIES_JSON = './src/data/continents_with_countries.json';
 
 var airportMapCsv = fs.readFileSync(AIRPORT_MAP_CSV, 'utf8');
 var airportMapRecords = parse(airportMapCsv, {columns: true});
@@ -41,6 +42,7 @@ var routePointListRecords = parse(routePointListCsv, {columns: true});
 
 var routePointList = [];
 var routeCashList = [];
+var continentsWithCountries = {};
 
 routePointListRecords.forEach((row, index) => {
   var numberOfPointsReq = Number(row['numberOfPointsReq']);
@@ -61,12 +63,24 @@ routePointListRecords.forEach((row, index) => {
     converted
   });
 
+  var continentName = route['arrivingAirportDetails']['continentName'];
+  var countryName = route['arrivingAirportDetails']['countryName'];
+  if (!continentsWithCountries[continentName]) {
+    continentsWithCountries[continentName] = [];
+  }
+  continentsWithCountries[continentName].push(countryName);
+
   if (originalPointType === 'Cash') {
     routeCashList.push(route);
   } else {
     routePointList.push(route);
   }
 });
+
+for (var continentName in continentsWithCountries) {
+  continentsWithCountries[continentName] = _R.uniq(continentsWithCountries[continentName]);
+  continentsWithCountries[continentName].sort();
+}
 
 var routePointListWithConversions = [];
 
@@ -148,9 +162,12 @@ for (var country in routeCashByCountry) {
 
 savedRoutesPointsJson = JSON3.stringify(routePointByCountry, null, 2);
 savedRoutesCashJson = JSON3.stringify(routeCashByCountry, null, 2);
+savedContinentsWithCountries = JSON3.stringify(continentsWithCountries, null, 2);
 
 fs.outputFileSync(OUTPUT_COUNTRY_AWARD_ROUTE_JSON, savedRoutesPointsJson);
 fs.outputFileSync(OUTPUT_COUNTRY_CASH_ROUTE_JSON, savedRoutesCashJson);
+fs.outputFileSync(OUTPUT_CONTINENTS_WITH_COUNTRIES_JSON, savedContinentsWithCountries);
+
 
 // sort each sub array
 // splice the end results off.
