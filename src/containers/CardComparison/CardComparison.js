@@ -1,7 +1,7 @@
 import _R from 'ramda';
-import React, {Component, PropTypes} from 'react';
-import {connect} from 'react-redux';
-import { CardBox, IssuerCheckbox, PointSlider } from 'components';
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { CardBox } from 'components';
 import { OverallSortCheckbox, CountrySortCheckbox, AnnualFeeCheckbox, FteCheckbox } from 'components';
 
 const getVisibleCards = (cards, filters, sort, routes) => {
@@ -79,7 +79,7 @@ const getVisibleCards = (cards, filters, sort, routes) => {
 
   cardsToShow.forEach((ca, ind) => { ca.curRank = ind + 1; });
 
-  return cardsToShow;
+  return cardsToShow.slice(0, 3);
 };
 
 @connect(
@@ -102,7 +102,7 @@ export default class Credit extends Component {
   };
 
   render() {
-    const { all, issuers } = this.props.cards;
+    const { all } = this.props.cards;
     const { filter, sort, routes } = this.props;
     const visibleCards = getVisibleCards(all, filter, sort, routes);
 
@@ -118,20 +118,22 @@ export default class Credit extends Component {
             <h3>Fees</h3>
             <div><FteCheckbox /></div>
             <div><AnnualFeeCheckbox /></div>
-            <h3>Issuers</h3>
-            {issuers && issuers.length &&
-              <div>
-              {issuers.map((issuer) => {
-                return (
-                  <div><IssuerCheckbox issuerName={issuer} /></div>
-                );
-              })}
-              </div>
-            }
-            <h3>Reward Value</h3>
-            <div><PointSlider multireducerKey="pointMinimumFilter1"/></div>
           </div>
           <div className="col-md-10">
+            <div className="row">
+              <div className="col-md-6">
+                <h3>How it works:</h3>
+                <p>1. Use the filters and sorts to pick the cards that fit your needs.</p>
+                <p>2. Apply / get approved for 1-3 cards and use them instead of your current cards.</p>
+                <p>3. After you meet the minimum spends you will be rewarded with the points shown below.</p>
+                <p>4. Use those points to redeem travel using the method shown below.</p>
+              </div>
+              <div className="col-md-6">
+                <h3>Why this works:</h3>
+                <p>1. There is no catch. Credit card companies want you to use their cards and they provide big incentives to do so.</p>
+                <p>2. If you abuse the card like any other bank account or loan it could harm your credit.</p>
+              </div>
+            </div>
             {visibleCards && visibleCards.length &&
               <div>
                 {visibleCards.map((card) => {
@@ -147,3 +149,17 @@ export default class Credit extends Component {
     );
   }
 }
+
+// <h3>Issuers</h3>
+// {issuers && issuers.length &&
+//   <div>
+//   {issuers.map((issuer) => {
+//     return (
+//       <div><IssuerCheckbox issuerName={issuer} /></div>
+//     );
+//   })}
+//   </div>
+// }
+// <h3>Reward Value</h3>
+// <div><PointSlider multireducerKey="pointMinimumFilter1"/></div>
+

@@ -1,23 +1,54 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { Button } from 'react-toolbox/lib/button';
+import Checkbox from 'react-toolbox/lib/checkbox';
+import { sortCountry } from 'redux/modules/sort';
+import { bindActionCreators } from 'redux';
 
 @connect(
   state => (
     {
       routes: state.routes
     }
-  )
+  ),
+  dispatch => bindActionCreators({ sortCountry }, dispatch)
 )
 
 export default class Welcome extends Component {
   static propTypes = {
-    routes: PropTypes.object
+    routes: PropTypes.object,
+    sortCountry: PropTypes.func
+  }
+
+  state = {
+    countries: {}
+  }
+
+  componentWillMount() {
+    const continentsWithCountries = this.props.routes.continentsWithCountries; // eslint-disable-line no-shadow
+    const continents = Object.keys(continentsWithCountries); // eslint-disable-line no-shadow
+
+    for (var continent in continentsWithCountries) { // eslint-disable-line no-shadow
+      continentsWithCountries[continent].forEach((cou) => {
+        this.state.countries[cou] = false;
+      });
+    }
+  }
+
+  handleCountryClick = (country, bool) => {
+    const { sortCountry } = this.props; // eslint-disable-line no-shadow
+    this.setState({
+      countries: {
+        [country]: bool
+      }
+    });
+    sortCountry(country, bool);
+    this.props.history.push('/card_comparison');
   }
 
   render() {
     const continentsWithCountries = this.props.routes.continentsWithCountries;
-    const countries = Object.keys(continentsWithCountries);
+    const continents = Object.keys(continentsWithCountries);
+
     return (
       <div className="container">
         <div className="row">
@@ -26,16 +57,19 @@ export default class Welcome extends Component {
           </div>
         </div>
         <div className="row">
-          {countries.map((con) => {
+          {continents.map((con) => {
             return (
               <div className="col-md-3">
                 <h2>{con}</h2>
                 {continentsWithCountries[con].map((cou) => {
                   return (
-                    <div>{cou}</div>
+                    <Checkbox
+                      checked={this.state.countries[cou]}
+                      label={cou}
+                      onChange={this.handleCountryClick.bind(this, cou)}
+                    />
                   );
                 })}
-                <Button href="/card_comparison">Compare Cards</Button>
               </div>
             );
           })}
@@ -46,3 +80,4 @@ export default class Welcome extends Component {
   }
 }
 
+// <Button href="/card_comparison">Compare Cards</Button>
