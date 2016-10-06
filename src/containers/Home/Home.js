@@ -20,29 +20,18 @@ export default class Welcome extends Component {
   }
 
   state = {
-    countries: {}
-  }
-
-  componentWillMount() {
-    const continentsWithCountries = this.props.routes.continentsWithCountries; // eslint-disable-line no-shadow
-    const continents = Object.keys(continentsWithCountries); // eslint-disable-line no-shadow
-
-    for (var continent in continentsWithCountries) { // eslint-disable-line no-shadow
-      continentsWithCountries[continent].forEach((cou) => {
-        this.state.countries[cou] = false;
-      });
-    }
+    currentCountry: ''
   }
 
   handleCountryClick = (country, bool) => {
     const { sortCountry } = this.props; // eslint-disable-line no-shadow
-    this.setState({
-      countries: {
-        [country]: bool
-      }
-    });
-    sortCountry(country, bool);
-    this.props.history.push('/card_comparison');
+    if (bool) {
+      this.setState({
+        currentCountry: country
+      });
+      sortCountry(country, bool);
+      this.props.history.push('/card_comparison');
+    }
   }
 
   render() {
@@ -64,7 +53,7 @@ export default class Welcome extends Component {
                 {continentsWithCountries[con].map((cou) => {
                   return (
                     <Checkbox
-                      checked={this.state.countries[cou]}
+                      checked={this.state.currentCountry === cou}
                       label={cou}
                       onChange={this.handleCountryClick.bind(this, cou)}
                     />
