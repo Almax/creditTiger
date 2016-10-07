@@ -36,7 +36,6 @@ export default class CardBox extends Component {
     this.setState({mouseIsOver: false});
   }
 
-
   render() {
     const { cardKey, cardName, issuerName, curRank, curBonusVal, annualFee, curBonusPrctl, minSpendPrctl, annualFeePrctl, annualFeeWaived } = this.props.card;
     const styles = require('./CardBox.scss');

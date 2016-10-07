@@ -1,7 +1,26 @@
 @import "../../theme/variables.scss";
+@import "~react-toolbox/lib/colors";
+
+$PADDING: 20px;
 
 .home {
   dd {
     margin-bottom: 15px;
+  }
+}
+
+.cardListHeader {
+  background-color: $palette-grey-50;
+  border: 1px solid $palette-grey-300;
+  padding: 0 $PADDING;
+}
+
+.cardListSubHeader {
+  background-color: $palette-grey-50;
+  border: 1px solid $palette-grey-300;
+  padding: $PADDING/2 $PADDING;
+
+  .view {
+    text-align: right;
   }
 }

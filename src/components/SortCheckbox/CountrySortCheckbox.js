@@ -1,3 +1,5 @@
+// deprecated?
+
 import React, {Component, PropTypes} from 'react';
 import Checkbox from 'react-toolbox/lib/checkbox';
 import { bindActionCreators } from 'redux';
@@ -44,4 +46,3 @@ export default class CountrySortCheckbox extends Component {
     );
   }
 }
-

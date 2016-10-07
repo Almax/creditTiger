@@ -7,7 +7,8 @@ import { bindActionCreators } from 'redux';
 @connect(
   state => (
     {
-      routes: state.routes
+      routes: state.routes,
+      sort: state.sort
     }
   ),
   dispatch => bindActionCreators({ sortCountry }, dispatch)
@@ -16,19 +17,14 @@ import { bindActionCreators } from 'redux';
 export default class Welcome extends Component {
   static propTypes = {
     routes: PropTypes.object,
-    sortCountry: PropTypes.func
-  }
-
-  state = {
-    currentCountry: ''
+    sort: PropTypes.object,
+    history: PropTypes.object,
+    sortCountry: PropTypes.function
   }
 
   handleCountryClick = (country, bool) => {
     const { sortCountry } = this.props; // eslint-disable-line no-shadow
     if (bool) {
-      this.setState({
-        currentCountry: country
-      });
       sortCountry(country, bool);
       this.props.history.push('/card_comparison');
     }
@@ -37,6 +33,7 @@ export default class Welcome extends Component {
   render() {
     const continentsWithCountries = this.props.routes.continentsWithCountries;
     const continents = Object.keys(continentsWithCountries);
+    const { sort } = this.props;
 
     return (
       <div className="container">
@@ -53,7 +50,7 @@ export default class Welcome extends Component {
                 {continentsWithCountries[con].map((cou) => {
                   return (
                     <Checkbox
-                      checked={this.state.currentCountry === cou}
+                      checked={sort.currentCountryName === cou}
                       label={cou}
                       onChange={this.handleCountryClick.bind(this, cou)}
                     />

@@ -2,12 +2,17 @@ const initialState = {
   pointMinimumFilter: 0,
   noFteOnly: false,
   onlyShowIssuer: {},
-  hiddenCardKeys: {}
+  hiddenCardKeys: {},
+  annualFeeWaivedOnly: false,
+  annualFeeLess100Only: false,
+  annualFee100MoreOnly: false
 };
 
 const POINT_FILTER = 'SET_POINT_FILTER';
 const FTE_FILTER = 'SET_FTE_FILTER';
-const ANNUAL_FEE_CHANGE = 'SET_ANNUAL_FEE_FILTER';
+const ANNUAL_FEE_WAIVED_CHANGE = 'SET_ANNUAL_FEE_WAIVED_FILTER';
+const ANNUAL_FEE_LESS_100_CHANGE = 'SET_ANNUAL_FEE_LESS_100_FILTER';
+const ANNUAL_FEE_100_MORE_CHANGE = 'SET_ANNUAL_FEE_100_MORE_FILTER';
 const ONLY_SHOW_ISSUER_FILTER = 'SET_ONLY_SHOW_ISSUER_FILTER';
 const HIDE_CARD = 'HIDE_CARD';
 
@@ -23,10 +28,20 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         noFteOnly: action.bool
       };
-    case ANNUAL_FEE_CHANGE:
+    case ANNUAL_FEE_WAIVED_CHANGE:
       return {
         ...state,
-        noAnnualFeeOnly: action.bool
+        annualFeeWaivedOnly: action.bool
+      };
+    case ANNUAL_FEE_LESS_100_CHANGE:
+      return {
+        ...state,
+        annualFeeLess100Only: action.bool
+      };
+    case ANNUAL_FEE_100_MORE_CHANGE:
+      return {
+        ...state,
+        annualFee100MoreOnly: action.bool
       };
     case ONLY_SHOW_ISSUER_FILTER:
       const newIssuerFilter = Object.assign({}, state.onlyShowIssuer, {
@@ -64,9 +79,24 @@ export function fteBoxChange(bool) {
   };
 }
 
-export function annualFeeChange(bool) {
+export function annualFeeWaivedChange(bool) {
+  console.log('annualFeeWaivedChange');
   return {
-    type: ANNUAL_FEE_CHANGE,
+    type: ANNUAL_FEE_WAIVED_CHANGE,
+    bool
+  };
+}
+
+export function annualFeeLess100Change(bool) {
+  return {
+    type: ANNUAL_FEE_LESS_100_CHANGE,
+    bool
+  };
+}
+
+export function annualFee100MoreChange(bool) {
+  return {
+    type: ANNUAL_FEE_100_MORE_CHANGE,
     bool
   };
 }

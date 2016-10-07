@@ -48,9 +48,9 @@ export default class CardBoxRoute extends Component {
     );
   }
 
-  planeChart = (floorNumTrips) => {
-    const floorTrips = Math.floor(floorNumTrips);
-    const hasHalf = floorNumTrips - floorTrips >= 0.5;
+  planeChart = (numTrips) => {
+    const floorTrips = Math.floor(numTrips);
+    const hasHalf = numTrips - floorTrips >= 0.5;
     const planeGreen = require('./plane_green.png');
     const planeYellowHalf = require('./plane_yellow_half.png');
 

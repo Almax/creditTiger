@@ -15,7 +15,7 @@ export SurveyForm from './SurveyForm/SurveyForm';
 export WidgetForm from './WidgetForm/WidgetForm';
 export PointSlider from './PointSlider/PointSlider';
 export FteCheckbox from './FeeCheckbox/FteCheckbox';
-export AnnualFeeCheckbox from './FeeCheckbox/AnnualFeeCheckbox';
+export AnnualFeeCheckboxes from './FeeCheckbox/AnnualFeeCheckboxes';
 export IssuerCheckbox from './IssuerCheckbox/IssuerCheckbox';
 export RatingBar from './RatingBar/RatingBar';
 export CountrySortCheckbox from './SortCheckbox/CountrySortCheckbox';
