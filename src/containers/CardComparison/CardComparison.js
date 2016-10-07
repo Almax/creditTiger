@@ -188,17 +188,3 @@ export default class Credit extends Component {
     );
   }
 }
-
-// <h3>Issuers</h3>
-// {issuers && issuers.length &&
-//   <div>
-//   {issuers.map((issuer) => {
-//     return (
-//       <div><IssuerCheckbox issuerName={issuer} /></div>
-//     );
-//   })}
-//   </div>
-// }
-// <h3>Reward Value</h3>
-// <div><PointSlider multireducerKey="pointMinimumFilter1"/></div>
-
