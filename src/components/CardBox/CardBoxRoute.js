@@ -1,5 +1,7 @@
 import _R from 'ramda';
 import React, { Component, PropTypes } from 'react';
+import numeral from 'numeral';
+
 const styles = require('./CardBoxRoute.scss');
 
 export default class CardBoxRoute extends Component {
@@ -86,6 +88,7 @@ export default class CardBoxRoute extends Component {
     const route = card.allRoutesForSort[this.state.routeNum];
     const onewayRedeemPerc = route.isCashRoute ? route.cashRedeemPerc : route.awardRedeemPerc;
     const floorNumRoundTrips = Math.floor(onewayRedeemPerc * 10 / 5 / 2) * 0.5;
+    const routeMilesStr = numeral(route.originalPointType).format('(0,0)');
 
     return (
       <div className={styles.routes}>
@@ -94,13 +97,13 @@ export default class CardBoxRoute extends Component {
           {this.subtitle(floorNumRoundTrips)}
           {this.planeChart(floorNumRoundTrips)}
         </div>
-        <div className={styles.explanation}>After the minimum spend, you will be rewarded with <b>{card.curBonusPts} {card.rewardProvider} points</b>.</div>
+        <div className={styles.explanation}>After the minimum spend ({numeral(card.minSpendVal).format('($0,0)')} in {card.minSpendMonths} months), you will be rewarded with <b>{numeral(card.curBonusPts).format('(0,0)')} {card.rewardProvider} points</b>.</div>
         <br />
         {!route.isCashRoute &&
-          <div>If you convert those points to {route.originalPointType} miles, it is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {route.numberOfPointsReq * 2} {route.originalPointType} miles per roundtrip. (how it works)</div>
+          <div>If you convert those points to {routeMilesStr} miles, it is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {route.numberOfPointsReq * 2} {routeMilesStr} miles per roundtrip. (how it works)</div>
         }
         {route.isCashRoute &&
-          <div>The {card.cardName} allows you to convert to travel credit at ${card.travelConvRate} per point. You could therefore transfer all your points to ${card.travelConvRate * card.curBonusPts} in travel credit, which is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at ${route.cashReq * 2} per roundtrip. (how it works)</div>
+          <div>The {card.cardName} allows you to convert to travel credit at ${card.travelConvRate} per point. You could therefore transfer all your points to {numeral(card.travelConvRate * card.curBonusPts).format('($0,0)')} in travel credit, which is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {numeral(route.cashReq * 2).format('($0,0)')} per roundtrip. (how it works)</div>
         }
         <button className={styles.nextRoute + ' btn btn-default'} onClick={this.handleNextRouteClick.bind(this)}>More flights</button>
       </div>
