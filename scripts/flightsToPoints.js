@@ -13,6 +13,9 @@ var OUTPUT_COUNTRY_AWARD_ROUTE_JSON = './src/data/country_award_routes.json';
 var OUTPUT_COUNTRY_CASH_ROUTE_JSON = './src/data/country_cash_routes.json';
 var OUTPUT_CONTINENTS_WITH_COUNTRIES_JSON = './src/data/continents_with_countries.json';
 
+var NUM_AWARD_ROUTE_PER_COUNTRY = 3;
+var NUM_CASH_ROUTE_PER_COUNTRY = 3;
+
 var airportMapCsv = fs.readFileSync(AIRPORT_MAP_CSV, 'utf8');
 var airportMapRecords = parse(airportMapCsv, {columns: true});
 
@@ -137,7 +140,7 @@ routePointListWithConversions.forEach((route, index) => {
 for (var country in routePointByCountry) {
   for (var pointType in routePointByCountry[country]) {
     routePointByCountry[country][pointType].sort((ca, cb) => { return (ca.numberOfPointsReq - cb.numberOfPointsReq);});
-    routePointByCountry[country][pointType].splice(5);
+    routePointByCountry[country][pointType].splice(NUM_AWARD_ROUTE_PER_COUNTRY);
   }
   // console.log(routePointByCountry[country]);
 }
@@ -157,7 +160,7 @@ routeCashList.forEach((route, index) => {
 
 for (var country in routeCashByCountry) {
   routeCashByCountry[country].sort((ca, cb) => { return (ca.cashReq - cb.cashReq);});
-  routeCashByCountry[country].splice(10);
+  routeCashByCountry[country].splice(NUM_CASH_ROUTE_PER_COUNTRY);
 }
 
 savedRoutesPointsJson = JSON3.stringify(routePointByCountry, null, 2);

@@ -9,11 +9,23 @@
     "Vietnam"
   ],
   "Europe": [
-    "Belgium",
     "France",
     "Germany",
+    "Greece",
+    "Italy",
     "Netherlands",
     "Spain",
     "United Kingdom"
+  ],
+  "Americas": [
+    "Argentina",
+    "Belize",
+    "Brazil",
+    "Chile",
+    "Colombia",
+    "Costa Rica",
+    "Mexico",
+    "Panama",
+    "Peru"
   ]
 }
