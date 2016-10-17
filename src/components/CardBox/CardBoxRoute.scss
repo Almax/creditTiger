@@ -54,7 +54,9 @@ $INNER-WIDTH-HALF: $CARD-WIDTH / 2 - $PADDING -  $BORDER-WIDTH;
   }
 
   .nextRoute {
-    float: right;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
   }
 
   .explanation {
