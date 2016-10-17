@@ -9,16 +9,23 @@ $PADDING: 20px;
   }
 }
 
+.filter_menu {
+  .destination {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
 .cardListHeader {
   background-color: $palette-grey-50;
   border: 1px solid $palette-grey-300;
-  padding: 0 $PADDING;
+  padding: $PADDING;
 }
 
 .cardListSubHeader {
   background-color: $palette-grey-50;
   border: 1px solid $palette-grey-300;
-  padding: $PADDING/2 $PADDING;
+  padding: 0 $PADDING $PADDING;
 
   .view {
     text-align: right;

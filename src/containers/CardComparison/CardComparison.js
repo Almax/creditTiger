@@ -131,10 +131,12 @@ export default class Credit extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-2">
+          <div className={styles.filter_menu + ' col-md-2'}>
             <h3>Filters</h3>
             <h5>Current Destination</h5>
-            <div>{sort.currentCountryName}</div>
+            <div className={styles.destination}>
+              {sort.currentCountryName}
+            </div>
             <Link href="/" label="Change" />
             <h5>Annual Fees</h5>
             <div><AnnualFeeCheckboxes /></div>
@@ -143,30 +145,39 @@ export default class Credit extends Component {
           </div>
           <div className="col-md-10">
             <div className={styles.cardListHeader}>
-              <div className="row">
-                <div className="col-md-6">
-                  <h2>Best Cards for Free Flights to {sort.currentCountryName}</h2>
+              <div className={styles.how_to + ' row'}>
+                <div className="col-md-12">
+                  <h4>How it works:</h4>
                 </div>
               </div>
               <div className="row">
-                <div className="col-md-6">
-                  <h4>How it works:</h4>
-                  <p>1. Use the filters to pick the cards that fit your needs.</p>
-                  <p>2. Apply / get approved for 1-3 cards and use them instead of your current cards.</p>
-                  <p>3. After you meet the minimum spends you will be rewarded with the points shown below.</p>
-                  <p>4. Use those points to redeem travel using the method shown below.</p>
+                <div className="col-md-3 text-center">
+                  <h5>1</h5>
+                  <p>Use the filters on the left.</p>
                 </div>
-                <div className="col-md-6">
-                  <h4>Why this works:</h4>
-                  <p>1. There is no catch. Credit card companies want you to use their cards and they provide big incentives to do so.</p>
-                  <p>2. If you abuse the card like any other bank account or loan it could harm your credit.</p>
+                <div className="col-md-3 text-center">
+                  <h5>2</h5>
+                  <p>Apply / get approved for 1-3 cards.</p>
+                </div>
+                <div className="col-md-3 text-center">
+                  <h5>3</h5>
+                  <p>Use the new cards. Meet the minimum spends. Redeem points.</p>
+                </div>
+                <div className="col-md-3 text-center">
+                  <h5>4</h5>
+                  <p>Use those points to redeem travel.</p>
                 </div>
               </div>
             </div>
             <div className={styles.cardListSubHeader}>
               <div className="row">
                 <div className="col-md-6">
-                  3 of {sort.currentNumCards} cards
+                  <h3>Best Cards for Free Flights to {sort.currentCountryName}</h3>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6">
+                  Showing 3 of {sort.currentNumCards} cards
                 </div>
                 <div className={styles.view + ' col-md-6'}>
                   View: Basic | Detailed
