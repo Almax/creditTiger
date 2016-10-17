@@ -25,6 +25,10 @@ $PADDING: 20px;
   border: 1px solid $palette-grey-300;
   padding: 0 $PADDING $PADDING;
 
+  .meta {
+    font-size: 12px;
+  }
+
   .view {
     text-align: right;
   }

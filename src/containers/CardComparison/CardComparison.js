@@ -175,12 +175,12 @@ export default class Credit extends Component {
                   <h3>Best Cards for Free Flights to {sort.currentCountryName}</h3>
                 </div>
               </div>
-              <div className="row">
+              <div className={styles.meta + ' row'}>
                 <div className="col-md-6">
                   Showing 3 of {sort.currentNumCards} cards
                 </div>
                 <div className={styles.view + ' col-md-6'}>
-                  View: Basic | Detailed
+                  View: <b>Basic</b> | Detailed
                 </div>
               </div>
             </div>

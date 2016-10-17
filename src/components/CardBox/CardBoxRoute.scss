@@ -1,7 +1,7 @@
 @import "~react-toolbox/lib/colors";
 
 $CARD-WIDTH: 350px;
-$CARD-ROUTE-HEIGHT: 350px;
+$CARD-ROUTE-HEIGHT: 370px;
 $PADDING: 20px;
 $BORDER-WIDTH: 1px;
 $INNER-WIDTH-HALF: $CARD-WIDTH / 2 - $PADDING -  $BORDER-WIDTH;
@@ -13,6 +13,11 @@ $INNER-WIDTH-HALF: $CARD-WIDTH / 2 - $PADDING -  $BORDER-WIDTH;
   border: $BORDER-WIDTH solid $palette-grey-300;
   padding: $PADDING;
   margin-bottom: 20px;
+
+  .option {
+    text-align: right;
+    font-size: 12px;
+  }
 
   .title {
     font-size: 24px;
