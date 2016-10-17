@@ -671,5 +671,127 @@
       "originalPointType": "Cash",
       "converted": false
     }
+  ],
+  "Australia": [
+    {
+      "departingAirportTicker": "LAX",
+      "arrivingAirportTicker": "SYD",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 496,
+      "class": "Coach",
+      "airlineName": "Air New Zealand",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "SYD",
+        "cityName": "Sydney",
+        "countryName": "Australia",
+        "continentName": "Oceania"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "MEL",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 496,
+      "class": "Coach",
+      "airlineName": "Air New Zealand",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "MEL",
+        "cityName": "Melbourne",
+        "countryName": "Australia",
+        "continentName": "Oceania"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "New Zealand": [
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "AKL",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 522.5,
+      "class": "Coach",
+      "airlineName": "Air New Zealand",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "AKL",
+        "cityName": "Auckland",
+        "countryName": "New Zealand",
+        "continentName": "Oceania"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "CHC",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 560,
+      "class": "Coach",
+      "airlineName": "Air New Zealand",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "CHC",
+        "cityName": "Christchurch",
+        "countryName": "New Zealand",
+        "continentName": "Oceania"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Hawaii": [
+    {
+      "departingAirportTicker": "SFO",
+      "arrivingAirportTicker": "HNL",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 256.5,
+      "class": "Coach",
+      "airlineName": "Hawaiian",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "HNL",
+        "cityName": "Honolulu",
+        "countryName": "Hawaii",
+        "continentName": "Oceania"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
+  ],
+  "Fiji": [
+    {
+      "departingAirportTicker": "LAX",
+      "arrivingAirportTicker": "NAN",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 497,
+      "class": "Coach",
+      "airlineName": "Fiji Airways",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "NAN",
+        "cityName": "Nadi",
+        "countryName": "Fiji",
+        "continentName": "Oceania"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
   ]
 }

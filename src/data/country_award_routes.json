@@ -1342,46 +1342,6 @@
         "converted": false
       }
     ],
-    "China": [
-      {
-        "departingAirportTicker": "LAX",
-        "arrivingAirportTicker": "TPE",
-        "pointType": "China",
-        "numberOfPointsReq": 66000,
-        "cashReq": 23.4,
-        "class": "Coach",
-        "airlineName": "China",
-        "isCashRoute": false,
-        "roundTripReq": false,
-        "arrivingAirportDetails": {
-          "airportTicker": "TPE",
-          "cityName": "Taipei",
-          "countryName": "Taiwan",
-          "continentName": "Asia"
-        },
-        "originalPointType": "China",
-        "converted": false
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "TPE",
-        "pointType": "China",
-        "numberOfPointsReq": 66000,
-        "cashReq": 23.4,
-        "class": "Coach",
-        "airlineName": "China",
-        "isCashRoute": false,
-        "roundTripReq": false,
-        "arrivingAirportDetails": {
-          "airportTicker": "TPE",
-          "cityName": "Taipei",
-          "countryName": "Taiwan",
-          "continentName": "Asia"
-        },
-        "originalPointType": "China",
-        "converted": false
-      }
-    ],
     "Delta": [
       {
         "departingAirportTicker": "SFO",
@@ -8117,6 +8077,1309 @@
           "continentName": "Europe"
         },
         "originalPointType": "Delta",
+        "converted": false
+      }
+    ]
+  },
+  "Australia": {
+    "SPG": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "SPG",
+        "numberOfPointsReq": 32000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "AA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "AA",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "SPG",
+        "numberOfPointsReq": 32000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "SPG",
+        "numberOfPointsReq": 32000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "United",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "MR": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "MR",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "MR",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "MR",
+        "numberOfPointsReq": 62500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Avios",
+          "rate": "0.8"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "UR",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "UR",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Avios",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "UR",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "TYP",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "AA": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "AA",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      }
+    ],
+    "Alaska": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "United",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ],
+    "Avios": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "Avios",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": false
+      }
+    ],
+    "FlyingBlue": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "SYD",
+        "pointType": "FlyingBlue",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "SYD",
+          "cityName": "Sydney",
+          "countryName": "Australia",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": false
+      }
+    ]
+  },
+  "New Zealand": {
+    "SPG": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "SPG",
+        "numberOfPointsReq": 32000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "AA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "AA",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "SPG",
+        "numberOfPointsReq": 32000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "SPG",
+        "numberOfPointsReq": 32000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air New Zealand",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "United",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "MR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "MR",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air New Zealand",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "MR",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "UR",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air New Zealand",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "UR",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "TYP",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "AA": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "AA",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      }
+    ],
+    "Alaska": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Cathay",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "United",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air New Zealand",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ],
+    "FlyingBlue": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "AKL",
+        "pointType": "FlyingBlue",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "AKL",
+          "cityName": "Auckland",
+          "countryName": "New Zealand",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": false
+      }
+    ]
+  },
+  "Hawaii": {
+    "MR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "MR",
+        "numberOfPointsReq": 15000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "MR",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "MR",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Delta",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Delta",
+          "rate": "1"
+        }
+      }
+    ],
+    "SPG": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "SPG",
+        "numberOfPointsReq": 12000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "FlyingBlue",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "SPG",
+        "numberOfPointsReq": 16000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "AA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "AA",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "SPG",
+        "numberOfPointsReq": 16000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Avios",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "TYP",
+        "numberOfPointsReq": 15000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "UR",
+        "numberOfPointsReq": 15000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "UR",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Avios",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "UR",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      }
+    ],
+    "FlyingBlue": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "FlyingBlue",
+        "numberOfPointsReq": 15000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": false
+      }
+    ],
+    "AA": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "AA",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      }
+    ],
+    "Avios": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "Avios",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": false
+      }
+    ],
+    "Alaska": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "United",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "United",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ],
+    "Delta": [
+      {
+        "departingAirportTicker": "SFO",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "Delta",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Delta",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Delta",
+        "converted": false
+      }
+    ]
+  },
+  "Fiji": {
+    "MR": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "MR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air New Zealand",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "MR",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "SPG": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 28000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air New Zealand",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "United",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 32000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Qantas",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "AA",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "AA",
+          "rate": "1.25"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "SPG",
+        "numberOfPointsReq": 32000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Qantas",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Alaska",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Alaska",
+          "rate": "1.25"
+        }
+      }
+    ],
+    "UR": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "UR",
+        "numberOfPointsReq": 35000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air New Zealand",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "United",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "UR",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "TYP": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "TYP",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
+    "United": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "United",
+        "numberOfPointsReq": 35000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air New Zealand",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "United",
+        "converted": false
+      }
+    ],
+    "AA": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "AA",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Qantas",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      }
+    ],
+    "Alaska": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "Alaska",
+        "numberOfPointsReq": 40000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Qantas",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Alaska",
+        "converted": false
+      }
+    ],
+    "FlyingBlue": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "NAN",
+        "pointType": "FlyingBlue",
+        "numberOfPointsReq": 50000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Korean",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "NAN",
+          "cityName": "Nadi",
+          "countryName": "Fiji",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "FlyingBlue",
         "converted": false
       }
     ]

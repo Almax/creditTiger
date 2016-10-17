@@ -27,5 +27,11 @@
     "Mexico",
     "Panama",
     "Peru"
+  ],
+  "Oceania": [
+    "Australia",
+    "Fiji",
+    "Hawaii",
+    "New Zealand"
   ]
 }

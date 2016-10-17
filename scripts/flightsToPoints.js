@@ -171,24 +171,3 @@ fs.outputFileSync(OUTPUT_COUNTRY_AWARD_ROUTE_JSON, savedRoutesPointsJson);
 fs.outputFileSync(OUTPUT_COUNTRY_CASH_ROUTE_JSON, savedRoutesCashJson);
 fs.outputFileSync(OUTPUT_CONTINENTS_WITH_COUNTRIES_JSON, savedContinentsWithCountries);
 
-
-// sort each sub array
-// splice the end results off.
-
-// create all routes with point mappings
-// then filter by country. it will be simpler if you only have to rank like this once. maybe later you optimize the other way around.
-
-// var countryRoutes = {};
-
-// would be great to find a data structure that kept a stack rank of stuff I throw into it, like Redis.
-// let's keep it in an array. rank it at the end. then cut off anything below top 3.
-
-// routePointList.forEach((route, index) => {
-  // var country = route['arrivingAirportDetails']['countryName'];
-// });
-
-// console.log(routePointList);
-
-// savedCardsJson = JSON3.stringify(savedCards, null, 2);
-
-// fs.outputFileSync(OUTPUT_COUNTRY_AWARD_ROUTE_JSON, savedCardsJson);
