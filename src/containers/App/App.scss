@@ -1,3 +1,5 @@
+@import "~react-toolbox/lib/colors";
+
 .app {
   .brand {
     position: absolute;
@@ -19,6 +21,22 @@
     line-height: 20px;
   }
 }
+
 .appContent {
-  margin: 50px 0; // for fixed navbar
+  margin: 50px 0 0px; // for fixed navbar
+}
+
+.footer {
+  padding: 35px;
+  height: 150px;
+  background-color: $palette-grey-800;
+
+  .title {
+    margin-bottom: 20px;
+    color: $palette-grey-200;
+  }
+
+  .main_text {
+    color: $palette-grey-400;
+  }
 }

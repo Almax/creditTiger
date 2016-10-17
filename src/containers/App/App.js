@@ -74,6 +74,31 @@ export default class App extends Component {
         <div className={styles.appContent}>
           {this.props.children}
         </div>
+        <div className={styles.footer}>
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-8 col-md-offset-2">
+                <div className={styles.title}>
+                  {config.app.title}
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-8 col-md-offset-2">
+                <div className={styles.main_text}>
+                  © 2016 {config.app.title}, All Rights Reserved
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-8 col-md-offset-2">
+                <div className={styles.main_text}>
+                  Designed & Developed by {config.app.title}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

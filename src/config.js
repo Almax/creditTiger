@@ -15,7 +15,7 @@ module.exports = Object.assign({
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
   app: {
-    title: 'Credit Tiger',
+    title: 'CreditTiger',
     description: 'Helping you find the best credit cards to enable free trips.',
     head: {
       titleTemplate: 'Helping you find the best credit cards to enable free trips. %s',
