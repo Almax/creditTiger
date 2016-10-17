@@ -90,6 +90,12 @@ export default class CardBoxRoute extends Component {
     const floorNumRoundTrips = Math.floor(onewayRedeemPerc * 10 / 5 / 2) * 0.5;
     const routeCount = card.allRoutesForSort.length;
     const curRouteNum = this.state.routeNum + 1;
+    const pointConv = route.pointConversion;
+    let convRate = 0;
+
+    if (pointConv) {
+      convRate = pointConv.rate;
+    }
 
     return (
       <div className={styles.routes}>
@@ -102,7 +108,7 @@ export default class CardBoxRoute extends Component {
         <div className={styles.explanation}>After the minimum spend ({numeral(card.minSpendVal).format('($0,0)')} in {card.minSpendMonths} months), you will be rewarded with <b>{numeral(card.curBonusPts).format('(0,0)')} {card.rewardProvider} points</b>.</div>
         <br />
         {!route.isCashRoute &&
-          <div>If you convert those points to {numeral(card.curBonusPts * route.pointConversion.rate).format('(0,0)')} {route.originalPointType} miles, it is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {numeral(route.numberOfPointsReq * 2).format('(0,0)')} {route.originalPointType} miles per roundtrip.</div>
+          <div>If you convert those points to {numeral(card.curBonusPts * convRate).format('(0,0)')} {route.originalPointType} miles, it is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {numeral(route.numberOfPointsReq * 2).format('(0,0)')} {route.originalPointType} miles per roundtrip.</div>
         }
         {route.isCashRoute &&
           <div>The {card.cardName} allows you to convert to travel credit at ${card.travelConvRate} per point. You could then transfer all the points to {numeral(card.travelConvRate * card.curBonusPts).format('($0,0)')} in travel credit, which is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {numeral(route.cashReq * 2).format('($0,0)')} per roundtrip.</div>

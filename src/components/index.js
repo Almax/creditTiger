@@ -20,3 +20,4 @@ export IssuerCheckbox from './IssuerCheckbox/IssuerCheckbox';
 export RatingBar from './RatingBar/RatingBar';
 export CountrySortCheckbox from './SortCheckbox/CountrySortCheckbox';
 export OverallSortCheckbox from './SortCheckbox/OverallSortCheckbox';
+export TooltipWrapper from './TooltipWrapper/TooltipWrapper';

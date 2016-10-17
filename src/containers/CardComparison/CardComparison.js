@@ -19,10 +19,6 @@ const getVisibleCards = (cards, filters, sort, routes) => {
     cardsToShow = cardsToShow.filter(ca => ca.ftf === 0.0);
   }
 
-  if (filters.noAnnualFeeOnly === true) {
-    cardsToShow = cardsToShow.filter(ca => ca.annualFee === 0.0 || ca.annualFeeWaived === true);
-  }
-
   const allNotSame = filters.annualFeeWaivedOnly !== filters.annualFeeLess100Only || filters.annualFeeLess100Only !== filters.annualFee100MoreOnly;
 
   if (allNotSame) {
@@ -157,11 +153,11 @@ export default class Credit extends Component {
                 </div>
                 <div className="col-md-3 text-center">
                   <h5>2</h5>
-                  <p>Apply / get approved for 1-3 cards.</p>
+                  <p>Apply and get approved for 1-3 cards. Use the new cards instead of your current cards.</p>
                 </div>
                 <div className="col-md-3 text-center">
                   <h5>3</h5>
-                  <p>Use the new cards. Meet the minimum spends. Redeem points.</p>
+                  <p>Meet the minimum spends to earn the point promotions on each card.</p>
                 </div>
                 <div className="col-md-3 text-center">
                   <h5>4</h5>

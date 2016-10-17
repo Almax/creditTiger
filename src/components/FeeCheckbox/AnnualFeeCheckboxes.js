@@ -22,8 +22,6 @@ export default class AnnualFeeCheckbox extends Component {
   }
 
   handleChange = (field, bool) => {
-    console.log('handing change', field, bool);
-
     const { annualFeeWaivedChange, annualFeeLess100Change, annualFee100MoreChange } = this.props; // eslint-disable-line no-shadow
 
     if (field === WAIVED) {
