@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 // import { CardActions } from 'react-toolbox/lib/card';
-// import { Button } from 'react-toolbox/lib/button';
 // import RatingBar from '../RatingBar/RatingBar';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -104,6 +103,19 @@ export default class CardBox extends Component {
         {this.props.sort.sortType === 'SET_COUNTRY' &&
           <CardBoxRoute card={this.props.card} />
         }
+        <div className={styles.card_buttons + ' row'}>
+          <div className="col-md-1"></div>
+          <div className="col-md-3">
+            <button className={styles.button + ' btn btn-default'}>Hide Card</button>
+          </div>
+          <div className="col-md-3">
+            <button className={styles.button + ' btn btn-default'}>Details</button>
+          </div>
+          <div className="col-md-3">
+            <button className={styles.button + ' btn btn-success'}>Apply Now</button>
+          </div>
+          <div className="col-md-1"></div>
+        </div>
       </div>
     );
   }

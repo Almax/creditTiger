@@ -102,7 +102,7 @@ export default class CardBoxRoute extends Component {
         {route.isCashRoute &&
           <div>The {card.cardName} allows you to convert to travel credit at ${card.travelConvRate} per point. You could therefore transfer all your points to ${card.travelConvRate * card.curBonusPts} in travel credit, which is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at ${route.cashReq * 2} per roundtrip. (how it works)</div>
         }
-        <button className={styles.nextRoute} onClick={this.handleNextRouteClick.bind(this)}>More flights</button>
+        <button className={styles.nextRoute + ' btn btn-default'} onClick={this.handleNextRouteClick.bind(this)}>More flights</button>
       </div>
     );
   }
