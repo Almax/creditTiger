@@ -72,7 +72,7 @@ export default class CardBoxRoute extends Component {
 
   handleNextRouteClick = () => {
     let nextRoute = this.state.routeNum + 1;
-    const hasNextRoute = !!this.props.card.awardRoutesForSort[nextRoute];
+    const hasNextRoute = !!this.props.card.allRoutesForSort[nextRoute];
     nextRoute = hasNextRoute ? nextRoute : 0;
 
     this.setState({routeNum: nextRoute});
