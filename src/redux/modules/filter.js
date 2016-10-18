@@ -80,7 +80,6 @@ export function fteBoxChange(bool) {
 }
 
 export function annualFeeWaivedChange(bool) {
-  console.log('annualFeeWaivedChange');
   return {
     type: ANNUAL_FEE_WAIVED_CHANGE,
     bool

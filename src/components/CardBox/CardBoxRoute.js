@@ -91,7 +91,7 @@ export default class CardBoxRoute extends Component {
     const routeCount = card.allRoutesForSort.length;
     const curRouteNum = this.state.routeNum + 1;
     const pointConv = route.pointConversion;
-    let convRate = 0;
+    let convRate = 1;
 
     if (pointConv) {
       convRate = pointConv.rate;
