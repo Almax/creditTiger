@@ -1,8 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Checkbox from 'react-toolbox/lib/checkbox';
-import { sortCountry } from 'redux/modules/sort';
-import { bindActionCreators } from 'redux';
 
 @connect(
   state => (
@@ -11,22 +9,19 @@ import { bindActionCreators } from 'redux';
       sort: state.sort
     }
   ),
-  dispatch => bindActionCreators({ sortCountry }, dispatch)
+  null
 )
 
 export default class Welcome extends Component {
   static propTypes = {
     routes: PropTypes.object,
     sort: PropTypes.object,
-    history: PropTypes.object,
-    sortCountry: PropTypes.function
+    history: PropTypes.object
   }
 
   handleCountryClick = (country, bool) => {
-    const { sortCountry } = this.props; // eslint-disable-line no-shadow
     if (bool) {
-      sortCountry(country, bool);
-      this.props.history.push('/card_comparison');
+      this.props.history.push('/card_comparison/country/' + country);
     }
   }
 

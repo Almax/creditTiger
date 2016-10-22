@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { Link } from 'react-toolbox/lib/link';
 import { CardBox } from 'components';
 import { AnnualFeeCheckboxes, FteCheckbox } from 'components';
+import { bindActionCreators } from 'redux';
+import { sortCountry } from 'redux/modules/sort';
 
 const getVisibleCards = (cards, filters, sort, routes) => {
   let cardsToShow = cards;
@@ -105,7 +107,8 @@ const getVisibleCards = (cards, filters, sort, routes) => {
       sort: state.sort,
       routes: state.routes
     }
-  )
+  ),
+  dispatch => bindActionCreators({ sortCountry }, dispatch)
 )
 
 export default class Credit extends Component {
@@ -113,8 +116,19 @@ export default class Credit extends Component {
     cards: PropTypes.object,
     filter: PropTypes.object,
     sort: PropTypes.object,
-    routes: PropTypes.object
+    routes: PropTypes.object,
+    params: PropTypes.object,
+    sortCountry: PropTypes.func
   };
+
+  componentDidMount() {
+    const { sortCountry } = this.props; // eslint-disable-line no-shadow
+
+    // FIX THIS. Properly add the helper functions.
+    // _S.countryNameToKey(this.props.params.countryName);
+
+    sortCountry(this.props.params.countryName, true);
+  }
 
   render() {
     const { all } = this.props.cards;
@@ -148,20 +162,20 @@ export default class Credit extends Component {
               </div>
               <div className="row">
                 <div className="col-md-3 text-center">
-                  <h5>1</h5>
-                  <p>Use the filters on the left.</p>
+                  <h5>Filter</h5>
+                  <p>the cards using the boxes on the left.</p>
                 </div>
                 <div className="col-md-3 text-center">
-                  <h5>2</h5>
-                  <p>Apply and get approved for 1-3 cards. Use the new cards instead of your current cards.</p>
+                  <h5>Apply</h5>
+                  <p>and get approved for 1-3 cards.</p>
                 </div>
                 <div className="col-md-3 text-center">
-                  <h5>3</h5>
-                  <p>Meet the minimum spends to earn the point promotions on each card.</p>
+                  <h5>Use</h5>
+                  <p>the new cards instead of your old ones.</p>
                 </div>
                 <div className="col-md-3 text-center">
-                  <h5>4</h5>
-                  <p>Use those points to redeem travel.</p>
+                  <h5>Travel</h5>
+                  <p>with the reward points you earn from each promotion.</p>
                 </div>
               </div>
             </div>
