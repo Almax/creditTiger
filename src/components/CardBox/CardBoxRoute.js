@@ -1,6 +1,7 @@
 import _R from 'ramda';
 import React, { Component, PropTypes } from 'react';
 import numeral from 'numeral';
+import { TooltipWrapper } from 'components';
 
 const styles = require('./CardBoxRoute.scss');
 
@@ -105,7 +106,9 @@ export default class CardBoxRoute extends Component {
           {this.subtitle(floorNumRoundTrips)}
           {this.planeChart(floorNumRoundTrips)}
         </div>
-        <div className={styles.explanation}>After the minimum spend ({numeral(card.minSpendVal).format('($0,0)')} in {card.minSpendMonths} months), you will be rewarded with <b>{numeral(card.curBonusPts).format('(0,0)')} {card.rewardProvider} points</b>.</div>
+        <TooltipWrapper tooltip="Minimum spend is how much you need to spend to get the promotional points. You do NOT need to spend any more than you currently do. You just need to convert your current spending to the new card(s) instead of your old credit cards, debit cards, checks, and/or cash.">
+          <div className={styles.explanation}>After the <i>minimum spend</i> ({numeral(card.minSpendVal).format('($0,0)')} in {card.minSpendMonths} months), you will be rewarded with <b>{numeral(card.curBonusPts).format('(0,0)')} {card.rewardProvider} points</b>.</div>
+        </TooltipWrapper>
         <br />
         {!route.isCashRoute &&
           <div>If you convert those points to {numeral(card.curBonusPts * convRate).format('(0,0)')} {route.originalPointType} miles, it is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {numeral(route.numberOfPointsReq * 2).format('(0,0)')} {route.originalPointType} miles per roundtrip.</div>
@@ -113,7 +116,7 @@ export default class CardBoxRoute extends Component {
         {route.isCashRoute &&
           <div>The {card.cardName} allows you to convert to travel credit at ${card.travelConvRate} per point. You could then transfer all the points to {numeral(card.travelConvRate * card.curBonusPts).format('($0,0)')} in travel credit, which is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {numeral(route.cashReq * 2).format('($0,0)')} per roundtrip.</div>
         }
-        <button className={styles.nextRoute + ' btn btn-default'} onClick={this.handleNextRouteClick.bind(this)}>More flights</button>
+        <button className={styles.nextRoute + ' btn btn-default'} onClick={this.handleNextRouteClick.bind(this)}>More reward options</button>
       </div>
     );
   }
