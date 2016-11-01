@@ -6,6 +6,7 @@ import { CardBox } from 'components';
 import { AnnualFeeCheckboxes, FteCheckbox } from 'components';
 import { bindActionCreators } from 'redux';
 import { sortCountry } from 'redux/modules/sort';
+import Helmet from 'react-helmet';
 
 const getVisibleCards = (cards, filters, sort, routes) => {
   let cardsToShow = cards;
@@ -139,70 +140,73 @@ export default class Credit extends Component {
     const styles = require('./CardComparison.scss');
 
     return (
-      <div className={styles.card_comparison + ' container-fluid'}>
-        <div className="row">
-          <div className={styles.filter_menu + ' col-md-2'}>
-            <h3>Filters</h3>
-            <h5>Current Destination</h5>
-            <div className={styles.destination}>
-              {sort.currentCountryName}
+      <div>
+        <Helmet title={'Free Flights to ' + this.props.params.countryName}/>
+        <div className={styles.card_comparison + ' container-fluid'}>
+          <div className="row">
+            <div className={styles.filter_menu + ' col-md-2'}>
+              <h3>Filters</h3>
+              <h5>Current Destination</h5>
+              <div className={styles.destination}>
+                {sort.currentCountryName}
+              </div>
+              <Link href="/" label="Change" />
+              <h5>Annual Fees</h5>
+              <div><AnnualFeeCheckboxes /></div>
+              <h5>Transaction Fees</h5>
+              <div><FteCheckbox /></div>
             </div>
-            <Link href="/" label="Change" />
-            <h5>Annual Fees</h5>
-            <div><AnnualFeeCheckboxes /></div>
-            <h5>Transaction Fees</h5>
-            <div><FteCheckbox /></div>
-          </div>
-          <div className="col-md-10">
-            <div className={styles.cardListHeader}>
-              <div className={styles.how_to + ' row'}>
-                <div className="col-md-12">
-                  <h4>How it works:</h4>
+            <div className="col-md-10">
+              <div className={styles.cardListHeader}>
+                <div className={styles.how_to + ' row'}>
+                  <div className="col-md-12">
+                    <h4>How it works:</h4>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-3 text-center">
+                    <h5>Filter</h5>
+                    <p>the cards using the boxes on the left.</p>
+                  </div>
+                  <div className="col-md-3 text-center">
+                    <h5>Apply</h5>
+                    <p>and get approved for 1-3 cards.</p>
+                  </div>
+                  <div className="col-md-3 text-center">
+                    <h5>Use</h5>
+                    <p>the new cards instead of your old ones.</p>
+                  </div>
+                  <div className="col-md-3 text-center">
+                    <h5>Travel</h5>
+                    <p>with the reward points you earn from each promotion.</p>
+                  </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-md-3 text-center">
-                  <h5>Filter</h5>
-                  <p>the cards using the boxes on the left.</p>
+              <div className={styles.cardListSubHeader}>
+                <div className="row">
+                  <div className="col-md-6">
+                    <h3>Best Cards for Free Flights to {sort.currentCountryName}</h3>
+                  </div>
                 </div>
-                <div className="col-md-3 text-center">
-                  <h5>Apply</h5>
-                  <p>and get approved for 1-3 cards.</p>
-                </div>
-                <div className="col-md-3 text-center">
-                  <h5>Use</h5>
-                  <p>the new cards instead of your old ones.</p>
-                </div>
-                <div className="col-md-3 text-center">
-                  <h5>Travel</h5>
-                  <p>with the reward points you earn from each promotion.</p>
+                <div className={styles.meta + ' row'}>
+                  <div className="col-md-6">
+                    Showing 3 of {sort.currentNumCards} cards
+                  </div>
+                  <div className={styles.view + ' col-md-6'}>
+                    View: <b>Basic</b> | Detailed
+                  </div>
                 </div>
               </div>
+              {visibleCards && visibleCards.length &&
+                <div>
+                  {visibleCards.map((card) => {
+                    return (
+                      <CardBox card={card} />
+                    );
+                  })}
+                </div>
+              }
             </div>
-            <div className={styles.cardListSubHeader}>
-              <div className="row">
-                <div className="col-md-6">
-                  <h3>Best Cards for Free Flights to {sort.currentCountryName}</h3>
-                </div>
-              </div>
-              <div className={styles.meta + ' row'}>
-                <div className="col-md-6">
-                  Showing 3 of {sort.currentNumCards} cards
-                </div>
-                <div className={styles.view + ' col-md-6'}>
-                  View: <b>Basic</b> | Detailed
-                </div>
-              </div>
-            </div>
-            {visibleCards && visibleCards.length &&
-              <div>
-                {visibleCards.map((card) => {
-                  return (
-                    <CardBox card={card} />
-                  );
-                })}
-              </div>
-            }
           </div>
         </div>
       </div>

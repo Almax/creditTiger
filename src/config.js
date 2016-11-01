@@ -15,10 +15,9 @@ module.exports = Object.assign({
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
   app: {
-    title: 'CreditTiger',
+    title: 'CreditTiger - Helping you find the best credit cards to enable free trips.',
     description: 'Helping you find the best credit cards to enable free trips.',
     head: {
-      titleTemplate: 'Helping you find the best credit cards to enable free trips. %s',
       meta: [
         {name: 'description', content: 'Helping you find the best credit cards to enable free trips.'},
         {charset: 'utf-8'},

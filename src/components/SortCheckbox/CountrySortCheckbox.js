@@ -20,7 +20,6 @@ export default class CountrySortCheckbox extends Component {
     label: PropTypes.string
   }
 
-
   handleChange = (bool) => {
     const { sortCountry, unsortCountry, countryName } = this.props; // eslint-disable-line no-shadow
 
