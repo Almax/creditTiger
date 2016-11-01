@@ -1,0 +1,260 @@
+{
+  "AA": {
+    "pointKey": "AA",
+    "programName": "AAdvantage",
+    "pointTerm": "Mile",
+    "mainAffiliate": "American Airlines"
+  },
+  "Aeroplan": {
+    "pointKey": "Aeroplan",
+    "programName": "Aeroplan",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Air Canada"
+  },
+  "Air China": {
+    "pointKey": "Air China",
+    "programName": "Air China PhoenixMiles",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Air China"
+  },
+  "Alaska": {
+    "pointKey": "Alaska",
+    "programName": "Mileage Plan",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Alaska Airlines"
+  },
+  "ANA": {
+    "pointKey": "ANA",
+    "programName": "ANA Mileage Club",
+    "pointTerm": "Mile",
+    "mainAffiliate": "All Nippon Airways"
+  },
+  "Arrival": {
+    "pointKey": "Arrival",
+    "programName": "Arrival",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Barclaycard"
+  },
+  "Asiana": {
+    "pointKey": "Asiana",
+    "programName": "Asiana Club",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Asiana Airlines"
+  },
+  "Avios": {
+    "pointKey": "Avios",
+    "programName": "Executive Club",
+    "pointTerm": "Avio",
+    "mainAffiliate": "British Airways"
+  },
+  "Blue Sky": {
+    "pointKey": "Blue Sky",
+    "programName": "Blue Sky",
+    "pointTerm": "Point",
+    "mainAffiliate": "American Express"
+  },
+  "Carlson": {
+    "pointKey": "Carlson",
+    "programName": "Club Carlson",
+    "pointTerm": "Gold Point",
+    "mainAffiliate": "Club Carlson"
+  },
+  "Cash": {
+    "pointKey": "Cash",
+    "programName": "Cash",
+    "pointTerm": "Dollar",
+    "mainAffiliate": "Cash"
+  },
+  "Cathay": {
+    "pointKey": "Cathay",
+    "programName": "Asia Miles",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Cathay Pacific"
+  },
+  "China Southern": {
+    "pointKey": "China Southern",
+    "programName": "Sky Pearl Club",
+    "pointTerm": "Mile",
+    "mainAffiliate": "China Southern Airlines"
+  },
+  "Delta": {
+    "pointKey": "Delta",
+    "programName": "SkyMiles",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Delta Airlines"
+  },
+  "Emirates": {
+    "pointKey": "Emirates",
+    "programName": "Emirates Skywards",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Emirates"
+  },
+  "EVA": {
+    "pointKey": "EVA",
+    "programName": "Infinity MileageLands",
+    "pointTerm": "Mile",
+    "mainAffiliate": "EVA Air"
+  },
+  "FlexPerks": {
+    "pointKey": "FlexPerks",
+    "programName": "FlexPerks",
+    "pointTerm": "Point",
+    "mainAffiliate": "U.S. Bank"
+  },
+  "FlyingBlue": {
+    "pointKey": "FlyingBlue",
+    "programName": "Flying Blue",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Air France"
+  },
+  "Frontier": {
+    "pointKey": "Frontier",
+    "programName": "EarlyReturns",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Frontier Airlines"
+  },
+  "Hainan": {
+    "pointKey": "Hainan",
+    "programName": "Fortune Wings Club",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Hainan Airlines"
+  },
+  "Hawaiian": {
+    "pointKey": "Hawaiian",
+    "programName": "HawaiianMiles",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Hawaiian Airlines"
+  },
+  "Hilton": {
+    "pointKey": "Hilton",
+    "programName": "HHonors",
+    "pointTerm": "Point",
+    "mainAffiliate": "Hilton Hotels"
+  },
+  "Hyatt": {
+    "pointKey": "Hyatt",
+    "programName": "Hyatt Gold Passport",
+    "pointTerm": "Point",
+    "mainAffiliate": "Hyatt Hotels"
+  },
+  "IHG": {
+    "pointKey": "IHG",
+    "programName": "IHG Rewards Club",
+    "pointTerm": "Point",
+    "mainAffiliate": "InterContinental Hotels Group (IHG)"
+  },
+  "Japan": {
+    "pointKey": "Japan",
+    "programName": "JAL Mileage Bank",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Japan Airlines"
+  },
+  "JetBlue": {
+    "pointKey": "JetBlue",
+    "programName": "TrueBlue",
+    "pointTerm": "Mile",
+    "mainAffiliate": "JetBlue Airways"
+  },
+  "Korean": {
+    "pointKey": "Korean",
+    "programName": "Korean Air SkyPass",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Korean Air"
+  },
+  "Malaysia": {
+    "pointKey": "Malaysia",
+    "programName": "Enrich",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Malaysia Airlines"
+  },
+  "Marriott": {
+    "pointKey": "Marriott",
+    "programName": "Marriott Rewards",
+    "pointTerm": "Point",
+    "mainAffiliate": "Marriott Hotels"
+  },
+  "Miles & More": {
+    "pointKey": "Miles & More",
+    "programName": "Miles & More",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Lufthansa"
+  },
+  "MR": {
+    "pointKey": "MR",
+    "programName": "Membership Rewards",
+    "pointTerm": "Point",
+    "mainAffiliate": "American Express"
+  },
+  "Singapore": {
+    "pointKey": "Singapore",
+    "programName": "KrisFlyer",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Singapore Airlines"
+  },
+  "Southwest": {
+    "pointKey": "Southwest",
+    "programName": "Rapid Rewards",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Southwest Airlines"
+  },
+  "SPG": {
+    "pointKey": "SPG",
+    "programName": "Starwood Preferred Guest",
+    "pointTerm": "Starpoint",
+    "mainAffiliate": "Starwood Hotels"
+  },
+  "Thai": {
+    "pointKey": "Thai",
+    "programName": "Royal Orchid Plus",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Thai Airways"
+  },
+  "TYP": {
+    "pointKey": "TYP",
+    "programName": "Citi ThankYou Rewards",
+    "pointTerm": "Point",
+    "mainAffiliate": "Citibank"
+  },
+  "United": {
+    "pointKey": "United",
+    "programName": "MileagePlus",
+    "pointTerm": "Mile",
+    "mainAffiliate": "United Airlines"
+  },
+  "UR": {
+    "pointKey": "UR",
+    "programName": "Ultimate Rewards",
+    "pointTerm": "Point",
+    "mainAffiliate": "Chase Bank"
+  },
+  "Venture": {
+    "pointKey": "Venture",
+    "programName": "Venture Rewards",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Capital One"
+  },
+  "Virgin America": {
+    "pointKey": "Virgin America",
+    "programName": "Elevate",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Virgin America"
+  },
+  "Virgin Atlantic": {
+    "pointKey": "Virgin Atlantic",
+    "programName": "Flying Club",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Virgin Atlantic"
+  },
+  "Wells Fargo": {
+    "pointKey": "Wells Fargo",
+    "programName": "Go Far Rewards",
+    "pointTerm": "Point",
+    "mainAffiliate": "Wells Fargo"
+  },
+  "Wyndham": {
+    "pointKey": "Wyndham",
+    "programName": "Wyndham Rewards",
+    "pointTerm": "Point",
+    "mainAffiliate": "Wyndham Hotels"
+  }
+}

@@ -141,7 +141,7 @@ export default class Credit extends Component {
 
     return (
       <div>
-        <Helmet title={'Free Flights to ' + this.props.params.countryName}/>
+        <Helmet title={'Best Cards for Free Flights to ' + this.props.params.countryName}/>
         <div className={styles.card_comparison + ' container-fluid'}>
           <div className="row">
             <div className={styles.filter_menu + ' col-md-2'}>

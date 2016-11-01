@@ -12,6 +12,7 @@ import cards from './cards';
 import filter from './filter';
 import sort from './sort';
 import routes from './routes';
+import points from './points';
 
 export default combineReducers({
   routing: routerReducer,
@@ -22,6 +23,7 @@ export default combineReducers({
   filter,
   sort,
   routes,
+  points,
   multireducer: multireducer({
     counter1: counter,
     counter2: counter,
