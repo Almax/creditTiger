@@ -67,6 +67,7 @@ export default class App extends Component {
                 <span>{config.app.name}</span>
               </IndexLink>
             </Navbar.Brand>
+            <div className="fb-like" data-href={window.location.href} data-layout="button_count" data-action="recommend" data-size="large" data-show-faces="true" data-share="true"></div>
             <Navbar.Toggle/>
           </Navbar.Header>
         </Navbar>

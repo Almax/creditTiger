@@ -122,8 +122,6 @@ export default class CardBox extends Component {
 //   <button className={styles.button + ' btn btn-default'}>Details</button>
 // </div>
 
-
-
 // <Card>
 //   <CardTitle
 //     title={ cardName }
@@ -145,7 +143,6 @@ export default class CardBox extends Component {
   //   <Button label="Hide" onMouseUp={this.handleHideClick.bind(this, cardKey)} />
   // </CardActions>
 // </Card>
-
 
 // <CardText>{dummyText}</CardText>
 //       <Card className="col-md-4" style={{width: '280px'}}>
