@@ -64,7 +64,7 @@ export default class App extends Component {
             <Navbar.Brand>
               <IndexLink to="/">
                 <div className={styles.brand}/>
-                <span>{config.app.title}</span>
+                <span>{config.app.name}</span>
               </IndexLink>
             </Navbar.Brand>
             <Navbar.Toggle/>

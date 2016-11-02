@@ -15,16 +15,17 @@ module.exports = Object.assign({
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
   app: {
-    title: 'CreditTiger - Helping you find the best credit cards to enable free trips.',
+    title: 'FreeTravelGuy - Helping you find the best credit cards to enable free trips.',
     description: 'Helping you find the best credit cards to enable free trips.',
+    name: 'FreeTravelGuy',
     head: {
       meta: [
         {name: 'description', content: 'Helping you find the best credit cards to enable free trips.'},
         {charset: 'utf-8'},
-        {property: 'og:site_name', content: 'Credit Tiger - Easy, Free Trips'},
+        {property: 'og:site_name', content: 'FreeTravelGuy - Easy, Free Trips'},
         {property: 'og:image', content: 'http://thenano.agency/wp-content/uploads/2016/03/Tony-The-Tigre.jpg'},
         {property: 'og:locale', content: 'en_US'},
-        {property: 'og:title', content: 'Credit Tiger - Easy, Free Trips'},
+        {property: 'og:title', content: 'FreeTravelGuy - Easy, Free Trips'},
         {property: 'og:description', content: 'Helping you find the best credit cards to enable free trips.'},
         {property: 'og:card', content: 'summary'},
         {property: 'og:site', content: '@tiger'},

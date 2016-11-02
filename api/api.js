@@ -66,7 +66,7 @@ if (config.apiPort) {
   });
 
   io.on('connection', (socket) => {
-    socket.emit('news', {msg: `Welcome to Credit Tiger!`});
+    socket.emit('news', {msg: `Welcome to FreeTravelGuy!`});
 
     socket.on('history', () => {
       for (let index = 0; index < bufferSize; index++) {
