@@ -50,7 +50,7 @@ export default class CardBox extends Component {
   }
 
   render() {
-    const { cardKey, cardName, issuerName, curRank, curBonusVal, annualFee, annualFeeWaived } = this.props.card;
+    const { cardKey, cardName, issuerName, curRank, curBonusVal, annualFee, annualFeeWaived, signupUrl } = this.props.card;
     const styles = require('./CardBox.scss');
     const imgUrl = require('../../images/' + cardKey + '.jpg');
     const imageStyle = {backgroundImage: 'url(' + imgUrl + ')'};
@@ -104,22 +104,24 @@ export default class CardBox extends Component {
           <CardBoxRoute card={this.props.card} />
         }
         <div className={styles.card_buttons + ' row'}>
-          <div className="col-md-1"></div>
-          <div className="col-md-3">
-            <button className={styles.button + ' btn btn-default'}>Hide Card</button>
+          <div className="col-md-4 col-md-offset-4">
+            <a href={signupUrl} target="_blank">
+              <button className={styles.button + ' btn btn-success'}>Apply Now</button>
+            </a>
           </div>
-          <div className="col-md-3">
-            <button className={styles.button + ' btn btn-default'}>Details</button>
-          </div>
-          <div className="col-md-3">
-            <button className={styles.button + ' btn btn-success'}>Apply Now</button>
-          </div>
-          <div className="col-md-1"></div>
         </div>
       </div>
     );
   }
 }
+
+// <div className="col-md-3">
+//   <button className={styles.button + ' btn btn-default'}>Hide Card</button>
+// </div>
+// <div className="col-md-3">
+//   <button className={styles.button + ' btn btn-default'}>Details</button>
+// </div>
+
 
 
 // <Card>

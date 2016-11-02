@@ -79,21 +79,21 @@ export default class App extends Component {
             <div className="row">
               <div className="col-md-8 col-md-offset-2">
                 <div className={styles.title}>
-                  {config.app.title}
+                  {config.app.name}
                 </div>
               </div>
             </div>
             <div className="row">
               <div className="col-md-8 col-md-offset-2">
                 <div className={styles.main_text}>
-                  © 2016 {config.app.title}, All Rights Reserved
+                  © 2016 {config.app.name}, All Rights Reserved
                 </div>
               </div>
             </div>
             <div className="row">
               <div className="col-md-8 col-md-offset-2">
                 <div className={styles.main_text}>
-                  Designed & Developed by {config.app.title}
+                  Designed & Developed by {config.app.name}
                 </div>
               </div>
             </div>

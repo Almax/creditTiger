@@ -103,7 +103,6 @@ export default class CardBoxRoute extends Component {
     let convRate = 1;
     const pointOriginalMeta = pointPrograms[card.rewardProvider];
     const pointTransferToMeta = pointPrograms[route.originalPointType];
-    console.log('route', route, pointPrograms);
 
     if (pointConv) {
       convRate = pointConv.rate;

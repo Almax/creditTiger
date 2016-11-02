@@ -75,6 +75,9 @@ var cardKeyFormats = [
     fieldTypeFn: _C.convertFloat
   },
   {
+    fieldName: 'signupUrl',
+    fieldTypeFn: String
+  },  {
     fieldName: 'useOnCt',
     fieldTypeFn: String
   },
