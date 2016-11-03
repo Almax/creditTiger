@@ -12,6 +12,7 @@ import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ReduxAsyncConnect } from 'redux-async-connect';
 import useScroll from 'scroll-behavior/lib/useStandardScroll';
+import { ReactGA } from 'react-ga';
 
 import getRoutes from './routes';
 
@@ -20,6 +21,7 @@ const _browserHistory = useScroll(() => browserHistory)();
 const dest = document.getElementById('content');
 const store = createStore(_browserHistory, client, window.__data);
 const history = syncHistoryWithStore(_browserHistory, store);
+ReactGA.initialize('UA-1413128-12');
 
 function initSocket() {
   const socket = io('', {path: '/ws'});
@@ -34,10 +36,15 @@ function initSocket() {
   return socket;
 }
 
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+}
+
 global.socket = initSocket();
 
 const component = (
-  <Router render={(props) =>
+  <Router onUpdate={logPageView} render={(props) =>
         <ReduxAsyncConnect {...props} helpers={{client}} filter={item => !item.deferred} />
       } history={history}>
     {getRoutes(store)}
