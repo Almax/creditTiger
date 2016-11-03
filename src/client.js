@@ -37,8 +37,10 @@ function initSocket() {
 }
 
 function logPageView() {
-  ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
+  if (process.env.NODE_ENV !== 'production') {
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
+  }
 }
 
 global.socket = initSocket();

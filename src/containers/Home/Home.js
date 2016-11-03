@@ -36,7 +36,7 @@ export default class Welcome extends Component {
         <div className={styles.hero + ' row'}>
           <div className="col-md-12">
             <div className={styles.heroText}>
-              <h1>Credit Cards for Free Flights to</h1>
+              <h1>Find Cards that will get you Free Flights to:</h1>
             </div>
           </div>
           <div className="col-md-2"></div>
