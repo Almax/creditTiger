@@ -12,7 +12,7 @@ import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ReduxAsyncConnect } from 'redux-async-connect';
 import useScroll from 'scroll-behavior/lib/useStandardScroll';
-import { ReactGA } from 'react-ga';
+import ReactGA from 'react-ga';
 
 import getRoutes from './routes';
 
