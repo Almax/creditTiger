@@ -1,23 +1,10 @@
 @import "~react-toolbox/lib/colors";
 
-$CARD-WIDTH: 350px;
 $CARD-ROUTE-HEIGHT: 370px;
-$PADDING: 20px;
-$BORDER-WIDTH: 1px;
-$INNER-WIDTH-HALF: $CARD-WIDTH / 2 - $PADDING -  $BORDER-WIDTH;
 
 .routes {
-  width: $CARD-WIDTH;
   height: $CARD-ROUTE-HEIGHT;
-  background-color: $palette-grey-50;
-  border: $BORDER-WIDTH solid $palette-grey-300;
-  padding: $PADDING;
   margin-bottom: 20px;
-
-  .option {
-    text-align: right;
-    font-size: 12px;
-  }
 
   .title {
     font-size: 24px;
@@ -31,7 +18,7 @@ $INNER-WIDTH-HALF: $CARD-WIDTH / 2 - $PADDING -  $BORDER-WIDTH;
 
   .subtitle {
     display: inline-block;
-    width: $INNER-WIDTH-HALF;
+    width: 50%;
     padding: 10px;
     font-size: 14px;
     text-transform: uppercase;
@@ -40,7 +27,7 @@ $INNER-WIDTH-HALF: $CARD-WIDTH / 2 - $PADDING -  $BORDER-WIDTH;
 
   .planeChart {
     display: inline-block;
-    width: $INNER-WIDTH-HALF;
+    width: 50%;
     padding: 10px 10px 10px 0px;
     vertical-align: top;
   }

@@ -175,7 +175,7 @@ export default class Credit extends Component {
                   </div>
                   <div className="col-md-3 text-center">
                     <h5>Use</h5>
-                    <p>the new cards instead of your old ones.</p>
+                    <p>the new card instead of your old ones.</p>
                   </div>
                   <div className="col-md-3 text-center">
                     <h5>Travel</h5>

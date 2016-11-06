@@ -46,6 +46,18 @@ export default class CardBoxRoute extends Component {
 
       card.allRoutesForSort.sort((ca, cb) => { return (cb.bestRedeemPerc - ca.bestRedeemPerc);});
     }
+
+    card.routesUniqAirport = [];
+    let uniqAirports = {};
+    uniqAirports['test'] = true;
+
+    card.allRoutesForSort.forEach((ro) => {
+      const arrAirport = ro.arrivingAirportTicker;
+      if (!uniqAirports[arrAirport]) {
+        uniqAirports[arrAirport] = true;
+        card.routesUniqAirport.push(ro);
+      }
+    });
   }
 
   subtitle = (floorNumTrips) => {
@@ -82,7 +94,7 @@ export default class CardBoxRoute extends Component {
 
   handleNextRouteClick = () => {
     let nextRoute = this.state.routeNum + 1;
-    const hasNextRoute = !!this.props.card.allRoutesForSort[nextRoute];
+    const hasNextRoute = !!this.props.card.routesUniqAirport[nextRoute];
     nextRoute = hasNextRoute ? nextRoute : 0;
 
     this.setState({routeNum: nextRoute});
@@ -94,11 +106,9 @@ export default class CardBoxRoute extends Component {
 
     // FIX this!
     this.updateRoutes();
-    const route = card.allRoutesForSort[this.state.routeNum];
+    const route = card.routesUniqAirport[this.state.routeNum];
     const onewayRedeemPerc = route.isCashRoute ? route.cashRedeemPerc : route.awardRedeemPerc;
     const floorNumRoundTrips = Math.floor(onewayRedeemPerc * 10 / 5 / 2) * 0.5;
-    const routeCount = card.allRoutesForSort.length;
-    const curRouteNum = this.state.routeNum + 1;
     const pointConv = route.pointConversion;
     let convRate = 1;
     const pointOriginalMeta = pointPrograms[card.rewardProvider];
@@ -110,12 +120,12 @@ export default class CardBoxRoute extends Component {
 
     return (
       <div className={styles.routes}>
-        <div className={styles.option}>Option {curRouteNum} of {routeCount}</div>
         <div className={styles.title + ' uppercase'}>{route.arrivingAirportDetails.cityName}</div>
         <div className={styles.subheader}>
           {this.subtitle(floorNumRoundTrips)}
           {this.planeChart(floorNumRoundTrips)}
         </div>
+        <div>How to get Reward</div>
         <TooltipWrapper tooltip="Minimum spend is how much you need to spend to get the promotional points. You do NOT need to spend any more than you currently do. You just need to convert your current spending to the new card(s) instead of your old credit cards, debit cards, checks, and/or cash.">
           <div className={styles.explanation}>After the <i>minimum spend</i> ({numeral(card.minSpendVal).format('($0,0)')} in {card.minSpendMonths} months), you will be rewarded with <b>{numeral(card.curBonusPts).format('(0,0)')} {pointOriginalMeta.programName} {pointOriginalMeta.pointTerm}s ({pointOriginalMeta.mainAffiliate})</b>.</div>
         </TooltipWrapper>
@@ -126,7 +136,7 @@ export default class CardBoxRoute extends Component {
         {route.isCashRoute &&
           <div>The {card.cardName} allows you to convert to travel credit at ${card.travelConvRate} per point. You could then transfer all the points to {numeral(card.travelConvRate * card.curBonusPts).format('($0,0)')} in travel credit, which is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {numeral(route.cashReq * 2).format('($0,0)')} per roundtrip.</div>
         }
-        <button className={styles.nextRoute + ' btn btn-default'} onClick={this.handleNextRouteClick.bind(this)}>More reward options</button>
+        <button className={styles.nextRoute + ' btn btn-default'} onClick={this.handleNextRouteClick.bind(this)}>Other Airports</button>
       </div>
     );
   }

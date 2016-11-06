@@ -6,7 +6,6 @@
  */
 
 export RecBox from './RecBox/RecBox';
-export CardBox from './RecBox/CardBox';
 export CardBoxRoute from './RecBox/CardBoxRoute';
 export CounterButton from './CounterButton/CounterButton';
 export GithubButton from './GithubButton/GithubButton';
