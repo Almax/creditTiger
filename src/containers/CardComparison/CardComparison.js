@@ -2,7 +2,7 @@ import _R from 'ramda';
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-toolbox/lib/link';
-import { CardBox } from 'components';
+import { RecBox } from 'components';
 import { AnnualFeeCheckboxes, FteCheckbox } from 'components';
 import { bindActionCreators } from 'redux';
 import { sortCountry } from 'redux/modules/sort';
@@ -138,10 +138,11 @@ export default class Credit extends Component {
     sort.currentNumCards = possibleCards.length;
     const visibleCards = possibleCards.slice(0, 3);
     const styles = require('./CardComparison.scss');
+    // const topCard = all[0];
 
     return (
       <div>
-        <Helmet title={'Best Cards for Free Flights to ' + this.props.params.countryName}/>
+        <Helmet title={'Best Card for Free Flights to ' + this.props.params.countryName}/>
         <div className={styles.card_comparison + ' container-fluid'}>
           <div className="row">
             <div className={styles.filter_menu + ' col-md-2'}>
@@ -170,7 +171,7 @@ export default class Credit extends Component {
                   </div>
                   <div className="col-md-3 text-center">
                     <h5>Apply</h5>
-                    <p>and get approved for 1-3 cards.</p>
+                    <p>and get approved for a card.</p>
                   </div>
                   <div className="col-md-3 text-center">
                     <h5>Use</h5>
@@ -201,7 +202,7 @@ export default class Credit extends Component {
                 <div>
                   {visibleCards.map((card) => {
                     return (
-                      <CardBox card={card} />
+                      <RecBox card={card} />
                     );
                   })}
                 </div>

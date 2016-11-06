@@ -2,11 +2,6 @@
 
 $CARD-WIDTH: 350px;
 $CARD-HEIGHT: 220px;
-
-.recommend_title {
-  margin: 20px 10px;
-}
-
 .card {
   margin-bottom: 20px;
   width: $CARD-WIDTH;
@@ -94,11 +89,5 @@ $CARD-HEIGHT: 220px;
       color: $palette-grey-400;
       font-size: 12px;
     }
-  }
-}
-
-.card_buttons {
-  button {
-    width: 90px;
   }
 }
