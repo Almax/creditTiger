@@ -48,8 +48,7 @@ export default class CardBoxRoute extends Component {
     }
 
     card.routesUniqAirport = [];
-    let uniqAirports = {};
-    uniqAirports['test'] = true;
+    const uniqAirports = {};
 
     card.allRoutesForSort.forEach((ro) => {
       const arrAirport = ro.arrivingAirportTicker;
