@@ -152,6 +152,7 @@ export default class Credit extends Component {
     sort.currentNumCards = possibleCards.length;
     const visibleCards = possibleCards.slice(0, 3);
     const styles = require('./CardComparison.scss');
+    const pencil = require('./pencil.png');
 
     return (
       <div>
@@ -163,18 +164,23 @@ export default class Credit extends Component {
             }
             {(this.state.largeScreen || !view.showFilterMenu) &&
               <div className="col-xs-12 col-md-10">
-                <div className={styles.cardListSubHeader}>
-                  <div className="row">
-                    <div className="col-md-6">
-                      <h3>Best Cards for Free Flights to {sort.currentCountryName}</h3>
-                    </div>
+                <div className={styles.cardListHowTo + ' text-center'}>
+                  <span>How does this work?</span>
+                </div>
+                <div className={styles.separatorTab}></div>
+                <div className={styles.cardListMainHeader}>
+                  <div className={styles.cardListHeading}>
+                    <h4>
+                      <span>Best Cards for Free Flights to </span>
+                      <span className={styles.countryNameInline}>
+                        {sort.currentCountryName}
+                        <img className={styles.pencilInline} src={pencil} height="9px" />
+                      </span>
+                    </h4>
                   </div>
                   <div className={styles.meta + ' row'}>
-                    <div className="col-md-6">
+                    <div className={styles.showing + " col-md-6"}>
                       Showing 3 of {sort.currentNumCards} cards
-                    </div>
-                    <div className={styles.view + ' col-md-6'}>
-                      View: <b>Basic</b> | Detailed
                     </div>
                   </div>
                 </div>

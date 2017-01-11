@@ -50,7 +50,7 @@
     .navRight {
       margin-right: 0px;
 
-      .filterButton {
+      .filterButton * {
         font-size: 12px;
         font-weight: 600px;
         color: white;
@@ -60,7 +60,7 @@
 }
 
 .appContent {
-  margin: 50px 0 0px; // for fixed navbar
+  margin: 54px 0 0px; // for fixed navbar
 }
 
 .footer {

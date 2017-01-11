@@ -7,16 +7,37 @@ $PADDING: 20px;
   margin-bottom: 40px;
 }
 
-.cardListSubHeader {
-  background-color: $palette-grey-50;
-  border: 1px solid $palette-grey-300;
-  padding: 0 $PADDING $PADDING;
+.cardListHowTo {
+  margin: 15px 0 15px;
+  color: $free-cyan;
+}
+
+.separatorTab {
+  margin: 0 auto 15px;
+  border-bottom: 1px solid $palette-grey-200;
+  width: 55px;
+}
+
+.cardListMainHeader {
+  .cardListHeading {
+    margin-bottom: 20px;
+  }
+  .countryNameInline {
+    font-weight: 800;
+    color: $free-blue;
+  }
+
+  .pencilInline {
+    margin-bottom: 4px;
+    margin-left: 4px;
+  }
 
   .meta {
     font-size: 12px;
   }
 
-  .view {
-    text-align: right;
+  .showing {
+    color: $palette-grey-500;
   }
+
 }
