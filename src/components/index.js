@@ -13,6 +13,7 @@ export InfoBar from './InfoBar/InfoBar';
 export MiniInfoBar from './MiniInfoBar/MiniInfoBar';
 export SurveyForm from './SurveyForm/SurveyForm';
 export WidgetForm from './WidgetForm/WidgetForm';
+export FilterMenu from './FilterMenu/FilterMenu';
 export PointSlider from './PointSlider/PointSlider';
 export FteCheckbox from './FeeCheckbox/FteCheckbox';
 export AnnualFeeCheckboxes from './FeeCheckbox/AnnualFeeCheckboxes';

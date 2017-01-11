@@ -1,9 +1,8 @@
 import _R from 'ramda';
 import React, { Component, PropTypes } from 'react';
+import { FilterMenu } from 'components';
 import { connect } from 'react-redux';
-import { Link } from 'react-toolbox/lib/link';
 import { RecBox } from 'components';
-import { AnnualFeeCheckboxes, FteCheckbox } from 'components';
 import { bindActionCreators } from 'redux';
 import { sortCountry } from 'redux/modules/sort';
 import Helmet from 'react-helmet';
@@ -100,17 +99,24 @@ const getVisibleCards = (cards, filters, sort, routes) => {
   return cardsToShow;
 };
 
+const browserSelector = ({browser}) => {
+  return { browser };
+};
+
 @connect(
   state => (
     {
       cards: state.cards,
       filter: state.filter,
       sort: state.sort,
-      routes: state.routes
+      routes: state.routes,
+      view: state.view
     }
   ),
   dispatch => bindActionCreators({ sortCountry }, dispatch)
 )
+
+@connect(browserSelector)
 
 export default class Credit extends Component {
   static propTypes = {
@@ -119,11 +125,18 @@ export default class Credit extends Component {
     sort: PropTypes.object,
     routes: PropTypes.object,
     params: PropTypes.object,
-    sortCountry: PropTypes.func
+    sortCountry: PropTypes.func,
+    browser: PropTypes.object,
+    view: PropTypes.object
+  };
+
+  state = {
+    largeScreen: true
   };
 
   componentDidMount() {
-    const { sortCountry } = this.props; // eslint-disable-line no-shadow
+    const { browser, sortCountry } = this.props; // eslint-disable-line no-shadow
+    this.state.largeScreen = browser.greaterThan.medium;
 
     // FIX THIS. Properly add the helper functions.
     // _S.countryNameToKey(this.props.params.countryName);
@@ -133,81 +146,49 @@ export default class Credit extends Component {
 
   render() {
     const { all } = this.props.cards;
-    const { filter, sort, routes } = this.props;
+    const { filter, sort, routes, view } = this.props;
+
     const possibleCards = getVisibleCards(all, filter, sort, routes);
     sort.currentNumCards = possibleCards.length;
     const visibleCards = possibleCards.slice(0, 3);
     const styles = require('./CardComparison.scss');
-    // const topCard = all[0];
 
     return (
       <div>
         <Helmet title={'Best Card for Free Flights to ' + this.props.params.countryName}/>
         <div className={styles.card_comparison + ' container-fluid'}>
           <div className="row">
-            <div className={styles.filter_menu + ' col-md-2'}>
-              <h3>Filters</h3>
-              <h5>Current Destination</h5>
-              <div className={styles.destination}>
-                {sort.currentCountryName}
+            {(this.state.largeScreen || view.showFilterMenu) &&
+              <FilterMenu />
+            }
+            {(this.state.largeScreen || !view.showFilterMenu) &&
+              <div className="col-xs-12 col-md-10">
+                <div className={styles.cardListSubHeader}>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h3>Best Cards for Free Flights to {sort.currentCountryName}</h3>
+                    </div>
+                  </div>
+                  <div className={styles.meta + ' row'}>
+                    <div className="col-md-6">
+                      Showing 3 of {sort.currentNumCards} cards
+                    </div>
+                    <div className={styles.view + ' col-md-6'}>
+                      View: <b>Basic</b> | Detailed
+                    </div>
+                  </div>
+                </div>
+                {visibleCards && visibleCards.length &&
+                  <div>
+                    {visibleCards.map((card) => {
+                      return (
+                        <RecBox card={card} />
+                      );
+                    })}
+                  </div>
+                }
               </div>
-              <Link href="/" label="Change" />
-              <h5>Annual Fees</h5>
-              <div><AnnualFeeCheckboxes /></div>
-              <h5>Transaction Fees</h5>
-              <div><FteCheckbox /></div>
-            </div>
-            <div className="col-md-10">
-              <div className={styles.cardListHeader}>
-                <div className={styles.how_to + ' row'}>
-                  <div className="col-md-12">
-                    <h4>How it works:</h4>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-3 text-center">
-                    <h5>Filter</h5>
-                    <p>the cards using the boxes on the left.</p>
-                  </div>
-                  <div className="col-md-3 text-center">
-                    <h5>Apply</h5>
-                    <p>and get approved for a card.</p>
-                  </div>
-                  <div className="col-md-3 text-center">
-                    <h5>Use</h5>
-                    <p>the new card instead of your old ones.</p>
-                  </div>
-                  <div className="col-md-3 text-center">
-                    <h5>Travel</h5>
-                    <p>with the reward points you earn from each promotion.</p>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.cardListSubHeader}>
-                <div className="row">
-                  <div className="col-md-6">
-                    <h3>Best Cards for Free Flights to {sort.currentCountryName}</h3>
-                  </div>
-                </div>
-                <div className={styles.meta + ' row'}>
-                  <div className="col-md-6">
-                    Showing 3 of {sort.currentNumCards} cards
-                  </div>
-                  <div className={styles.view + ' col-md-6'}>
-                    View: <b>Basic</b> | Detailed
-                  </div>
-                </div>
-              </div>
-              {visibleCards && visibleCards.length &&
-                <div>
-                  {visibleCards.map((card) => {
-                    return (
-                      <RecBox card={card} />
-                    );
-                  })}
-                </div>
-              }
-            </div>
+            }
           </div>
         </div>
       </div>

@@ -15,9 +15,9 @@ module.exports = Object.assign({
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
   app: {
-    title: 'FreeTravelGuy - Helping you find the best credit cards to enable free trips.',
+    title: 'Free Travel Guy - Helping you find the best credit cards to enable free trips.',
     description: 'Helping you find the best credit cards to enable free trips.',
-    name: 'FreeTravelGuy',
+    name: 'Free Travel Guy',
     head: {
       meta: [
         {name: 'description', content: 'Helping you find the best credit cards to enable free trips.'},

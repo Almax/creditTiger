@@ -2,6 +2,7 @@ import { combineReducers } from 'redux';
 import multireducer from 'multireducer';
 import { routerReducer } from 'react-router-redux';
 import {reducer as reduxAsyncConnect} from 'redux-async-connect';
+import {responsiveStateReducer} from 'redux-responsive';
 
 import auth from './auth';
 import counter from './counter';
@@ -13,10 +14,12 @@ import filter from './filter';
 import sort from './sort';
 import routes from './routes';
 import points from './points';
+import view from './view';
 
 export default combineReducers({
   routing: routerReducer,
   reduxAsyncConnect,
+  browser: responsiveStateReducer,
   auth,
   form,
   cards,
@@ -24,6 +27,7 @@ export default combineReducers({
   sort,
   routes,
   points,
+  view,
   multireducer: multireducer({
     counter1: counter,
     counter2: counter,

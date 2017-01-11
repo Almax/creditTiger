@@ -1,7 +1,9 @@
 import React, { Component, PropTypes } from 'react';
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { IndexLink } from 'react-router';
-import Navbar from 'react-bootstrap/lib/Navbar';
+import { Navbar, NavItem, Nav } from 'react-bootstrap/lib';
+import { toggleFilterMenu } from 'redux/modules/view';
 import Helmet from 'react-helmet';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
 import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/modules/auth';
@@ -24,14 +26,29 @@ import { asyncConnect } from 'redux-async-connect';
   }
 }])
 @connect(
-  state => ({user: state.auth.user}),
-  {logout, pushState: push})
+  state => (
+    {
+      user: state.auth.user,
+      view: state.view
+    }
+  ),
+  dispatch => bindActionCreators(
+    {
+      toggleFilterMenu,
+      logout,
+      pushState: push
+    },
+    dispatch
+  )
+)
 export default class App extends Component {
   static propTypes = {
     children: PropTypes.object.isRequired,
     user: PropTypes.object,
     logout: PropTypes.func.isRequired,
-    pushState: PropTypes.func.isRequired
+    pushState: PropTypes.func.isRequired,
+    toggleFilterMenu: PropTypes.func,
+    view: PropTypes.object
   };
 
   static contextTypes = {
@@ -53,21 +70,30 @@ export default class App extends Component {
     this.props.logout();
   };
 
+  handleSelect = () => {
+    const { view, toggleFilterMenu } = this.props; // eslint-disable-line no-shadow
+
+    const showFilterMenu = view.showFilterMenu;
+    toggleFilterMenu(!showFilterMenu);
+    console.log('toggling');
+  };
+
   render() {
     const styles = require('./App.scss');
 
     return (
       <div className={styles.app}>
         <Helmet {...config.app.head}/>
-        <Navbar fixedTop>
+        <Navbar fixedTop className={styles.navBar}>
           <Navbar.Header>
             <Navbar.Brand>
               <IndexLink to="/">
-                <div className={styles.brand}/>
-                <span>{config.app.name}</span>
+                <span className={styles.brand}>{config.app.name}</span>
               </IndexLink>
             </Navbar.Brand>
-            <Navbar.Toggle/>
+            <Nav pullRight className={styles.navRight}>
+              <NavItem eventKey={11} className={styles.filterButton} onSelect={this.handleSelect}>FILTER</NavItem>
+            </Nav>
           </Navbar.Header>
         </Navbar>
 

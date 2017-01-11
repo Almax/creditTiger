@@ -1,23 +1,10 @@
-@import "../../theme/variables.scss";
+@import "./src/theme/variables.scss";
 @import "~react-toolbox/lib/colors";
 
 $PADDING: 20px;
 
 .card_comparison {
   margin-bottom: 40px;
-}
-
-.filter_menu {
-  .destination {
-    text-align: center;
-    font-size: 20px;
-  }
-}
-
-.cardListHeader {
-  background-color: $palette-grey-50;
-  border: 1px solid $palette-grey-300;
-  padding: $PADDING;
 }
 
 .cardListSubHeader {

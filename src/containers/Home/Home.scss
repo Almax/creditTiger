@@ -4,7 +4,7 @@ $BG_OVERLAY_OPACITY: 0.2;
 $COUNTRY_BOX_BG_OPACITY: 0.7;
 
 .hero {
-  padding: 40px;
+  padding: 30px;
   background: linear-gradient(rgba(0,0,0,$BG_OVERLAY_OPACITY), rgba(0,0,0,$BG_OVERLAY_OPACITY)),
     url('../Home/paris_bg.jpg') no-repeat center center;
   -webkit-background-size: cover;
@@ -18,8 +18,8 @@ $COUNTRY_BOX_BG_OPACITY: 0.7;
 
     h1 {
       margin-top: 0px;
-      font-size: 48px;
-      font-weight: 400;
+      font-size: 24px;
+      font-weight: 800;
     }
   }
 
