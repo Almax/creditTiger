@@ -6,6 +6,7 @@
  */
 
 export RecBox from './RecBox/RecBox';
+export RedemptionDesc from './RecBox/RedemptionDesc';
 export CounterButton from './CounterButton/CounterButton';
 export GithubButton from './GithubButton/GithubButton';
 export InfoBar from './InfoBar/InfoBar';

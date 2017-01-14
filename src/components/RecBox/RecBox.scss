@@ -1,36 +1,45 @@
-@import "./src/theme/grid.scss";
 @import "~react-toolbox/lib/colors";
+@import "./src/theme/variables.scss";
 
 .rec_box {
   padding: 15px;
   border-radius: 6px;
-  background-color: $palette-grey-50;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
   -o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
 
   .card {
-    .card_heading_box {
-      margin-left: 15px;
-    }
-    h4 {
-      margin-top: 10px;
-      margin-bottom: 5px;
-      font-weight: 700;
+    .card_header {
+      margin-bottom: 15px;
     }
 
-    h5 {
-      margin-top: 0px;
-      color: $palette-grey-500;
+    .card_heading_box {
+      margin-left: 15px;
+
+      h4 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: 700;
+      }
+
+      h5 {
+        margin-top: 0px;
+        color: $palette-grey-500;
+      }
     }
 
     .card_image {
       margin-left: 15px;
     }
 
-    .route_highlight {
+    .separatorLine {
+      border-bottom: 1px solid $palette-grey-200;
+      margin-bottom: 18px;
+    }
 
+    .route_highlights {
+      margin-bottom: 20px;
     }
 
     .route_stat {
@@ -42,6 +51,12 @@
       font-size: 12px;
       font-weight: 600;
       color: $palette-grey-500;
+    }
+
+    .separatorTab {
+      margin: 0 auto 15px;
+      border-bottom: 1px solid $palette-grey-400;
+      width: 55px;
     }
   }
 }
@@ -57,3 +72,21 @@
   padding-left:0;
 }
 
+.route {
+  .title {
+    margin-bottom: 8px;
+
+    .planeInline {
+      display: inline;
+      margin-right: 6px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin-right: 20px;
+      font-size: 28px;
+      font-weight: 600;
+      display: inline;
+    }
+  }
+}

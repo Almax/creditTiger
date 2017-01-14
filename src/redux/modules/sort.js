@@ -32,7 +32,6 @@ export function sortOverall() {
 }
 
 export function sortCountry(country, bool) {
-  console.log('--- reducing sortCountry ---', country);
   return {
     type: COUNTRY,
     currentCountryName: country,

@@ -2,11 +2,9 @@ import _R from 'ramda';
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import numeral from 'numeral';
-import { TooltipWrapper } from 'components';
+import { RedemptionDesc } from 'components';
 
 // import { CardBoxRoute } from 'components';
-
-const styles = require('./RecBox.scss');
 
 @connect(
   state => ({
@@ -65,16 +63,6 @@ export default class RecBox extends Component {
     });
   }
 
-  subtitle = (floorNumTrips) => {
-    return (
-      <div className={styles.subtitle + ' uppercase'}>
-        <div>{floorNumTrips >= 1 ? floorNumTrips + ' ' : ''}Free</div>
-        <div>{floorNumTrips >= 1 ? 'Roundtrip' : 'One-way'}</div>
-        <div>Flight{floorNumTrips >= 1.5 ? 's ' : ' '}</div>
-      </div>
-    );
-  }
-
   handleNextRouteClick = () => {
     let nextRoute = this.state.routeNum + 1;
     const hasNextRoute = !!this.props.card.routesUniqAirport[nextRoute];
@@ -84,31 +72,25 @@ export default class RecBox extends Component {
   }
 
   render() {
+    const styles = require('./RecBox.scss');
+
     const { cardKey, cardName, issuerName, curBonusVal, annualFee, annualFeeWaived, signupUrl } = this.props.card;
     const imgUrl = require('../../images/' + cardKey + '.jpg');
+    const imgPlane = require('./plane_black.png');
 
     // FIX this!
     const { card } = this.props;
-    const { pointPrograms } = this.props.points;
     this.updateRoutes();
     const route = card.routesUniqAirport[this.state.routeNum];
     const onewayRedeemPerc = route.isCashRoute ? route.cashRedeemPerc : route.awardRedeemPerc;
     const floorNumRoundTrips = Math.floor(onewayRedeemPerc * 10 / 5 / 2) * 0.5;
-    const pointConv = route.pointConversion;
-    let convRate = 1;
-    const pointOriginalMeta = pointPrograms[card.rewardProvider];
-    const pointTransferToMeta = pointPrograms[route.originalPointType];
-
-    if (pointConv) {
-      convRate = pointConv.rate;
-    }
 
     const annualFeeStr = annualFeeWaived ? '*' : '';
 
     return (
       <div className={styles.rec_box}>
         <div className={styles.card}>
-          <div className={styles.no_gutter + ' row'}>
+          <div className={styles.card_header + ' ' + styles.no_gutter + ' row'}>
             <div className="col-xs-4">
               <img className={styles.card_image} src={imgUrl} width="100px" />
             </div>
@@ -119,42 +101,33 @@ export default class RecBox extends Component {
               </div>
             </div>
           </div>
-          <div className={styles.no_gutter + ' row'}>
-            <div className={styles.route_highlight + ' col-xs-4 text-center'}>
+          <div className={styles.separatorLine}></div>
+          <div className={styles.route_highlights + ' ' + styles.no_gutter + ' row'}>
+            <div className="col-xs-4 text-center">
               <div className={styles.route_stat}>{ floorNumRoundTrips }x</div>
               <div className={styles.route_subtext}>Round Trips</div>
             </div>
-            <div className={styles.route_highlight + ' col-xs-4 text-center'}>
-              <div className={styles.route_stat}>${ curBonusVal }</div>
+            <div className="col-xs-4 text-center">
+              <div className={styles.route_stat}>{numeral(curBonusVal).format('$(0,0)')}</div>
               <div className={styles.route_subtext}>Sign-up Bonus</div>
             </div>
-            <div className={styles.route_highlight + ' col-xs-4 text-center'}>
+            <div className="col-xs-4 text-center">
               <div className={styles.route_stat}>${ annualFee + annualFeeStr}</div>
               <div className={styles.route_subtext}>Annual Fee</div>
             </div>
           </div>
+          <div className={styles.separatorTab}></div>
         </div>
-        {this.props.sort.sortType === 'SET_COUNTRY' &&
-          <div className={styles.routes}>
-            <div className={styles.title + ' uppercase'}>{route.arrivingAirportDetails.cityName}</div>
-            <div className={styles.subheader}>
-              {this.subtitle(floorNumRoundTrips)}
+        <div>
+          <div className={styles.route}>
+            <div className={styles.title + ' text-center'}>
+              <img className={styles.planeInline} src={imgPlane} height="13px" />
+              <h3>{route.arrivingAirportDetails.cityName}</h3>
             </div>
-            <div>How to get Reward</div>
-            <TooltipWrapper tooltip="Minimum spend is how much you need to spend to get the promotional points. You do NOT need to spend any more than you currently do. You just need to convert your current spending to the new card(s) instead of your old credit cards, debit cards, checks, and/or cash.">
-              <div className={styles.explanation}>After the <i>minimum spend</i> ({numeral(card.minSpendVal).format('($0,0)')} in {card.minSpendMonths} months), you will be rewarded with <b>{numeral(card.curBonusPts).format('(0,0)')} {pointOriginalMeta.programName} {pointOriginalMeta.pointTerm}s ({pointOriginalMeta.mainAffiliate})</b>.</div>
-            </TooltipWrapper>
-            <br />
-            {!route.isCashRoute &&
-              <div>If you convert those points to {numeral(card.curBonusPts * convRate).format('(0,0)')} {pointTransferToMeta.programName} {pointTransferToMeta.pointTerm}s ({pointTransferToMeta.mainAffiliate}), it is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {numeral(route.numberOfPointsReq * 2).format('(0,0)')} {route.originalPointType} miles per roundtrip.</div>
-            }
-            {route.isCashRoute &&
-              <div>The {card.cardName} allows you to convert to travel credit at ${card.travelConvRate} per point. You could then transfer all the points to {numeral(card.travelConvRate * card.curBonusPts).format('($0,0)')} in travel credit, which is enough for <b>{floorNumRoundTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {numeral(route.cashReq * 2).format('($0,0)')} per roundtrip.</div>
-            }
-            <button className={styles.nextRoute + ' btn btn-default'} onClick={this.handleNextRouteClick.bind(this)}>Other Airports</button>
           </div>
-
-        }
+          <RedemptionDesc route={route} card={card} floorTrips={floorNumRoundTrips}/>
+          <button className={styles.nextRoute + ' btn btn-default'} onClick={this.handleNextRouteClick.bind(this)}>Other Airports</button>
+        </div>
         <div className={styles.card_buttons + ' row'}>
           <div className="col-md-4 col-md-offset-4">
             <a href={signupUrl} target="_blank">

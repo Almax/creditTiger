@@ -1,0 +1,33 @@
+@import "./src/theme/variables.scss";
+
+.redemption_desc {
+  .route_show_details {
+    button {
+      font-size: 12px;
+      font-weight: 600;
+      color: $free-blue;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+
+  .route_desc {
+    &.hide {
+      display: none;
+    }
+  }
+
+  .route_hide_details {
+    button {
+      font-size: 12px;
+      font-weight: 600;
+      color: $free-blue;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+}
