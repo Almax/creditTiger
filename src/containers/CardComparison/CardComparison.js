@@ -151,7 +151,7 @@ export default class Credit extends Component {
         <div className={styles.card_comparison + ' container-fluid'}>
           <div className="row">
             <div className={styles.filter_menu + addnFilterClass + ' col-xs-12 col-md-2'}>
-              <FilterMenu />
+              <FilterMenu country={this.state.currentCountry}/>
             </div>
             <div className={styles.card_results + addnResultsClass + ' col-xs-12 col-md-10'}>
               <div className={styles.cardListHowTo + ' text-center'}>

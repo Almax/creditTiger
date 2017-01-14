@@ -1,24 +1,14 @@
 import React, {Component, PropTypes} from 'react';
 import { AnnualFeeCheckboxes, FteCheckbox } from 'components';
 import { Link } from 'react-toolbox/lib/link';
-import {connect} from 'react-redux';
-
-@connect(
-  state => (
-    {
-      sort: state.sort
-    }
-  ),
-  null
-)
 
 export default class FilterMenu extends Component {
   static propTypes = {
-    sort: PropTypes.object
+    country: PropTypes.string
   }
 
   render() {
-    const { sort } = this.props;
+    const { country } = this.props;
     const styles = require('./FilterMenu.scss');
 
     return (
@@ -26,7 +16,7 @@ export default class FilterMenu extends Component {
         <h3>Filter Cards</h3>
         <h5>Current Destination</h5>
         <div className={styles.destination}>
-          {sort.currentCountryName}
+          {country}
         </div>
         <Link href="/" label="Change" />
         <h5>Annual Fees</h5>

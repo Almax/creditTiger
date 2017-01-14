@@ -1,7 +1,7 @@
 @import "./src/theme/grid.scss";
 @import "~react-toolbox/lib/colors";
 
-.rec_box_card_route {
+.rec_box {
   padding: 15px;
   border-radius: 6px;
   background-color: $palette-grey-50;
@@ -27,6 +27,21 @@
 
     .card_image {
       margin-left: 15px;
+    }
+
+    .route_highlight {
+
+    }
+
+    .route_stat {
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+    .route_subtext {
+      font-size: 12px;
+      font-weight: 600;
+      color: $palette-grey-500;
     }
   }
 }

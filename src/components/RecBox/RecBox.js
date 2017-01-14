@@ -103,11 +103,10 @@ export default class RecBox extends Component {
       convRate = pointConv.rate;
     }
 
-    let annualFeeStr = '$' + annualFee + ' Annual Fee';
-    if (annualFeeWaived === true) annualFeeStr += ' (waived first year)';
+    const annualFeeStr = annualFeeWaived ? '*' : '';
 
     return (
-      <div className={styles.rec_box_card_route}>
+      <div className={styles.rec_box}>
         <div className={styles.card}>
           <div className={styles.no_gutter + ' row'}>
             <div className="col-xs-4">
@@ -121,14 +120,17 @@ export default class RecBox extends Component {
             </div>
           </div>
           <div className={styles.no_gutter + ' row'}>
-            <div className="col-xs-4 text-center">
-              <div>${ curBonusVal } Sign-up Bonus Value</div>
+            <div className={styles.route_highlight + ' col-xs-4 text-center'}>
+              <div className={styles.route_stat}>{ floorNumRoundTrips }x</div>
+              <div className={styles.route_subtext}>Round Trips</div>
             </div>
-            <div className="col-xs-4 text-center">
-              <div>{ annualFeeStr }</div>
+            <div className={styles.route_highlight + ' col-xs-4 text-center'}>
+              <div className={styles.route_stat}>${ curBonusVal }</div>
+              <div className={styles.route_subtext}>Sign-up Bonus</div>
             </div>
-            <div className="col-xs-4 text-center">
-              <div>{ annualFeeStr }</div>
+            <div className={styles.route_highlight + ' col-xs-4 text-center'}>
+              <div className={styles.route_stat}>${ annualFee + annualFeeStr}</div>
+              <div className={styles.route_subtext}>Annual Fee</div>
             </div>
           </div>
         </div>
