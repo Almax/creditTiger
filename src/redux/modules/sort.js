@@ -2,7 +2,7 @@ const OVERALL = 'SET_OVERALL';
 const COUNTRY = 'SET_COUNTRY';
 
 const initialState = {
-  sortType: OVERALL,
+  sortType: COUNTRY,
   currentCountryName: '',
   currentNumCards: 0
 };
@@ -32,6 +32,7 @@ export function sortOverall() {
 }
 
 export function sortCountry(country, bool) {
+  console.log('--- reducing sortCountry ---', country);
   return {
     type: COUNTRY,
     currentCountryName: country,

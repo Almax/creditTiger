@@ -7,7 +7,7 @@ import { bindActionCreators } from 'redux';
 import { sortCountry } from 'redux/modules/sort';
 import Helmet from 'react-helmet';
 
-const getVisibleCards = (cards, filters, sort, routes) => {
+const getVisibleCards = (cards, filters, country, routes) => {
   let cardsToShow = cards;
   let onlyIssuerKeysToFilter = {}; // eslint-disable-line prefer-const
 
@@ -53,54 +53,46 @@ const getVisibleCards = (cards, filters, sort, routes) => {
     cardsToShow = cardsToShow.filter(ca => onlyIssuerKeysToFilter[ca.issuerName] === true);
   }
 
-  if (sort.sortType === 'SET_COUNTRY') {
-    const curAwardRoutes = routes.countryAwardRoutes[sort.currentCountryName];
-    const curCashRoutes = routes.countryCashRoutes[sort.currentCountryName];
+  const curAwardRoutes = routes.countryAwardRoutes[country];
+  const curCashRoutes = routes.countryCashRoutes[country];
 
-    const plus = (aa, bb) => aa + bb;
-    const numPointsFn = ro => ro.numberOfPointsReq;
-    const cashFn = ro => ro.cashReq;
+  const plus = (aa, bb) => aa + bb;
+  const numPointsFn = ro => ro.numberOfPointsReq;
+  const cashFn = ro => ro.cashReq;
 
-    cardsToShow.forEach((ca) => {
-      const rewardProviver = ca.rewardProvider;
-      ca.awardRedeemPerc = 0;
-      ca.cashRedeemPerc = 0;
-      ca.bestRedeemPerc = 0;
+  cardsToShow.forEach((ca) => {
+    const rewardProviver = ca.rewardProvider;
+    ca.awardRedeemPerc = 0;
+    ca.cashRedeemPerc = 0;
+    ca.bestRedeemPerc = 0;
 
-      ca.awardRoutesForSort = curAwardRoutes[rewardProviver] || [];
+    ca.awardRoutesForSort = curAwardRoutes[rewardProviver] || [];
 
-      if (ca.canConvToCash) {
-        const cashRouteList = _R.map(cashFn, curCashRoutes);
-        const averageCash = _R.reduce(plus, 0, cashRouteList) / curCashRoutes.length;
+    if (ca.canConvToCash) {
+      const cashRouteList = _R.map(cashFn, curCashRoutes);
+      const averageCash = _R.reduce(plus, 0, cashRouteList) / curCashRoutes.length;
 
-        ca.cashRedeemPerc = (ca.curBonusPts * ca.travelConvRate) / averageCash;
-        ca.cashRoutesForSort = curCashRoutes;
-      }
+      ca.cashRedeemPerc = (ca.curBonusPts * ca.travelConvRate) / averageCash;
+      ca.cashRoutesForSort = curCashRoutes;
+    }
 
-      if (ca.awardRoutesForSort.length) {
-        const numPointsRouteList = _R.map(numPointsFn, ca.awardRoutesForSort);
-        const averageNumPoints = _R.reduce(plus, 0, numPointsRouteList) / ca.awardRoutesForSort.length;
-        ca.awardRedeemPerc = ca.curBonusPts / averageNumPoints;
-      }
+    if (ca.awardRoutesForSort.length) {
+      const numPointsRouteList = _R.map(numPointsFn, ca.awardRoutesForSort);
+      const averageNumPoints = _R.reduce(plus, 0, numPointsRouteList) / ca.awardRoutesForSort.length;
+      ca.awardRedeemPerc = ca.curBonusPts / averageNumPoints;
+    }
 
-      ca.bestRedeemPerc = ca.awardRedeemPerc > ca.cashRedeemPerc ? ca.awardRedeemPerc : ca.cashRedeemPerc;
-    });
+    ca.bestRedeemPerc = ca.awardRedeemPerc > ca.cashRedeemPerc ? ca.awardRedeemPerc : ca.cashRedeemPerc;
+  });
 
-    const hasNoRoutes = ca => !ca.awardRoutesForSort.length && !ca.canConvToCash;
-    cardsToShow = _R.reject(hasNoRoutes, cardsToShow);
+  const hasNoRoutes = ca => !ca.awardRoutesForSort.length && !ca.canConvToCash;
+  cardsToShow = _R.reject(hasNoRoutes, cardsToShow);
 
-    cardsToShow.sort((ca, cb) => { return (cb.bestRedeemPerc - ca.bestRedeemPerc);});
-  } else {
-    cardsToShow.sort((ca, cb) => { return (cb.overallRank - ca.overallRank);});
-  }
+  cardsToShow.sort((ca, cb) => { return (cb.bestRedeemPerc - ca.bestRedeemPerc);});
 
   cardsToShow.forEach((ca, ind) => { ca.curRank = ind + 1; });
 
   return cardsToShow;
-};
-
-const browserSelector = ({browser}) => {
-  return { browser };
 };
 
 @connect(
@@ -116,8 +108,6 @@ const browserSelector = ({browser}) => {
   dispatch => bindActionCreators({ sortCountry }, dispatch)
 )
 
-@connect(browserSelector)
-
 export default class Credit extends Component {
   static propTypes = {
     cards: PropTypes.object,
@@ -126,75 +116,74 @@ export default class Credit extends Component {
     routes: PropTypes.object,
     params: PropTypes.object,
     sortCountry: PropTypes.func,
-    browser: PropTypes.object,
     view: PropTypes.object
   };
 
   state = {
-    largeScreen: true
+    currentCountry: ''
   };
 
-  componentDidMount() {
-    const { browser, sortCountry } = this.props; // eslint-disable-line no-shadow
-    this.state.largeScreen = browser.greaterThan.medium;
-
-    // FIX THIS. Properly add the helper functions.
-    // _S.countryNameToKey(this.props.params.countryName);
-
-    sortCountry(this.props.params.countryName, true);
+  componentWillMount() {
+    const { sortCountry } = this.props; // eslint-disable-line no-shadow
+    this.setState({
+      currentCountry: this.props.params.countryName
+    });
+    sortCountry(this.state.currentCountry, true);
   }
 
   render() {
     const { all } = this.props.cards;
-    const { filter, sort, routes, view } = this.props;
+    const { filter, routes, sort, view } = this.props;
+    const possibleCards = getVisibleCards(all, filter, this.state.currentCountry, routes);
 
-    const possibleCards = getVisibleCards(all, filter, sort, routes);
     sort.currentNumCards = possibleCards.length;
     const visibleCards = possibleCards.slice(0, 3);
+
     const styles = require('./CardComparison.scss');
     const pencil = require('./pencil.png');
 
+    const addnFilterClass = view.showFilterMenu ? '' : ' hide';
+    const addnResultsClass = view.showFilterMenu ? ' hide' : '';
+
     return (
       <div>
-        <Helmet title={'Best Card for Free Flights to ' + this.props.params.countryName}/>
+        <Helmet title={'Best Card for Free Flights to ' + this.state.currentCountry}/>
         <div className={styles.card_comparison + ' container-fluid'}>
           <div className="row">
-            {(this.state.largeScreen || view.showFilterMenu) &&
+            <div className={styles.filter_menu + addnFilterClass + ' col-xs-12 col-md-2'}>
               <FilterMenu />
-            }
-            {(this.state.largeScreen || !view.showFilterMenu) &&
-              <div className="col-xs-12 col-md-10">
-                <div className={styles.cardListHowTo + ' text-center'}>
-                  <span>How does this work?</span>
-                </div>
-                <div className={styles.separatorTab}></div>
-                <div className={styles.cardListMainHeader}>
-                  <div className={styles.cardListHeading}>
-                    <h4>
-                      <span>Best Cards for Free Flights to </span>
-                      <span className={styles.countryNameInline}>
-                        {sort.currentCountryName}
-                        <img className={styles.pencilInline} src={pencil} height="9px" />
-                      </span>
-                    </h4>
-                  </div>
-                  <div className={styles.meta + ' row'}>
-                    <div className={styles.showing + " col-md-6"}>
-                      Showing 3 of {sort.currentNumCards} cards
-                    </div>
-                  </div>
-                </div>
-                {visibleCards && visibleCards.length &&
-                  <div>
-                    {visibleCards.map((card) => {
-                      return (
-                        <RecBox card={card} />
-                      );
-                    })}
-                  </div>
-                }
+            </div>
+            <div className={styles.card_results + addnResultsClass + ' col-xs-12 col-md-10'}>
+              <div className={styles.cardListHowTo + ' text-center'}>
+                <span>How does this work?</span>
               </div>
-            }
+              <div className={styles.separatorTab}></div>
+              <div className={styles.cardListMainHeader}>
+                <div className={styles.cardListHeading}>
+                  <h4>
+                    <span>Best Cards for Free Flights to </span>
+                    <span className={styles.countryNameInline}>
+                      {this.state.currentCountry}
+                      <img className={styles.pencilInline} src={pencil} height="9px" />
+                    </span>
+                  </h4>
+                </div>
+                <div className={styles.meta + ' row'}>
+                  <div className={styles.showing + ' col-md-6'}>
+                    Showing 3 of {sort.currentNumCards} cards
+                  </div>
+                </div>
+              </div>
+              {visibleCards && visibleCards.length &&
+                <div>
+                  {visibleCards.map((card) => {
+                    return (
+                      <RecBox card={card} />
+                    );
+                  })}
+                </div>
+              }
+            </div>
           </div>
         </div>
       </div>

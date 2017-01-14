@@ -1,7 +1,6 @@
 import { createStore as _createStore, applyMiddleware, compose } from 'redux';
 import createMiddleware from './middleware/clientMiddleware';
 import { routerMiddleware } from 'react-router-redux';
-import { responsiveStoreEnhancer } from 'redux-responsive';
 
 export default function createStore(history, client, data) {
   // Sync dispatched route actions to the history
@@ -14,14 +13,12 @@ export default function createStore(history, client, data) {
     const { persistState } = require('redux-devtools');
     const DevTools = require('../containers/DevTools/DevTools');
     finalCreateStore = compose(
-      responsiveStoreEnhancer,
       applyMiddleware(...middleware),
       window.devToolsExtension ? window.devToolsExtension() : DevTools.instrument(),
       persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
     )(_createStore);
   } else {
     finalCreateStore = compose(
-      responsiveStoreEnhancer,
       applyMiddleware(...middleware)
     )(_createStore);
   }

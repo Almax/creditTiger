@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { IndexLink } from 'react-router';
 import { Navbar, NavItem, Nav } from 'react-bootstrap/lib';
-import { toggleFilterMenu } from 'redux/modules/view';
+import { toggleFilterMenu, setScreenSize } from 'redux/modules/view';
 import Helmet from 'react-helmet';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
 import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/modules/auth';
@@ -25,6 +25,7 @@ import { asyncConnect } from 'redux-async-connect';
     return Promise.all(promises);
   }
 }])
+
 @connect(
   state => (
     {
@@ -35,12 +36,14 @@ import { asyncConnect } from 'redux-async-connect';
   dispatch => bindActionCreators(
     {
       toggleFilterMenu,
+      setScreenSize,
       logout,
       pushState: push
     },
     dispatch
   )
 )
+
 export default class App extends Component {
   static propTypes = {
     children: PropTypes.object.isRequired,
@@ -48,6 +51,7 @@ export default class App extends Component {
     logout: PropTypes.func.isRequired,
     pushState: PropTypes.func.isRequired,
     toggleFilterMenu: PropTypes.func,
+    setScreenSize: PropTypes.func,
     view: PropTypes.object
   };
 
@@ -71,11 +75,10 @@ export default class App extends Component {
   };
 
   handleSelect = () => {
-    const { view, toggleFilterMenu } = this.props; // eslint-disable-line no-shadow
+    const { toggleFilterMenu, view } = this.props; // eslint-disable-line no-shadow
 
     const showFilterMenu = view.showFilterMenu;
     toggleFilterMenu(!showFilterMenu);
-    console.log('toggling');
   };
 
   render() {

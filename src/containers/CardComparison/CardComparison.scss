@@ -5,6 +5,20 @@ $PADDING: 20px;
 
 .card_comparison {
   margin-bottom: 40px;
+
+  .filter_menu {
+    &.hide {
+      display: none;
+      background-color: red;
+    }
+  }
+
+  .card_results {
+    &.hide {
+      display: none;
+      background-color: red;
+    }
+  }
 }
 
 .cardListHowTo {
@@ -19,6 +33,8 @@ $PADDING: 20px;
 }
 
 .cardListMainHeader {
+  margin-bottom: 25px;
+
   .cardListHeading {
     margin-bottom: 20px;
   }

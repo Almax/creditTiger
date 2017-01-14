@@ -1,33 +1,44 @@
+@import "./src/theme/grid.scss";
 @import "~react-toolbox/lib/colors";
 
-$PADDING: 20px;
-$BORDER-WIDTH: 1px;
-
 .rec_box_card_route {
+  padding: 15px;
+  border-radius: 6px;
   background-color: $palette-grey-50;
-  border: $BORDER-WIDTH solid $palette-grey-300;
-  padding: $PADDING;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
 
   .card {
-    h3 {
+    .card_heading_box {
+      margin-left: 15px;
+    }
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+
+    h5 {
       margin-top: 0px;
+      color: $palette-grey-500;
+    }
+
+    .card_image {
+      margin-left: 15px;
     }
   }
 }
-
-.card_image {
-  width: 100%;
-  height: 100%;
-  background-size: 100%;
-}
-
-.recommend_title {
-  margin: 20px 10px;
-}
-
 
 .card_buttons {
   button {
     width: 90px;
   }
 }
+
+.no_gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
