@@ -25,8 +25,6 @@ export default class CardBoxRoute extends Component {
     this.setState({
       hide: !this.state.hide
     });
-
-    console.log('this.state.hide', this.state.hide);
   }
 
   render() {
@@ -49,7 +47,7 @@ export default class CardBoxRoute extends Component {
 
     return (
       <div className={styles.redemption_desc}>
-        <div className={styles.route_show_details + addnShowDetailsCls + ' text-center'}>
+        <div className={styles.show_hide + ' ' + styles.route_show_details + addnShowDetailsCls + ' text-center'}>
           <button onClick={this.toggleShowDetails}>
             Show more details
           </button>
@@ -64,7 +62,7 @@ export default class CardBoxRoute extends Component {
             <div>The {card.cardName} allows you to convert to travel credit at ${card.travelConvRate} per point. You could then transfer all the points to {numeral(card.travelConvRate * card.curBonusPts).format('($0,0)')} in travel credit, which is enough for <b>{floorTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {numeral(route.cashReq * 2).format('($0,0)')} per roundtrip.</div>
           }
         </div>
-        <div className={styles.route_hide_details + addnDetailsCls + ' text-center'}>
+        <div className={styles.show_hide + ' ' + styles.route_hide_details + addnDetailsCls + ' text-center'}>
           <button onClick={this.toggleShowDetails}>
             Show less details
           </button>

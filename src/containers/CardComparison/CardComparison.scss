@@ -1,22 +1,23 @@
 @import "./src/theme/variables.scss";
 @import "~react-toolbox/lib/colors";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
 $PADDING: 20px;
 
 .card_comparison {
   margin-bottom: 30px;
 
-  .filter_menu {
-    &.hide {
-      display: none;
-      background-color: red;
+  @media (max-width: $screen-sm-min) {
+    .filter_menu {
+      &.hide_col {
+        display: none;
+      }
     }
-  }
 
-  .card_results {
-    &.hide {
-      display: none;
-      background-color: red;
+    .card_results {
+      &.hide_col {
+        display: none;
+      }
     }
   }
 }

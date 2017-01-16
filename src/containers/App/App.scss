@@ -1,5 +1,6 @@
 @import "./src/theme/variables.scss";
 @import "~react-toolbox/lib/colors";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
 @font-face {
   font-family: 'Raleway';
@@ -54,6 +55,12 @@
         font-size: 12px;
         font-weight: 600px;
         color: white;
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      .navRight {
+        display: none;
       }
     }
   }

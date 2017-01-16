@@ -1,0 +1,17 @@
+@import "./src/theme/variables.scss";
+
+.check {
+  float: right !important;
+  border-radius: 9px;
+
+  &.check.checked {
+    border: 2px solid $free-blue;
+    background-color: $free-blue;
+  }
+}
+
+.text {
+  padding-left: 0px;
+  font-weight: 700;
+  font-size: 18px;
+}

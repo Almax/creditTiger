@@ -1,8 +1,28 @@
-
+@import "./src/theme/variables.scss";
 
 .filters {
-  .destination {
-    text-align: center;
-    font-size: 20px;
+  h4 {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 24px;
   }
+  .destination {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 700;
+
+    a {
+      color: $free-blue;
+    }
+  }
+  .change {
+    float: right;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.filter_headers {
+  margin-top: 32px;
+  margin-bottom: 12px;
 }

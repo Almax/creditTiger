@@ -1,6 +1,5 @@
 import React, {Component, PropTypes} from 'react';
 import { AnnualFeeCheckboxes, FteCheckbox } from 'components';
-import { Link } from 'react-toolbox/lib/link';
 
 export default class FilterMenu extends Component {
   static propTypes = {
@@ -13,15 +12,17 @@ export default class FilterMenu extends Component {
 
     return (
       <div className={styles.filters}>
-        <h3>Filter Cards</h3>
-        <h5>Current Destination</h5>
+        <h4>Filter Cards</h4>
+        <div className={styles.filter_headers}>Current Destination</div>
         <div className={styles.destination}>
           {country}
+          <span className={styles.change}>
+            <a href="/">Change</a>
+          </span>
         </div>
-        <Link href="/" label="Change" />
-        <h5>Annual Fees</h5>
+        <div className={styles.filter_headers}>Annual Fees</div>
         <div><AnnualFeeCheckboxes /></div>
-        <h5>Transaction Fees</h5>
+        <div className={styles.filter_headers}>Foreign Transaction Fees</div>
         <div><FteCheckbox /></div>
       </div>
     );

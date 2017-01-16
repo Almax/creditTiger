@@ -39,20 +39,24 @@ export default class AnnualFeeCheckbox extends Component {
 
   render() {
     const { filter } = this.props;
+    const styles = require('./FreeBox.scss');
 
     return (
       <div>
         <Checkbox
+          theme={styles}
           checked={filter.annualFeeWaivedOnly}
           label="Waived or None"
           onChange={this.handleChange.bind(this, WAIVED)}
         />
         <Checkbox
+          theme={styles}
           checked={filter.annualFeeLess100Only}
           label="Less than $100"
           onChange={this.handleChange.bind(this, LESS_100)}
         />
         <Checkbox
+          theme={styles}
           checked={filter.annualFee100MoreOnly}
           label="$100 or more"
           onChange={this.handleChange.bind(this, MORE_100)}

@@ -27,10 +27,13 @@ export default class FteCheckbox extends Component {
   };
 
   render() {
+    const styles = require('./FreeBox.scss');
+
     return (
       <Checkbox
+        theme={styles}
         checked={this.state.check2}
-        label="No Foreign Transaction Fees"
+        label="None"
         onChange={this.handleChange.bind(this, 'check2')}
       />
     );

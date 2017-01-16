@@ -142,18 +142,18 @@ export default class Credit extends Component {
     const styles = require('./CardComparison.scss');
     const pencil = require('./pencil.png');
 
-    const addnFilterClass = view.showFilterMenu ? '' : ' hide';
-    const addnResultsClass = view.showFilterMenu ? ' hide' : '';
+    const addnFilterClass = view.showFilterMenu ? '' : ' ' + styles.hide_col;
+    const addnResultsClass = view.showFilterMenu ? ' ' + styles.hide_col : '';
 
     return (
       <div>
         <Helmet title={'Best Card for Free Flights to ' + this.state.currentCountry}/>
         <div className={styles.card_comparison + ' container-fluid'}>
           <div className="row">
-            <div className={styles.filter_menu + addnFilterClass + ' col-xs-12 col-md-2'}>
+            <div className={styles.filter_menu + addnFilterClass + ' col-xs-12 col-sm-3 col-md-2'}>
               <FilterMenu country={this.state.currentCountry}/>
             </div>
-            <div className={styles.card_results + addnResultsClass + ' col-xs-12 col-md-10'}>
+            <div className={styles.card_results + addnResultsClass + ' col-xs-12 col-sm-9 col-md-10'}>
               <div className={styles.cardListHowTo + ' text-center'}>
                 <span>How does this work?</span>
               </div>

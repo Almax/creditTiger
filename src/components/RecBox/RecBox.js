@@ -131,11 +131,11 @@ export default class RecBox extends Component {
         </div>
         <div className={styles.card_buttons + ' row'}>
           <div className={styles.button_container + ' ' + styles.other}>
-            <div className={styles.nextRoute + ' ' + styles.full_width + ' btn btn-default'} onClick={this.handleNextRouteClick.bind(this)}>Other Airports</div>
+            <div className={styles.nextRoute + ' ' + styles.full_width + ' btn btn-default text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>More Options</div>
           </div>
           <div className={styles.button_container + ' ' + styles.apply}>
             <a href={signupUrl} target="_blank">
-              <div className={styles.full_width + ' btn btn-success'}>Apply Now</div>
+              <div className={styles.full_width + ' btn btn-success text-uppercase'}>Learn More</div>
             </a>
           </div>
         </div>

@@ -1,11 +1,13 @@
 @import "./src/theme/variables.scss";
 
 .redemption_desc {
-  .route_show_details {
+  .show_hide {
     button {
       font-size: 12px;
       font-weight: 600;
       color: $free-blue;
+      background-color: white;
+      border: none;
     }
 
     &.hide {
@@ -17,18 +19,6 @@
     padding: 5px;
     line-height: 20px;
     font-size: 12px;
-
-    &.hide {
-      display: none;
-    }
-  }
-
-  .route_hide_details {
-    button {
-      font-size: 12px;
-      font-weight: 600;
-      color: $free-blue;
-    }
 
     &.hide {
       display: none;
