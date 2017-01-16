@@ -64,13 +64,24 @@
 }
 
 .footer {
-  padding: 35px;
-  height: 150px;
-  background-color: $palette-grey-800;
+  padding: 25px 0px 65px;
+  background-color: $palette-grey-200;
+
+  .plane_img {
+    margin-bottom: 10px;
+  }
 
   .title {
-    margin-bottom: 20px;
-    color: $palette-grey-200;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $gray-300;
+  }
+
+  .separatorTab {
+    margin: 0 auto 22px;
+    border-bottom: 1px solid $palette-grey-400;
+    width: 36px;
   }
 
   .main_text {

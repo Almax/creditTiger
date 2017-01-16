@@ -46,8 +46,6 @@ export default class CardBoxRoute extends Component {
 
     const addnShowDetailsCls = this.state.hide ? '' : ' hide';
     const addnDetailsCls = this.state.hide ? ' hide' : '';
-    console.log('addnShowDetailsCls', addnShowDetailsCls);
-    console.log('addnDetailsCls', addnDetailsCls);
 
     return (
       <div className={styles.redemption_desc}>

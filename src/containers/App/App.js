@@ -83,6 +83,7 @@ export default class App extends Component {
 
   render() {
     const styles = require('./App.scss');
+    const imgPlane = require('./plane_gray.png');
 
     return (
       <div className={styles.app}>
@@ -106,22 +107,28 @@ export default class App extends Component {
         <div className={styles.footer}>
           <div className="container-fluid">
             <div className="row">
-              <div className="col-md-8 col-md-offset-2">
+              <div className="col-md-8 col-md-offset-2 text-center">
+                <img className={styles.plane_img} src={imgPlane} height="13px" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-8 col-md-offset-2 text-center">
                 <div className={styles.title}>
                   {config.app.name}
                 </div>
               </div>
             </div>
+            <div className={styles.separatorTab}></div>
             <div className="row">
               <div className="col-md-8 col-md-offset-2">
-                <div className={styles.main_text}>
+                <div className={styles.main_text + ' text-center'}>
                   © 2016 {config.app.name}, All Rights Reserved
                 </div>
               </div>
             </div>
             <div className="row">
               <div className="col-md-8 col-md-offset-2">
-                <div className={styles.main_text}>
+                <div className={styles.main_text + ' text-center'}>
                   Designed & Developed by {config.app.name}
                 </div>
               </div>
