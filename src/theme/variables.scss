@@ -13,6 +13,7 @@ $cyan: #33e0ff;
 $humility: #777;
 $free-blue: #4EB1CB;
 $free-cyan: #25D6BE;
+$gray-300: #55575D;
 
 // Bootstrap Variables
 $brand-primary: darken(#428bca, 6.5%);
@@ -27,3 +28,15 @@ $body-bg: #fff;
 
 $font-size-base: 14px;
 $font-family-sans-serif: "Raleway", "Helvetica Neue", Helvetica, sans-serif;
+
+$btn-font-weight: 700;
+$btn-default-color: $gray-300;
+$btn-default-bg: $palette-grey-200;
+$btn-default-border: $palette-grey-200;
+
+$btn-success-color: white;
+$btn-success-bg: $free-cyan;
+$btn-success-border: $free-cyan;
+
+
+

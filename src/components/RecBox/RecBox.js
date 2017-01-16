@@ -126,12 +126,14 @@ export default class RecBox extends Component {
             </div>
           </div>
           <RedemptionDesc route={route} card={card} floorTrips={floorNumRoundTrips}/>
-          <button className={styles.nextRoute + ' btn btn-default'} onClick={this.handleNextRouteClick.bind(this)}>Other Airports</button>
         </div>
         <div className={styles.card_buttons + ' row'}>
-          <div className="col-md-4 col-md-offset-4">
+          <div className={styles.button_container + ' ' + styles.other}>
+            <div className={styles.nextRoute + ' ' + styles.full_width + ' btn btn-default'} onClick={this.handleNextRouteClick.bind(this)}>Other Airports</div>
+          </div>
+          <div className={styles.button_container + ' ' + styles.apply}>
             <a href={signupUrl} target="_blank">
-              <button className={styles.button + ' btn btn-success'}>Apply Now</button>
+              <div className={styles.full_width + ' btn btn-success'}>Apply Now</div>
             </a>
           </div>
         </div>

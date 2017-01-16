@@ -57,7 +57,6 @@ export default class CardBoxRoute extends Component {
           </button>
         </div>
         <div className={styles.route_desc + addnDetailsCls}>
-          <div>How to get Reward</div>
           <div className={styles.explanation}>After the <i>minimum spend</i> ({numeral(card.minSpendVal).format('($0,0)')} in {card.minSpendMonths} months), you will be rewarded with <b>{numeral(card.curBonusPts).format('(0,0)')} {pointOriginalMeta.programName} {pointOriginalMeta.pointTerm}s ({pointOriginalMeta.mainAffiliate})</b>.</div>
           <br />
           {!route.isCashRoute &&

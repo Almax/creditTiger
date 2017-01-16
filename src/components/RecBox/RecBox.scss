@@ -2,6 +2,7 @@
 @import "./src/theme/variables.scss";
 
 .rec_box {
+  margin-bottom: 15px;
   padding: 15px;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
@@ -61,12 +62,6 @@
   }
 }
 
-.card_buttons {
-  button {
-    width: 90px;
-  }
-}
-
 .no_gutter > [class*='col-'] {
   padding-right:0;
   padding-left:0;
@@ -90,3 +85,23 @@
     }
   }
 }
+
+.card_buttons {
+  .full_width {
+    width: 100%;
+  }
+
+  .button_container {
+    padding: 0px 15px;
+
+    &.other {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    &.apply {
+
+    }
+  }
+}
+
