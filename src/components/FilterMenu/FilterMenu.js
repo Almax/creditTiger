@@ -1,5 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import { AnnualFeeCheckboxes, FteCheckbox } from 'components';
+import { IndexLink } from 'react-router';
 
 export default class FilterMenu extends Component {
   static propTypes = {
@@ -9,6 +10,7 @@ export default class FilterMenu extends Component {
   render() {
     const { country } = this.props;
     const styles = require('./FilterMenu.scss');
+    const linkStyles = require('./LinkStyles.scss');
 
     return (
       <div className={styles.filters}>
@@ -17,7 +19,9 @@ export default class FilterMenu extends Component {
         <div className={styles.destination}>
           {country}
           <span className={styles.change}>
-            <a href="/">Change</a>
+            <IndexLink theme={linkStyles} to="/">
+              <span>Change</span>
+            </IndexLink>
           </span>
         </div>
         <div className={styles.filter_headers}>Annual Fees</div>
