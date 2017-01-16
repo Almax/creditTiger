@@ -1,6 +1,8 @@
 @import "~react-toolbox/lib/colors";
 @import "./src/theme/variables.scss";
 
+$IPHONE_5_WIDTH: 350px;
+
 .rec_box {
   margin-bottom: 15px;
   padding: 15px;
@@ -13,6 +15,14 @@
   .card {
     .card_header {
       margin-bottom: 15px;
+    }
+
+    .card_image_box {
+      margin-left: 15px;
+
+      .card_image {
+        width: 100%;
+      }      
     }
 
     .card_heading_box {
@@ -30,10 +40,6 @@
       }
     }
 
-    .card_image {
-      margin-left: 15px;
-    }
-
     .separatorLine {
       border-bottom: 1px solid $palette-grey-200;
       margin-bottom: 18px;
@@ -46,6 +52,12 @@
     .route_stat {
       font-size: 36px;
       font-weight: 600;
+    }
+
+    @media (max-width: $IPHONE_5_WIDTH) {
+      .route_stat {
+        font-size: 32px;
+      }
     }
 
     .route_subtext {

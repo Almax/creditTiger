@@ -92,7 +92,9 @@ export default class RecBox extends Component {
         <div className={styles.card}>
           <div className={styles.card_header + ' ' + styles.no_gutter + ' row'}>
             <div className="col-xs-4">
-              <img className={styles.card_image} src={imgUrl} width="100px" />
+              <div className={styles.card_image_box}>
+                <img className={styles.card_image} src={imgUrl} width="100%" />
+              </div>
             </div>
             <div className="col-xs-8">
               <div className={styles.card_heading_box}>
