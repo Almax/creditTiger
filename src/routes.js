@@ -8,6 +8,7 @@ import {
     CardComparison,
     Widgets,
     About,
+    LearnMore,
     Login,
     LoginSuccess,
     Survey,
@@ -54,6 +55,7 @@ export default (store) => {
       <Route path="login" component={Login}/>
       <Route path="survey" component={Survey}/>
       <Route path="widgets" component={Widgets}/>
+      <Route path="learn_more" component={LearnMore}/>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
