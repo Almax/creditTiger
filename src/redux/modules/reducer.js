@@ -14,17 +14,19 @@ import sort from './sort';
 import routes from './routes';
 import points from './points';
 import view from './view';
+import learnMore from './learnMore';
 
 export default combineReducers({
   routing: routerReducer,
   reduxAsyncConnect,
   auth,
-  form,
   cards,
+  form,
   filter,
-  sort,
-  routes,
+  learnMore,
   points,
+  routes,
+  sort,
   view,
   multireducer: multireducer({
     counter1: counter,
