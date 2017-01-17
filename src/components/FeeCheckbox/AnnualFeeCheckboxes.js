@@ -3,7 +3,6 @@ import Checkbox from 'react-toolbox/lib/checkbox';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { annualFeeWaivedChange, annualFeeLess100Change, annualFee100MoreChange } from 'redux/modules/filter';
-import { theme } from './FreeBox.scss';
 
 const WAIVED = 'WAIVED';
 const LESS_100 = 'LESS_100';
@@ -44,19 +43,16 @@ export default class AnnualFeeCheckbox extends Component {
     return (
       <div>
         <Checkbox
-          theme={theme}
           checked={filter.annualFeeWaivedOnly}
           label="Waived or None"
           onChange={this.handleChange.bind(this, WAIVED)}
         />
         <Checkbox
-          theme={theme}
           checked={filter.annualFeeLess100Only}
           label="Less than $100"
           onChange={this.handleChange.bind(this, LESS_100)}
         />
         <Checkbox
-          theme={theme}
           checked={filter.annualFee100MoreOnly}
           label="$100 or more"
           onChange={this.handleChange.bind(this, MORE_100)}
