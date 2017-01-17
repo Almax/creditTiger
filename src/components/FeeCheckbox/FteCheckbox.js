@@ -3,6 +3,7 @@ import Checkbox from 'react-toolbox/lib/checkbox';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { fteBoxChange } from 'redux/modules/filter';
+import { theme } from './FreeBox.scss';
 
 @connect(
   null,
@@ -27,11 +28,9 @@ export default class FteCheckbox extends Component {
   };
 
   render() {
-    const styles = require('./FreeBox.scss');
-
     return (
       <Checkbox
-        theme={styles}
+        theme={theme}
         checked={this.state.check2}
         label="None"
         onChange={this.handleChange.bind(this, 'check2')}
