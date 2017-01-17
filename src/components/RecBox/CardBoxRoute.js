@@ -1,7 +1,6 @@
 import _R from 'ramda';
 import React, { Component, PropTypes } from 'react';
 // import numeral from 'numeral';
-import { TooltipWrapper } from 'components';
 import { connect } from 'react-redux';
 
 @connect(
