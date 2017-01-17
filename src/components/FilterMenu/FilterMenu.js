@@ -17,7 +17,9 @@ export default class FilterMenu extends Component {
         <h4>Filter Cards</h4>
         <div className={styles.filter_headers}>Current Destination</div>
         <div className={styles.destination}>
-          {country}
+          <span className={styles.country}>
+            {country}
+          </span>
           <span className={styles.change}>
             <IndexLink theme={linkStyles} to="/">
               <span>Change</span>
