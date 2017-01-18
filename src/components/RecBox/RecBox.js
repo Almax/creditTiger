@@ -86,6 +86,8 @@ export default class RecBox extends Component {
 
     const annualFeeStr = annualFeeWaived ? '*' : '';
 
+    const moreOptions = 'More Options';
+
     return (
       <div className={styles.rec_box}>
         <div className={styles.card}>
@@ -95,45 +97,60 @@ export default class RecBox extends Component {
                 <img className={styles.card_image} src={imgUrl} width="100%" />
               </div>
             </div>
-            <div className="col-xs-8 col-sm-9 col-md-10">
+            <div className="col-xs-8 col-sm-9 col-md-7 col-lg-7">
               <div className={styles.card_heading_box}>
                 <h4>{ cardName }</h4>
                 <h5>{ issuerName }</h5>
               </div>
             </div>
+            <div className="hidden-xs hidden-sm col-md-3 col-lg-3">
+              <div className={styles.buttons_lg}>
+                <div className={'btn btn-default full_width text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>{moreOptions}</div>
+              </div>
+            </div>
           </div>
           <div className={styles.separatorLine}></div>
           <div className={styles.route_highlights + ' row no_gutter'}>
-            <div className="col-xs-4 text-center">
+            <div className="col-xs-4 col-sm-3 col-md-2 text-center">
               <div className={styles.route_stat}>{ floorNumRoundTrips }x</div>
               <div className={styles.route_subtext}>Round Trips</div>
             </div>
-            <div className="col-xs-4 text-center">
+            <div className="col-xs-4 col-sm-3 col-md-2 text-center">
               <div className={styles.route_stat}>{numeral(curBonusVal).format('$(0,0)')}</div>
               <div className={styles.route_subtext}>Sign-up Bonus</div>
             </div>
-            <div className="col-xs-4 text-center">
+            <div className="col-xs-4 col-sm-3 col-md-2 text-center">
               <div className={styles.route_stat}>${ annualFee + annualFeeStr}</div>
               <div className={styles.route_subtext}>Annual Fee</div>
             </div>
-          </div>
-          <div className={styles.separatorTab}></div>
-        </div>
-        <div>
-          <div className={styles.route}>
-            <div className={styles.title + ' text-center'}>
-              <img className={styles.planeInline} src={imgPlane} height="13px" />
-              <h3>{route.arrivingAirportDetails.cityName}</h3>
+            <div className="col-xs-12 hidden-sm hidden-md hidden-lg">
+              <div className={styles.separatorTab}></div>
+            </div>
+            <div className={styles.route + ' col-sm-3 text-center'}>
+              <div className={styles.title + ' text-center'}>
+                <img className={styles.planeInline} src={imgPlane} height="13px" />
+                <h3>{route.arrivingAirportDetails.cityName}</h3>
+              </div>
+            </div>
+            <div className={styles.redempSmall}>
+              <RedemptionDesc route={route} card={card} floorTrips={floorNumRoundTrips}/>
+            </div>
+            <div className="hidden-xs hidden-sm col-md-3 col-lg-3">
+              <div className={styles.buttons_lg}>
+                <LearnMoreModal countryName={countryName} />
+              </div>
             </div>
           </div>
-          <RedemptionDesc route={route} card={card} floorTrips={floorNumRoundTrips}/>
         </div>
         <div className={styles.card_buttons + ' row'}>
-          <div className={styles.button_container + ' ' + styles.other}>
-            <div className={styles.nextRoute + ' btn btn-default full_width text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>More Options</div>
+          <div className={styles.button_container + ' ' + styles.other + ' col-xs-12 col-sm-12 hidden-md hidden-lg'}>
+            <div className={styles.nextRoute + ' btn btn-default full_width text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>{moreOptions}</div>
           </div>
-          <div className={styles.button_container + ' ' + styles.apply}>
+          <div className={styles.button_container + ' col-xs-12 col-sm-12 hidden-md hidden-lg'}>
             <LearnMoreModal countryName={countryName} />
+          </div>
+          <div className="hidden-xs hidden-sm col-md-12 col-lg-12 ">
+            <RedemptionDesc route={route} card={card} floorTrips={floorNumRoundTrips}/>
           </div>
         </div>
       </div>

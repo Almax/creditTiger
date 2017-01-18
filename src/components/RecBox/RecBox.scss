@@ -1,5 +1,6 @@
 @import "~react-toolbox/lib/colors";
 @import "./src/theme/variables.scss";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
 $IPHONE_5_WIDTH: 350px;
 
@@ -65,12 +66,19 @@ $IPHONE_5_WIDTH: 350px;
       font-weight: 600;
       color: $palette-grey-500;
     }
+  }
+}
 
-    .separatorTab {
-      margin: 0 auto 15px;
-      border-bottom: 1px solid $palette-grey-400;
-      width: 55px;
-    }
+.separatorTab {
+  margin: 20px auto 15px;
+  border-bottom: 1px solid $palette-grey-400;
+  width: 55px;
+  clear: both;
+}
+
+@media (min-width: $screen-sm-min) {
+  .separatorTab {
+    display: none;
   }
 }
 
@@ -105,10 +113,15 @@ $IPHONE_5_WIDTH: 350px;
       margin-top: 15px;
       margin-bottom: 10px;
     }
-
-    &.apply {
-
-    }
   }
 }
 
+@media (min-width: $screen-md-min) {
+  .redempSmall {
+    display: none;
+  }
+}
+
+.buttons_lg {
+  padding: 15px;
+}
