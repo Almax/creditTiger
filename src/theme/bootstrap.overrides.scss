@@ -19,3 +19,11 @@
   float: right !important;
 }
 
+.full_width {
+  width: 100%;
+}
+
+.no_gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}

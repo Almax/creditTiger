@@ -19,7 +19,6 @@ export default class LearnMore extends Component {
     const { all } = this.props.cards;
     const cardKey = this.props.params.cardKey;
     const countryName = this.props.params.countryName;
-    const styles = require('./LearnMore.scss');
 
     const card = _R.find(_R.propEq('cardKey', cardKey))(all);
     const signupUrl = card.signupUrl;
@@ -28,7 +27,7 @@ export default class LearnMore extends Component {
     return (
       <div className="container-fluid">
         <LearnMoreForm countryName={countryName} />
-        <div className={styles.no_gutter + ' row'}>
+        <div className="row no_gutter">
           <div className="col-md-12">
             <iframe src={cleanUrl} width="100%" height="2000px"></iframe>
           </div>

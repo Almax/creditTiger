@@ -15,6 +15,7 @@ export InfoBar from './InfoBar/InfoBar';
 export IssuerCheckbox from './IssuerCheckbox/IssuerCheckbox';
 export MiniInfoBar from './MiniInfoBar/MiniInfoBar';
 export LearnMoreForm from './LearnMoreForm/LearnMoreForm';
+export LearnMoreModal from './LearnMoreModal/LearnMoreModal';
 export OverallSortCheckbox from './SortCheckbox/OverallSortCheckbox';
 export PointSlider from './PointSlider/PointSlider';
 export RecBox from './RecBox/RecBox';

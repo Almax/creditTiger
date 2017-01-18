@@ -2,7 +2,7 @@ import _R from 'ramda';
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import numeral from 'numeral';
-import { RedemptionDesc } from 'components';
+import { LearnMoreModal, RedemptionDesc } from 'components';
 
 @connect(
   state => ({
@@ -89,7 +89,7 @@ export default class RecBox extends Component {
     return (
       <div className={styles.rec_box}>
         <div className={styles.card}>
-          <div className={styles.card_header + ' ' + styles.no_gutter + ' row'}>
+          <div className={styles.card_header + ' row no_gutter'}>
             <div className="col-xs-4 col-sm-3 col-md-2">
               <div className={styles.card_image_box}>
                 <img className={styles.card_image} src={imgUrl} width="100%" />
@@ -103,7 +103,7 @@ export default class RecBox extends Component {
             </div>
           </div>
           <div className={styles.separatorLine}></div>
-          <div className={styles.route_highlights + ' ' + styles.no_gutter + ' row'}>
+          <div className={styles.route_highlights + ' row no_gutter'}>
             <div className="col-xs-4 text-center">
               <div className={styles.route_stat}>{ floorNumRoundTrips }x</div>
               <div className={styles.route_subtext}>Round Trips</div>
@@ -130,12 +130,10 @@ export default class RecBox extends Component {
         </div>
         <div className={styles.card_buttons + ' row'}>
           <div className={styles.button_container + ' ' + styles.other}>
-            <div className={styles.nextRoute + ' ' + styles.full_width + ' btn btn-default text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>More Options</div>
+            <div className={styles.nextRoute + ' btn btn-default full_width text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>More Options</div>
           </div>
           <div className={styles.button_container + ' ' + styles.apply}>
-            <a href={'/learn_more/country/' + countryName + '/' + cardKey}>
-              <div className={styles.full_width + ' btn btn-success text-uppercase'}>Learn More</div>
-            </a>
+            <LearnMoreModal countryName={countryName} />
           </div>
         </div>
       </div>

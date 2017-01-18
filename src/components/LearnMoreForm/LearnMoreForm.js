@@ -37,30 +37,34 @@ export default class LearnMoreForm extends Component {
   render() {
     const { save, countryName, fields: {email}, handleSubmit, // eslint-disable-line no-shadow
       values, invalid, submitting } = this.props; // eslint-disable-line no-shadow
-    const pencil = require('./pencil.png');
     const styles = require('./LearnMoreForm.scss');
-    console.log('invalid, submitting', invalid, submitting);
 
     const addnFormCls = this.state.submitSuccess ? ' hide' : '';
     const addnSuccessCls = this.state.submitSuccess ? '' : ' hide';
 
     return (
-      <div className={styles.learnMoreForm + ' row'}>
+      <div className={styles.learnMoreForm + ' row no_gutter'}>
         <div className="col-md-12">
           <h4>
             <span>For more secrets on how to get free travel credit for your trip to </span>
             <span className={styles.countryNameInline}>
               {countryName}
-              <img src={pencil} className={styles.pencilInline} height="9px" />
             </span>
+            <span> as well as...</span>
           </h4>
         </div>
         <div className={styles.separatorTab}></div>
+        <ul>
+          <li>Updates on Citi Prestige rewards changes</li>
+          <li>Future reward cards for {countryName}</li>
+          <li>Secret guide to maximizing your points in 2017</li>
+        </ul>
+        <div className={styles.separatorTab}></div>
         <div className={'col-xs-12 col-sm-6' + addnFormCls}>
           <input type="hidden" className="form-control" value={countryName}/>
-          <input type="email" className={styles.email_input + ' form-control'} placeholder="kellythetraveler@gmail.com" {...email}/>
+          <input type="email" className={styles.email_input + ' form-control'} placeholder="Enter your email" {...email}/>
         </div>
-        <div className={'col-xs-12 col-sm-3 col-md-1' + addnFormCls}>
+        <div className={'col-xs-12 col-sm-3 col-md-3' + addnFormCls}>
           <button className={styles.success + ' btn btn-success'}
               onClick={handleSubmit(() => save(values)
                 .then(result => {
@@ -68,7 +72,7 @@ export default class LearnMoreForm extends Component {
                 })
               )}
               disabled={invalid || submitting}>
-              Save
+              Yes, I want travel tips!
           </button>
         </div>
         <div className={styles.thanks + ' col-md-12 text-center' + addnSuccessCls}>
