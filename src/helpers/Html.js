@@ -49,8 +49,6 @@ export default class Html extends Component {
           { Object.keys(assets.styles).length === 0 ? <style dangerouslySetInnerHTML={{__html: require('../theme/bootstrap.config.js') + require('../containers/App/App.scss')._style}}/> : null }
         </head>
         <body>
-          <div id="fb-root"></div>
-          <script dangerouslySetInnerHTML={{__html: "(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1697227587263342'; fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));"}}/>
           <div id="content" dangerouslySetInnerHTML={{__html: content}}/>
           <script dangerouslySetInnerHTML={{__html: `window.__data=${serialize(store.getState())};`}} charSet="UTF-8"/>
           <script src={assets.javascript.main} charSet="UTF-8"/>

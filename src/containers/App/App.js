@@ -140,8 +140,6 @@ export default class App extends Component {
   }
 }
 
-// <div className="fb-like" data-href="https://www.facebook.com/freetravelguy/" data-layout="button_count" data-action="recommend" data-size="large" data-show-faces="true" data-share="true"></div>
-
 // <Navbar.Collapse eventKey={0}>
 //   <Nav navbar>
 //     {user && <LinkContainer to="/chat">
