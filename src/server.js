@@ -30,14 +30,16 @@ const proxy = httpProxy.createProxyServer({
 
 app.use(compression());
 
-if (!__DEVELOPMENT__) {
-  app.use((req, res, next) => {
-    if (req.headers['x-forwarded-proto'] !== 'https') {
-        return res.redirect(['https://', req.get('Host'), req.url].join(''));
-    }
-    return next();
-  });
-}
+// use for https
+
+// if (!__DEVELOPMENT__) {
+//   app.use((req, res, next) => {
+//     if (req.headers['x-forwarded-proto'] !== 'https') {
+//         return res.redirect(['https://', req.get('Host'), req.url].join(''));
+//     }
+//     return next();
+//   });
+// }
 
 app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 
