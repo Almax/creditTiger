@@ -86,7 +86,7 @@ export default class App extends Component {
     const styles = require('./App.scss');
     const imgPlane = require('./plane_gray.png');
     const pathName = this.props.location.pathname;
-    
+
     const pathReqShowFilterMenuCls = pathName.includes('/card_comparison') ? '' : ' hide';
 
     return (

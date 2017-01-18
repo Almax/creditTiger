@@ -4,8 +4,6 @@ import { connect } from 'react-redux';
 import numeral from 'numeral';
 import { RedemptionDesc } from 'components';
 
-// import { CardBoxRoute } from 'components';
-
 @connect(
   state => ({
     sort: state.sort,
@@ -74,7 +72,7 @@ export default class RecBox extends Component {
   render() {
     const styles = require('./RecBox.scss');
 
-    const { cardKey, cardName, issuerName, curBonusVal, annualFee, annualFeeWaived, signupUrl } = this.props.card;
+    const { cardKey, cardName, issuerName, curBonusVal, annualFee, annualFeeWaived } = this.props.card;
     const imgUrl = require('../../images/' + cardKey + '.jpg');
     const imgPlane = require('./plane_black.png');
 
@@ -82,6 +80,7 @@ export default class RecBox extends Component {
     const { card } = this.props;
     this.updateRoutes();
     const route = card.routesUniqAirport[this.state.routeNum];
+    const countryName = route.arrivingAirportDetails.countryName;
     const onewayRedeemPerc = route.isCashRoute ? route.cashRedeemPerc : route.awardRedeemPerc;
     const floorNumRoundTrips = Math.floor(onewayRedeemPerc * 10 / 5 / 2) * 0.5;
 
@@ -134,7 +133,7 @@ export default class RecBox extends Component {
             <div className={styles.nextRoute + ' ' + styles.full_width + ' btn btn-default text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>More Options</div>
           </div>
           <div className={styles.button_container + ' ' + styles.apply}>
-            <a href={signupUrl} target="_blank">
+            <a href={'/learn_more/country/' + countryName + '/' + cardKey}>
               <div className={styles.full_width + ' btn btn-success text-uppercase'}>Learn More</div>
             </a>
           </div>

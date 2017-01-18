@@ -1,17 +1,36 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import { LearnMoreForm } from 'components';
+import { connect } from 'react-redux';
+import _R from 'ramda';
 
+@connect(
+  state => ({
+    cards: state.cards
+  }),
+  null
+)
 export default class LearnMore extends Component {
   static propTypes = {
+    params: PropTypes.object,
+    cards: PropTypes.object
   }
 
   render() {
+    const { all } = this.props.cards;
+    const cardKey = this.props.params.cardKey;
+    const countryName = this.props.params.countryName;
+    const styles = require('./LearnMore.scss');
+
+    const card = _R.find(_R.propEq('cardKey', cardKey))(all);
+    const signupUrl = card.signupUrl;
+    const cleanUrl = signupUrl.replace(/^\/\/|^.*?:\/\//, '//');
+
     return (
-      <div>
-        <div className="row">
+      <div className="container-fluid">
+        <LearnMoreForm countryName={countryName} />
+        <div className={styles.no_gutter + ' row'}>
           <div className="col-md-12">
-            <h1>Learn More</h1>
-            <LearnMoreForm />
+            <iframe src={cleanUrl} width="100%" height="2000px"></iframe>
           </div>
         </div>
       </div>

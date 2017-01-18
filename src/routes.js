@@ -56,7 +56,7 @@ export default (store) => {
       <Route path="survey" component={Survey}/>
       <Route path="widgets" component={Widgets}/>
       <Route path="learn_more" component={LearnMore}>
-        <Route path="learn_more/country/:countryName" component={LearnMore}/>
+        <Route path="/learn_more/country/:countryName/:cardKey" component={LearnMore}/>
       </Route>
 
       { /* Catch all route */ }

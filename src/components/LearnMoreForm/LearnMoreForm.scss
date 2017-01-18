@@ -1,0 +1,36 @@
+@import "./src/theme/variables.scss";
+
+.learnMoreForm {
+  h4 {
+    line-height: 22px;
+  }
+}
+
+.separatorTab {
+  margin: 0 auto 20px;
+  border-bottom: 1px solid $palette-grey-200;
+  width: 55px;
+}
+
+.countryNameInline {
+  font-weight: 800;
+  color: $free-blue;
+}
+
+.pencilInline {
+  margin-bottom: 4px;
+  margin-left: 4px;
+}
+
+.email_input {
+  margin-bottom: 10px;
+}
+
+.success {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.thanks {
+  margin-bottom: 20px;
+}
