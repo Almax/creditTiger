@@ -1,19 +1,16 @@
+@import "./src/theme/variables.scss";
 @import "~react-toolbox/lib/colors";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
 $BG_OVERLAY_OPACITY: 0.2;
 $COUNTRY_BOX_BG_OPACITY: 0.7;
 
+
 .hero {
-  padding: 30px;
-  background: linear-gradient(rgba(0,0,0,$BG_OVERLAY_OPACITY), rgba(0,0,0,$BG_OVERLAY_OPACITY)),
-    url('../Home/paris_bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  margin-bottom: 40px;
+  padding: 40px;
 
   .heroText {
-    text-align: center;
     color: white;
 
     h1 {
@@ -22,18 +19,68 @@ $COUNTRY_BOX_BG_OPACITY: 0.7;
       font-weight: 800;
     }
   }
+}
 
-  .countryBox {
-    margin: 10px;
-    padding: 20px;
-    background: linear-gradient(rgba(255,255,255,$COUNTRY_BOX_BG_OPACITY), rgba(255,255,255,$COUNTRY_BOX_BG_OPACITY));
-    border: 1px solid $palette-grey-300;
+@media (max-width: $screen-sm-min) {
+  .hero {
+    background: linear-gradient(rgba(0,0,0,$BG_OVERLAY_OPACITY), rgba(0,0,0,$BG_OVERLAY_OPACITY)),
+      url('../Home/paris_bg_small.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
 
-    h3 {
-      margin: 0px 0px 10px;
-      text-align: center;
+@media (min-width: $screen-sm-min + 1) {
+  .hero {
+    padding: 60px;
+    background: linear-gradient(rgba(0,0,0,$BG_OVERLAY_OPACITY), rgba(0,0,0,$BG_OVERLAY_OPACITY)),
+      url('../Home/paris_bg_med.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .heroText {
+      width: 500px;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 42px;
+      }
     }
   }
+}
+
+.countryBox {
+  h4 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: $cyan-cap;
+  }
+
+  .countryButton {
+    margin-left: 26px;
+    margin-bottom: 20px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+  }
+
+  .arrowImg {
+    margin-left: 16px;
+    margin-bottom: 5px;
+    height: 16px;
+  }
+}
+
+.separatorTab {
+  margin: 0 auto 15px;
+  border-bottom: 1px solid $palette-grey-400;
+  width: 40px;
 }
 
 .valueAdds {
