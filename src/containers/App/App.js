@@ -52,7 +52,8 @@ export default class App extends Component {
     pushState: PropTypes.func.isRequired,
     toggleFilterMenu: PropTypes.func,
     setScreenSize: PropTypes.func,
-    view: PropTypes.object
+    view: PropTypes.object,
+    location: PropTypes.object
   };
 
   static contextTypes = {
@@ -84,6 +85,9 @@ export default class App extends Component {
   render() {
     const styles = require('./App.scss');
     const imgPlane = require('./plane_gray.png');
+    const pathName = this.props.location.pathname;
+    
+    const pathReqShowFilterMenuCls = pathName.includes('/card_comparison') ? '' : ' hide';
 
     return (
       <div className={styles.app}>
@@ -95,7 +99,7 @@ export default class App extends Component {
                 <span className={styles.brand}>{config.app.name}</span>
               </IndexLink>
             </Navbar.Brand>
-            <Nav pullRight className={styles.navRight}>
+            <Nav pullRight className={styles.navRight + ' ' + pathReqShowFilterMenuCls}>
               <NavItem eventKey={11} className={styles.filterButton} onSelect={this.handleSelect}>FILTER</NavItem>
             </Nav>
           </Navbar.Header>
