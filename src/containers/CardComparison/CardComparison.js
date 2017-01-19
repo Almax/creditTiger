@@ -137,7 +137,7 @@ export default class Credit extends Component {
     const possibleCards = getVisibleCards(all, filter, this.state.currentCountry, routes);
 
     sort.currentNumCards = possibleCards.length;
-    const visibleCards = possibleCards.slice(0, 3);
+    const visibleCards = possibleCards.slice(0, 5);
 
     const styles = require('./CardComparison.scss');
     const pencil = require('./pencil.png');
