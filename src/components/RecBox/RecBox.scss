@@ -116,6 +116,10 @@ $IPHONE_5_WIDTH: 350px;
   }
 }
 
+.redempSmall {
+  margin: 0px 20px;
+}
+
 @media (min-width: $screen-md-min) {
   .redempSmall {
     display: none;
