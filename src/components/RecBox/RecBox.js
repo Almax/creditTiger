@@ -80,13 +80,15 @@ export default class RecBox extends Component {
     const { card } = this.props;
     this.updateRoutes();
     const route = card.routesUniqAirport[this.state.routeNum];
+    const onlyOneRoute = card.routesUniqAirport.length < 2;
+    const addnMoreOptionsCls = onlyOneRoute ? ' hide' : '';
     const countryName = route.arrivingAirportDetails.countryName;
     const onewayRedeemPerc = route.isCashRoute ? route.cashRedeemPerc : route.awardRedeemPerc;
     const floorNumRoundTrips = Math.floor(onewayRedeemPerc * 10 / 5 / 2) * 0.5;
 
     const annualFeeStr = annualFeeWaived ? '*' : '';
 
-    const moreOptions = 'More Options';
+    const moreAirports = 'More Airports';
 
     return (
       <div className={styles.rec_box}>
@@ -103,9 +105,9 @@ export default class RecBox extends Component {
                 <h5>{ issuerName }</h5>
               </div>
             </div>
-            <div className="hidden-xs hidden-sm col-md-3 col-lg-3">
+            <div className={'hidden-xs hidden-sm col-md-3 col-lg-3' + addnMoreOptionsCls}>
               <div className={styles.buttons_lg}>
-                <div className={'btn btn-default full_width text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>{moreOptions}</div>
+                <div className={'btn btn-default full_width text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>{moreAirports}</div>
               </div>
             </div>
           </div>
@@ -143,8 +145,8 @@ export default class RecBox extends Component {
           </div>
         </div>
         <div className={styles.card_buttons + ' row'}>
-          <div className={styles.button_container + ' ' + styles.other + ' col-xs-12 col-sm-12 hidden-md hidden-lg'}>
-            <div className={styles.nextRoute + ' btn btn-default full_width text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>{moreOptions}</div>
+          <div className={styles.button_container + ' ' + styles.other + ' col-xs-12 col-sm-12 hidden-md hidden-lg' + addnMoreOptionsCls}>
+            <div className={styles.nextRoute + ' btn btn-default full_width text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>{moreAirports}</div>
           </div>
           <div className={styles.button_container + ' col-xs-12 col-sm-12 hidden-md hidden-lg'}>
             <LearnMoreModal countryName={countryName} />
