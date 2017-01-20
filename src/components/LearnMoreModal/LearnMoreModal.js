@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import Dialog from 'react-toolbox/lib/dialog';
 import { LearnMoreForm } from 'components';
+import ReactGA from 'react-ga';
 
 export default class LearnMoreModal extends Component {
   static propTypes = {
@@ -12,6 +13,12 @@ export default class LearnMoreModal extends Component {
   };
 
   handleToggle = () => {
+    ReactGA.modalview('/learn_more/herro');
+    ReactGA.event({
+      category: 'Card Comparison',
+      action: 'Learn More Clicked',
+      label: 'Country Name'
+    });
     this.setState({active: !this.state.active});
   }
 

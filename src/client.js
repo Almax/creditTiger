@@ -21,7 +21,9 @@ const _browserHistory = useScroll(() => browserHistory)();
 const dest = document.getElementById('content');
 const store = createStore(_browserHistory, client, window.__data);
 const history = syncHistoryWithStore(_browserHistory, store);
-ReactGA.initialize('UA-1413128-12');
+ReactGA.initialize('UA-1413128-12', {
+  debug: global.__DEVELOPMENT__
+});
 
 function initSocket() {
   const socket = io('', {path: '/ws'});
@@ -37,10 +39,8 @@ function initSocket() {
 }
 
 function logPageView() {
-  if (process.env.NODE_ENV !== 'production') {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-  }
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
 }
 
 global.socket = initSocket();
