@@ -55,6 +55,10 @@ $COUNTRY_BOX_BG_OPACITY: 0.7;
 .countryBox {
   margin-top: 50px;
 
+  a {
+    color: inherit;
+  }
+
   h4 {
     margin-bottom: 20px;
     font-weight: 700;

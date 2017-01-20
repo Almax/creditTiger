@@ -87,7 +87,7 @@ export default class App extends Component {
     const imgPlane = require('./plane_gray.png');
     const pathName = this.props.location.pathname;
 
-    const pathReqShowFilterMenuCls = pathName.includes('/card_comparison') ? '' : ' hide';
+    const pathReqShowFilterMenuCls = pathName.includes('/best-credit-cards-for-free-flights-to') ? '' : ' hide';
 
     return (
       <div className={styles.app}>
@@ -126,7 +126,7 @@ export default class App extends Component {
             <div className="row">
               <div className="col-md-8 col-md-offset-2">
                 <div className={styles.main_text + ' text-center'}>
-                  © 2016 {config.app.name}, All Rights Reserved
+                  © 2017 {config.app.name}, All Rights Reserved
                 </div>
               </div>
             </div>

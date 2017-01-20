@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import ReactGA from 'react-ga';
+import { Link } from 'react-router';
 
 @connect(
   state => (
@@ -17,10 +18,6 @@ export default class Home extends Component {
     history: PropTypes.object
   }
 
-  static contextTypes = {
-    router: PropTypes.object
-  }
-
   handleCountryClick = (country, bool) => {
     if (bool) {
       ReactGA.event({
@@ -28,7 +25,6 @@ export default class Home extends Component {
         action: 'country_clicked',
         label: country
       });
-      this.context.router.push('/card_comparison/country/' + country);
     }
   }
 
@@ -59,9 +55,11 @@ export default class Home extends Component {
                   {continentsWithCountries[con].map((cou) => {
                     return (
                       <div>
-                        <button className={styles.countryButton} onClick={
-                          this.handleCountryClick.bind(this, cou)}>{cou}</button>
-                        <img className={styles.arrowImg} src={arrowImg} />
+                        <Link to={`/best-credit-cards-for-free-flights-to/${cou}`}>
+                          <button className={styles.countryButton} onClick={
+                            this.handleCountryClick.bind(this, cou)}>{cou}</button>
+                          <img className={styles.arrowImg} src={arrowImg} />
+                        </Link>
                       </div>
                     );
                   })}
