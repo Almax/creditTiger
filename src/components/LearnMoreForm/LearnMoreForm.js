@@ -36,8 +36,8 @@ export default class LearnMoreForm extends Component {
   handleSuccess(result) {
     console.log('result', result.change_this);
     ReactGA.event({
-      category: 'Learn More',
-      action: 'Email Successfully added'
+      category: 'learn_more',
+      action: 'email_successfully_added'
     });
     this.setState({
       submitSuccess: true

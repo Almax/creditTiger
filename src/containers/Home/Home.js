@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import ReactGA from 'react-ga';
 
 @connect(
   state => (
@@ -22,6 +23,11 @@ export default class Home extends Component {
 
   handleCountryClick = (country, bool) => {
     if (bool) {
+      ReactGA.event({
+        category: 'home',
+        action: 'country_clicked',
+        label: country
+      });
       this.context.router.push('/card_comparison/country/' + country);
     }
   }
