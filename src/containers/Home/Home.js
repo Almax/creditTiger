@@ -10,15 +10,19 @@ import { connect } from 'react-redux';
   null
 )
 
-export default class Welcome extends Component {
+export default class Home extends Component {
   static propTypes = {
     routes: PropTypes.object,
     history: PropTypes.object
   }
 
+  static contextTypes = {
+    router: PropTypes.object
+  }
+
   handleCountryClick = (country, bool) => {
     if (bool) {
-      this.props.history.push('/card_comparison/country/' + country);
+      this.context.router.push('/card_comparison/country/' + country);
     }
   }
 
