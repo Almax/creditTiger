@@ -27,6 +27,10 @@ export default class LearnMoreForm extends Component {
     submitSuccess: false
   }
 
+  componentDidMount() {
+    this.emailInput.focus();
+  }
+
   handleSuccess(result) {
     console.log('success', result);
     this.setState({
@@ -62,7 +66,9 @@ export default class LearnMoreForm extends Component {
         <div className={styles.separatorTab}></div>
         <div className={'col-xs-12 col-sm-6' + addnFormCls}>
           <input type="hidden" className="form-control" value={countryName}/>
-          <input type="email" className={styles.email_input + ' form-control'} placeholder="Enter your email" {...email}/>
+          <input type="email" className={styles.email_input + ' form-control'}
+            ref={(input) => { this.emailInput = input; }}
+            placeholder="Enter your email" {...email}/>
         </div>
         <div className={'col-xs-12 col-sm-3 col-md-3' + addnFormCls}>
           <button className={styles.success + ' btn btn-success'}
