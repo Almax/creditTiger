@@ -47,6 +47,15 @@ export default class Html extends Component {
           {/* can smoothen the initial style flash (flicker) on page load in development mode. */}
           {/* ideally one could also include here the style for the current page (Home.scss, About.scss, etc) */}
           { Object.keys(assets.styles).length === 0 ? <style dangerouslySetInnerHTML={{__html: require('../theme/bootstrap.config.js') + require('../containers/App/App.scss')._style}}/> : null }
+          <script dangerouslySetInnerHTML={{__html: `!function(){var a;if(a=window.driftt=window.drift=window.driftt||[],!a.init)
+            return a.invoked?void(window.console&&console.error&&console.error("Drift snippet included twice.")):
+            (a.invoked=!0,a.methods=["identify","config","track","reset","debug","show","ping","page","hide","off","on"],
+            a.factory=function(b){return function(){var c;return c=Array.prototype.slice.call(arguments),c.unshift(b),a.push(c),a}},
+            a.methods.forEach(function(b){a[b]=a.factory(b)}),a.load=function(a){var b,c,d,e;b=3e5,e=Math.ceil(new Date/b)*b,
+            d=document.createElement("script"),d.type="text/javascript",d.async=!0,d.crossorigin="anonymous",
+            d.src="https://js.driftt.com/include/"+e+"/"+a+".js",c=document.getElementsByTagName("script")[0],
+            c.parentNode.insertBefore(d,c)})}(),drift.SNIPPET_VERSION="0.3.1",
+          drift.load("amy622ayz2ey");`}}/>
         </head>
         <body>
           <div id="content" dangerouslySetInnerHTML={{__html: content}}/>
