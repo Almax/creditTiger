@@ -139,7 +139,7 @@ export default class RecBox extends Component {
             </div>
             <div className="hidden-xs hidden-sm col-md-3 col-lg-3">
               <div className={styles.buttons_lg}>
-                <LearnMoreModal countryName={countryName} />
+                <LearnMoreModal card={card} countryName={countryName} />
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ export default class RecBox extends Component {
             <div className={styles.nextRoute + ' btn btn-default full_width text-uppercase'} onClick={this.handleNextRouteClick.bind(this)}>{moreAirports}</div>
           </div>
           <div className={styles.button_container + ' col-xs-12 col-sm-12 hidden-md hidden-lg'}>
-            <LearnMoreModal countryName={countryName} />
+            <LearnMoreModal card={card} countryName={countryName} />
           </div>
           <div className="hidden-xs hidden-sm col-md-12 col-lg-12 ">
             <RedemptionDesc route={route} card={card} floorTrips={floorNumRoundTrips}/>

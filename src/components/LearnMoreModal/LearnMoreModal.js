@@ -5,6 +5,7 @@ import ReactGA from 'react-ga';
 
 export default class LearnMoreModal extends Component {
   static propTypes = {
+    card: PropTypes.object,
     countryName: PropTypes.string
   }
 
@@ -13,9 +14,9 @@ export default class LearnMoreModal extends Component {
   };
 
   handleToggle = () => {
-    ReactGA.modalview('/learn_more/herro');
+    ReactGA.modalview('/learn_more');
     ReactGA.event({
-      category: 'Card Comparison',
+      category: 'Learn More',
       action: 'Learn More Clicked',
       label: 'Country Name'
     });
@@ -23,7 +24,7 @@ export default class LearnMoreModal extends Component {
   }
 
   render() {
-    const { countryName } = this.props;
+    const { card, countryName } = this.props;
 
     return (
       <div>
@@ -34,7 +35,7 @@ export default class LearnMoreModal extends Component {
           onOverlayClick={this.handleToggle}
         >
           <div className="container-fluid">
-            <LearnMoreForm countryName={countryName} />
+            <LearnMoreForm card={card} countryName={countryName} />
           </div>
         </Dialog>
       </div>

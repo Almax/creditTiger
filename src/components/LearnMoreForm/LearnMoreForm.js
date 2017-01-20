@@ -3,6 +3,7 @@ import { reduxForm } from 'redux-form';
 import { connect} from 'react-redux';
 import { save } from 'redux/modules/learnMore';
 import { bindActionCreators } from 'redux';
+import ReactGA from 'react-ga';
 
 @connect(
   null,
@@ -14,6 +15,7 @@ import { bindActionCreators } from 'redux';
 })
 export default class LearnMoreForm extends Component {
   static propTypes = {
+    card: PropTypes.object,
     save: PropTypes.func.isRequired,
     fields: PropTypes.object.isRequired,
     handleSubmit: PropTypes.func.isRequired,
@@ -32,14 +34,18 @@ export default class LearnMoreForm extends Component {
   }
 
   handleSuccess(result) {
-    console.log('success', result);
+    console.log('result', result.change_this);
+    ReactGA.event({
+      category: 'Learn More',
+      action: 'Email Successfully added'
+    });
     this.setState({
       submitSuccess: true
     });
   }
 
   render() {
-    const { save, countryName, fields: {email}, handleSubmit, // eslint-disable-line no-shadow
+    const { card, save, countryName, fields: {email}, handleSubmit, // eslint-disable-line no-shadow
       values, invalid, submitting } = this.props; // eslint-disable-line no-shadow
     const styles = require('./LearnMoreForm.scss');
 
@@ -59,7 +65,7 @@ export default class LearnMoreForm extends Component {
         </div>
         <div className={styles.separatorTab}></div>
         <ul>
-          <li>Updates on Citi Prestige rewards changes</li>
+          <li>Updates on {card.issuerName} {card.cardName} rewards changes</li>
           <li>Future reward cards for {countryName}</li>
           <li>Secret guide to maximizing your points in 2017</li>
         </ul>
@@ -88,3 +94,4 @@ export default class LearnMoreForm extends Component {
     );
   }
 }
+
