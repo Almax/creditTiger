@@ -49,8 +49,8 @@ export default (store) => {
 
       { /* Routes */ }
       <Route path="about" component={About}/>
-      <Route path="best-credit-cards-for-free-flights-to" component={CardComparison}>
-        <Route path="/best-credit-cards-for-free-flights-to/:countryName" component={CardComparison}/>
+      <Route path="best-credit-card-offers-for-flights-to" component={CardComparison}>
+        <Route path="/best-credit-card-offers-for-flights-to/:countryName" component={CardComparison}/>
       </Route>
       <Route path="login" component={Login}/>
       <Route path="survey" component={Survey}/>

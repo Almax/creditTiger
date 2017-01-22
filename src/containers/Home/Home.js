@@ -55,7 +55,7 @@ export default class Home extends Component {
                   {continentsWithCountries[con].map((cou) => {
                     return (
                       <div>
-                        <Link to={`/best-credit-cards-for-free-flights-to/${cou}`}>
+                        <Link to={`/best-credit-card-offers-for-flights-to/${cou}`}>
                           <button className={styles.countryButton} onClick={
                             this.handleCountryClick.bind(this, cou)}>{cou}</button>
                           <img className={styles.arrowImg} src={arrowImg} />

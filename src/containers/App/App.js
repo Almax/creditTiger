@@ -87,7 +87,7 @@ export default class App extends Component {
     const imgPlane = require('./plane_gray.png');
     const pathName = this.props.location.pathname;
 
-    const pathReqShowFilterMenuCls = pathName.includes('/best-credit-cards-for-free-flights-to') ? '' : ' hide';
+    const pathReqShowFilterMenuCls = pathName.includes('/best-credit-card-offers-for-flights-to') ? '' : ' hide';
 
     return (
       <div className={styles.app}>
