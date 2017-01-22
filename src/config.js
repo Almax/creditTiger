@@ -32,11 +32,9 @@ module.exports = Object.assign({
         {property: 'og:locale', content: 'en_US'},
         {property: 'og:title', content: TITLE},
         {property: 'og:description', content: DESCRIPTION},
-        {property: 'og:card', content: 'summary'},
-        {property: 'og:site', content: '@tiger'},
-        {property: 'og:creator', content: '@tiger'},
         {property: 'og:image:width', content: '1200'},
-        {property: 'og:image:height', content: '630'}
+        {property: 'og:image:height', content: '630'},
+        {property: 'fb:app_id', content: '1697227587263342'}
       ]
     }
   },
