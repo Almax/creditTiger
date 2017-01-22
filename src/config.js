@@ -33,7 +33,7 @@ module.exports = Object.assign({
         {property: 'og:description', content: DESCRIPTION},
         {property: 'og:image:width', content: '1200'},
         {property: 'og:image:height', content: '630'},
-        {property: 'fb:app_id', content: '1697227587263342'}
+        {property: 'fb:page_id', content: '349897755371235'}
       ]
     }
   },
