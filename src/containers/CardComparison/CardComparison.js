@@ -131,6 +131,19 @@ export default class Credit extends Component {
     sortCountry(this.state.currentCountry, true);
   }
 
+  helmetTags = (countryName) => {
+    const title = 'Best Travel Cards for Free Flights to ' + countryName;
+    return {
+      title: title,
+      meta: [
+        // {property: 'og:image', content: 'http://www.freetravelguy.com/free_travel_guy_share.jpg'},
+        {property: 'og:title', content: title},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'}
+      ]
+    };
+  }
+
   render() {
     const { all } = this.props.cards;
     const { filter, routes, sort, view } = this.props;
@@ -148,7 +161,7 @@ export default class Credit extends Component {
 
     return (
       <div>
-        <Helmet title={'Best Travel Cards for Free Flights to ' + this.state.currentCountry}/>
+        <Helmet {...this.helmetTags(this.state.currentCountry)}/>
         <div className={styles.card_comparison + ' container-fluid'}>
           <div className="row">
             <div className={styles.filter_menu + addnFilterClass + ' col-xs-12 col-sm-3 col-md-2'}>

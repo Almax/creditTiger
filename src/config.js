@@ -11,8 +11,7 @@ const environment = {
 
 const NAME = 'Free Travel Guy';
 const TITLE = 'Best Travel Credit Card Offers for Free Flights';
-const DESCRIPTION = `Find how to get free flights with credit card offers. We have searched every travel card and
-                      thousands of ways to redeem points to find how to get your destination for free.`;
+const DESCRIPTION = 'Find how to get free flights with credit card offers. We have searched every travel card and thousands of ways to redeem points to find how to get your destination for free.';
 
 module.exports = Object.assign({
   host: process.env.HOST || 'localhost',
