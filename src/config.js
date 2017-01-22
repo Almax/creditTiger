@@ -1,5 +1,3 @@
-import { homeUrl } from '../../helpers/Url';
-
 require('babel-polyfill');
 
 const environment = {
@@ -29,8 +27,8 @@ module.exports = Object.assign({
         {name: 'description', content: DESCRIPTION},
         {charset: 'utf-8'},
         {property: 'og:site_name', content: NAME},
-        {property: 'og:image', content: `${homeUrl}/share/home.jpg`},
-        {property: 'og:url', content: homeUrl},
+        {property: 'og:image', content: `http://www.freetravelguy.com/share/home.jpg`},
+        {property: 'og:url', content: 'http://www.freetravelguy.com'},
         {property: 'og:locale', content: 'en_US'},
         {property: 'og:title', content: TITLE},
         {property: 'og:description', content: DESCRIPTION},
