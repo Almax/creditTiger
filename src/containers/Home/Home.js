@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import ReactGA from 'react-ga';
 import { Link } from 'react-router';
+import { flightsToUrl } from '../../helpers/Url';
 
 @connect(
   state => (
@@ -40,14 +41,14 @@ export default class Home extends Component {
         <div className={styles.hero + ' row'}>
           <div className="col-md-12">
             <div className={styles.heroText + ' text-center'}>
-              <h1>Find Cards that will get you Free Flights</h1>
+              <h1>Get Free Flights to Anywhere</h1>
             </div>
           </div>
         </div>
         <div className="row">
           <div className="col-md-12 text-center">
             <div className={styles.pick_destination}>
-              Pick a destination
+              Credit card signup bonuses can give you enough points to go anywhere. We've analyzed 1000's of credit cards, flight routes, and redemption methods to get you the most free flights to:
             </div>
           </div>
         </div>
@@ -62,7 +63,7 @@ export default class Home extends Component {
                   {continentsWithCountries[con].map((cou) => {
                     return (
                       <div>
-                        <Link to={`/best-credit-card-offers-for-flights-to/${cou}`}>
+                        <Link to={flightsToUrl(cou)}>
                           <button className={styles.countryButton} onClick={
                             this.handleCountryClick.bind(this, cou)}>{cou}</button>
                           <img className={styles.arrowImg} src={arrowImg} />

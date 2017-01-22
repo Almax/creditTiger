@@ -22,7 +22,7 @@ const dest = document.getElementById('content');
 const store = createStore(_browserHistory, client, window.__data);
 const history = syncHistoryWithStore(_browserHistory, store);
 ReactGA.initialize('UA-1413128-12', {
-  debug: global.__DEVELOPMENT__
+  debug: __DEVELOPMENT__
 });
 
 function initSocket() {

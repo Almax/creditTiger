@@ -27,7 +27,7 @@ module.exports = Object.assign({
         {name: 'description', content: DESCRIPTION},
         {charset: 'utf-8'},
         {property: 'og:site_name', content: NAME},
-        {property: 'og:image', content: 'http://www.freetravelguy.com/free_travel_guy_share.jpg'},
+        {property: 'og:image', content: 'http://www.freetravelguy.com/share/home.jpg'},
         {property: 'og:locale', content: 'en_US'},
         {property: 'og:title', content: TITLE},
         {property: 'og:description', content: DESCRIPTION},

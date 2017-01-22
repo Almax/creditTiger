@@ -6,6 +6,8 @@ import { RecBox } from 'components';
 import { bindActionCreators } from 'redux';
 import { sortCountry } from 'redux/modules/sort';
 import Helmet from 'react-helmet';
+import { countryNameToKey, urlNameToCountryName } from '../../helpers/Format';
+import { homeUrl, flightsToUrl} from '../../helpers/Url';
 
 const getVisibleCards = (cards, filters, country, routes) => {
   let cardsToShow = cards;
@@ -125,18 +127,22 @@ export default class Credit extends Component {
 
   componentWillMount() {
     const { sortCountry } = this.props; // eslint-disable-line no-shadow
+    const properCountryName = urlNameToCountryName(this.props.params.countryName);
     this.setState({
-      currentCountry: this.props.params.countryName
+      currentCountry: properCountryName
     });
     sortCountry(this.state.currentCountry, true);
   }
 
   helmetTags = (countryName) => {
     const title = 'Best Travel Cards for Free Flights to ' + countryName;
+    const countryKey = countryNameToKey(countryName);
+
     return {
       title: title,
       meta: [
-        // {property: 'og:image', content: 'http://www.freetravelguy.com/free_travel_guy_share.jpg'},
+        {property: 'og:image', content: `${homeUrl}/share/country/${countryKey}.jpg`},
+        {property: 'og:url', content: `${homeUrl}${flightsToUrl(countryName)}`},
         {property: 'og:title', content: title},
         {property: 'og:image:width', content: '1200'},
         {property: 'og:image:height', content: '630'}

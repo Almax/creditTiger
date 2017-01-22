@@ -14,6 +14,7 @@ import {
     Survey,
     NotFound,
   } from 'containers';
+import { flightsToUrl } from './helpers/Url';
 
 export default (store) => {
   const requireLogin = (nextState, replace, cb) => {
@@ -43,19 +44,19 @@ export default (store) => {
 
       { /* Routes requiring login */ }
       <Route onEnter={requireLogin}>
-        <Route path="chat" component={Chat}/>
-        <Route path="loginSuccess" component={LoginSuccess}/>
+        <Route path="/chat" component={Chat}/>
+        <Route path="/loginSuccess" component={LoginSuccess}/>
       </Route>
 
       { /* Routes */ }
-      <Route path="about" component={About}/>
-      <Route path="best-credit-card-offers-for-flights-to" component={CardComparison}>
-        <Route path="/best-credit-card-offers-for-flights-to/:countryName" component={CardComparison}/>
+      <Route path="/about" component={About}/>
+      <Route path={flightsToUrl()} component={CardComparison}>
+        <Route path={flightsToUrl() + ':countryName'} component={CardComparison}/>
       </Route>
-      <Route path="login" component={Login}/>
-      <Route path="survey" component={Survey}/>
-      <Route path="widgets" component={Widgets}/>
-      <Route path="learn_more" component={LearnMore}>
+      <Route path="/login" component={Login}/>
+      <Route path="/survey" component={Survey}/>
+      <Route path="/widgets" component={Widgets}/>
+      <Route path="/learn_more" component={LearnMore}>
         <Route path="/learn_more/country/:countryName/:cardKey" component={LearnMore}/>
       </Route>
 

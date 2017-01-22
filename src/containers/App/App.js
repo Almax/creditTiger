@@ -10,6 +10,7 @@ import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/module
 import { push } from 'react-router-redux';
 import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
+import { flightsToUrl } from '../../helpers/Url';
 
 @asyncConnect([{
   promise: ({store: {dispatch, getState}}) => {
@@ -87,7 +88,7 @@ export default class App extends Component {
     const imgPlane = require('./plane_gray.png');
     const pathName = this.props.location.pathname;
 
-    const pathReqShowFilterMenuCls = pathName.includes('/best-credit-card-offers-for-flights-to') ? '' : ' hide';
+    const pathReqShowFilterMenuCls = pathName.includes(flightsToUrl()) ? '' : ' hide';
 
     return (
       <div className={styles.app}>
