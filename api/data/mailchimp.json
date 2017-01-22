@@ -1,0 +1,1826 @@
+{
+  "countryList": [
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "f739ff31d3",
+      "name": "Argentina",
+      "subscriber_count": "0",
+      "display_order": 3,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/f739ff31d3",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/f739ff31d3",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/f739ff31d3",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "3ea22270d1",
+      "name": "Australia",
+      "subscriber_count": "0",
+      "display_order": 4,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/3ea22270d1",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/3ea22270d1",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/3ea22270d1",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "10ae31a9e4",
+      "name": "Belize",
+      "subscriber_count": "0",
+      "display_order": 5,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/10ae31a9e4",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/10ae31a9e4",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/10ae31a9e4",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "32b9326279",
+      "name": "Brazil",
+      "subscriber_count": "0",
+      "display_order": 6,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/32b9326279",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/32b9326279",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/32b9326279",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "bcca779920",
+      "name": "Chile",
+      "subscriber_count": "0",
+      "display_order": 7,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/bcca779920",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/bcca779920",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/bcca779920",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "028370a3fe",
+      "name": "China",
+      "subscriber_count": "0",
+      "display_order": 8,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/028370a3fe",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/028370a3fe",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/028370a3fe",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "86a66b1f92",
+      "name": "Colombia",
+      "subscriber_count": "0",
+      "display_order": 9,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/86a66b1f92",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/86a66b1f92",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/86a66b1f92",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "d9649b355f",
+      "name": "Costa Rica",
+      "subscriber_count": "0",
+      "display_order": 10,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/d9649b355f",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/d9649b355f",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/d9649b355f",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "9f61df0073",
+      "name": "Fiji",
+      "subscriber_count": "0",
+      "display_order": 11,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/9f61df0073",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/9f61df0073",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/9f61df0073",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "273a2f6fea",
+      "name": "France",
+      "subscriber_count": "0",
+      "display_order": 12,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/273a2f6fea",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/273a2f6fea",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/273a2f6fea",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "320e33ecb5",
+      "name": "Germany",
+      "subscriber_count": "0",
+      "display_order": 13,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/320e33ecb5",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/320e33ecb5",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/320e33ecb5",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "3cd984bf23",
+      "name": "Greece",
+      "subscriber_count": "0",
+      "display_order": 14,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/3cd984bf23",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/3cd984bf23",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/3cd984bf23",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "c01c5c15d1",
+      "name": "Hawaii",
+      "subscriber_count": "0",
+      "display_order": 15,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/c01c5c15d1",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/c01c5c15d1",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/c01c5c15d1",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "4158e79f39",
+      "name": "Italy",
+      "subscriber_count": "0",
+      "display_order": 16,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/4158e79f39",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/4158e79f39",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/4158e79f39",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "ec95144c74",
+      "name": "Japan",
+      "subscriber_count": "0",
+      "display_order": 17,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/ec95144c74",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/ec95144c74",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/ec95144c74",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "9181d48745",
+      "name": "Korea",
+      "subscriber_count": "0",
+      "display_order": 18,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/9181d48745",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/9181d48745",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/9181d48745",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "bcbec8bbec",
+      "name": "Mexico",
+      "subscriber_count": "0",
+      "display_order": 19,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/bcbec8bbec",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/bcbec8bbec",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/bcbec8bbec",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "85da077fd8",
+      "name": "Netherlands",
+      "subscriber_count": "0",
+      "display_order": 20,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/85da077fd8",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/85da077fd8",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/85da077fd8",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "d406b137d2",
+      "name": "New Zealand",
+      "subscriber_count": "0",
+      "display_order": 21,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/d406b137d2",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/d406b137d2",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/d406b137d2",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "b8d81c3a68",
+      "name": "Panama",
+      "subscriber_count": "0",
+      "display_order": 22,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/b8d81c3a68",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/b8d81c3a68",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/b8d81c3a68",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "a2371e6e56",
+      "name": "Peru",
+      "subscriber_count": "0",
+      "display_order": 23,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/a2371e6e56",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/a2371e6e56",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/a2371e6e56",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "6d6e3d3d2f",
+      "name": "Singapore",
+      "subscriber_count": "0",
+      "display_order": 24,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/6d6e3d3d2f",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/6d6e3d3d2f",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/6d6e3d3d2f",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "e8e3e17c4b",
+      "name": "Spain",
+      "subscriber_count": "0",
+      "display_order": 25,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/e8e3e17c4b",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/e8e3e17c4b",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/e8e3e17c4b",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "60c74fa407",
+      "name": "Taiwan",
+      "subscriber_count": "0",
+      "display_order": 26,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/60c74fa407",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/60c74fa407",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/60c74fa407",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "3de2efd5e8",
+      "name": "Thailand",
+      "subscriber_count": "0",
+      "display_order": 27,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/3de2efd5e8",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/3de2efd5e8",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/3de2efd5e8",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "95e8450b5b",
+      "name": "United Kingdom",
+      "subscriber_count": "0",
+      "display_order": 28,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/95e8450b5b",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/95e8450b5b",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/95e8450b5b",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "f1fe964c05",
+      "list_id": "d980545431",
+      "id": "0ca61ce68e",
+      "name": "Vietnam",
+      "subscriber_count": "0",
+      "display_order": 29,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/0ca61ce68e",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/0ca61ce68e",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/f1fe964c05/interests/0ca61ce68e",
+          "method": "DELETE"
+        }
+      ]
+    }
+  ],
+  "cardList": [
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "f9589767cb",
+      "name": "Chase Sapphire Reserve",
+      "subscriber_count": "0",
+      "display_order": 2,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/f9589767cb",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/f9589767cb",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/f9589767cb",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "ed0a5b685c",
+      "name": "Amex Gold Delta",
+      "subscriber_count": "0",
+      "display_order": 30,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/ed0a5b685c",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/ed0a5b685c",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/ed0a5b685c",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "65504e2217",
+      "name": "Amex Starwood Preferred Guest",
+      "subscriber_count": "0",
+      "display_order": 31,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/65504e2217",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/65504e2217",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/65504e2217",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "39133186aa",
+      "name": "Amex Platinum",
+      "subscriber_count": "0",
+      "display_order": 32,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/39133186aa",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/39133186aa",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/39133186aa",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "17a1d3e93e",
+      "name": "Amex Platinum Delta",
+      "subscriber_count": "0",
+      "display_order": 33,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/17a1d3e93e",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/17a1d3e93e",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/17a1d3e93e",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "46fb619576",
+      "name": "Amex Mercedes-Benz Platinum",
+      "subscriber_count": "0",
+      "display_order": 34,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/46fb619576",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/46fb619576",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/46fb619576",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "26b04e68ab",
+      "name": "Amex Premier Rewards Gold",
+      "subscriber_count": "0",
+      "display_order": 35,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/26b04e68ab",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/26b04e68ab",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/26b04e68ab",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "035efcf749",
+      "name": "Bank of America Alaska",
+      "subscriber_count": "0",
+      "display_order": 36,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/035efcf749",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/035efcf749",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/035efcf749",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "46ecf14ca5",
+      "name": "Bank of America Virgin Atlantic",
+      "subscriber_count": "0",
+      "display_order": 37,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/46ecf14ca5",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/46ecf14ca5",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/46ecf14ca5",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "e0ae580f15",
+      "name": "Barclays JetBlue Plus",
+      "subscriber_count": "0",
+      "display_order": 38,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/e0ae580f15",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/e0ae580f15",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/e0ae580f15",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "85d9b79b0c",
+      "name": "Barclays Arrival +",
+      "subscriber_count": "0",
+      "display_order": 39,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/85d9b79b0c",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/85d9b79b0c",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/85d9b79b0c",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "7896e17c63",
+      "name": "Barclays Lufthansa",
+      "subscriber_count": "0",
+      "display_order": 40,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/7896e17c63",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/7896e17c63",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/7896e17c63",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "d7dc3c0eff",
+      "name": "Barclays Hawaiian",
+      "subscriber_count": "0",
+      "display_order": 41,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/d7dc3c0eff",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/d7dc3c0eff",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/d7dc3c0eff",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "43c9a2a14b",
+      "name": "Capital One Venture One Rewards",
+      "subscriber_count": "0",
+      "display_order": 42,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/43c9a2a14b",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/43c9a2a14b",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/43c9a2a14b",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "9aec32c032",
+      "name": "Capital One Venture Rewards",
+      "subscriber_count": "0",
+      "display_order": 43,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/9aec32c032",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/9aec32c032",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/9aec32c032",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "7588ee6ab6",
+      "name": "Chase Freedom Unlimited",
+      "subscriber_count": "0",
+      "display_order": 44,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/7588ee6ab6",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/7588ee6ab6",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/7588ee6ab6",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "db68fe2fdc",
+      "name": "Chase United Explorer",
+      "subscriber_count": "0",
+      "display_order": 45,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/db68fe2fdc",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/db68fe2fdc",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/db68fe2fdc",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "c7fb810abd",
+      "name": "Chase Freedom",
+      "subscriber_count": "0",
+      "display_order": 46,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/c7fb810abd",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/c7fb810abd",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/c7fb810abd",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "bd5bd2e542",
+      "name": "Chase Southwest Plus",
+      "subscriber_count": "0",
+      "display_order": 47,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/bd5bd2e542",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/bd5bd2e542",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/bd5bd2e542",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "ec0ad255b4",
+      "name": "Chase British Airways",
+      "subscriber_count": "0",
+      "display_order": 48,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/ec0ad255b4",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/ec0ad255b4",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/ec0ad255b4",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "f1b0c61bac",
+      "name": "Chase Southwest Premier",
+      "subscriber_count": "0",
+      "display_order": 49,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/f1b0c61bac",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/f1b0c61bac",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/f1b0c61bac",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "dc5a51cd47",
+      "name": "Chase Sapphire Preferred",
+      "subscriber_count": "0",
+      "display_order": 50,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/dc5a51cd47",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/dc5a51cd47",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/dc5a51cd47",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "0a4e5ebad4",
+      "name": "Citi AAdvantage Platinum",
+      "subscriber_count": "0",
+      "display_order": 51,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/0a4e5ebad4",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/0a4e5ebad4",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/0a4e5ebad4",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "aa5a8bc293",
+      "name": "Citi Prestige",
+      "subscriber_count": "0",
+      "display_order": 52,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/aa5a8bc293",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/aa5a8bc293",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/aa5a8bc293",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "category_id": "fba4f6cdc0",
+      "list_id": "d980545431",
+      "id": "932821a275",
+      "name": "US Bank FlexPerks Select+ (Amex)",
+      "subscriber_count": "0",
+      "display_order": 53,
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/932821a275",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests",
+          "method": "GET",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/CollectionResponse.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Interests.json"
+        },
+        {
+          "rel": "update",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/932821a275",
+          "method": "PATCH",
+          "targetSchema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/Response.json",
+          "schema": "https://us9.api.mailchimp.com/schema/3.0/Definitions/Lists/Interest-Categories/Interests/PATCH.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://us9.api.mailchimp.com/3.0/lists/d980545431/interest-categories/fba4f6cdc0/interests/932821a275",
+          "method": "DELETE"
+        }
+      ]
+    }
+  ]
+}

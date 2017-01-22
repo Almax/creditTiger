@@ -11,26 +11,23 @@ import ReactGA from 'react-ga';
 )
 @reduxForm({
   form: 'learnMore',
-  fields: ['country', 'email']
+  fields: ['card', 'country', 'email']
 })
 export default class LearnMoreForm extends Component {
   static propTypes = {
-    card: PropTypes.object,
+    cardObj: PropTypes.object,
     save: PropTypes.func.isRequired,
     fields: PropTypes.object.isRequired,
     handleSubmit: PropTypes.func.isRequired,
     values: PropTypes.object,
     countryName: PropTypes.string,
     invalid: PropTypes.bool.isRequired,
-    submitting: PropTypes.bool.isRequired
+    submitting: PropTypes.bool.isRequired,
+    initialValues: PropTypes.object
   }
 
   state = {
     submitSuccess: false
-  }
-
-  componentDidMount() {
-    this.emailInput.focus();
   }
 
   handleSuccess(result) {
@@ -45,7 +42,7 @@ export default class LearnMoreForm extends Component {
   }
 
   render() {
-    const { card, save, countryName, fields: {email}, handleSubmit, // eslint-disable-line no-shadow
+    const { cardObj, save, countryName, fields: { email }, handleSubmit, // eslint-disable-line no-shadow
       values, invalid, submitting } = this.props; // eslint-disable-line no-shadow
     const styles = require('./LearnMoreForm.scss');
 
@@ -56,7 +53,7 @@ export default class LearnMoreForm extends Component {
       <div className={styles.learnMoreForm + ' row no_gutter'}>
         <div className="col-md-12">
           <h4>
-            <span>For more secrets on how to get free travel credit for your trip to </span>
+            <span>For more secrets on how to get free trips to </span>
             <span className={styles.countryNameInline}>
               {countryName}
             </span>
@@ -65,18 +62,16 @@ export default class LearnMoreForm extends Component {
         </div>
         <div className={styles.separatorTab}></div>
         <ul>
-          <li>Updates on {card.issuerName} {card.cardName} rewards changes</li>
+          <li>Updates on {cardObj.issuerName} {cardObj.cardName} rewards changes</li>
           <li>Future reward cards for {countryName}</li>
           <li>Secret guide to maximizing your points in 2017</li>
         </ul>
         <div className={styles.separatorTab}></div>
-        <div className={'col-xs-12 col-sm-6' + addnFormCls}>
-          <input type="hidden" className="form-control" value={countryName}/>
+        <div className={'col-xs-12 col-sm-6 col-md-6' + addnFormCls}>
           <input type="email" className={styles.email_input + ' form-control'}
-            ref={(input) => { this.emailInput = input; }}
             placeholder="Enter your email" {...email}/>
         </div>
-        <div className={'col-xs-12 col-sm-3 col-md-3' + addnFormCls}>
+        <div className={'col-xs-12 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1' + addnFormCls}>
           <button className={styles.success + ' btn btn-success'}
               onClick={handleSubmit(() => save(values)
                 .then(result => {

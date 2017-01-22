@@ -169,6 +169,7 @@ var cleanCard = (card) => {
     });
 
     var cardKey = createCardKey(cleanedCard);
+
     cleanedCard['cardKey'] = cardKey;
     cleanedCard['canConvToCash'] = cleanedCard['travelConvRate'] > 0;
   } catch(err) {

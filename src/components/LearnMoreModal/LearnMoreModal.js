@@ -31,6 +31,13 @@ export default class LearnMoreModal extends Component {
     const { card, countryName } = this.props;
     const cardKey = card.cardKey;
 
+    const initialValues = {
+      initialValues: {
+        card: `${card.issuerName} ${card.cardName}`,
+        country: countryName
+      }
+    };
+
     return (
       <div>
         <button className={'btn btn-success full_width text-uppercase'} onClick={() => this.handleClick(cardKey, countryName)}>Learn More</button>
@@ -40,7 +47,7 @@ export default class LearnMoreModal extends Component {
           onOverlayClick={this.handleToggle}
         >
           <div className="container-fluid">
-            <LearnMoreForm card={card} countryName={countryName} />
+            <LearnMoreForm {...initialValues} cardObj={card} countryName={countryName} />
           </div>
         </Dialog>
       </div>

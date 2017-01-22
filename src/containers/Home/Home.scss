@@ -58,6 +58,12 @@ $COUNTRY_BOX_BG_OPACITY: 0.7;
   color: $palette-grey-500;
 }
 
+@media (min-width: $screen-sm-min) {
+  .pick_destination {
+    font-size: 16px;
+  }
+}
+
 .countryBox {
   margin-top: 50px;
 

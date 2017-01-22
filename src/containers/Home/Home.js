@@ -15,8 +15,7 @@ import { flightsToUrl } from '../../helpers/Url';
 
 export default class Home extends Component {
   static propTypes = {
-    routes: PropTypes.object,
-    history: PropTypes.object
+    routes: PropTypes.object
   }
 
   handleCountryClick = (country, bool) => {
@@ -46,7 +45,7 @@ export default class Home extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-12 text-center">
+          <div className="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
             <div className={styles.pick_destination}>
               Credit card signup bonuses can give you enough points to go anywhere. We've analyzed 1000's of credit cards, flight routes, and redemption methods to get you the most free flights to:
             </div>

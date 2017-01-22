@@ -151,7 +151,7 @@ export default class RecBox extends Component {
           <div className={styles.button_container + ' col-xs-12 col-sm-12 hidden-md hidden-lg'}>
             <LearnMoreModal card={card} countryName={countryName} />
           </div>
-          <div className="hidden-xs hidden-sm col-md-12 col-lg-12 ">
+          <div className="hidden-xs hidden-sm col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
             <RedemptionDesc route={route} card={card} floorTrips={floorNumRoundTrips}/>
           </div>
         </div>

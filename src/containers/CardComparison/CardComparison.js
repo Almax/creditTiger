@@ -174,8 +174,8 @@ export default class Credit extends Component {
               <FilterMenu country={this.state.currentCountry}/>
             </div>
             <div className={styles.card_results + addnResultsClass + ' col-xs-12 col-sm-9 col-md-10'}>
-              <div className={styles.cardListHowTo + ' text-center'}>
-                <span>How does this work?</span>
+              <div className={styles.cardListHelper + ' text-center'}>
+                <span>Here are the best combinations of credits cards, flight routes, and redemption methods to get you to your destination.</span>
               </div>
               <div className={styles.separatorTab}></div>
               <div className={styles.cardListMainHeader}>
