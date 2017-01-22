@@ -58,6 +58,10 @@ export default class Html extends Component {
           drift.load("amy622ayz2ey");`}}/>
         </head>
         <body>
+          <script dangerouslySetInnerHTML={{__html: `window.fbAsyncInit=function(){FB.init({appId:"1697227587263342",xfbml:!0,
+            version:"v2.8"}),FB.AppEvents.logPageView()},function(e,n,t){var o,c=e.getElementsByTagName(n)[0];e.getElementById(t)||
+            (o=e.createElement(n),o.id=t,o.src="//connect.facebook.net/en_US/sdk.js",c.parentNode.insertBefore(o,c))}(document,
+            "script","facebook-jssdk");`}}/>
           <div id="content" dangerouslySetInnerHTML={{__html: content}}/>
           <script dangerouslySetInnerHTML={{__html: `window.__data=${serialize(store.getState())};`}} charSet="UTF-8"/>
           <script src={assets.javascript.main} charSet="UTF-8"/>

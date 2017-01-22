@@ -1,3 +1,5 @@
+import { homeUrl } from '../../helpers/Url';
+
 require('babel-polyfill');
 
 const environment = {
@@ -27,13 +29,14 @@ module.exports = Object.assign({
         {name: 'description', content: DESCRIPTION},
         {charset: 'utf-8'},
         {property: 'og:site_name', content: NAME},
-        {property: 'og:image', content: 'http://www.freetravelguy.com/share/home.jpg'},
+        {property: 'og:image', content: `${homeUrl}/share/home.jpg`},
+        {property: 'og:url', content: homeUrl},
         {property: 'og:locale', content: 'en_US'},
         {property: 'og:title', content: TITLE},
         {property: 'og:description', content: DESCRIPTION},
         {property: 'og:image:width', content: '1200'},
         {property: 'og:image:height', content: '630'},
-        {property: 'fb:page_id', content: '349897755371235'}
+        {property: 'fb:app_id', content: '1697227587263342'}
       ]
     }
   },
