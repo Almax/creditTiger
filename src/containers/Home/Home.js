@@ -45,6 +45,13 @@ export default class Home extends Component {
           </div>
         </div>
         <div className="row">
+          <div className="col-md-12 text-center">
+            <div className={styles.pick_destination}>
+              Pick a destination
+            </div>
+          </div>
+        </div>
+        <div className="row">
           <div className="col-xs-0 col-sm-0 col-md-2"></div>
           {continents.map((con) => {
             return (
@@ -73,20 +80,20 @@ export default class Home extends Component {
           <div className="col-md-8 col-md-offset-2">
             <div className="col-md-4">
               <div className={styles.valueAddCol}>
-                <h3>1-10 Roundtrips</h3>
-                <p>depending on your destination of choice.</p>
+                <h3>Best offers to get you a free flight</h3>
+                <p>Comparing rewards points is confusing. Comparing the number of free flights is simple.</p>
               </div>
             </div>
             <div className="col-md-4">
               <div className={styles.valueAddCol}>
-                <h3>$0</h3>
-                <p>of extra spend. Unless you want cards with annual fees.</p>
+                <h3>Every travel card compared</h3>
+                <p>We have compared every major travel card in the US.</p>
               </div>
             </div>
             <div className="col-md-4">
               <div className={styles.valueAddCol}>
-                <h3>Every Country</h3>
-                <p>that has an international airport.</p>
+                <h3>Free Travel Guy is Free!</h3>
+                <p>There are no charges or fees to use our service.</p>
               </div>
             </div>
           </div>
