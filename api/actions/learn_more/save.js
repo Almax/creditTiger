@@ -14,13 +14,13 @@ export default function save(req) {
   const cardObj = _R.find(_R.propEq('name', card))(mailchimpInterests.cardList);
 
   const interests = {};
-  if (countryObj) {
+  if (countryObj && countryObj.id) {
     interests[countryObj.id] = true;
   }
-  if (cardObj) {
+  if (cardObj && cardObj.id) {
     interests[cardObj.id] = true;
   }
-  
+
   return new Promise((resolve, reject) => {
     mailchimp.post(`/lists/${mailchimpListId}/members`, {
       email_address: req.body.email,

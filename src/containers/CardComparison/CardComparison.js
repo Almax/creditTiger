@@ -7,7 +7,8 @@ import { bindActionCreators } from 'redux';
 import { sortCountry } from 'redux/modules/sort';
 import Helmet from 'react-helmet';
 import { countryNameToKey, urlNameToCountryName } from '../../helpers/Format';
-import { homeUrl, flightsToUrl} from '../../helpers/Url';
+import { homeUrl, flightsToUrl, howToSignUpBonus } from '../../helpers/Url';
+import { Link } from 'react-router';
 
 const getVisibleCards = (cards, filters, country, routes) => {
   let cardsToShow = cards;
@@ -176,6 +177,11 @@ export default class Credit extends Component {
             <div className={styles.card_results + addnResultsClass + ' col-xs-12 col-sm-9 col-md-10'}>
               <div className={styles.cardListHelper + ' text-center'}>
                 <span>Here are the best combinations of credits cards, flight routes, and redemption methods to get you to your destination.</span>
+              </div>
+              <div className={styles.cardListHowTo + ' text-center'}>
+                <Link to={howToSignUpBonus()}>
+                  <span>How do Sign-Up Bonuses work?</span>
+                </Link>
               </div>
               <div className={styles.separatorTab}></div>
               <div className={styles.cardListMainHeader}>

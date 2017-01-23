@@ -53,18 +53,16 @@ export default class LearnMoreForm extends Component {
       <div className={styles.learnMoreForm + ' row no_gutter'}>
         <div className="col-md-12">
           <h4>
-            <span>For more secrets on how to get free trips to </span>
-            <span className={styles.countryNameInline}>
-              {countryName}
-            </span>
-            <span> as well as...</span>
+            <span>Don't miss out on the next 100,000 point offer to <span className={styles.countryNameInline}>{countryName}</span>!</span>
           </h4>
         </div>
         <div className={styles.separatorTab}></div>
+        <div>
+          Be sure you receive:
+        </div>
         <ul>
-          <li>Updates on {cardObj.issuerName} {cardObj.cardName} rewards changes</li>
-          <li>Future reward cards for {countryName}</li>
-          <li>Secret guide to maximizing your points in 2017</li>
+          <li>Latest offers to get to {countryName} for free</li>
+          <li>Notifications if the {cardObj.issuerName} {cardObj.cardName} offer is expiring</li>
         </ul>
         <div className={styles.separatorTab}></div>
         <div className={'col-xs-12 col-sm-6 col-md-6' + addnFormCls}>

@@ -7,6 +7,7 @@ import {
     Home,
     CardComparison,
     Widgets,
+    HowToSignUpBonus,
     About,
     LearnMore,
     Login,
@@ -14,7 +15,7 @@ import {
     Survey,
     NotFound,
   } from 'containers';
-import { flightsToUrl } from './helpers/Url';
+import { flightsToUrl, howToSignUpBonus } from './helpers/Url';
 
 export default (store) => {
   const requireLogin = (nextState, replace, cb) => {
@@ -53,6 +54,7 @@ export default (store) => {
       <Route path={flightsToUrl()} component={CardComparison}>
         <Route path={flightsToUrl() + ':countryName'} component={CardComparison}/>
       </Route>
+      <Route path={howToSignUpBonus()} component={HowToSignUpBonus}/>
       <Route path="/login" component={Login}/>
       <Route path="/survey" component={Survey}/>
       <Route path="/widgets" component={Widgets}/>

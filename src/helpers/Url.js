@@ -7,7 +7,12 @@ const flightsToUrl = (countryName = '') => {
   return `/Best-Credit-Card-Offers-for-Flights-to-${urlCouName}`;
 };
 
+const howToSignUpBonus = () => {
+  return '/how-do-sign-up-bonuses-work';
+};
+
 module.exports = Object.assign({
   homeUrl,
-  flightsToUrl
+  flightsToUrl,
+  howToSignUpBonus
 });

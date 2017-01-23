@@ -28,6 +28,14 @@ $PADDING: 20px;
   color: $palette-grey-500;
 }
 
+.cardListHowTo {
+  margin: 15px 0 15px;
+  font-size: 12px;
+  a {
+    color: $free-cyan;
+  }
+}
+
 .separatorTab {
   margin: 0 auto 15px;
   border-bottom: 1px solid $palette-grey-200;
