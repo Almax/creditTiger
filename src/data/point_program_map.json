@@ -256,5 +256,11 @@
     "programName": "Wyndham Rewards",
     "pointTerm": "Point",
     "mainAffiliate": "Wyndham Hotels"
+  },
+  "Etihad": {
+    "pointKey": "Etihad",
+    "programName": "Etihad Guest",
+    "pointTerm": "Mile",
+    "mainAffiliate": "Etihad Airways"
   }
 }

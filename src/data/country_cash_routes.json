@@ -793,5 +793,26 @@
       "originalPointType": "Cash",
       "converted": false
     }
+  ],
+  "Belgium": [
+    {
+      "departingAirportTicker": "JFK",
+      "arrivingAirportTicker": "BRU",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 272.5,
+      "class": "Coach",
+      "airlineName": "TAP",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "BRU",
+        "cityName": "Brussels",
+        "countryName": "Belgium",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    }
   ]
 }
