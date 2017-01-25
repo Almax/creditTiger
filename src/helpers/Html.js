@@ -65,6 +65,7 @@ export default class Html extends Component {
           <div id="content" dangerouslySetInnerHTML={{__html: content}}/>
           <script dangerouslySetInnerHTML={{__html: `window.__data=${serialize(store.getState())};`}} charSet="UTF-8"/>
           <script src={assets.javascript.main} charSet="UTF-8"/>
+          <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5888396ac783d21a"></script> 
         </body>
       </html>
     );
