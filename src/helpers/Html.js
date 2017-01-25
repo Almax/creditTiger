@@ -34,6 +34,7 @@ export default class Html extends Component {
           {head.script.toComponent()}
 
           <meta name="bankrate-site-verification" content="75387a3abc9bf8cf6cc8" />
+          <meta name="google-site-verification" content="1DZOZwCcjvk35l-3ZclhWBnFEXzDLECREa5Buv2E37U" />
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           {/* styles (will be present only in production with webpack extract text plugin) */}
