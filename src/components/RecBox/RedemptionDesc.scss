@@ -9,19 +9,11 @@
       background-color: white;
       border: none;
     }
-
-    &.hide {
-      display: none;
-    }
   }
 
-  .route_desc {
+  .route_desc, .feeWaived {
     padding: 5px;
     line-height: 20px;
     font-size: 12px;
-
-    &.hide {
-      display: none;
-    }
   }
 }

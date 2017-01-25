@@ -86,7 +86,7 @@ export default class RecBox extends Component {
     const onewayRedeemPerc = route.isCashRoute ? route.cashRedeemPerc : route.awardRedeemPerc;
     const floorNumRoundTrips = Math.floor(onewayRedeemPerc * 10 / 5 / 2) * 0.5;
 
-    const annualFeeStr = annualFeeWaived ? '*' : '';
+    const annualFeeStr = annualFeeWaived ? '0*' : annualFee;
 
     const moreAirports = 'More Airports';
 
@@ -122,7 +122,7 @@ export default class RecBox extends Component {
               <div className={styles.route_subtext}>Sign-up Bonus</div>
             </div>
             <div className="col-xs-4 col-sm-3 col-md-2 text-center">
-              <div className={styles.route_stat}>${ annualFee + annualFeeStr}</div>
+              <div className={styles.route_stat}>${ annualFeeStr}</div>
               <div className={styles.route_subtext}>Annual Fee</div>
             </div>
             <div className="col-xs-12 hidden-sm hidden-md hidden-lg">

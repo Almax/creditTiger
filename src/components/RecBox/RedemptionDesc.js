@@ -37,6 +37,7 @@ export default class CardBoxRoute extends Component {
     const { pointPrograms } = this.props.points;
     const pointOriginalMeta = pointPrograms[card.rewardProvider];
     const pointTransferToMeta = pointPrograms[route.originalPointType];
+    const feeWaivedStr = card.annualFeeWaived ? '' : ' hide';
 
     if (pointConv) {
       convRate = pointConv.rate;
@@ -61,6 +62,9 @@ export default class CardBoxRoute extends Component {
           {route.isCashRoute &&
             <div>The {card.cardName} allows you to convert to travel credit at ${card.travelConvRate} per point. You could then transfer all the points to {numeral(card.travelConvRate * card.curBonusPts).format('($0,0)')} in travel credit, which is enough for <b>{floorTrips} roundtrips to {route.arrivingAirportDetails.cityName}, {route.arrivingAirportDetails.countryName}</b> which are valued at {numeral(route.cashReq * 2).format('($0,0)')} per roundtrip.</div>
           }
+        </div>
+        <div className={styles.feeWaived + feeWaivedStr + addnDetailsCls}>
+          * = Annual fee waived for first year. Each year after is ${numeral(card.annualFee).format('(0,0)')}
         </div>
         <div className={styles.show_hide + ' ' + styles.route_hide_details + addnDetailsCls + ' text-center'}>
           <button onClick={this.toggleShowDetails}>
