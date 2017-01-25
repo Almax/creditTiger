@@ -72,7 +72,11 @@ export default class RecBox extends Component {
   render() {
     const styles = require('./RecBox.scss');
 
-    const { cardKey, cardName, issuerName, curBonusVal, annualFee, annualFeeWaived } = this.props.card;
+    const { cardKey, cardName, issuerName, curBonusPts, rewardProvider, annualFee, annualFeeWaived } = this.props.card;
+    const { pointPrograms } = this.props.points;
+    const pointOriginalMeta = pointPrograms[rewardProvider];
+    const pointTerm = pointOriginalMeta.pointTerm;
+
     const imgUrl = require('../../images/' + cardKey + '.jpg');
     const imgPlane = require('./plane_black.png');
 
@@ -118,8 +122,8 @@ export default class RecBox extends Component {
               <div className={styles.route_subtext}>Round Trips</div>
             </div>
             <div className="col-xs-4 col-sm-3 col-md-2 text-center">
-              <div className={styles.route_stat}>{numeral(curBonusVal).format('$(0,0)')}</div>
-              <div className={styles.route_subtext}>Sign-up Bonus</div>
+              <div className={styles.route_stat}>{numeral(curBonusPts).format('(0a)')}</div>
+              <div className={styles.route_subtext}>Bonus {pointTerm}s</div>
             </div>
             <div className="col-xs-4 col-sm-3 col-md-2 text-center">
               <div className={styles.route_stat}>${ annualFeeStr}</div>
