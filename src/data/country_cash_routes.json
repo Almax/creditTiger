@@ -344,6 +344,25 @@
   ],
   "Germany": [
     {
+      "departingAirportTicker": "JFK",
+      "arrivingAirportTicker": "TXL",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 254,
+      "class": "Coach",
+      "airlineName": "TAP",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "TXL",
+        "cityName": "Berlin",
+        "countryName": "Germany",
+        "continentName": "Europe"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
       "departingAirportTicker": "BOS",
       "arrivingAirportTicker": "FRA",
       "pointType": "Cash",
@@ -766,6 +785,25 @@
       "arrivingAirportDetails": {
         "airportTicker": "HNL",
         "cityName": "Honolulu",
+        "countryName": "Hawaii",
+        "continentName": "Oceania"
+      },
+      "originalPointType": "Cash",
+      "converted": false
+    },
+    {
+      "departingAirportTicker": "LAX",
+      "arrivingAirportTicker": "LIH",
+      "pointType": "Cash",
+      "numberOfPointsReq": 0,
+      "cashReq": 283,
+      "class": "Coach",
+      "airlineName": "United",
+      "isCashRoute": true,
+      "roundTripReq": true,
+      "arrivingAirportDetails": {
+        "airportTicker": "LIH",
+        "cityName": "Lihue",
         "countryName": "Hawaii",
         "continentName": "Oceania"
       },

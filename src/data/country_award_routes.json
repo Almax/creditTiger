@@ -1778,6 +1778,32 @@
     ]
   },
   "Korea": {
+    "TYP": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "ICN",
+        "pointType": "TYP",
+        "numberOfPointsReq": 35000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Asiana",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "ICN",
+          "cityName": "Incheon",
+          "countryName": "Korea",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Etihad",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "Etihad",
+          "rate": "1"
+        }
+      }
+    ],
     "UR": [
       {
         "departingAirportTicker": "SEA",
@@ -1904,6 +1930,27 @@
         }
       }
     ],
+    "Etihad": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "ICN",
+        "pointType": "Etihad",
+        "numberOfPointsReq": 35000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Asiana",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "ICN",
+          "cityName": "Incheon",
+          "countryName": "Korea",
+          "continentName": "Asia"
+        },
+        "originalPointType": "Etihad",
+        "converted": false
+      }
+    ],
     "Korean": [
       {
         "departingAirportTicker": "SEA",
@@ -1967,6 +2014,56 @@
     ]
   },
   "France": {
+    "TYP": [
+      {
+        "departingAirportTicker": "BOS",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "TYP",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "American",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Etihad",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "Etihad",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "TYP",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air France",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "FlyingBlue",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "TYP",
+          "transfersToType": "FlyingBlue",
+          "rate": "1"
+        }
+      }
+    ],
     "MR": [
       {
         "departingAirportTicker": "JFK",
@@ -2115,32 +2212,6 @@
         }
       }
     ],
-    "TYP": [
-      {
-        "departingAirportTicker": "JFK",
-        "arrivingAirportTicker": "CDG",
-        "pointType": "TYP",
-        "numberOfPointsReq": 25000,
-        "cashReq": 1.11,
-        "class": "Coach",
-        "airlineName": "Air France",
-        "isCashRoute": false,
-        "roundTripReq": false,
-        "arrivingAirportDetails": {
-          "airportTicker": "CDG",
-          "cityName": "Paris",
-          "countryName": "France",
-          "continentName": "Europe"
-        },
-        "originalPointType": "FlyingBlue",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "TYP",
-          "transfersToType": "FlyingBlue",
-          "rate": "1"
-        }
-      }
-    ],
     "UR": [
       {
         "departingAirportTicker": "JFK",
@@ -2213,6 +2284,27 @@
           "transfersToType": "United",
           "rate": "1"
         }
+      }
+    ],
+    "Etihad": [
+      {
+        "departingAirportTicker": "BOS",
+        "arrivingAirportTicker": "CDG",
+        "pointType": "Etihad",
+        "numberOfPointsReq": 20000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "American",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "CDG",
+          "cityName": "Paris",
+          "countryName": "France",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Etihad",
+        "converted": false
       }
     ],
     "Iberia": [
@@ -3027,6 +3119,30 @@
       },
       {
         "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "MAD",
+        "pointType": "MR",
+        "numberOfPointsReq": 21250,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Iberia",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "MAD",
+          "cityName": "Madrid",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Iberia",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Iberia",
+          "rate": "0.8"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
         "arrivingAirportTicker": "BCN",
         "pointType": "MR",
         "numberOfPointsReq": 25000,
@@ -3046,30 +3162,6 @@
         "pointConversion": {
           "originalType": "MR",
           "transfersToType": "FlyingBlue",
-          "rate": "1"
-        }
-      },
-      {
-        "departingAirportTicker": "JFK",
-        "arrivingAirportTicker": "BCN",
-        "pointType": "MR",
-        "numberOfPointsReq": 30000,
-        "cashReq": 1.11,
-        "class": "Coach",
-        "airlineName": "Avianca",
-        "isCashRoute": false,
-        "roundTripReq": false,
-        "arrivingAirportDetails": {
-          "airportTicker": "BCN",
-          "cityName": "Barcelona",
-          "countryName": "Spain",
-          "continentName": "Europe"
-        },
-        "originalPointType": "United",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "MR",
-          "transfersToType": "United",
           "rate": "1"
         }
       }
@@ -3125,25 +3217,25 @@
       },
       {
         "departingAirportTicker": "JFK",
-        "arrivingAirportTicker": "BCN",
+        "arrivingAirportTicker": "MAD",
         "pointType": "SPG",
-        "numberOfPointsReq": 20000,
+        "numberOfPointsReq": 18000,
         "cashReq": 1.11,
         "class": "Coach",
-        "airlineName": "Delta",
+        "airlineName": "AA",
         "isCashRoute": false,
         "roundTripReq": false,
         "arrivingAirportDetails": {
-          "airportTicker": "BCN",
-          "cityName": "Barcelona",
+          "airportTicker": "MAD",
+          "cityName": "Madrid",
           "countryName": "Spain",
           "continentName": "Europe"
         },
-        "originalPointType": "FlyingBlue",
+        "originalPointType": "AA",
         "converted": true,
         "pointConversion": {
           "originalType": "SPG",
-          "transfersToType": "FlyingBlue",
+          "transfersToType": "AA",
           "rate": "1.25"
         }
       }
@@ -3243,6 +3335,25 @@
         },
         "originalPointType": "Iberia",
         "converted": false
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "MAD",
+        "pointType": "Iberia",
+        "numberOfPointsReq": 17000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Iberia",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "MAD",
+          "cityName": "Madrid",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Iberia",
+        "converted": false
       }
     ],
     "Alaska": [
@@ -3280,6 +3391,25 @@
         "arrivingAirportDetails": {
           "airportTicker": "BCN",
           "cityName": "Barcelona",
+          "countryName": "Spain",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "MAD",
+        "pointType": "AA",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "MAD",
+          "cityName": "Madrid",
           "countryName": "Spain",
           "continentName": "Europe"
         },
@@ -3445,26 +3575,26 @@
       },
       {
         "departingAirportTicker": "JFK",
-        "arrivingAirportTicker": "FRA",
+        "arrivingAirportTicker": "TXL",
         "pointType": "MR",
-        "numberOfPointsReq": 30000,
-        "cashReq": 1.11,
+        "numberOfPointsReq": 25000,
+        "cashReq": 40,
         "class": "Coach",
-        "airlineName": "United",
+        "airlineName": "Air Berlin",
         "isCashRoute": false,
         "roundTripReq": false,
         "arrivingAirportDetails": {
-          "airportTicker": "FRA",
-          "cityName": "Frankfurt",
+          "airportTicker": "TXL",
+          "cityName": "Berlin",
           "countryName": "Germany",
           "continentName": "Europe"
         },
-        "originalPointType": "United",
+        "originalPointType": "Avios",
         "converted": true,
         "pointConversion": {
           "originalType": "MR",
-          "transfersToType": "United",
-          "rate": "1"
+          "transfersToType": "Avios",
+          "rate": "0.8"
         }
       }
     ],
@@ -3519,25 +3649,25 @@
       },
       {
         "departingAirportTicker": "JFK",
-        "arrivingAirportTicker": "FRA",
+        "arrivingAirportTicker": "TXL",
         "pointType": "SPG",
-        "numberOfPointsReq": 18000,
-        "cashReq": 1.11,
+        "numberOfPointsReq": 16000,
+        "cashReq": 40,
         "class": "Coach",
-        "airlineName": "AA",
+        "airlineName": "Air Berlin",
         "isCashRoute": false,
         "roundTripReq": false,
         "arrivingAirportDetails": {
-          "airportTicker": "FRA",
-          "cityName": "Frankfurt",
+          "airportTicker": "TXL",
+          "cityName": "Berlin",
           "countryName": "Germany",
           "continentName": "Europe"
         },
-        "originalPointType": "AA",
+        "originalPointType": "Avios",
         "converted": true,
         "pointConversion": {
           "originalType": "SPG",
-          "transfersToType": "AA",
+          "transfersToType": "Avios",
           "rate": "1.25"
         }
       }
@@ -3619,6 +3749,30 @@
       },
       {
         "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "TXL",
+        "pointType": "UR",
+        "numberOfPointsReq": 20000,
+        "cashReq": 40,
+        "class": "Coach",
+        "airlineName": "Air Berlin",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TXL",
+          "cityName": "Berlin",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Avios",
+          "rate": "1"
+        }
+      },
+      {
+        "departingAirportTicker": "JFK",
         "arrivingAirportTicker": "FRA",
         "pointType": "UR",
         "numberOfPointsReq": 25000,
@@ -3638,30 +3792,6 @@
         "pointConversion": {
           "originalType": "UR",
           "transfersToType": "FlyingBlue",
-          "rate": "1"
-        }
-      },
-      {
-        "departingAirportTicker": "JFK",
-        "arrivingAirportTicker": "FRA",
-        "pointType": "UR",
-        "numberOfPointsReq": 30000,
-        "cashReq": 1.11,
-        "class": "Coach",
-        "airlineName": "United",
-        "isCashRoute": false,
-        "roundTripReq": false,
-        "arrivingAirportDetails": {
-          "airportTicker": "FRA",
-          "cityName": "Frankfurt",
-          "countryName": "Germany",
-          "continentName": "Europe"
-        },
-        "originalPointType": "United",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "UR",
-          "transfersToType": "United",
           "rate": "1"
         }
       }
@@ -3748,6 +3878,25 @@
         },
         "originalPointType": "AA",
         "converted": false
+      },
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "TXL",
+        "pointType": "AA",
+        "numberOfPointsReq": 25000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "Air Berlin",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TXL",
+          "cityName": "Berlin",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "AA",
+        "converted": false
       }
     ],
     "FlyingBlue": [
@@ -3789,6 +3938,27 @@
           "continentName": "Europe"
         },
         "originalPointType": "United",
+        "converted": false
+      }
+    ],
+    "Avios": [
+      {
+        "departingAirportTicker": "JFK",
+        "arrivingAirportTicker": "TXL",
+        "pointType": "Avios",
+        "numberOfPointsReq": 20000,
+        "cashReq": 40,
+        "class": "Coach",
+        "airlineName": "Air Berlin",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "TXL",
+          "cityName": "Berlin",
+          "countryName": "Germany",
+          "continentName": "Europe"
+        },
+        "originalPointType": "Avios",
         "converted": false
       }
     ]
@@ -8725,6 +8895,30 @@
   "Hawaii": {
     "SPG": [
       {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "LIH",
+        "pointType": "SPG",
+        "numberOfPointsReq": 10000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LIH",
+          "cityName": "Lihue",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Avios",
+          "rate": "1.25"
+        }
+      },
+      {
         "departingAirportTicker": "SFO",
         "arrivingAirportTicker": "HNL",
         "pointType": "SPG",
@@ -8771,30 +8965,6 @@
           "transfersToType": "AA",
           "rate": "1.25"
         }
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "HNL",
-        "pointType": "SPG",
-        "numberOfPointsReq": 16000,
-        "cashReq": 1.11,
-        "class": "Coach",
-        "airlineName": "AA",
-        "isCashRoute": false,
-        "roundTripReq": false,
-        "arrivingAirportDetails": {
-          "airportTicker": "HNL",
-          "cityName": "Honolulu",
-          "countryName": "Hawaii",
-          "continentName": "Oceania"
-        },
-        "originalPointType": "Avios",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "SPG",
-          "transfersToType": "Avios",
-          "rate": "1.25"
-        }
       }
     ],
     "MR": [
@@ -8823,6 +8993,30 @@
         }
       },
       {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "LIH",
+        "pointType": "MR",
+        "numberOfPointsReq": 15625,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LIH",
+          "cityName": "Lihue",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "MR",
+          "transfersToType": "Avios",
+          "rate": "0.8"
+        }
+      },
+      {
         "departingAirportTicker": "SFO",
         "arrivingAirportTicker": "HNL",
         "pointType": "MR",
@@ -8843,30 +9037,6 @@
         "pointConversion": {
           "originalType": "MR",
           "transfersToType": "United",
-          "rate": "1"
-        }
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "HNL",
-        "pointType": "MR",
-        "numberOfPointsReq": 22500,
-        "cashReq": 1.11,
-        "class": "Coach",
-        "airlineName": "Delta",
-        "isCashRoute": false,
-        "roundTripReq": false,
-        "arrivingAirportDetails": {
-          "airportTicker": "HNL",
-          "cityName": "Honolulu",
-          "countryName": "Hawaii",
-          "continentName": "Oceania"
-        },
-        "originalPointType": "Delta",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "MR",
-          "transfersToType": "Delta",
           "rate": "1"
         }
       }
@@ -8898,6 +9068,30 @@
       }
     ],
     "UR": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "LIH",
+        "pointType": "UR",
+        "numberOfPointsReq": 12500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LIH",
+          "cityName": "Lihue",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Avios",
+          "rate": "1"
+        }
+      },
       {
         "departingAirportTicker": "SFO",
         "arrivingAirportTicker": "HNL",
@@ -8943,30 +9137,6 @@
         "pointConversion": {
           "originalType": "UR",
           "transfersToType": "Avios",
-          "rate": "1"
-        }
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "HNL",
-        "pointType": "UR",
-        "numberOfPointsReq": 22500,
-        "cashReq": 1.11,
-        "class": "Coach",
-        "airlineName": "United",
-        "isCashRoute": false,
-        "roundTripReq": false,
-        "arrivingAirportDetails": {
-          "airportTicker": "HNL",
-          "cityName": "Honolulu",
-          "countryName": "Hawaii",
-          "continentName": "Oceania"
-        },
-        "originalPointType": "United",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "UR",
-          "transfersToType": "United",
           "rate": "1"
         }
       }
@@ -9011,9 +9181,47 @@
         },
         "originalPointType": "AA",
         "converted": false
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "LIH",
+        "pointType": "AA",
+        "numberOfPointsReq": 22500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LIH",
+          "cityName": "Lihue",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "AA",
+        "converted": false
       }
     ],
     "Avios": [
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "LIH",
+        "pointType": "Avios",
+        "numberOfPointsReq": 12500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": false,
+        "roundTripReq": false,
+        "arrivingAirportDetails": {
+          "airportTicker": "LIH",
+          "cityName": "Lihue",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": false
+      },
       {
         "departingAirportTicker": "SFO",
         "arrivingAirportTicker": "HNL",
