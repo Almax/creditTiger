@@ -8919,6 +8919,30 @@
         }
       },
       {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "SPG",
+        "numberOfPointsReq": 10000,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": true,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "SPG",
+          "transfersToType": "Avios",
+          "rate": "1.25"
+        }
+      },
+      {
         "departingAirportTicker": "SFO",
         "arrivingAirportTicker": "HNL",
         "pointType": "SPG",
@@ -8939,30 +8963,6 @@
         "pointConversion": {
           "originalType": "SPG",
           "transfersToType": "FlyingBlue",
-          "rate": "1.25"
-        }
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "HNL",
-        "pointType": "SPG",
-        "numberOfPointsReq": 16000,
-        "cashReq": 1.11,
-        "class": "Coach",
-        "airlineName": "AA",
-        "isCashRoute": false,
-        "roundTripReq": false,
-        "arrivingAirportDetails": {
-          "airportTicker": "HNL",
-          "cityName": "Honolulu",
-          "countryName": "Hawaii",
-          "continentName": "Oceania"
-        },
-        "originalPointType": "AA",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "SPG",
-          "transfersToType": "AA",
           "rate": "1.25"
         }
       }
@@ -9017,27 +9017,27 @@
         }
       },
       {
-        "departingAirportTicker": "SFO",
+        "departingAirportTicker": "LAX",
         "arrivingAirportTicker": "HNL",
         "pointType": "MR",
-        "numberOfPointsReq": 22500,
+        "numberOfPointsReq": 15625,
         "cashReq": 1.11,
         "class": "Coach",
-        "airlineName": "United",
-        "isCashRoute": false,
-        "roundTripReq": false,
+        "airlineName": "AA",
+        "isCashRoute": true,
+        "roundTripReq": true,
         "arrivingAirportDetails": {
           "airportTicker": "HNL",
           "cityName": "Honolulu",
           "countryName": "Hawaii",
           "continentName": "Oceania"
         },
-        "originalPointType": "United",
+        "originalPointType": "Avios",
         "converted": true,
         "pointConversion": {
           "originalType": "MR",
-          "transfersToType": "United",
-          "rate": "1"
+          "transfersToType": "Avios",
+          "rate": "0.8"
         }
       }
     ],
@@ -9093,6 +9093,30 @@
         }
       },
       {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "UR",
+        "numberOfPointsReq": 12500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": true,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": true,
+        "pointConversion": {
+          "originalType": "UR",
+          "transfersToType": "Avios",
+          "rate": "1"
+        }
+      },
+      {
         "departingAirportTicker": "SFO",
         "arrivingAirportTicker": "HNL",
         "pointType": "UR",
@@ -9113,30 +9137,6 @@
         "pointConversion": {
           "originalType": "UR",
           "transfersToType": "FlyingBlue",
-          "rate": "1"
-        }
-      },
-      {
-        "departingAirportTicker": "SFO",
-        "arrivingAirportTicker": "HNL",
-        "pointType": "UR",
-        "numberOfPointsReq": 20000,
-        "cashReq": 1.11,
-        "class": "Coach",
-        "airlineName": "AA",
-        "isCashRoute": false,
-        "roundTripReq": false,
-        "arrivingAirportDetails": {
-          "airportTicker": "HNL",
-          "cityName": "Honolulu",
-          "countryName": "Hawaii",
-          "continentName": "Oceania"
-        },
-        "originalPointType": "Avios",
-        "converted": true,
-        "pointConversion": {
-          "originalType": "UR",
-          "transfersToType": "Avios",
           "rate": "1"
         }
       }
@@ -9216,6 +9216,25 @@
         "arrivingAirportDetails": {
           "airportTicker": "LIH",
           "cityName": "Lihue",
+          "countryName": "Hawaii",
+          "continentName": "Oceania"
+        },
+        "originalPointType": "Avios",
+        "converted": false
+      },
+      {
+        "departingAirportTicker": "LAX",
+        "arrivingAirportTicker": "HNL",
+        "pointType": "Avios",
+        "numberOfPointsReq": 12500,
+        "cashReq": 1.11,
+        "class": "Coach",
+        "airlineName": "AA",
+        "isCashRoute": true,
+        "roundTripReq": true,
+        "arrivingAirportDetails": {
+          "airportTicker": "HNL",
+          "cityName": "Honolulu",
           "countryName": "Hawaii",
           "continentName": "Oceania"
         },
